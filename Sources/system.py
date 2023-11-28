@@ -3,6 +3,11 @@ from level1.algorithms import *
 from mapstate import *
 import os 
 import json
+import re
+
+def repl_func(match: re.Match):
+    return " ".join(match.group().split())
+
 
 # This is the main program for the project to navigate between frontend, backend and other class
 class SystemController:
@@ -79,8 +84,12 @@ class SystemController:
         
         with open(new_path, "w") as outfile:
             # write to json file with endline
-            json.dump(jsonData, outfile, indent=4)
+            json_str = json.dumps(jsonData, indent=4)
+            json_str = re.sub(r"(?<=\[)[^\[\]]+(?=])", repl_func, json_str)
+            outfile.write(json_str)
         print('Write to file ' + mapName + '_' + algorithm + '.json successfully')
+
+
     def solving(self, mapName, algorithm):
         MazeSolver = MazerSolverLevel1(self.mapLists[mapName].mazer, self.mapLists[mapName].nRow, self.mapLists[mapName].mCol, self.mapLists[mapName].nLayer)
         start = MazeSolver.agentPosition('A1')
