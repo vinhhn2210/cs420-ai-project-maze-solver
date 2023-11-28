@@ -34,7 +34,14 @@ class MapState:
                     print(traceMaze[i][j][k], end = '\t')
                 print()
             print()
-
+    def getKeysPosition(self):
+        keyList = []
+        for i in range(self.nLayer):
+            for j in range(self.nRow):
+                for k in range(self.mCol):
+                    if len(self.mazer[i][j][k]) > 1 and self.mazer[i][j][k][0] == 'K':
+                        keyList.append([j, k, i])
+        return keyList
 def loadMap(mapName):
     cur_path = os.path.dirname(__file__)
     new_path = os.path.relpath('..\\Map\\' + mapName +'.txt', cur_path)

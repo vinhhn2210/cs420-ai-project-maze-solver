@@ -2,33 +2,14 @@
     "0": {
         "numFloor": 1,
         "numAgent": 1,
-        "floor": [
-            0
-        ],
-        "mapSize": [4, 3],
-        // Trong 1 ô chỉ lưu các loại sau:
-        // Ô trống, Vật cản, Stair (UP, DO), T1..9
-        // Không lưu A1, A2, ... trên map, người code UI đỡ cực
+        "floor": [0],
+        "mapSize": [3, 4],
+        "key": [],
         "map": [
             [
-                [
-                    "A1",
-                    "0",
-                    "0",
-                    "-1"
-                ],
-                [
-                    "-1",
-                    "0",
-                    "0",
-                    "0"
-                ],
-                [
-                    "-1",
-                    "0",
-                    "0",
-                    "T1"
-                ]
+                ["A1", "0", "0", "-1"],
+                ["-1", "0", "0", "0"],
+                ["-1", "0", "0", "T1"]
             ]
         ],
         "key": [
@@ -37,62 +18,40 @@
         ],
         "agents": {
             "1": {
-                "position": [
-                    0,
-                    0,
-                    0
-                ],
+                "position": [0, 0, 0],
                 "key": []
             }
         }
     },
     "1": {
         "isWin": false,
-        "floor": [
-            0
-        ],
+        "floor": [0],
         "step": 1,
         "agents": {
             "1": {
-                "position": [
-                    0,
-                    1,
-                    0
-                ],
+                "position": [0, 1, 0],
                 "key": []
             }
         }
     },
     "2": {
         "isWin": false,
-        "floor": [
-            0
-        ],
+        "floor": [0],
         "step": 2,
         "agents": {
             "1": {
-                "position": [
-                    1,
-                    2,
-                    0
-                ],
+                "position": [1, 2, 0],
                 "key": []
             }
         }
     },
     "3": {
         "isWin": true,
-        "floor": [
-            0
-        ],
+        "floor": [0],
         "step": 3,
         "agents": {
             "1": {
-                "position": [
-                    2,
-                    3,
-                    0
-                ],
+                "position": [2, 3, 0],
                 "key": []
             }
         }

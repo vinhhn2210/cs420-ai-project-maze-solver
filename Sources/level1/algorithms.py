@@ -55,9 +55,9 @@ class MazerSolverLevel1:
                 layerNext -= 1
             if self.mazer[layer][xCor][yCor][0] == 'K':
                 keyNext |= (1 << int(self.mazer[layer][xCor][yCor][1:]))
-
+                
             if self.canMove(xNext, yNext, layerNext, keyNext) and self.isValid(xCor, yNext, layer, key) and self.isValid(xNext, yCor, layer, key):
-                succ.append((xNext, yNext, layer, key))
+                succ.append((xNext, yNext, layerNext, keyNext))
         return succ
 
     # dfs algorithm to solve mazer 
