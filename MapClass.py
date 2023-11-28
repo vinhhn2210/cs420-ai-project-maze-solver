@@ -32,10 +32,11 @@ class Map:
 			for j in range(self.N):
 				if self.mapData[i][j] == "-1": 
 					mapImageRow.append(CellClass.ObstacleCell(cellSize, (j * cellSize[0] + self.mapCoord[0], i * cellSize[1] + self.mapCoord[1]), (i, j)))
-				elif self.isChestCell(self.mapData[i][j]):
-					mapImageRow.append(CellClass.ChestCell(cellSize, (j * cellSize[0] + self.mapCoord[0], i * cellSize[1] + self.mapCoord[1]), (i, j), int(self.mapData[i][j][1:2]) - 1))
 				else:
 					mapImageRow.append(CellClass.EmptyCell(cellSize, (j * cellSize[0] + self.mapCoord[0], i * cellSize[1] + self.mapCoord[1]), (i, j)))
+
+					if self.isChestCell(self.mapData[i][j]):
+						mapImageRow[j].updateChest(int(self.mapData[i][j][1:2]) - 1)
 			self.mapImage.append(mapImageRow)
 
 		# Create graph for Map
@@ -60,5 +61,5 @@ class Map:
 				cell.draw(gameScreen)
 
 	def isChestCell(self, ID):
-		return ID[0:1] == 'A'
+		return ID[0:1] == 'T'
 

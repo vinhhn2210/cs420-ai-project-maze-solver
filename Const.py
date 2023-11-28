@@ -28,6 +28,18 @@ CELL_IMAGE_LIST = [pygame.image.load(f'Assets/Images/InGame/Cell/tile-{i}.png') 
 CELL_IMAGE_BLOCK = pygame.image.load(f'Assets/Images/InGame/Cell/Block.png')
 CELL_IMAGE_CHEST = [pygame.image.load(f'Assets/Images/InGame/Cell/chest_{i}.png') for i in range(1, 10)]
 
+COLOR_AGENT = (
+	(0, 0, 0),
+	(182, 213, 60),
+	(35, 205, 224),
+	(244, 127, 20),
+	(253, 123, 151),
+	(228, 185, 36),
+	(208, 221, 239),
+	(54, 69, 120),
+	(127, 112, 111),
+	(111, 57, 123)
+)
 # AGENT_FRAME_LIST = [
 # 	[pygame.image.load(f'Assets/Images/InGame/Agent/player{i}-left-{j}.png') for i in range(1, 5) for j in range(12)],
 # 	[pygame.image.load(f'Assets/Images/InGame/Agent/player{i}-right-{j}.png') for i in range(1, 5) for j in range(12)],

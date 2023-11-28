@@ -35,33 +35,30 @@ class EmptyCell(Cell):
 			pygame.transform.scale(Const.CELL_IMAGE_LIST[i], cellSize) 
 		for i in range(5)]
 
-		self.agentID = -1
-		self.emptyID = random.randint(0, 4)
+		self.chestID = -1
 
-	def updateAgent(self, agentID):
-		self.agentID = agentID
-		print(self.cellID, agentID)
-
-	def draw(self, gameScreen):
-		gameScreen.blit(self.image[self.emptyID], self.cellCoord)
-
-		if self.agentID != -1:
-			pygame.draw.rect(gameScreen, Const.WHITE, pygame.Rect(self.cellCoord[0], self.cellCoord[1], self.cellCoord[0] + self.cellSize[0], self.cellCoord[1] + self.cellSize[1]))
-
-
-class ChestCell(Cell):
-	def __init__(self, cellSize, cellCoord, cellID, chestID):
-		Cell.__init__(self, cellSize, cellCoord, cellID)
-
-		self.image = [
+		self.chestImage = [
 			pygame.transform.scale(Const.CELL_IMAGE_CHEST[i], cellSize) 
 		for i in range(9)]
 
+		self.agentID = -1
+		self.emptyID = random.randint(0, 4)
+		self.padding = (cellSize[0] * 10 / 100, cellSize[1] * 10 / 100)
+
+	def updateAgent(self, agentID):
+		self.agentID = agentID
+
+	def updateChest(self, chestID):
 		self.chestID = chestID
 
-	def draw(self, gameScreen):
-		gameScreen.blit(self.image[self.chestID], self.cellCoord)
-		
+	def draw(self, gameScreen):	
+		gameScreen.blit(self.image[self.emptyID], self.cellCoord)
+
+		if self.agentID != -1:
+			pygame.draw.rect(gameScreen, Const.COLOR_AGENT[self.agentID], pygame.Rect(self.cellCoord[0] + self.padding[0], self.cellCoord[1] + self.padding[1], self.cellSize[0] - 2 * self.padding[0], self.cellSize[1] - 2 * self.padding[1]))
+
+		if self.chestID != -1:
+			gameScreen.blit(self.chestImage[self.chestID], self.cellCoord)
 
 class ObstacleCell(Cell):
 	def __init__(self, cellSize, cellCoord, cellID):

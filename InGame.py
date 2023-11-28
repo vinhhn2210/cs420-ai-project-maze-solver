@@ -49,6 +49,8 @@ class InGame:
 		# Agent
 		# self.agent1 = AgentClass.Agent(1, self.gameMap.getCell(1, 1))
 
+		self.updateMap()
+
 	def loadJsonFile(self, jsonFilePath):
 		jsonFile = open(jsonFilePath)
 
@@ -68,7 +70,6 @@ class InGame:
 		for i in range(1, self.totalAgent + 1):
 			tmpTuple = self.jsonData[str(self.step)]["agents"][str(i)]["position"]
 			X, Y, Z = tmpTuple[0], tmpTuple[1], tmpTuple[2]
-			print(tmpTuple)
 
 			if self.map[Z][X][Y] == f'A{i}':
 				self.map[Z][X][Y] = f'A{i}0'
