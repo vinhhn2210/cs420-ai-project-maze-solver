@@ -87,13 +87,13 @@ class Menu:
 		) for j in range(2)] for i in range(4)]
 
 		# Algorithm Text
-		algoTuple = ('BFS', 'DFS', 'UCS', 'A*')
+		self.algoTuple = ('BFS', 'DFS', 'UCS', 'A*')
 
 		self.algoText = [TextClass.Text(
 			Const.VCR_OSD_MONO_FONT,
 			Const.WHITE,
 			25,
-			algoTuple[i],
+			self.algoTuple[i],
 			(self.algoTickButtonList[i][0].coord[0] + self.screenWidth * 1 / 100 + self.algoTickButtonList[i][0].size[0], self.algoTickButtonList[i][0].coord[1], 0, self.algoTickButtonList[i][0].size[1])
 		) for i in range(4)]
 
@@ -186,7 +186,8 @@ class Menu:
 
 			if startButtonState == True:
 				if self.algorithmID != -1:
-					ingame = InGame.InGame()
+					jsonFilePath = 'Solution/input' + str(self.mapID) + '-level' + str(self.levelID) + '_' + self.algoTuple[self.algorithmID].lower() + '.json'
+					ingame = InGame.InGame(jsonFilePath)
 					ingame.run()
 					break
 

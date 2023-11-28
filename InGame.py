@@ -5,7 +5,7 @@ import AgentClass
 import json
 
 class InGame:
-	def __init__(self):
+	def __init__(self, jsonFile):
 		# Init
 		pygame.init()
 
@@ -18,7 +18,7 @@ class InGame:
 		self.jsonData = []
 		self.totalAgent = 0
 
-		self.loadJsonFile('Solution/sample_bfs.json')
+		self.loadJsonFile(jsonFile)
 
 		# Set up Game Window
 		infoObject = pygame.display.Info()
@@ -44,7 +44,7 @@ class InGame:
 		self.clock = pygame.time.Clock()
 		self.isEndGame = False
 		self.initTick = pygame.time.get_ticks()
-		self.stepTime = 3
+		self.stepTime = 0.5
 
 		# Agent
 		# self.agent1 = AgentClass.Agent(1, self.gameMap.getCell(1, 1))
@@ -90,8 +90,6 @@ class InGame:
 			tick = pygame.time.get_ticks()
 			if tick >= self.initTick + self.stepTime * 1000:
 				self.step += 1
-				print("Change: " + str(self.step))
-				print(self.map)
 				self.initTick += self.stepTime * 1000
 
 				if str(self.step) in self.jsonData:
