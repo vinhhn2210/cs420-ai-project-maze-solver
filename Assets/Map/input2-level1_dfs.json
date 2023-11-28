@@ -1,15 +1,9 @@
 {
     "0": {
         "numFloor": 1,
-        "numAgent": 1,
         "floor": [
             0
         ],
-        "mapSize": [
-            3,
-            4
-        ],
-        "key": [],
         "map": [
             [
                 [

@@ -5,6 +5,10 @@
         "floor": [
             0
         ],
+        "mapSize": [4, 3],
+        // Trong 1 ô chỉ lưu các loại sau:
+        // Ô trống, Vật cản, Stair (UP, DO), T1..9
+        // Không lưu A1, A2, ... trên map, người code UI đỡ cực
         "map": [
             [
                 [
@@ -26,6 +30,10 @@
                     "T1"
                 ]
             ]
+        ],
+        "key": [
+            [1, 2, 3],
+            [1, 1, 1]
         ],
         "agents": {
             "1": {
