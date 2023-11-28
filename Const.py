@@ -46,3 +46,6 @@ COLOR_AGENT = (
 # ]
 
 
+# Leaderboard
+LEADERBOARD_BACKGROUND = pygame.image.load('Assets/Images/Leaderboard/Background.png')
+BACK_BUTTON = pygame.image.load('Assets/Images/Leaderboard/back.png')
