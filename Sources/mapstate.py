@@ -1,6 +1,6 @@
 import os
 
-class Map:
+class MapState:
     def __init__(self, name, nRow, mCol, nLayer = 1, mazer = []):
         self.name = name
         self.nRow = nRow
@@ -52,8 +52,14 @@ def loadMap(mapName):
             else:
                 row_data = lines[i].split(',')
                 mazer[nLayer - 1].append(row_data)
-        return Map(mapName, nRow, mCol, nLayer, mazer)
+        return MapState(mapName, nRow, mCol, nLayer, mazer)
 
+def listKeys(keyMask):
+    keyList = []
+    for i in range(32):
+        if keyMask & (1 << i) != 0:
+            keyList.append(i)
+    return keyList
     '''
 20,15
 [floor1]

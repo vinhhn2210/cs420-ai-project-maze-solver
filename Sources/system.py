@@ -1,6 +1,6 @@
 #import algorithms in level1 folder
 from level1.algorithms import *
-from map import *
+from mapstate import *
 import os 
 import json
 
@@ -25,22 +25,60 @@ class SystemController:
         for key in self.mapLists:
             self.mapLists[key].display()
 
-    def solutionJsonFile(self, mapName, path, algorithm):
+    def writeSolutionJsonFile(self, mapName, agentPath, algorithm):
         # path = [(x1, y1, layer1), (x2, y2, layer2), ...]
-        traceMaze = self.mapLists[mapName].mazer.copy()
-        for i in range(1, len(path)):
-            xCor, yCor, layer, key = path[i]
-            traceMaze[layer][xCor][yCor] = i
+        MapJson = self.mapLists[mapName]
         # write to json file
         cur_path = os.path.dirname(__file__)
         new_path = os.path.relpath('..\\Solution\\' + mapName + '_' + algorithm + '.json', cur_path)
         jsonData = {
-
+            "0": {
+                "numFloor": MapJson.nLayer,
+                "numAgent": len(agentPath),
+                "floor": [],
+                "map": MapJson.mazer,
+                "agents": {
+                   
+                }
+            }
         }
+        floorList = []
+        for i in range(0, len(agentPath)):
+            xCor, yCor, layer, key = agentPath[i][0]
+            if (layer not in floorList):
+                floorList.append(layer)
+            jsonData['0']['agents'][str(i + 1)] = {
+                "position": [xCor, yCor, layer],
+                "key": listKeys(key)
+            }
+        jsonData['0']['floor'] = floorList
+        numStep = len(agentPath[0])
+        #print(agentPath)
+        for i in range(1, numStep):
+            floorList = []
+            for j in range(0, len(agentPath)):
+                xCor, yCor, layer, key = agentPath[j][i]
+                if (layer not in floorList):
+                    floorList.append(layer)
+
+            jsonData[str(i)] = {
+                "isWin": (i == numStep - 1),
+                "floor": floorList,
+                "step": i,
+                "agents": {
+                }
+            }
+            for j in range(0, len(agentPath)):
+                xCor, yCor, layer, key = agentPath[j][i]
+                jsonData[str(i)]['agents'][str(j + 1)] = {
+                    "position": [xCor, yCor, layer],
+                    "key": listKeys(key)
+                }
         
         with open(new_path, "w") as outfile:
-            json.dump(jsonData, outfile)
-
+            # write to json file with endline
+            json.dump(jsonData, outfile, indent=4)
+        print('Write to file ' + mapName + '_' + algorithm + '.json successfully')
     def solving(self, mapName, algorithm):
         MazeSolver = MazerSolverLevel1(self.mapLists[mapName].mazer, self.mapLists[mapName].nRow, self.mapLists[mapName].mCol, self.mapLists[mapName].nLayer)
         start = MazeSolver.agentPosition('A1')
@@ -52,11 +90,17 @@ class SystemController:
         elif algorithm == 'bfs':
             solution = MazeSolver.bfs(start, goal)
         if solution:
-            self.mapLists[mapName].visualize(solution)
+            self.writeSolutionJsonFile(mapName, [solution], algorithm)
         else:
-            print('No solution')
-            print(goal)
+            print('No solution for ' + mapName + ' with ' + algorithm + ' algorithm')
+
+    def solvingAllMap(self, algorithm):
+        for mapName in self.mapLists:
+            self.solving(mapName, algorithm)
+
 system = SystemController()
 system.readFolderMap('Map')
-system.solving('input1-level1', 'bfs')
+system.solvingAllMap('dfs')
+system.solvingAllMap('bfs')
+
 #system.displayMap('input1-level2')
