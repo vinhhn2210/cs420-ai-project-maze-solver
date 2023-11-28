@@ -36,6 +36,8 @@ class SystemController:
                 "numFloor": MapJson.nLayer,
                 "numAgent": len(agentPath),
                 "floor": [],
+                "mapSize": [MapJson.nRow, MapJson.mCol],
+                "key": MapJson.getKeysPosition(),
                 "map": MapJson.mazer,
                 "agents": {
                    
@@ -99,6 +101,7 @@ class SystemController:
             self.solving(mapName, algorithm)
 
 system = SystemController()
+
 system.readFolderMap('Map')
 system.solvingAllMap('dfs')
 system.solvingAllMap('bfs')
