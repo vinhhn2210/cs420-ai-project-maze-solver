@@ -29,7 +29,9 @@ CELL_MOVE = ((0, -1), (-1, 0), (0, 1), (1, 0), (-1, -1), (-1, 1), (1, -1), (1, 1
 CELL_IMAGE_LIST = [pygame.image.load(f'Assets/Images/InGame/Cell/tile-{i}.png') for i in range(1, 6)]
 CELL_IMAGE_BLOCK = pygame.image.load(f'Assets/Images/InGame/Cell/Block.png')
 CELL_IMAGE_CHEST = [pygame.image.load(f'Assets/Images/InGame/Cell/chest_{i}.png') for i in range(1, 10)]
-CELL_IMAGE_KEY = [pygame.image.load(f'Assets/Images/InGame/Cell/Key-{i}.png') for i in range(1, 10)]
+CELL_IMAGE_KEY = [pygame.image.load(f'Assets/Images/InGame/Cell/Key-{i}.png') for i in range(1, 21)]
+CELL_IMAGE_SUPPORTKEY = pygame.image.load(f'Assets/Images/InGame/Cell/Support-Key.png')
+CELL_IMAGE_DOOR = [pygame.image.load(f'Assets/Images/InGame/Cell/Door-{i}.png') for i in range(1, 21)]
 
 COLOR_AGENT = (
 	(0, 0, 0),

@@ -36,7 +36,11 @@ class Map:
 					mapImageRow.append(CellClass.EmptyCell(cellSize, (j * cellSize[0] + self.mapCoord[0], i * cellSize[1] + self.mapCoord[1]), (i, j)))
 
 					if self.isChestCell(self.mapData[i][j]):
-						mapImageRow[j].updateChest(int(self.mapData[i][j][1:2]) - 1)
+						mapImageRow[j].updateChest(int(self.mapData[i][j][1:]) - 1)
+
+					if self.isDoorCell(self.mapData[i][j]):
+						curDoor = self.mapData[i][j][1:]
+						mapImageRow[j].updateDoor(int(curDoor) - 1)
 
 			self.mapImage.append(mapImageRow)
 
@@ -63,4 +67,7 @@ class Map:
 
 	def isChestCell(self, ID):
 		return ID[0:1] == 'T'
+
+	def isDoorCell(self, ID):
+		return ID[0:1] == 'D'
 

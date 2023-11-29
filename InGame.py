@@ -96,7 +96,6 @@ class InGame:
 			(self.gamePropertiesContent[0] + textPadding, self.gamePropertiesContent[1] + self.gamePropertiesContent[3] * 75 / 100, self.gamePropertiesContent[2] - 2 * textPadding, self.gamePropertiesContent[3] * 10 / 100)
 		)
 
-
 		# Set up Clock
 		self.clock = pygame.time.Clock()
 		self.isEndGame = False
@@ -132,8 +131,9 @@ class InGame:
 		self.keyList = data["0"]["key"]
 		cnt = 0
 		for i in self.keyList:
-			self.gameMap[i[2]].getCell(i[0], i[1]).updateKey(cnt)
 			cnt += 1
+			print(cnt, i)
+			self.gameMap[i[2]].getCell(i[0], i[1]).updateKey(cnt)
 
 		# Json Data
 		self.jsonData = data
