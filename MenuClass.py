@@ -186,8 +186,7 @@ class Menu:
 
 			if startButtonState == True:
 				if self.algorithmID != -1:
-					jsonFilePath = 'Solution/input' + str(self.mapID) + '-level' + str(self.levelID) + '_' + self.algoTuple[self.algorithmID].lower() + '.json'
-					ingame = InGame.InGame(jsonFilePath)
+					ingame = InGame.InGame((self.mapID, self.levelID, self.algoTuple[self.algorithmID]))
 					ingame.run()
 					break
 

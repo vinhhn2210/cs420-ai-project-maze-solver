@@ -41,7 +41,15 @@ class EmptyCell(Cell):
 			pygame.transform.scale(Const.CELL_IMAGE_CHEST[i], cellSize) 
 		for i in range(9)]
 
+		self.keyImage = [
+			pygame.transform.scale(Const.CELL_IMAGE_KEY[i], cellSize) 
+		for i in range(9)
+		]
+
+		# Cell Type
 		self.agentID = -1
+		self.keyID = -1
+
 		self.emptyID = random.randint(0, 4)
 		self.padding = (cellSize[0] * 10 / 100, cellSize[1] * 10 / 100)
 
@@ -51,11 +59,17 @@ class EmptyCell(Cell):
 	def updateChest(self, chestID):
 		self.chestID = chestID
 
+	def updateKey(self, keyID):
+		self.keyID = keyID
+
 	def draw(self, gameScreen):	
 		gameScreen.blit(self.image[self.emptyID], self.cellCoord)
 
 		if self.agentID != -1:
 			pygame.draw.rect(gameScreen, Const.COLOR_AGENT[self.agentID], pygame.Rect(self.cellCoord[0] + self.padding[0], self.cellCoord[1] + self.padding[1], self.cellSize[0] - 2 * self.padding[0], self.cellSize[1] - 2 * self.padding[1]))
+
+		if self.keyID != -1:
+			gameScreen.blit(self.keyImage[self.keyID], self.cellCoord)
 
 		if self.chestID != -1:
 			gameScreen.blit(self.chestImage[self.chestID], self.cellCoord)

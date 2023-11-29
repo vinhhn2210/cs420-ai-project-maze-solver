@@ -7,7 +7,7 @@ class Agent:
 		self.agentID = agentID
 		self.agentCell = curCell
 		self.agentSize = (curCell.cellSize[0] * 4 / 7, curCell.cellSize[1] * 6 / 7)
-		self.agentPadding = curCell.cellSize[1] * 10 / 100
+		self.agentPadding = curCell.cellSize[1] * 30 / 100
 		self.agentCoord = [curCell.cellCoord[0] + (curCell.cellSize[0] - self.agentSize[0]) / 2, curCell.cellCoord[1] + curCell.cellSize[1] / 2 + self.agentPadding - self.agentSize[1]]
 		# self.agentCell.addPlayer(self.agentID)
 
@@ -17,23 +17,16 @@ class Agent:
 		self.agentSpeed = 15
 
 		# Agent Animation
-		self.agentFrame = []
-		for listFrame in Const.AGENT_FRAME_LIST:
-			agentFrameList = []
-			step = len(listFrame) // 4
-			for i in range(self.agentID * step, self.agentID * step + step):
-				frame = listFrame[i]
-				agentFrameList.append(pygame.transform.scale(frame, self.agentSize))
-			self.agentFrame.append(agentFrameList)
+		self.agentFrame = Const.AGENT_FRAME_LIST[self.agentID - 1]
 
 		# Agent frame
-		self.animationDirection = 0
+		self.animationDirection = 1
 		self.curFrame = 0
 		self.totalFrame = len(self.agentFrame[self.animationDirection])
 
-		# Portal
-		self.agentPortal = PortalClass.Portal(curCell)
-		self.portalFrame = 10
+		# # Portal
+		# self.agentPortal = PortalClass.Portal(curCell)
+		# self.portalFrame = 10
 
 	def getAgentCoordInCell(self, newCell):
 		return (newCell.cellCoord[0] + (newCell.cellSize[0] - self.agentSize[0]) / 2, newCell.cellCoord[1] + newCell.cellSize[1] / 2 + self.agentPadding - self.agentSize[1])
@@ -50,6 +43,14 @@ class Agent:
 				self.agentCoord[i] += moveDistance
 			elif self.agentCoord[i] > targetPos[i]:
 				self.agentCoord[i] -= moveDistance
+
+	def updateAgentCell(self, newCell):
+		if newCell.cellID[0] > self.agentCell.cellID[0]:
+			self.animationDirection = 1
+		elif newCell.cellID[0] < self.agentCell.cellID[0]:
+			self.animationDirection = 0
+
+		self.agentCell = newCell
 
 	def changeCell(self, direction):
 		if self.agentCell.listAdj[direction] is not None:
@@ -73,11 +74,6 @@ class Agent:
 		self.curFrame = (self.curFrame + 1) % self.totalFrame
 
 	def draw(self, gameScreen):
-		if(self.portalFrame > 0):
-			self.agentPortal.draw(gameScreen)
-			self.portalFrame -= 1
-			return
-
-		gameScreen.blit(self.agentFrame[0][self.curFrame], tuple(self.agentCoord))
+		gameScreen.blit(self.agentFrame[self.animationDirection][self.curFrame], tuple(self.agentCoord))
 
 		self.moveFrame()

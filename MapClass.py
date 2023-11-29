@@ -37,6 +37,7 @@ class Map:
 
 					if self.isChestCell(self.mapData[i][j]):
 						mapImageRow[j].updateChest(int(self.mapData[i][j][1:2]) - 1)
+
 			self.mapImage.append(mapImageRow)
 
 		# Create graph for Map

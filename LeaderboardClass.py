@@ -6,7 +6,7 @@ import ButtonClass
 import InGame
 
 class Leaderboard:
-	def __init__(self):
+	def __init__(self, menuData):
 		pygame.init()
 
 		### Prepare data
@@ -47,7 +47,7 @@ class Leaderboard:
 			Const.AMATICSC_FONT,
 			Const.WHITE,
 			35,
-			"Level: 1",
+			"Level: " + str(menuData[1]),
 			(containerBoxContainer[0], containerBoxContainer[1] + containerBoxContainer[3] * 25 / 100, containerBoxContainer[2], containerBoxContainer[3] * 15 / 100)
 		)
 
@@ -56,7 +56,7 @@ class Leaderboard:
 			Const.AMATICSC_FONT,
 			Const.WHITE,
 			35,
-			"Algorithm: BFS",
+			"Algorithm: " + menuData[2],
 			(containerBoxContainer[0], containerBoxContainer[1] + containerBoxContainer[3] * 40 / 100, containerBoxContainer[2], containerBoxContainer[3] * 15 / 100)
 		)
 
@@ -90,7 +90,7 @@ class Leaderboard:
 		# Start Button
 		self.backButton = ButtonClass.Button(
 			(self.screenWidth * 10 / 100, self.screenHeight * 10 / 100),
-			Const.START_BUTTON_IMAGE,
+			Const.BACK_BUTTON_IMAGE,
 			(containerBoxContainer[0], containerBoxContainer[1] + containerBoxContainer[3] + self.screenHeight * 3 / 100, containerBoxContainer[2], self.screenHeight - (containerBoxContainer[1] + containerBoxContainer[3]))
 		)
 
