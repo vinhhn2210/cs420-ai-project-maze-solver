@@ -24,6 +24,7 @@ TICK_IMAGE = [
 
 # In Game
 INGAME_BACKGROUND = pygame.image.load('Assets/Images/InGame/Background.png')
+INGAME_BACKGROUND_LEVEL4 = pygame.image.load('Assets/Images/InGame/Background_Level4.png')
 CELL_MOVE = ((0, -1), (-1, 0), (0, 1), (1, 0), (-1, -1), (-1, 1), (1, -1), (1, 1))
 CELL_IMAGE_LIST = [pygame.image.load(f'Assets/Images/InGame/Cell/tile-{i}.png') for i in range(1, 6)]
 CELL_IMAGE_BLOCK = pygame.image.load(f'Assets/Images/InGame/Cell/Block.png')
@@ -49,6 +50,12 @@ AGENT_FRAME_LIST = [
 	]
 	for i in range(1, 10)
 ]
+
+PAUSE_BUTTON = [
+	pygame.image.load('Assets/Images/InGame/Pause_button.png'),
+	pygame.image.load('Assets/Images/InGame/Continue_button.png')
+]
+MENU_BUTTON = pygame.image.load('Assets/Images/InGame/Menu_button.png')
 
 
 # Leaderboard

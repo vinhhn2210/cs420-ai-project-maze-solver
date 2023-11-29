@@ -3,6 +3,7 @@ import Const
 import ObjectClass
 import TextClass
 import ButtonClass
+import MenuClass
 import InGame
 
 class Leaderboard:
@@ -108,6 +109,8 @@ class Leaderboard:
 			backButtonState = self.backButton.isClicked(self.gameScreen)
 
 			if backButtonState == True:
+				menu = MenuClass.Menu((self.screenWidth, self.screenHeight))
+				menu.run()
 				break
 
 			# Draw Window

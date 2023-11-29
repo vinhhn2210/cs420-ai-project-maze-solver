@@ -5,8 +5,9 @@ import TextClass
 import ButtonClass
 import InGame
 
+
 class Menu:
-	def __init__(self):
+	def __init__(self, screenSize):
 		pygame.init()
 
 		### Prepare data
@@ -15,9 +16,7 @@ class Menu:
 		self.mapID = 1
 
 		# Menu Screen
-		infoObject = pygame.display.Info()
-		screenProportion = 3 / 4
-		self.gameScreen = pygame.display.set_mode((infoObject.current_w * screenProportion, infoObject.current_h * screenProportion))
+		self.gameScreen = pygame.display.set_mode(screenSize)
 		self.screenWidth, self.screenHeight = pygame.display.get_surface().get_size()
 		pygame.display.flip()
 		pygame.display.set_caption("Move Your Step")
