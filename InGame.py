@@ -100,7 +100,7 @@ class InGame:
 		self.clock = pygame.time.Clock()
 		self.isEndGame = False
 		self.initTick = pygame.time.get_ticks()
-		self.stepTime = 0.5
+		self.stepTime = 0.3
 
 		self.updateMap()
 
@@ -131,9 +131,8 @@ class InGame:
 		self.keyList = data["0"]["key"]
 		cnt = 0
 		for i in self.keyList:
-			cnt += 1
-			print(cnt, i)
 			self.gameMap[i[2]].getCell(i[0], i[1]).updateKey(cnt)
+			cnt += 1
 
 		# Json Data
 		self.jsonData = data
