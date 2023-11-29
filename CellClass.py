@@ -79,11 +79,14 @@ class EmptyCell(Cell):
 	def draw(self, gameScreen):	
 		gameScreen.blit(self.image[self.emptyID], self.cellCoord)
 
+		if self.keyID != -1:
+			gameScreen.blit(self.supportKeyImage, self.cellCoord)
+			gameScreen.blit(self.keyImage[self.keyID], (self.cellCoord[0] , self.cellCoord[1]))
+
 		if self.agentID != -1:
 			pygame.draw.rect(gameScreen, Const.COLOR_AGENT[self.agentID], pygame.Rect(self.cellCoord[0] + self.padding[0], self.cellCoord[1] + self.padding[1], self.cellSize[0] - 2 * self.padding[0], self.cellSize[1] - 2 * self.padding[1]))
 
 		if self.keyID != -1:
-			gameScreen.blit(self.supportKeyImage, self.cellCoord)
 			gameScreen.blit(self.keyImage[self.keyID], (self.cellCoord[0] , self.cellCoord[1]))
 
 		if self.doorID != -1:
