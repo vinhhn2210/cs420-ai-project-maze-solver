@@ -4,6 +4,7 @@ DELL = (1280, 720)
 
 # Color
 WHITE = (255, 255, 255)
+BROWN = (128,0,0)
 BLACK = (0, 0, 0)
 
 # Text Font

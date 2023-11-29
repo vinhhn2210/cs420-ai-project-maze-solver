@@ -37,7 +37,7 @@ class Menu:
 		# Level Text
 		self.levelText = TextClass.Text(
 			Const.AMATICSC_FONT,
-			Const.WHITE,
+			Const.BROWN,
 			50,
 			"LEVEL",
 			(containerBoxContainer[0], containerBoxContainer[1], containerBoxContainer[2], containerBoxContainer[3] * 20 / 100)
@@ -53,7 +53,7 @@ class Menu:
 		# Level ID
 		self.levelIDText = TextClass.Text(
 			Const.AMATICSC_FONT,
-			Const.WHITE,
+			Const.BROWN,
 			35,
 			'Level ' + str(self.levelID),
 			(self.levelDropbox.coord[0], self.levelDropbox.coord[1], self.levelDropbox.size[0], self.levelDropbox.size[1])
@@ -91,7 +91,7 @@ class Menu:
 
 		self.algoText = [TextClass.Text(
 			Const.VCR_OSD_MONO_FONT,
-			Const.WHITE,
+			Const.BROWN,
 			25,
 			self.algoTuple[i],
 			(self.algoTickButtonList[i][0].coord[0] + self.screenWidth * 1 / 100 + self.algoTickButtonList[i][0].size[0], self.algoTickButtonList[i][0].coord[1], 0, self.algoTickButtonList[i][0].size[1])
@@ -100,7 +100,7 @@ class Menu:
 		# Map Text
 		self.mapText = TextClass.Text(
 			Const.AMATICSC_FONT,
-			Const.WHITE,
+			Const.BROWN,
 			50,
 			"MAP",
 			(containerBoxContainer[0], containerBoxContainer[1] + containerBoxContainer[3] * 60 / 100, containerBoxContainer[2], containerBoxContainer[3] * 20 / 100)
@@ -116,7 +116,7 @@ class Menu:
 		# Map ID
 		self.mapIDText = TextClass.Text(
 			Const.AMATICSC_FONT,
-			Const.WHITE,
+			Const.BROWN,
 			40,
 			'Map ' + str(self.mapID),
 			(self.mapDropbox.coord[0], self.mapDropbox.coord[1], self.mapDropbox.size[0], self.mapDropbox.size[1])

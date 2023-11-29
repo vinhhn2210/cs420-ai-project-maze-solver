@@ -36,7 +36,7 @@ class Leaderboard:
 		# Leaderboard Text
 		self.leaderboardText = TextClass.Text(
 			Const.AMATICSC_FONT,
-			Const.WHITE,
+			Const.BROWN,
 			60,
 			"Leaderboard",
 			(containerBoxContainer[0], containerBoxContainer[1], containerBoxContainer[2], containerBoxContainer[3] * 30 / 100)
@@ -45,7 +45,7 @@ class Leaderboard:
 		# Algorithm Text
 		self.levelText = TextClass.Text(
 			Const.AMATICSC_FONT,
-			Const.WHITE,
+			Const.BROWN,
 			35,
 			"Level: " + str(menuData[1]),
 			(containerBoxContainer[0], containerBoxContainer[1] + containerBoxContainer[3] * 25 / 100, containerBoxContainer[2], containerBoxContainer[3] * 15 / 100)
@@ -54,7 +54,7 @@ class Leaderboard:
 		# Algorithm Text
 		self.algorithmText = TextClass.Text(
 			Const.AMATICSC_FONT,
-			Const.WHITE,
+			Const.BROWN,
 			35,
 			"Algorithm: " + menuData[2],
 			(containerBoxContainer[0], containerBoxContainer[1] + containerBoxContainer[3] * 40 / 100, containerBoxContainer[2], containerBoxContainer[3] * 15 / 100)
@@ -63,7 +63,7 @@ class Leaderboard:
 		# Time Text
 		self.timeText = TextClass.Text(
 			Const.AMATICSC_FONT,
-			Const.WHITE,
+			Const.BROWN,
 			35,
 			"Time: 10s",
 			(containerBoxContainer[0], containerBoxContainer[1] + containerBoxContainer[3] * 55 / 100, containerBoxContainer[2], containerBoxContainer[3] * 15 / 100)
@@ -72,7 +72,7 @@ class Leaderboard:
 		# Memory Text
 		self.memoryText = TextClass.Text(
 			Const.AMATICSC_FONT,
-			Const.WHITE,
+			Const.BROWN,
 			35,
 			"Memory: 10MB",
 			(containerBoxContainer[0], containerBoxContainer[1] + containerBoxContainer[3] * 70 / 100, containerBoxContainer[2], containerBoxContainer[3] * 15 / 100)
@@ -81,7 +81,7 @@ class Leaderboard:
 		# Score Text
 		self.scoreText = TextClass.Text(
 			Const.AMATICSC_FONT,
-			Const.WHITE,
+			Const.BROWN,
 			35,
 			"Score: 100",
 			(containerBoxContainer[0], containerBoxContainer[1] + containerBoxContainer[3] * 85 / 100, containerBoxContainer[2], containerBoxContainer[3] * 15 / 100)
