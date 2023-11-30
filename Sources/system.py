@@ -5,6 +5,12 @@ import os
 import json
 import re
 
+
+# back to the parent folder
+PARENT_PATH = os.path.dirname(os.getcwd())
+MAP_PATH = os.path.join(PARENT_PATH, 'Map')
+SOL_PATH = os.path.join(PARENT_PATH, 'Solution')
+
 def repl_func(match: re.Match):
     return " ".join(match.group().split())
 
@@ -15,10 +21,7 @@ class SystemController:
         self.mapLists = {}
 
     def readFolderMap(self, folderName): 
-        # list all txt files in the folder using os
-        cur_path = os.path.dirname(__file__)
-        new_path = os.path.relpath('..\\' + folderName, cur_path)
-        files = os.listdir(new_path)
+        files = os.listdir(MAP_PATH)
         for file in files:
             fileName = file[:-4]
             self.mapLists[fileName] = loadMap(fileName)
@@ -33,9 +36,8 @@ class SystemController:
     def writeSolutionJsonFile(self, mapName, agentPath, algorithm):
         # path = [(x1, y1, layer1), (x2, y2, layer2), ...]
         MapJson = self.mapLists[mapName]
+        new_path = os.path.join(SOL_PATH, f'{mapName}_{algorithm}.json')
         # write to json file
-        cur_path = os.path.dirname(__file__)
-        new_path = os.path.relpath('..\\Solution\\' + mapName + '_' + algorithm + '.json', cur_path)
         jsonData = {
             "0": {
                 "numFloor": MapJson.nLayer,
@@ -110,6 +112,7 @@ class SystemController:
             self.solving(mapName, algorithm)
 
 system = SystemController()
+
 
 system.readFolderMap('Map')
 system.solvingAllMap('dfs')

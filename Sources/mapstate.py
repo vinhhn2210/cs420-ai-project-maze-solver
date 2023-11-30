@@ -1,4 +1,8 @@
 import os
+PARENT_PATH = os.path.dirname(os.getcwd())
+MAP_PATH = os.path.join(PARENT_PATH, 'Map')
+SOL_PATH = os.path.join(PARENT_PATH, 'Solution')
+
 
 class MapState:
     def __init__(self, name, nRow, mCol, nLayer = 1, mazer = []):
@@ -43,8 +47,7 @@ class MapState:
                         keyList.append([j, k, i])
         return keyList
 def loadMap(mapName):
-    cur_path = os.path.dirname(__file__)
-    new_path = os.path.relpath('..\\Map\\' + mapName +'.txt', cur_path)
+    new_path = os.path.join(MAP_PATH, f'{mapName}.txt')
 
     with open(new_path, 'r') as data:
         # read lines in data without \n
