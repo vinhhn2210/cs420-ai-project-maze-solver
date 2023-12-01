@@ -1,4 +1,9 @@
 import os
+from colorama import Fore
+PARENT_PATH = os.path.dirname(os.getcwd())
+MAP_PATH = os.path.join(PARENT_PATH, 'Map')
+SOL_PATH = os.path.join(PARENT_PATH, 'Solution')
+
 
 class MapState:
     def __init__(self, name, nRow, mCol, nLayer = 1, mazer = []):
@@ -31,7 +36,19 @@ class MapState:
             print('[floor' + str(i + 1) + ']')
             for j in range(self.nRow):
                 for k in range(self.mCol):
-                    print(traceMaze[i][j][k], end = '\t')
+                    s = str(traceMaze[i][j][k])
+                    if (len(s) == 1):
+                        s = '  ' + s
+                    elif (len(s) == 2):
+                        s = ' ' + s
+                    if (traceMaze[i][j][k] == '-1'):
+                        print(Fore.RED + s, end = ' ')
+                    elif (traceMaze[i][j][k] == '0'):
+                        print(Fore.GREEN + s, end = ' ')
+                    elif (traceMaze[i][j][k] == 'A1'):
+                        print(Fore.YELLOW + s, end = ' ')
+                    else:
+                        print(Fore.WHITE + s, end = ' ')
                 print()
             print()
     def getKeysPosition(self):
@@ -43,8 +60,7 @@ class MapState:
                         keyList.append([j, k, i])
         return keyList
 def loadMap(mapName):
-    cur_path = os.path.dirname(__file__)
-    new_path = os.path.relpath('..\\Map\\' + mapName +'.txt', cur_path)
+    new_path = os.path.join(MAP_PATH, f'{mapName}.txt')
 
     with open(new_path, 'r') as data:
         # read lines in data without \n

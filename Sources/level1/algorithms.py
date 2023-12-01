@@ -1,16 +1,16 @@
     
 class MazerSolverLevel1:
     def __init__(self, mazer, nRow, mCol, nLayer = 1):
-        self.mazer = mazer
-        self.nRow = nRow
+        self.mazer = mazer # 3D array (floor, row, col)
+        self.nRow = nRow 
         self.mCol = mCol
-        self.nLayer = nLayer
-        self.key = 0
-        self.dx = [-1, 0, 1, 0, -1, -1, 1, 1]
-        self.dy = [0, 1, 0, -1, -1, 1, -1, 1]
-    # check if the current position is inside the mazer
+        self.nLayer = nLayer # number of floor
+        self.key = 0 # agent's key
+        self.dx = [-1, 0, 1, 0, -1, -1, 1, 1] # x direction
+        self.dy = [0, 1, 0, -1, -1, 1, -1, 1] # y direction
 
     def agentPosition(self, agentName):
+        ''' return agent's position'''
         for layer in range(self.nLayer):
             for xCor in range(self.nRow):
                 for yCor in range(self.mCol):
@@ -18,13 +18,16 @@ class MazerSolverLevel1:
                         return (xCor, yCor, layer)
 
     def inside(self, xCor, yCor, layer):
+        ''' check if position is inside the maze'''
         return (xCor >= 0 and xCor < self.nRow and yCor >= 0 
             and yCor < self.mCol and layer >= 0 and layer < self.nLayer)
     
     def canUnlock(self, door, key):
+        ''' check if agent can unlock the door'''
         return key & (1 << door) != 0
 
     def isValid(self, xCor, yCor, layer, key):
+        ''' check if cell is blocked or locked door'''
         if self.mazer[layer][xCor][yCor]== '-1':
             return False
         if len(self.mazer[layer][xCor][yCor]) > 1 and self.mazer[layer][xCor][yCor][0] == 'D':
@@ -32,18 +35,20 @@ class MazerSolverLevel1:
             return self.canUnlock(door, key)
         return True
     
-    # goal test
     def goalTest(self, state, goal):
+        ''' check if agent reach the goal'''
         return state == goal
     
     # can move
     def canMove(self, xCor, yCor, layer, key):
+        ''' check if agent can travel to the cell'''
         if not self.inside(xCor, yCor, layer) or not self.isValid(xCor, yCor, layer, key):
             return False
         return True
         
     # successor function
     def succesor(self, xCor, yCor, layer, key):
+        ''' return a list of successor and their key'''
         succ = []
         for i in range(8):
             xNext = xCor + self.dx[i]
