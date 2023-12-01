@@ -4,7 +4,7 @@ from mapstate import *
 import os 
 import json
 import re
-
+import sys
 
 # back to the parent folder
 PARENT_PATH = os.path.dirname(os.getcwd())
@@ -95,7 +95,7 @@ class SystemController:
     def solving(self, mapName, algorithm):
         MazeSolver = MazerSolverLevel1(self.mapLists[mapName].mazer, self.mapLists[mapName].nRow, self.mapLists[mapName].mCol, self.mapLists[mapName].nLayer)
         start = MazeSolver.agentPosition('A1')
-        goal = MazeSolver.agentPosition('T1')
+        goal = MazeSolver.goalPosition('T1')
         #self.mapLists[mapName].display()
         solution = []
         if algorithm == 'dfs':
@@ -112,15 +112,16 @@ class SystemController:
         for mapName in self.mapLists:
             self.solving(mapName, algorithm)
 
-system = SystemController()
-
-
-system.readFolderMap('Map')
-#system.solvingAllMap('dfs')
-#system.solvingAllMap('bfs')
-
-path = system.solving('input4-level1', 'dfs')
-print(path)
-system.mapLists['input4-level1'].visualize(path)
 
 #system.displayMap('input1-level2')
+
+if __name__ == '__main__':
+    #if (len(sys.argv) != 3):
+    #    print('Please enter the correct command')
+    #    print('Example: python3 system.py Map_folder Algorithm_lists')
+    system = SystemController()
+    system.readFolderMap('Map')
+    system.solvingAllMap('dfs')
+    system.solvingAllMap('bfs')
+    
+    
