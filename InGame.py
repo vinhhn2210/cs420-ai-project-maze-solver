@@ -162,7 +162,14 @@ class InGame:
 
 			pauseState = self.pauseButton[0].isClicked(self.gameScreen)
 			if pauseState == True:
-				self.isPause = 1 - self.isPause			
+				self.isPause = 1 - self.isPause	
+
+			menuState = self.menuButton.isClicked(self.gameScreen)
+			if menuState == True:
+				menu = MenuClass.Menu((self.screenWidth, self.screenHeight))
+				menu.run()
+				self.run = False
+				break		
 
 		self.initTick = pygame.time.get_ticks()
 

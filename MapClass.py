@@ -45,17 +45,17 @@ class Map:
 			self.mapImage.append(mapImageRow)
 
 		# Create graph for Map
-		for i in range(self.M):
-			for j in range(self.N):
-				for k in range(8):
-					u = i + Const.CELL_MOVE[k][0]
-					v = j + Const.CELL_MOVE[k][1]
-					if u < 0 or u >= self.M or v < 0 or v >= self.N:
-						continue
+		# for i in range(self.M):
+		# 	for j in range(self.N):
+		# 		for k in range(8):
+		# 			u = i + Const.CELL_MOVE[k][0]
+		# 			v = j + Const.CELL_MOVE[k][1]
+		# 			if u < 0 or u >= self.M or v < 0 or v >= self.N:
+		# 				continue
 
-					curCell = self.getCell(i, j)
-					nextCell = self.getCell(u, v)
-					curCell.addAdj(nextCell, k)
+		# 			curCell = self.getCell(i, j)
+		# 			nextCell = self.getCell(u, v)
+		# 			curCell.addAdj(nextCell, k)
 
 	def getCell(self, i, j):
 		return self.mapImage[i % self.M][j % self.N]

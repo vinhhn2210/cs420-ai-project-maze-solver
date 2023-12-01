@@ -6,30 +6,34 @@ class Agent:
 	def __init__(self, agentID, curCell):
 		self.agentID = agentID
 		self.agentCell = curCell
-		self.agentSize = (curCell.cellSize[0] * 4 / 7, curCell.cellSize[1] * 6 / 7)
+		self.agentSize = (curCell.cellSize[0] * 4 / 7, curCell.cellSize[1] * 7 / 7)
 		self.agentPadding = curCell.cellSize[1] * 30 / 100
-		self.agentCoord = [curCell.cellCoord[0] + (curCell.cellSize[0] - self.agentSize[0]) / 2, curCell.cellCoord[1] + curCell.cellSize[1] / 2 + self.agentPadding - self.agentSize[1]]
-		# self.agentCell.addPlayer(self.agentID)
+		self.agentCoord = self.getAgentCoord()
+		print(self.agentSize)
 
 		# Agent moving
-		self.isMoving = False
 		self.moveDirection = -1
 		self.agentSpeed = 15
 
 		# Agent Animation
 		self.agentFrame = Const.AGENT_FRAME_LIST[self.agentID - 1]
 
+		for i in range(len(self.agentFrame)):
+			for j in range(len(self.agentFrame[i])):
+				self.agentFrame[i][j] = pygame.transform.scale(self.agentFrame[i][j], self.agentSize) 
+
 		# Agent frame
 		self.animationDirection = 1
 		self.curFrame = 0
 		self.totalFrame = len(self.agentFrame[self.animationDirection])
 
-		# # Portal
-		# self.agentPortal = PortalClass.Portal(curCell)
-		# self.portalFrame = 10
+	def getAgentCoord(self):
+		agentCoord = [self.agentCell.cellCoord[0] + (self.agentCell.cellSize[0] - self.agentSize[0]) / 2, self.agentCell.cellCoord[1] + self.agentCell.cellSize[1] * 60 / 100 - self.agentSize[1]]
+		return agentCoord
 
 	def getAgentCoordInCell(self, newCell):
-		return (newCell.cellCoord[0] + (newCell.cellSize[0] - self.agentSize[0]) / 2, newCell.cellCoord[1] + newCell.cellSize[1] / 2 + self.agentPadding - self.agentSize[1])
+		agentCoord = [self.agentCell.cellCoord[0] + (self.agentCell.cellSize[0] - self.agentSize[0]) / 2, self.agentCell.cellCoord[1] + self.agentCell.cellSize[1] * 60 / 100 - self.agentSize[1]]
+		return agentCoord
 
 	def moveAgent(self):
 		targetPos = self.getAgentCoordInCell(self.agentCell)
