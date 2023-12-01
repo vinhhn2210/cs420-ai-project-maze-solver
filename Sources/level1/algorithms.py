@@ -5,7 +5,6 @@ class MazerSolverLevel1:
         self.nRow = nRow 
         self.mCol = mCol
         self.nLayer = nLayer # number of floor
-        self.key = 0 # agent's key
         self.dx = [-1, 0, 1, 0, -1, -1, 1, 1] # x direction
         self.dy = [0, 1, 0, -1, -1, 1, -1, 1] # y direction
         self.agentPos = {} # agent's position
@@ -50,7 +49,7 @@ class MazerSolverLevel1:
         ''' return down floor's position'''
         return self.downFloor[floor]
     
-    def inside(self, xCor, yCor, layer):
+    def inside(self, xCor, yCor, layer = 0):
         ''' check if position is inside the maze'''
         return (xCor >= 0 and xCor < self.nRow and yCor >= 0 
             and yCor < self.mCol and layer >= 0 and layer < self.nLayer)
@@ -59,7 +58,7 @@ class MazerSolverLevel1:
         ''' check if agent can unlock the door'''
         return key & (1 << door) != 0
 
-    def isValid(self, xCor, yCor, layer, key):
+    def isValid(self, xCor, yCor, layer = 0, key = 0):
         ''' check if cell is blocked or locked door'''
         if self.mazer[layer][xCor][yCor]== '-1':
             return False
@@ -73,14 +72,14 @@ class MazerSolverLevel1:
         return state == goal
     
     # can move
-    def canMove(self, xCor, yCor, layer, key):
+    def canMove(self, xCor, yCor, layer = 0, key = 0):
         ''' check if agent can travel to the cell'''
         if not self.inside(xCor, yCor, layer) or not self.isValid(xCor, yCor, layer, key):
             return False
         return True
     
     # successor function
-    def succesor(self, xCor, yCor, layer, key):
+    def succesor(self, xCor, yCor, layer = 0, key = 0):
         ''' return a list of successor and their key'''
         succ = []
         for i in range(8):
@@ -88,6 +87,9 @@ class MazerSolverLevel1:
             yNext = yCor + self.dy[i]
             layerNext = layer
             keyNext = key
+            # get key
+            if self.inside(xNext, yNext, layer) and self.mazer[layerNext][xNext][yNext][0] == 'K':
+                keyNext = keyNext | (1 << int(self.mazer[layerNext][xNext][yNext][1:]))
             # go up floor
             if self.inside(xNext, yNext, layer) and self.mazer[layerNext][xNext][yNext] == 'UP':
                 layerNext += 1
