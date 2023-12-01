@@ -100,7 +100,7 @@ class InGame:
 		self.clock = pygame.time.Clock()
 		self.isEndGame = False
 		self.initTick = pygame.time.get_ticks()
-		self.stepTime = 0.3
+		self.stepTime = 0.2
 
 		self.updateMap()
 
@@ -108,6 +108,7 @@ class InGame:
 		jsonFile = open(jsonFilePath)
 
 		data = json.load(jsonFile)
+		print(len(data))
 
 		# Initial Map
 		self.totalFloor = data["0"]["numFloor"]
@@ -129,10 +130,8 @@ class InGame:
 
 		# Initial Key
 		self.keyList = data["0"]["key"]
-		cnt = 0
 		for i in self.keyList:
-			self.gameMap[i[2]].getCell(i[0], i[1]).updateKey(cnt)
-			cnt += 1
+			self.gameMap[i[3]].getCell(i[1], i[2]).updateKey(i[0] - 1)
 
 		# Json Data
 		self.jsonData = data
