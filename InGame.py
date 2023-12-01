@@ -25,7 +25,7 @@ class InGame:
 		self.running = True
 
 		# Menu data
-		jsonFilePath = 'Solution/input' + str(menuData[0]) + '-level' + str(menuData[1]) + '_' + menuData[2].lower() + '.json'
+		jsonFilePath = 'Sources/Solution/input' + str(menuData[0]) + '-level' + str(menuData[1]) + '_' + menuData[2].lower() + '.json'
 		self.menuData = menuData
 
 		# Set up Map
@@ -117,7 +117,7 @@ class InGame:
 
 		# Game Map
 		inGameContainer = (159 / 1000 * self.screenWidth, 51 / 562.71 * self.screenHeight, 542 / 1000 * self.screenWidth, 447 / 562.71 * self.screenHeight)
-		self.gameMap = [MapClass.Map(self.mapSize, self.map[self.curFloor], (inGameContainer[2], inGameContainer[3]), inGameContainer) for i in range(self.totalFloor)]
+		self.gameMap = [MapClass.Map(self.mapSize, self.map[i], (inGameContainer[2], inGameContainer[3]), inGameContainer) for i in range(self.totalFloor)]
 
 		# Initial Agent
 		self.totalAgent = data["0"]["numAgent"]
@@ -143,6 +143,16 @@ class InGame:
 		for i in range(1, self.totalAgent + 1):
 			tmpTuple = self.jsonData[str(self.step)]["agents"][str(i)]["position"]
 			X, Y, Z = tmpTuple[0], tmpTuple[1], tmpTuple[2]
+
+			if self.step >= 1:
+				preTuple = self.jsonData[str(self.step - 1)]["agents"][str(i)]["position"]
+				A, B, C = preTuple[0], preTuple[1], preTuple[2]
+				if Z != C:
+					self.curFloor = Z
+					print(Z, X, Y)
+					self.gameMap[Z].getCell(X, Y).updateAgent(i)
+					self.agentList[i - 1].updateAgentInStair(self.gameMap[Z].getCell(X, Y))
+					continue
 
 			if self.map[Z][X][Y] == f'A{i}':
 				self.map[Z][X][Y] = f'A{i}0'

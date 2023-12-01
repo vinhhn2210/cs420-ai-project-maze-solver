@@ -18,7 +18,7 @@ class Map:
 		self.mapCoord = (containerInfo[0] + (containerInfo[2] - self.mapSize[0]) / 2, containerInfo[1] + (containerInfo[3] - self.mapSize[1]) / 2)
 		
 		self.M, self.N = (mapLen[0], mapLen[1])
-		print(self.M, self.N)
+		# print(self.M, self.N)
 		self.mapData = mapData
 
 		cellSize = (self.mapSize[0] / self.N, self.mapSize[1] / self.M)
@@ -48,7 +48,6 @@ class Map:
 						curDoor = self.mapData[i][j][1:]
 						if curDoor == 'O':
 							continue
-						print(int(curDoor))
 						mapImageRow[j].updateDoor(int(curDoor) - 1)
 
 			self.mapImage.append(mapImageRow)

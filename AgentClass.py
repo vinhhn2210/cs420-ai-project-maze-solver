@@ -58,6 +58,12 @@ class Agent:
 
 		self.agentCell = newCell
 
+	def updateAgentInStair(self, newCell):
+		self.agentCell = newCell
+		# print(self.agentCell.cellID)
+		self.agentCoord = self.getAgentCoord()
+		# print(self.agentCoord)
+
 	def changeCell(self, direction):
 		if self.agentCell.listAdj[direction] is not None:
 			self.agentCell = self.agentCell.listAdj[direction]
