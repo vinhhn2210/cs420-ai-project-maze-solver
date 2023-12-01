@@ -77,7 +77,7 @@ class MazerSolverLevel1:
         if not self.inside(xCor, yCor, layer) or not self.isValid(xCor, yCor, layer, key):
             return False
         return True
-    
+
     # successor function
     def succesor(self, xCor, yCor, layer = 0, key = 0):
         ''' return a list of successor and their key'''
