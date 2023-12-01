@@ -106,6 +106,7 @@ class SystemController:
             self.writeSolutionJsonFile(mapName, [solution], algorithm)
         else:
             print('No solution for ' + mapName + ' with ' + algorithm + ' algorithm')
+        return solution
 
     def solvingAllMap(self, algorithm):
         for mapName in self.mapLists:
@@ -115,7 +116,11 @@ system = SystemController()
 
 
 system.readFolderMap('Map')
-system.solvingAllMap('dfs')
-system.solvingAllMap('bfs')
+#system.solvingAllMap('dfs')
+#system.solvingAllMap('bfs')
+
+path = system.solving('input4-level1', 'dfs')
+print(path)
+system.mapLists['input4-level1'].visualize(path)
 
 #system.displayMap('input1-level2')
