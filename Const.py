@@ -32,6 +32,8 @@ CELL_IMAGE_CHEST = [pygame.image.load(f'Assets/Images/InGame/Cell/chest_{i}.png'
 CELL_IMAGE_KEY = [pygame.image.load(f'Assets/Images/InGame/Cell/Key-{i}.png') for i in range(1, 21)]
 CELL_IMAGE_SUPPORTKEY = pygame.image.load(f'Assets/Images/InGame/Cell/Support-Key.png')
 CELL_IMAGE_DOOR = [pygame.image.load(f'Assets/Images/InGame/Cell/Door-{i}.png') for i in range(1, 21)]
+CELL_IMAGE_STAIR_UP = pygame.image.load(f'Assets/Images/InGame/Cell/Stair-up.png')
+CELL_IMAGE_STAIR_DOWN = pygame.image.load(f'Assets/Images/InGame/Cell/Stair-down.png')
 
 COLOR_AGENT = (
 	(0, 0, 0),

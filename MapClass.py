@@ -35,11 +35,20 @@ class Map:
 				else:
 					mapImageRow.append(CellClass.EmptyCell(cellSize, (j * cellSize[0] + self.mapCoord[0], i * cellSize[1] + self.mapCoord[1]), (i, j)))
 
+					if self.isStairUp(self.mapData[i][j]):
+						mapImageRow[j].updateStairUp()
+
+					if self.isStairDown(self.mapData[i][j]):
+						mapImageRow[j].updateStairDown()
+
 					if self.isChestCell(self.mapData[i][j]):
 						mapImageRow[j].updateChest(int(self.mapData[i][j][1:]) - 1)
 
 					if self.isDoorCell(self.mapData[i][j]):
 						curDoor = self.mapData[i][j][1:]
+						if curDoor == 'O':
+							continue
+						print(int(curDoor))
 						mapImageRow[j].updateDoor(int(curDoor) - 1)
 
 			self.mapImage.append(mapImageRow)
@@ -70,4 +79,10 @@ class Map:
 
 	def isDoorCell(self, ID):
 		return ID[0:1] == 'D'
+
+	def isStairUp(self, ID):
+		return ID == 'UP'
+
+	def isStairDown(self, ID):
+		return ID == 'DO'
 

@@ -38,7 +38,6 @@ class EmptyCell(Cell):
 		self.doorSize = (cellSize[0] * 90 / 100, cellSize[1] * 120 / 100)
 		self.doorCoord = self.getItemCoord(self.doorSize)
 
-
 		self.fillColorPadding = (cellSize[0] * 10 / 100, cellSize[1] * 10 / 100)
 
 		# Image
@@ -60,6 +59,9 @@ class EmptyCell(Cell):
 		for i in range(20)
 		]
 
+		self.stairUpImage = pygame.transform.scale(Const.CELL_IMAGE_STAIR_UP, self.cellSize) 
+		self.stairDownImage = pygame.transform.scale(Const.CELL_IMAGE_STAIR_DOWN, self.cellSize) 
+
 		self.supportKeyImage = pygame.transform.scale(Const.CELL_IMAGE_SUPPORTKEY, cellSize) 
 
 		# Cell Type
@@ -68,6 +70,8 @@ class EmptyCell(Cell):
 		self.keyID = -1
 		self.doorID = -1
 		self.chestID = -1
+		self.isStairUp = False
+		self.isStairDown = False
 
 	def getItemCoord(self, itemSize):
 		itemCoord = (self.cellCoord[0] + (self.cellSize[0] - itemSize[0]) / 2, self.cellCoord[1] + self.cellSize[1] * 60 / 100 - itemSize[1])
@@ -84,6 +88,12 @@ class EmptyCell(Cell):
 
 	def updateDoor(self, doorID):
 		self.doorID = doorID
+
+	def updateStairUp(self):
+		self.isStairUp = True
+
+	def updateStairDown(self):
+		self.isStairDown = True
 
 	def draw(self, gameScreen):	
 		gameScreen.blit(self.image[self.emptyID], self.cellCoord)
@@ -103,6 +113,12 @@ class EmptyCell(Cell):
 
 		if self.chestID != -1:
 			gameScreen.blit(self.chestImage[self.chestID], self.chestCoord)
+
+		if self.isStairUp == True:
+			gameScreen.blit(self.stairUpImage, self.cellCoord)
+
+		if self.isStairDown == True:
+			gameScreen.blit(self.stairDownImage, self.cellCoord)
 
 class ObstacleCell(Cell):
 	def __init__(self, cellSize, cellCoord, cellID):

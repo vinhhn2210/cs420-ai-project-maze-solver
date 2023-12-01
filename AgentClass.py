@@ -9,14 +9,16 @@ class Agent:
 		self.agentSize = (curCell.cellSize[0] * 4 / 7, curCell.cellSize[1] * 7 / 7)
 		self.agentPadding = curCell.cellSize[1] * 30 / 100
 		self.agentCoord = self.getAgentCoord()
-		print(self.agentSize)
 
 		# Agent moving
 		self.moveDirection = -1
 		self.agentSpeed = 15
 
 		# Agent Animation
-		self.agentFrame = Const.AGENT_FRAME_LIST[self.agentID - 1]
+		self.agentFrame = [[
+			pygame.transform.scale(Const.AGENT_FRAME_LIST[self.agentID - 1][i][j], self.agentSize)
+				for j in range(len(Const.AGENT_FRAME_LIST[self.agentID - 1][i]))] 
+			for i in range(len(Const.AGENT_FRAME_LIST[self.agentID - 1]))]
 
 		for i in range(len(self.agentFrame)):
 			for j in range(len(self.agentFrame[i])):
