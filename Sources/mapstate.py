@@ -1,9 +1,7 @@
 import os
 from colorama import Fore
-PARENT_PATH = os.path.dirname(os.getcwd())
-MAP_PATH = os.path.join(PARENT_PATH, 'Map')
-SOL_PATH = os.path.join(PARENT_PATH, 'Solution')
 
+CUR_PATH = os.path.dirname(os.path.abspath(__file__))
 
 class MapState:
     def __init__(self, name, nRow, mCol, nLayer = 1, mazer = []):
@@ -59,10 +57,10 @@ class MapState:
                     if len(self.mazer[i][j][k]) > 1 and self.mazer[i][j][k][0] == 'K':
                         keyList.append([j, k, i])
         return keyList
-def loadMap(mapName):
-    new_path = os.path.join(MAP_PATH, f'{mapName}.txt')
+def loadMap(folderPath, mapName):
+    MAP_PATH = os.path.join(CUR_PATH, folderPath, mapName + '.txt')
 
-    with open(new_path, 'r') as data:
+    with open(MAP_PATH, 'r') as data:
         # read lines in data without \n
         lines = [line.rstrip('\n') for line in data]
         nRow, mCol = list(map(int, lines[0].split(',')))

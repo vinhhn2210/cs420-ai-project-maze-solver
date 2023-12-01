@@ -7,9 +7,7 @@ import re
 import sys
 
 # back to the parent folder
-PARENT_PATH = os.path.dirname(os.getcwd())
-MAP_PATH = os.path.join(PARENT_PATH, 'Map')
-SOL_PATH = os.path.join(PARENT_PATH, 'Solution')
+CUR_PATH = os.path.dirname(os.path.abspath(__file__))
 
 def repl_func(match: re.Match):
     return " ".join(match.group().split())
@@ -21,10 +19,10 @@ class SystemController:
         self.mapLists = {}
 
     def readFolderMap(self, folderName): 
-        files = os.listdir(MAP_PATH)
+        files = os.listdir(CUR_PATH + '/' + folderName)
         for file in files:
             fileName = file[:-4]
-            self.mapLists[fileName] = loadMap(fileName)
+            self.mapLists[fileName] = loadMap(folderName, fileName)
     
     def displayMap(self, mapName):
         self.mapLists[mapName].display()
@@ -36,7 +34,6 @@ class SystemController:
     def writeSolutionJsonFile(self, mapName, agentPath, algorithm):
         # path = [(x1, y1, layer1), (x2, y2, layer2), ...]
         MapJson = self.mapLists[mapName]
-        new_path = os.path.join(SOL_PATH, f'{mapName}_{algorithm}.json')
         # write to json file
         jsonData = {
             "0": {
@@ -83,8 +80,8 @@ class SystemController:
                     "position": [xCor, yCor, layer],
                     "key": listKeys(key)
                 }
-        
-        with open(new_path, "w") as outfile:
+        SOL_PATH = CUR_PATH + '/Solution/' + mapName + '_' + algorithm + '.json'
+        with open(SOL_PATH, "w") as outfile:
             # write to json file with endline
             json_str = json.dumps(jsonData, indent=4)
             json_str = re.sub(r"(?<=\[)[^\[\]]+(?=])", repl_func, json_str)
@@ -116,11 +113,12 @@ class SystemController:
 #system.displayMap('input1-level2')
 
 if __name__ == '__main__':
-    #if (len(sys.argv) != 3):
-    #    print('Please enter the correct command')
-    #    print('Example: python3 system.py Map_folder Algorithm_lists')
+    if (len(sys.argv) != 2):
+        print('Please enter the correct command')
+        print('Example: python3 system.py Map_folder')
+        exit()
     system = SystemController()
-    system.readFolderMap('Map')
+    system.readFolderMap(sys.argv[1])
     system.solvingAllMap('dfs')
     system.solvingAllMap('bfs')
     
