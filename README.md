@@ -23,3 +23,8 @@
 ### Adding new maps
 * Put new map in .txt format in /Map directory.
 * Rename new map file's name to format input**X**-level**Y**.txt (**X**: new map's ordinal number, **Y**: level of new map).
+
+
+
+### Solving
+* python system.py your_map_folder

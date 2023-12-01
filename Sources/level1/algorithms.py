@@ -88,17 +88,19 @@ class MazerSolverLevel1:
             yNext = yCor + self.dy[i]
             layerNext = layer
             keyNext = key
+            # go up floor
             if self.inside(xNext, yNext, layer) and self.mazer[layerNext][xNext][yNext] == 'UP':
                 layerNext += 1
                 xNext, yNext, layerNext = self.downFloorPosition(layerNext)
                 succ.append((xNext, yNext, layerNext, keyNext))
+            # go down floor
             elif self.inside(xNext, yNext, layer) and self.mazer[layerNext][xNext][yNext] == 'DO':
                 layerNext -= 1
                 xNext, yNext, layerNext = self.upFloorPosition(layerNext)
                 succ.append((xNext, yNext, layerNext, keyNext))
-    
-            elif self.canMove(xNext, yNext, layerNext, keyNext) and self.isValid(xCor, yNext, layer, key) and self.isValid(xNext, yCor, layer, key):
-                succ.append((xNext, yNext, layerNext, keyNext))
+            # move to cell
+            if self.canMove(xNext, yNext, layer, keyNext) and self.isValid(xCor, yNext, layer, key) and self.isValid(xNext, yCor, layer, key):
+                succ.append((xNext, yNext, layer, keyNext))
         return succ
 
     # dfs algorithm to solve mazer 
