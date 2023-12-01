@@ -55,7 +55,9 @@ class MapState:
             for j in range(self.nRow):
                 for k in range(self.mCol):
                     if len(self.mazer[i][j][k]) > 1 and self.mazer[i][j][k][0] == 'K':
-                        keyList.append([j, k, i])
+                        keyList.append([int(self.mazer[i][j][k][1:]), j, k, i])
+        sorted(keyList, key = lambda x: x[0])
+
         return keyList
 def loadMap(folderPath, mapName):
     MAP_PATH = os.path.join(CUR_PATH, folderPath, mapName + '.txt')
