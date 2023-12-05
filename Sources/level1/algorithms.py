@@ -1,4 +1,6 @@
-    
+import math
+from queue import PriorityQueue
+
 class MazerSolverLevel1:
     def __init__(self, mazer, nRow, mCol, nLayer = 1):
         self.mazer = mazer # 3D array (floor, row, col)
@@ -147,6 +149,83 @@ class MazerSolverLevel1:
                     visited[(xNext, yNext, layerNext, keyNext)] = (xCor, yCor, layer, key)
                     queue.append((xNext, yNext, layerNext, keyNext))
         
+        if solution:
+            path = []
+            current = goal + (key, )
+            while current:
+                path.append(current)
+                current = visited[current]
+            path.reverse()
+            return path
+        else:
+            return None
+
+    def getEuclidDistance(self, xCor, yCor, uCor, vCor):
+        return math.sqrt((xCor - uCor) ** 2 + (yCor - vCor) ** 2)
+
+    def getHeuristicFunction(self, state, goal):
+        xCor, yCor, layer, key = state
+        goalX, goalY, goalLayer = goal 
+
+        totalCost = 0
+
+        nextLayerCost = 1
+
+        if layer > goalLayer:
+            nextLayerCost = -1
+
+        for curLayer in range(layer, goalLayer, nextLayerCost):
+            stairX, stairY, stairLayer = None, None, None
+            if nextLayerCost == 1:
+                stairX, stairY, stairLayer = self.upFloorPosition(layer)
+                totalCost += 1 / math.sqrt(2) * self.getEuclidDistance(xCor, yCor, stairX, stairY)
+                stairLayer += 1
+                stairX, stairY, stairLayer = self.downFloorPosition(stairLayer)
+            else:
+                stairX, stairY, stairLayer = self.downFloorPosition(layer)
+                totalCost += 1 / math.sqrt(2) * self.getEuclidDistance(xCor, yCor, stairX, stairY)
+                stairLayer -= 1
+                stairX, stairY, stairLayer = self.upFloorPosition(stairLayer)
+            
+            xCor, yCor, layer = stairX, stairY, stairLayer
+
+        totalCost += 1 / math.sqrt(2) * self.getEuclidDistance(xCor, yCor, goalX, goalY)
+        return totalCost
+
+    def astar(self, start, goal, key = 0):
+        visited = {}
+        visited[start + (key, )] = None
+
+        g = {}
+        g[start + (key, )] = 0
+
+        f = {}
+        f[start + (key, )] = self.getHeuristicFunction(start + (key, ), goal)
+
+        solution = False
+        q = PriorityQueue()
+        q.put((f[start + (key, )], start + (key, )))
+
+        while q.empty() == False:
+            curF, curState = q.get()
+            xCor, yCor, layer, key = curState
+
+            if curF != f[curState]:
+                continue
+
+            curG = g[curState]
+
+            if self.goalTest((xCor, yCor, layer), goal):
+                solution = True
+                break
+
+            for xNext, yNext, layerNext, keyNext in self.succesor(xCor, yCor, layer, key):
+                if (xNext, yNext, layerNext, keyNext) not in g or g[(xNext, yNext, layerNext, keyNext)] > curG + 1:
+                    visited[(xNext, yNext, layerNext, keyNext)] = (xCor, yCor, layer, key)
+                    g[(xNext, yNext, layerNext, keyNext)] = curG + 1
+                    f[(xNext, yNext, layerNext, keyNext)] = curG + 1 + self.getHeuristicFunction((xNext, yNext, layerNext, keyNext), goal)
+                    q.put((f[(xNext, yNext, layerNext, keyNext)], (xNext, yNext, layerNext, keyNext)))
+
         if solution:
             path = []
             current = goal + (key, )

@@ -114,7 +114,7 @@ class SystemController:
             solution = MazeSolver.dfs(start, goal)
         elif algorithm == 'bfs':
             solution = MazeSolver.bfs(start, goal)
-        elif algorithm == 'astar' and mapLevel == 2:
+        elif algorithm == 'astar':
             solution = MazeSolver.astar(start, goal)
 
         if solution:
