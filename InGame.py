@@ -25,7 +25,10 @@ class InGame:
 		self.running = True
 
 		# Menu data
-		jsonFilePath = 'Sources/Solution/input' + str(menuData[0]) + '-level' + str(menuData[1]) + '_' + menuData[2].lower() + '.json'
+		algoName = menuData[2]
+		if algoName == 'A*':
+			algoName = "astar"
+		jsonFilePath = 'Sources/Solution/input' + str(menuData[0]) + '-level' + str(menuData[1]) + '_' + algoName.lower() + '.json'
 		self.menuData = menuData
 
 		# Set up Map

@@ -1,7 +1,7 @@
 import math
 from queue import PriorityQueue
 
-class MazerSolverLevel1:
+class MazerSolverLevel2:
     def __init__(self, mazer, nRow, mCol, nLayer = 1):
         self.mazer = mazer # 3D array (floor, row, col)
         self.nRow = nRow 
@@ -13,8 +13,7 @@ class MazerSolverLevel1:
         self.goalPos = {} # goal's position
         self.keyPos = {} # key's position
         self.doorPos = {} # door's position
-        self.upFloor = {} # up floor's position
-        self.downFloor = {} # down floor's position
+
         for layer in range(self.nLayer):
             for xCor in range(self.nRow):
                 for yCor in range(self.mCol):
@@ -27,10 +26,6 @@ class MazerSolverLevel1:
                         self.keyPos[value] = (xCor, yCor, layer)
                     elif len(self.mazer[layer][xCor][yCor]) > 1 and self.mazer[layer][xCor][yCor][0] == 'D' and self.mazer[layer][xCor][yCor][1] != 'O':
                         self.doorPos[value] = (xCor, yCor, layer)
-                    elif self.mazer[layer][xCor][yCor][0] == 'U':
-                        self.upFloor[layer] = (xCor, yCor, layer)
-                    elif self.mazer[layer][xCor][yCor] == 'DO':
-                        self.downFloor[layer] = (xCor, yCor, layer)
 
     def agentPosition(self, agentName):
         ''' return agent's position'''
@@ -44,12 +39,6 @@ class MazerSolverLevel1:
     def doorPosition(self, doorName):
         ''' return door's position'''
         return self.doorPos[doorName]
-    def upFloorPosition(self, floor):
-        ''' return up floor's position'''
-        return self.upFloor[floor]
-    def downFloorPosition(self, floor):
-        ''' return down floor's position'''
-        return self.downFloor[floor]
     
     def inside(self, xCor, yCor, layer = 0):
         ''' check if position is inside the maze'''
@@ -92,16 +81,6 @@ class MazerSolverLevel1:
             # get key
             if self.inside(xNext, yNext, layer) and self.mazer[layerNext][xNext][yNext][0] == 'K':
                 keyNext = keyNext | (1 << int(self.mazer[layerNext][xNext][yNext][1:]))
-            # go up floor
-            if self.inside(xNext, yNext, layer) and self.mazer[layerNext][xNext][yNext] == 'UP':
-                layerNext += 1
-                xNext, yNext, layerNext = self.downFloorPosition(layerNext)
-                succ.append((xNext, yNext, layerNext, keyNext))
-            # go down floor
-            elif self.inside(xNext, yNext, layer) and self.mazer[layerNext][xNext][yNext] == 'DO':
-                layerNext -= 1
-                xNext, yNext, layerNext = self.upFloorPosition(layerNext)
-                succ.append((xNext, yNext, layerNext, keyNext))
             # move to cell
             if self.canMove(xNext, yNext, layer, keyNext) and self.isValid(xCor, yNext, layer, key) and self.isValid(xNext, yCor, layer, key):
                 succ.append((xNext, yNext, layer, keyNext))
@@ -159,39 +138,14 @@ class MazerSolverLevel1:
             return path
         else:
             return None
-
-    def getEuclidDistance(self, xCor, yCor, uCor, vCor):
-        return math.sqrt((xCor - uCor) ** 2 + (yCor - vCor) ** 2)
-
+        
     def getHeuristicFunction(self, state, goal):
         xCor, yCor, layer, key = state
+
         goalX, goalY, goalLayer = goal 
 
-        totalCost = 0
-
-        nextLayerCost = 1
-
-        if layer > goalLayer:
-            nextLayerCost = -1
-
-        for curLayer in range(layer, goalLayer, nextLayerCost):
-            stairX, stairY, stairLayer = None, None, None
-            if nextLayerCost == 1:
-                stairX, stairY, stairLayer = self.upFloorPosition(layer)
-                totalCost += 1 / math.sqrt(2) * self.getEuclidDistance(xCor, yCor, stairX, stairY)
-                stairLayer += 1
-                stairX, stairY, stairLayer = self.downFloorPosition(stairLayer)
-            else:
-                stairX, stairY, stairLayer = self.downFloorPosition(layer)
-                totalCost += 1 / math.sqrt(2) * self.getEuclidDistance(xCor, yCor, stairX, stairY)
-                stairLayer -= 1
-                stairX, stairY, stairLayer = self.upFloorPosition(stairLayer)
-            
-            xCor, yCor, layer = stairX, stairY, stairLayer
-
-        totalCost += 1 / math.sqrt(2) * self.getEuclidDistance(xCor, yCor, goalX, goalY)
-        return totalCost
-
+        return 1 / math.sqrt(2) * math.sqrt((xCor - goalX) ** 2 + (yCor - goalY) ** 2)
+    
     def astar(self, start, goal, key = 0):
         visited = {}
         visited[start + (key, )] = None
@@ -236,5 +190,7 @@ class MazerSolverLevel1:
             return path
         else:
             return None
-    
+
+
+
     
