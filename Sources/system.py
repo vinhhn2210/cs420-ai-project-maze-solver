@@ -1,5 +1,6 @@
 #import algorithms in level1 folder
 from level1.algorithms import *
+from level1.algorithms_level2 import *
 from mapstate import *
 import os 
 import json
@@ -88,9 +89,23 @@ class SystemController:
             outfile.write(json_str)
         print('Write to file ' + mapName + '_' + algorithm + '.json successfully')
 
+    def getMapLevel(self, mapName):
+        mapInfo = mapName.split('-')
+        if len(mapInfo) != 2:
+            return 1
+        mapLevel = mapInfo[1][5:]
+        return int(mapLevel)
 
     def solving(self, mapName, algorithm):
-        MazeSolver = MazerSolverLevel1(self.mapLists[mapName].mazer, self.mapLists[mapName].nRow, self.mapLists[mapName].mCol, self.mapLists[mapName].nLayer)
+        mapLevel = self.getMapLevel(mapName)
+
+        MazeSolver = None
+
+        if mapLevel == 2:
+            MazeSolver = MazerSolverLevel2(self.mapLists[mapName].mazer, self.mapLists[mapName].nRow, self.mapLists[mapName].mCol, self.mapLists[mapName].nLayer)
+        else:
+            MazeSolver = MazerSolverLevel1(self.mapLists[mapName].mazer, self.mapLists[mapName].nRow, self.mapLists[mapName].mCol, self.mapLists[mapName].nLayer)
+        
         start = MazeSolver.agentPosition('A1')
         goal = MazeSolver.goalPosition('T1')
         #self.mapLists[mapName].display()
@@ -99,6 +114,9 @@ class SystemController:
             solution = MazeSolver.dfs(start, goal)
         elif algorithm == 'bfs':
             solution = MazeSolver.bfs(start, goal)
+        elif algorithm == 'astar' and mapLevel == 2:
+            solution = MazeSolver.astar(start, goal)
+
         if solution:
             self.writeSolutionJsonFile(mapName, [solution], algorithm)
         else:
@@ -109,8 +127,15 @@ class SystemController:
         for mapName in self.mapLists:
             self.solving(mapName, algorithm)
 
+    def solveAStarMap(self):
+        for mapName in self.mapLists:
+            mapLevel = self.getMapLevel(mapName)
 
-#system.displayMap('input1-level2')
+            if mapLevel == 2:
+                self.solving(mapName, 'astar')
+
+
+# system.displayMap('input1-level2')
 
 if __name__ == '__main__':
     if (len(sys.argv) != 2):
@@ -121,5 +146,7 @@ if __name__ == '__main__':
     system.readFolderMap(sys.argv[1])
     system.solvingAllMap('dfs')
     system.solvingAllMap('bfs')
+    system.solvingAllMap('astar')
+    # system.solveAStarMap()
     
     

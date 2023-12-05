@@ -12,7 +12,7 @@ class Agent:
 
 		# Agent moving
 		self.moveDirection = -1
-		self.agentSpeed = 15
+		self.agentSpeed = 30
 
 		# Agent Animation
 		self.agentFrame = [[
