@@ -1,0 +1,5183 @@
+{
+    "0": {
+        "numFloor": 1,
+        "numAgent": 1,
+        "floor": [0],
+        "mapSize": [20, 20],
+        "key": [
+            [3, 9, 10, 0],
+            [4, 9, 16, 0],
+            [5, 10, 7, 0],
+            [1, 14, 1, 0],
+            [6, 15, 10, 0],
+            [2, 16, 18, 0]
+        ],
+        "map": [
+            [
+                ["0", "-1", "0", "0", "0", "0", "0", "-1", "0", "0", "0", "0", "0", "0", "-1", "0", "0", "0", "0", "-1"],
+                ["0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0"],
+                ["0", "-1", "-1", "-1", "-1", "-1", "-1", "-1", "-1", "-1", "-1", "-1", "-1", "-1", "-1", "-1", "-1", "-1", "-1", "0"],
+                ["-1", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "-1", "0", "0"],
+                ["0", "0", "-1", "-1", "-1", "-1", "-1", "-1", "-1", "-1", "-1", "-1", "-1", "-1", "-1", "0", "0", "-1", "0", "0"],
+                ["0", "-1", "-1", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "-1", "-1", "0", "-1", "0", "-1"],
+                ["0", "0", "-1", "0", "-1", "-1", "-1", "-1", "-1", "-1", "-1", "-1", "-1", "0", "0", "-1", "0", "-1", "0", "0"],
+                ["-1", "0", "-1", "0", "-1", "0", "0", "0", "0", "0", "0", "0", "0", "-1", "0", "-1", "0", "0", "-1", "0"],
+                ["0", "0", "-1", "0", "-1", "0", "-1", "-1", "-1", "-1", "-1", "-1", "0", "-1", "0", "-1", "D6", "0", "0", "0"],
+                ["0", "-1", "-1", "0", "-1", "0", "-1", "0", "D4", "0", "K3", "-1", "0", "-1", "0", "-1", "K4", "-1", "0", "0"],
+                ["0", "0", "-1", "0", "-1", "0", "-1", "K5", "D4", "A1", "0", "0", "0", "-1", "0", "-1", "-1", "0", "0", "0"],
+                ["-1", "0", "-1", "0", "-1", "0", "-1", "-1", "-1", "-1", "-1", "-1", "0", "-1", "0", "-1", "0", "-1", "0", "0"],
+                ["0", "0", "-1", "0", "-1", "0", "0", "0", "0", "-1", "-1", "-1", "0", "-1", "0", "-1", "0", "-1", "0", "-1"],
+                ["0", "-1", "-1", "0", "-1", "-1", "-1", "-1", "0", "0", "0", "0", "-1", "-1", "0", "-1", "0", "-1", "0", "0"],
+                ["0", "K1", "-1", "0", "-1", "0", "0", "0", "0", "0", "D1", "0", "0", "0", "0", "-1", "0", "D3", "0", "0"],
+                ["-1", "-1", "-1", "0", "0", "-1", "-1", "-1", "-1", "-1", "K6", "-1", "-1", "-1", "-1", "0", "0", "0", "-1", "0"],
+                ["-1", "T1", "-1", "0", "0", "0", "0", "0", "0", "0", "-1", "0", "0", "0", "0", "0", "0", "-1", "K2", "0"],
+                ["-1", "D5", "-1", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "-1", "0", "0"],
+                ["0", "0", "-1", "-1", "-1", "-1", "-1", "-1", "-1", "-1", "-1", "-1", "-1", "-1", "-1", "-1", "-1", "-1", "0", "0"],
+                ["0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0"]
+            ]
+        ],
+        "agents": {
+            "1": {
+                "position": [10, 9, 0],
+                "key": []
+            }
+        }
+    },
+    "1": {
+        "isWin": false,
+        "floor": [0],
+        "step": 1,
+        "agents": {
+            "1": {
+                "position": [9, 10, 0],
+                "key": [3]
+            }
+        }
+    },
+    "2": {
+        "isWin": false,
+        "floor": [0],
+        "step": 2,
+        "agents": {
+            "1": {
+                "position": [10, 10, 0],
+                "key": [3]
+            }
+        }
+    },
+    "3": {
+        "isWin": false,
+        "floor": [0],
+        "step": 3,
+        "agents": {
+            "1": {
+                "position": [10, 11, 0],
+                "key": [3]
+            }
+        }
+    },
+    "4": {
+        "isWin": false,
+        "floor": [0],
+        "step": 4,
+        "agents": {
+            "1": {
+                "position": [10, 12, 0],
+                "key": [3]
+            }
+        }
+    },
+    "5": {
+        "isWin": false,
+        "floor": [0],
+        "step": 5,
+        "agents": {
+            "1": {
+                "position": [9, 12, 0],
+                "key": [3]
+            }
+        }
+    },
+    "6": {
+        "isWin": false,
+        "floor": [0],
+        "step": 6,
+        "agents": {
+            "1": {
+                "position": [8, 12, 0],
+                "key": [3]
+            }
+        }
+    },
+    "7": {
+        "isWin": false,
+        "floor": [0],
+        "step": 7,
+        "agents": {
+            "1": {
+                "position": [7, 12, 0],
+                "key": [3]
+            }
+        }
+    },
+    "8": {
+        "isWin": false,
+        "floor": [0],
+        "step": 8,
+        "agents": {
+            "1": {
+                "position": [7, 11, 0],
+                "key": [3]
+            }
+        }
+    },
+    "9": {
+        "isWin": false,
+        "floor": [0],
+        "step": 9,
+        "agents": {
+            "1": {
+                "position": [7, 10, 0],
+                "key": [3]
+            }
+        }
+    },
+    "10": {
+        "isWin": false,
+        "floor": [0],
+        "step": 10,
+        "agents": {
+            "1": {
+                "position": [7, 9, 0],
+                "key": [3]
+            }
+        }
+    },
+    "11": {
+        "isWin": false,
+        "floor": [0],
+        "step": 11,
+        "agents": {
+            "1": {
+                "position": [7, 8, 0],
+                "key": [3]
+            }
+        }
+    },
+    "12": {
+        "isWin": false,
+        "floor": [0],
+        "step": 12,
+        "agents": {
+            "1": {
+                "position": [7, 7, 0],
+                "key": [3]
+            }
+        }
+    },
+    "13": {
+        "isWin": false,
+        "floor": [0],
+        "step": 13,
+        "agents": {
+            "1": {
+                "position": [7, 6, 0],
+                "key": [3]
+            }
+        }
+    },
+    "14": {
+        "isWin": false,
+        "floor": [0],
+        "step": 14,
+        "agents": {
+            "1": {
+                "position": [7, 5, 0],
+                "key": [3]
+            }
+        }
+    },
+    "15": {
+        "isWin": false,
+        "floor": [0],
+        "step": 15,
+        "agents": {
+            "1": {
+                "position": [8, 5, 0],
+                "key": [3]
+            }
+        }
+    },
+    "16": {
+        "isWin": false,
+        "floor": [0],
+        "step": 16,
+        "agents": {
+            "1": {
+                "position": [9, 5, 0],
+                "key": [3]
+            }
+        }
+    },
+    "17": {
+        "isWin": false,
+        "floor": [0],
+        "step": 17,
+        "agents": {
+            "1": {
+                "position": [10, 5, 0],
+                "key": [3]
+            }
+        }
+    },
+    "18": {
+        "isWin": false,
+        "floor": [0],
+        "step": 18,
+        "agents": {
+            "1": {
+                "position": [11, 5, 0],
+                "key": [3]
+            }
+        }
+    },
+    "19": {
+        "isWin": false,
+        "floor": [0],
+        "step": 19,
+        "agents": {
+            "1": {
+                "position": [12, 5, 0],
+                "key": [3]
+            }
+        }
+    },
+    "20": {
+        "isWin": false,
+        "floor": [0],
+        "step": 20,
+        "agents": {
+            "1": {
+                "position": [12, 6, 0],
+                "key": [3]
+            }
+        }
+    },
+    "21": {
+        "isWin": false,
+        "floor": [0],
+        "step": 21,
+        "agents": {
+            "1": {
+                "position": [12, 7, 0],
+                "key": [3]
+            }
+        }
+    },
+    "22": {
+        "isWin": false,
+        "floor": [0],
+        "step": 22,
+        "agents": {
+            "1": {
+                "position": [12, 8, 0],
+                "key": [3]
+            }
+        }
+    },
+    "23": {
+        "isWin": false,
+        "floor": [0],
+        "step": 23,
+        "agents": {
+            "1": {
+                "position": [13, 8, 0],
+                "key": [3]
+            }
+        }
+    },
+    "24": {
+        "isWin": false,
+        "floor": [0],
+        "step": 24,
+        "agents": {
+            "1": {
+                "position": [13, 9, 0],
+                "key": [3]
+            }
+        }
+    },
+    "25": {
+        "isWin": false,
+        "floor": [0],
+        "step": 25,
+        "agents": {
+            "1": {
+                "position": [13, 10, 0],
+                "key": [3]
+            }
+        }
+    },
+    "26": {
+        "isWin": false,
+        "floor": [0],
+        "step": 26,
+        "agents": {
+            "1": {
+                "position": [13, 11, 0],
+                "key": [3]
+            }
+        }
+    },
+    "27": {
+        "isWin": false,
+        "floor": [0],
+        "step": 27,
+        "agents": {
+            "1": {
+                "position": [14, 11, 0],
+                "key": [3]
+            }
+        }
+    },
+    "28": {
+        "isWin": false,
+        "floor": [0],
+        "step": 28,
+        "agents": {
+            "1": {
+                "position": [14, 12, 0],
+                "key": [3]
+            }
+        }
+    },
+    "29": {
+        "isWin": false,
+        "floor": [0],
+        "step": 29,
+        "agents": {
+            "1": {
+                "position": [14, 13, 0],
+                "key": [3]
+            }
+        }
+    },
+    "30": {
+        "isWin": false,
+        "floor": [0],
+        "step": 30,
+        "agents": {
+            "1": {
+                "position": [14, 14, 0],
+                "key": [3]
+            }
+        }
+    },
+    "31": {
+        "isWin": false,
+        "floor": [0],
+        "step": 31,
+        "agents": {
+            "1": {
+                "position": [13, 14, 0],
+                "key": [3]
+            }
+        }
+    },
+    "32": {
+        "isWin": false,
+        "floor": [0],
+        "step": 32,
+        "agents": {
+            "1": {
+                "position": [12, 14, 0],
+                "key": [3]
+            }
+        }
+    },
+    "33": {
+        "isWin": false,
+        "floor": [0],
+        "step": 33,
+        "agents": {
+            "1": {
+                "position": [11, 14, 0],
+                "key": [3]
+            }
+        }
+    },
+    "34": {
+        "isWin": false,
+        "floor": [0],
+        "step": 34,
+        "agents": {
+            "1": {
+                "position": [10, 14, 0],
+                "key": [3]
+            }
+        }
+    },
+    "35": {
+        "isWin": false,
+        "floor": [0],
+        "step": 35,
+        "agents": {
+            "1": {
+                "position": [9, 14, 0],
+                "key": [3]
+            }
+        }
+    },
+    "36": {
+        "isWin": false,
+        "floor": [0],
+        "step": 36,
+        "agents": {
+            "1": {
+                "position": [8, 14, 0],
+                "key": [3]
+            }
+        }
+    },
+    "37": {
+        "isWin": false,
+        "floor": [0],
+        "step": 37,
+        "agents": {
+            "1": {
+                "position": [7, 14, 0],
+                "key": [3]
+            }
+        }
+    },
+    "38": {
+        "isWin": false,
+        "floor": [0],
+        "step": 38,
+        "agents": {
+            "1": {
+                "position": [6, 14, 0],
+                "key": [3]
+            }
+        }
+    },
+    "39": {
+        "isWin": false,
+        "floor": [0],
+        "step": 39,
+        "agents": {
+            "1": {
+                "position": [6, 13, 0],
+                "key": [3]
+            }
+        }
+    },
+    "40": {
+        "isWin": false,
+        "floor": [0],
+        "step": 40,
+        "agents": {
+            "1": {
+                "position": [5, 13, 0],
+                "key": [3]
+            }
+        }
+    },
+    "41": {
+        "isWin": false,
+        "floor": [0],
+        "step": 41,
+        "agents": {
+            "1": {
+                "position": [5, 12, 0],
+                "key": [3]
+            }
+        }
+    },
+    "42": {
+        "isWin": false,
+        "floor": [0],
+        "step": 42,
+        "agents": {
+            "1": {
+                "position": [5, 11, 0],
+                "key": [3]
+            }
+        }
+    },
+    "43": {
+        "isWin": false,
+        "floor": [0],
+        "step": 43,
+        "agents": {
+            "1": {
+                "position": [5, 10, 0],
+                "key": [3]
+            }
+        }
+    },
+    "44": {
+        "isWin": false,
+        "floor": [0],
+        "step": 44,
+        "agents": {
+            "1": {
+                "position": [5, 9, 0],
+                "key": [3]
+            }
+        }
+    },
+    "45": {
+        "isWin": false,
+        "floor": [0],
+        "step": 45,
+        "agents": {
+            "1": {
+                "position": [5, 8, 0],
+                "key": [3]
+            }
+        }
+    },
+    "46": {
+        "isWin": false,
+        "floor": [0],
+        "step": 46,
+        "agents": {
+            "1": {
+                "position": [5, 7, 0],
+                "key": [3]
+            }
+        }
+    },
+    "47": {
+        "isWin": false,
+        "floor": [0],
+        "step": 47,
+        "agents": {
+            "1": {
+                "position": [5, 6, 0],
+                "key": [3]
+            }
+        }
+    },
+    "48": {
+        "isWin": false,
+        "floor": [0],
+        "step": 48,
+        "agents": {
+            "1": {
+                "position": [5, 5, 0],
+                "key": [3]
+            }
+        }
+    },
+    "49": {
+        "isWin": false,
+        "floor": [0],
+        "step": 49,
+        "agents": {
+            "1": {
+                "position": [5, 4, 0],
+                "key": [3]
+            }
+        }
+    },
+    "50": {
+        "isWin": false,
+        "floor": [0],
+        "step": 50,
+        "agents": {
+            "1": {
+                "position": [5, 3, 0],
+                "key": [3]
+            }
+        }
+    },
+    "51": {
+        "isWin": false,
+        "floor": [0],
+        "step": 51,
+        "agents": {
+            "1": {
+                "position": [6, 3, 0],
+                "key": [3]
+            }
+        }
+    },
+    "52": {
+        "isWin": false,
+        "floor": [0],
+        "step": 52,
+        "agents": {
+            "1": {
+                "position": [7, 3, 0],
+                "key": [3]
+            }
+        }
+    },
+    "53": {
+        "isWin": false,
+        "floor": [0],
+        "step": 53,
+        "agents": {
+            "1": {
+                "position": [8, 3, 0],
+                "key": [3]
+            }
+        }
+    },
+    "54": {
+        "isWin": false,
+        "floor": [0],
+        "step": 54,
+        "agents": {
+            "1": {
+                "position": [9, 3, 0],
+                "key": [3]
+            }
+        }
+    },
+    "55": {
+        "isWin": false,
+        "floor": [0],
+        "step": 55,
+        "agents": {
+            "1": {
+                "position": [10, 3, 0],
+                "key": [3]
+            }
+        }
+    },
+    "56": {
+        "isWin": false,
+        "floor": [0],
+        "step": 56,
+        "agents": {
+            "1": {
+                "position": [11, 3, 0],
+                "key": [3]
+            }
+        }
+    },
+    "57": {
+        "isWin": false,
+        "floor": [0],
+        "step": 57,
+        "agents": {
+            "1": {
+                "position": [12, 3, 0],
+                "key": [3]
+            }
+        }
+    },
+    "58": {
+        "isWin": false,
+        "floor": [0],
+        "step": 58,
+        "agents": {
+            "1": {
+                "position": [13, 3, 0],
+                "key": [3]
+            }
+        }
+    },
+    "59": {
+        "isWin": false,
+        "floor": [0],
+        "step": 59,
+        "agents": {
+            "1": {
+                "position": [14, 3, 0],
+                "key": [3]
+            }
+        }
+    },
+    "60": {
+        "isWin": false,
+        "floor": [0],
+        "step": 60,
+        "agents": {
+            "1": {
+                "position": [15, 3, 0],
+                "key": [3]
+            }
+        }
+    },
+    "61": {
+        "isWin": false,
+        "floor": [0],
+        "step": 61,
+        "agents": {
+            "1": {
+                "position": [16, 4, 0],
+                "key": [3]
+            }
+        }
+    },
+    "62": {
+        "isWin": false,
+        "floor": [0],
+        "step": 62,
+        "agents": {
+            "1": {
+                "position": [17, 5, 0],
+                "key": [3]
+            }
+        }
+    },
+    "63": {
+        "isWin": false,
+        "floor": [0],
+        "step": 63,
+        "agents": {
+            "1": {
+                "position": [16, 6, 0],
+                "key": [3]
+            }
+        }
+    },
+    "64": {
+        "isWin": false,
+        "floor": [0],
+        "step": 64,
+        "agents": {
+            "1": {
+                "position": [17, 7, 0],
+                "key": [3]
+            }
+        }
+    },
+    "65": {
+        "isWin": false,
+        "floor": [0],
+        "step": 65,
+        "agents": {
+            "1": {
+                "position": [16, 8, 0],
+                "key": [3]
+            }
+        }
+    },
+    "66": {
+        "isWin": false,
+        "floor": [0],
+        "step": 66,
+        "agents": {
+            "1": {
+                "position": [17, 9, 0],
+                "key": [3]
+            }
+        }
+    },
+    "67": {
+        "isWin": false,
+        "floor": [0],
+        "step": 67,
+        "agents": {
+            "1": {
+                "position": [17, 10, 0],
+                "key": [3]
+            }
+        }
+    },
+    "68": {
+        "isWin": false,
+        "floor": [0],
+        "step": 68,
+        "agents": {
+            "1": {
+                "position": [17, 11, 0],
+                "key": [3]
+            }
+        }
+    },
+    "69": {
+        "isWin": false,
+        "floor": [0],
+        "step": 69,
+        "agents": {
+            "1": {
+                "position": [16, 12, 0],
+                "key": [3]
+            }
+        }
+    },
+    "70": {
+        "isWin": false,
+        "floor": [0],
+        "step": 70,
+        "agents": {
+            "1": {
+                "position": [17, 13, 0],
+                "key": [3]
+            }
+        }
+    },
+    "71": {
+        "isWin": false,
+        "floor": [0],
+        "step": 71,
+        "agents": {
+            "1": {
+                "position": [16, 14, 0],
+                "key": [3]
+            }
+        }
+    },
+    "72": {
+        "isWin": false,
+        "floor": [0],
+        "step": 72,
+        "agents": {
+            "1": {
+                "position": [17, 15, 0],
+                "key": [3]
+            }
+        }
+    },
+    "73": {
+        "isWin": false,
+        "floor": [0],
+        "step": 73,
+        "agents": {
+            "1": {
+                "position": [16, 16, 0],
+                "key": [3]
+            }
+        }
+    },
+    "74": {
+        "isWin": false,
+        "floor": [0],
+        "step": 74,
+        "agents": {
+            "1": {
+                "position": [15, 16, 0],
+                "key": [3]
+            }
+        }
+    },
+    "75": {
+        "isWin": false,
+        "floor": [0],
+        "step": 75,
+        "agents": {
+            "1": {
+                "position": [14, 17, 0],
+                "key": [3]
+            }
+        }
+    },
+    "76": {
+        "isWin": false,
+        "floor": [0],
+        "step": 76,
+        "agents": {
+            "1": {
+                "position": [14, 18, 0],
+                "key": [3]
+            }
+        }
+    },
+    "77": {
+        "isWin": false,
+        "floor": [0],
+        "step": 77,
+        "agents": {
+            "1": {
+                "position": [14, 19, 0],
+                "key": [3]
+            }
+        }
+    },
+    "78": {
+        "isWin": false,
+        "floor": [0],
+        "step": 78,
+        "agents": {
+            "1": {
+                "position": [15, 19, 0],
+                "key": [3]
+            }
+        }
+    },
+    "79": {
+        "isWin": false,
+        "floor": [0],
+        "step": 79,
+        "agents": {
+            "1": {
+                "position": [16, 19, 0],
+                "key": [3]
+            }
+        }
+    },
+    "80": {
+        "isWin": false,
+        "floor": [0],
+        "step": 80,
+        "agents": {
+            "1": {
+                "position": [16, 18, 0],
+                "key": [2, 3]
+            }
+        }
+    },
+    "81": {
+        "isWin": false,
+        "floor": [0],
+        "step": 81,
+        "agents": {
+            "1": {
+                "position": [16, 19, 0],
+                "key": [2, 3]
+            }
+        }
+    },
+    "82": {
+        "isWin": false,
+        "floor": [0],
+        "step": 82,
+        "agents": {
+            "1": {
+                "position": [15, 19, 0],
+                "key": [2, 3]
+            }
+        }
+    },
+    "83": {
+        "isWin": false,
+        "floor": [0],
+        "step": 83,
+        "agents": {
+            "1": {
+                "position": [14, 19, 0],
+                "key": [2, 3]
+            }
+        }
+    },
+    "84": {
+        "isWin": false,
+        "floor": [0],
+        "step": 84,
+        "agents": {
+            "1": {
+                "position": [13, 18, 0],
+                "key": [2, 3]
+            }
+        }
+    },
+    "85": {
+        "isWin": false,
+        "floor": [0],
+        "step": 85,
+        "agents": {
+            "1": {
+                "position": [12, 18, 0],
+                "key": [2, 3]
+            }
+        }
+    },
+    "86": {
+        "isWin": false,
+        "floor": [0],
+        "step": 86,
+        "agents": {
+            "1": {
+                "position": [11, 18, 0],
+                "key": [2, 3]
+            }
+        }
+    },
+    "87": {
+        "isWin": false,
+        "floor": [0],
+        "step": 87,
+        "agents": {
+            "1": {
+                "position": [10, 19, 0],
+                "key": [2, 3]
+            }
+        }
+    },
+    "88": {
+        "isWin": false,
+        "floor": [0],
+        "step": 88,
+        "agents": {
+            "1": {
+                "position": [9, 18, 0],
+                "key": [2, 3]
+            }
+        }
+    },
+    "89": {
+        "isWin": false,
+        "floor": [0],
+        "step": 89,
+        "agents": {
+            "1": {
+                "position": [8, 18, 0],
+                "key": [2, 3]
+            }
+        }
+    },
+    "90": {
+        "isWin": false,
+        "floor": [0],
+        "step": 90,
+        "agents": {
+            "1": {
+                "position": [8, 17, 0],
+                "key": [2, 3]
+            }
+        }
+    },
+    "91": {
+        "isWin": false,
+        "floor": [0],
+        "step": 91,
+        "agents": {
+            "1": {
+                "position": [7, 17, 0],
+                "key": [2, 3]
+            }
+        }
+    },
+    "92": {
+        "isWin": false,
+        "floor": [0],
+        "step": 92,
+        "agents": {
+            "1": {
+                "position": [7, 16, 0],
+                "key": [2, 3]
+            }
+        }
+    },
+    "93": {
+        "isWin": false,
+        "floor": [0],
+        "step": 93,
+        "agents": {
+            "1": {
+                "position": [6, 16, 0],
+                "key": [2, 3]
+            }
+        }
+    },
+    "94": {
+        "isWin": false,
+        "floor": [0],
+        "step": 94,
+        "agents": {
+            "1": {
+                "position": [5, 16, 0],
+                "key": [2, 3]
+            }
+        }
+    },
+    "95": {
+        "isWin": false,
+        "floor": [0],
+        "step": 95,
+        "agents": {
+            "1": {
+                "position": [4, 16, 0],
+                "key": [2, 3]
+            }
+        }
+    },
+    "96": {
+        "isWin": false,
+        "floor": [0],
+        "step": 96,
+        "agents": {
+            "1": {
+                "position": [3, 15, 0],
+                "key": [2, 3]
+            }
+        }
+    },
+    "97": {
+        "isWin": false,
+        "floor": [0],
+        "step": 97,
+        "agents": {
+            "1": {
+                "position": [3, 14, 0],
+                "key": [2, 3]
+            }
+        }
+    },
+    "98": {
+        "isWin": false,
+        "floor": [0],
+        "step": 98,
+        "agents": {
+            "1": {
+                "position": [3, 13, 0],
+                "key": [2, 3]
+            }
+        }
+    },
+    "99": {
+        "isWin": false,
+        "floor": [0],
+        "step": 99,
+        "agents": {
+            "1": {
+                "position": [3, 12, 0],
+                "key": [2, 3]
+            }
+        }
+    },
+    "100": {
+        "isWin": false,
+        "floor": [0],
+        "step": 100,
+        "agents": {
+            "1": {
+                "position": [3, 11, 0],
+                "key": [2, 3]
+            }
+        }
+    },
+    "101": {
+        "isWin": false,
+        "floor": [0],
+        "step": 101,
+        "agents": {
+            "1": {
+                "position": [3, 10, 0],
+                "key": [2, 3]
+            }
+        }
+    },
+    "102": {
+        "isWin": false,
+        "floor": [0],
+        "step": 102,
+        "agents": {
+            "1": {
+                "position": [3, 9, 0],
+                "key": [2, 3]
+            }
+        }
+    },
+    "103": {
+        "isWin": false,
+        "floor": [0],
+        "step": 103,
+        "agents": {
+            "1": {
+                "position": [3, 8, 0],
+                "key": [2, 3]
+            }
+        }
+    },
+    "104": {
+        "isWin": false,
+        "floor": [0],
+        "step": 104,
+        "agents": {
+            "1": {
+                "position": [3, 7, 0],
+                "key": [2, 3]
+            }
+        }
+    },
+    "105": {
+        "isWin": false,
+        "floor": [0],
+        "step": 105,
+        "agents": {
+            "1": {
+                "position": [3, 6, 0],
+                "key": [2, 3]
+            }
+        }
+    },
+    "106": {
+        "isWin": false,
+        "floor": [0],
+        "step": 106,
+        "agents": {
+            "1": {
+                "position": [3, 5, 0],
+                "key": [2, 3]
+            }
+        }
+    },
+    "107": {
+        "isWin": false,
+        "floor": [0],
+        "step": 107,
+        "agents": {
+            "1": {
+                "position": [3, 4, 0],
+                "key": [2, 3]
+            }
+        }
+    },
+    "108": {
+        "isWin": false,
+        "floor": [0],
+        "step": 108,
+        "agents": {
+            "1": {
+                "position": [3, 3, 0],
+                "key": [2, 3]
+            }
+        }
+    },
+    "109": {
+        "isWin": false,
+        "floor": [0],
+        "step": 109,
+        "agents": {
+            "1": {
+                "position": [3, 2, 0],
+                "key": [2, 3]
+            }
+        }
+    },
+    "110": {
+        "isWin": false,
+        "floor": [0],
+        "step": 110,
+        "agents": {
+            "1": {
+                "position": [3, 1, 0],
+                "key": [2, 3]
+            }
+        }
+    },
+    "111": {
+        "isWin": false,
+        "floor": [0],
+        "step": 111,
+        "agents": {
+            "1": {
+                "position": [4, 1, 0],
+                "key": [2, 3]
+            }
+        }
+    },
+    "112": {
+        "isWin": false,
+        "floor": [0],
+        "step": 112,
+        "agents": {
+            "1": {
+                "position": [4, 0, 0],
+                "key": [2, 3]
+            }
+        }
+    },
+    "113": {
+        "isWin": false,
+        "floor": [0],
+        "step": 113,
+        "agents": {
+            "1": {
+                "position": [5, 0, 0],
+                "key": [2, 3]
+            }
+        }
+    },
+    "114": {
+        "isWin": false,
+        "floor": [0],
+        "step": 114,
+        "agents": {
+            "1": {
+                "position": [6, 0, 0],
+                "key": [2, 3]
+            }
+        }
+    },
+    "115": {
+        "isWin": false,
+        "floor": [0],
+        "step": 115,
+        "agents": {
+            "1": {
+                "position": [6, 1, 0],
+                "key": [2, 3]
+            }
+        }
+    },
+    "116": {
+        "isWin": false,
+        "floor": [0],
+        "step": 116,
+        "agents": {
+            "1": {
+                "position": [7, 1, 0],
+                "key": [2, 3]
+            }
+        }
+    },
+    "117": {
+        "isWin": false,
+        "floor": [0],
+        "step": 117,
+        "agents": {
+            "1": {
+                "position": [8, 1, 0],
+                "key": [2, 3]
+            }
+        }
+    },
+    "118": {
+        "isWin": false,
+        "floor": [0],
+        "step": 118,
+        "agents": {
+            "1": {
+                "position": [8, 0, 0],
+                "key": [2, 3]
+            }
+        }
+    },
+    "119": {
+        "isWin": false,
+        "floor": [0],
+        "step": 119,
+        "agents": {
+            "1": {
+                "position": [9, 0, 0],
+                "key": [2, 3]
+            }
+        }
+    },
+    "120": {
+        "isWin": false,
+        "floor": [0],
+        "step": 120,
+        "agents": {
+            "1": {
+                "position": [10, 0, 0],
+                "key": [2, 3]
+            }
+        }
+    },
+    "121": {
+        "isWin": false,
+        "floor": [0],
+        "step": 121,
+        "agents": {
+            "1": {
+                "position": [10, 1, 0],
+                "key": [2, 3]
+            }
+        }
+    },
+    "122": {
+        "isWin": false,
+        "floor": [0],
+        "step": 122,
+        "agents": {
+            "1": {
+                "position": [11, 1, 0],
+                "key": [2, 3]
+            }
+        }
+    },
+    "123": {
+        "isWin": false,
+        "floor": [0],
+        "step": 123,
+        "agents": {
+            "1": {
+                "position": [12, 1, 0],
+                "key": [2, 3]
+            }
+        }
+    },
+    "124": {
+        "isWin": false,
+        "floor": [0],
+        "step": 124,
+        "agents": {
+            "1": {
+                "position": [12, 0, 0],
+                "key": [2, 3]
+            }
+        }
+    },
+    "125": {
+        "isWin": false,
+        "floor": [0],
+        "step": 125,
+        "agents": {
+            "1": {
+                "position": [13, 0, 0],
+                "key": [2, 3]
+            }
+        }
+    },
+    "126": {
+        "isWin": false,
+        "floor": [0],
+        "step": 126,
+        "agents": {
+            "1": {
+                "position": [14, 0, 0],
+                "key": [2, 3]
+            }
+        }
+    },
+    "127": {
+        "isWin": false,
+        "floor": [0],
+        "step": 127,
+        "agents": {
+            "1": {
+                "position": [14, 1, 0],
+                "key": [1, 2, 3]
+            }
+        }
+    },
+    "128": {
+        "isWin": false,
+        "floor": [0],
+        "step": 128,
+        "agents": {
+            "1": {
+                "position": [14, 0, 0],
+                "key": [1, 2, 3]
+            }
+        }
+    },
+    "129": {
+        "isWin": false,
+        "floor": [0],
+        "step": 129,
+        "agents": {
+            "1": {
+                "position": [13, 0, 0],
+                "key": [1, 2, 3]
+            }
+        }
+    },
+    "130": {
+        "isWin": false,
+        "floor": [0],
+        "step": 130,
+        "agents": {
+            "1": {
+                "position": [12, 0, 0],
+                "key": [1, 2, 3]
+            }
+        }
+    },
+    "131": {
+        "isWin": false,
+        "floor": [0],
+        "step": 131,
+        "agents": {
+            "1": {
+                "position": [12, 1, 0],
+                "key": [1, 2, 3]
+            }
+        }
+    },
+    "132": {
+        "isWin": false,
+        "floor": [0],
+        "step": 132,
+        "agents": {
+            "1": {
+                "position": [11, 1, 0],
+                "key": [1, 2, 3]
+            }
+        }
+    },
+    "133": {
+        "isWin": false,
+        "floor": [0],
+        "step": 133,
+        "agents": {
+            "1": {
+                "position": [10, 1, 0],
+                "key": [1, 2, 3]
+            }
+        }
+    },
+    "134": {
+        "isWin": false,
+        "floor": [0],
+        "step": 134,
+        "agents": {
+            "1": {
+                "position": [10, 0, 0],
+                "key": [1, 2, 3]
+            }
+        }
+    },
+    "135": {
+        "isWin": false,
+        "floor": [0],
+        "step": 135,
+        "agents": {
+            "1": {
+                "position": [9, 0, 0],
+                "key": [1, 2, 3]
+            }
+        }
+    },
+    "136": {
+        "isWin": false,
+        "floor": [0],
+        "step": 136,
+        "agents": {
+            "1": {
+                "position": [8, 0, 0],
+                "key": [1, 2, 3]
+            }
+        }
+    },
+    "137": {
+        "isWin": false,
+        "floor": [0],
+        "step": 137,
+        "agents": {
+            "1": {
+                "position": [8, 1, 0],
+                "key": [1, 2, 3]
+            }
+        }
+    },
+    "138": {
+        "isWin": false,
+        "floor": [0],
+        "step": 138,
+        "agents": {
+            "1": {
+                "position": [7, 1, 0],
+                "key": [1, 2, 3]
+            }
+        }
+    },
+    "139": {
+        "isWin": false,
+        "floor": [0],
+        "step": 139,
+        "agents": {
+            "1": {
+                "position": [6, 1, 0],
+                "key": [1, 2, 3]
+            }
+        }
+    },
+    "140": {
+        "isWin": false,
+        "floor": [0],
+        "step": 140,
+        "agents": {
+            "1": {
+                "position": [6, 0, 0],
+                "key": [1, 2, 3]
+            }
+        }
+    },
+    "141": {
+        "isWin": false,
+        "floor": [0],
+        "step": 141,
+        "agents": {
+            "1": {
+                "position": [5, 0, 0],
+                "key": [1, 2, 3]
+            }
+        }
+    },
+    "142": {
+        "isWin": false,
+        "floor": [0],
+        "step": 142,
+        "agents": {
+            "1": {
+                "position": [4, 0, 0],
+                "key": [1, 2, 3]
+            }
+        }
+    },
+    "143": {
+        "isWin": false,
+        "floor": [0],
+        "step": 143,
+        "agents": {
+            "1": {
+                "position": [4, 1, 0],
+                "key": [1, 2, 3]
+            }
+        }
+    },
+    "144": {
+        "isWin": false,
+        "floor": [0],
+        "step": 144,
+        "agents": {
+            "1": {
+                "position": [3, 1, 0],
+                "key": [1, 2, 3]
+            }
+        }
+    },
+    "145": {
+        "isWin": false,
+        "floor": [0],
+        "step": 145,
+        "agents": {
+            "1": {
+                "position": [3, 2, 0],
+                "key": [1, 2, 3]
+            }
+        }
+    },
+    "146": {
+        "isWin": false,
+        "floor": [0],
+        "step": 146,
+        "agents": {
+            "1": {
+                "position": [3, 3, 0],
+                "key": [1, 2, 3]
+            }
+        }
+    },
+    "147": {
+        "isWin": false,
+        "floor": [0],
+        "step": 147,
+        "agents": {
+            "1": {
+                "position": [3, 4, 0],
+                "key": [1, 2, 3]
+            }
+        }
+    },
+    "148": {
+        "isWin": false,
+        "floor": [0],
+        "step": 148,
+        "agents": {
+            "1": {
+                "position": [3, 5, 0],
+                "key": [1, 2, 3]
+            }
+        }
+    },
+    "149": {
+        "isWin": false,
+        "floor": [0],
+        "step": 149,
+        "agents": {
+            "1": {
+                "position": [3, 6, 0],
+                "key": [1, 2, 3]
+            }
+        }
+    },
+    "150": {
+        "isWin": false,
+        "floor": [0],
+        "step": 150,
+        "agents": {
+            "1": {
+                "position": [3, 7, 0],
+                "key": [1, 2, 3]
+            }
+        }
+    },
+    "151": {
+        "isWin": false,
+        "floor": [0],
+        "step": 151,
+        "agents": {
+            "1": {
+                "position": [3, 8, 0],
+                "key": [1, 2, 3]
+            }
+        }
+    },
+    "152": {
+        "isWin": false,
+        "floor": [0],
+        "step": 152,
+        "agents": {
+            "1": {
+                "position": [3, 9, 0],
+                "key": [1, 2, 3]
+            }
+        }
+    },
+    "153": {
+        "isWin": false,
+        "floor": [0],
+        "step": 153,
+        "agents": {
+            "1": {
+                "position": [3, 10, 0],
+                "key": [1, 2, 3]
+            }
+        }
+    },
+    "154": {
+        "isWin": false,
+        "floor": [0],
+        "step": 154,
+        "agents": {
+            "1": {
+                "position": [3, 11, 0],
+                "key": [1, 2, 3]
+            }
+        }
+    },
+    "155": {
+        "isWin": false,
+        "floor": [0],
+        "step": 155,
+        "agents": {
+            "1": {
+                "position": [3, 12, 0],
+                "key": [1, 2, 3]
+            }
+        }
+    },
+    "156": {
+        "isWin": false,
+        "floor": [0],
+        "step": 156,
+        "agents": {
+            "1": {
+                "position": [3, 13, 0],
+                "key": [1, 2, 3]
+            }
+        }
+    },
+    "157": {
+        "isWin": false,
+        "floor": [0],
+        "step": 157,
+        "agents": {
+            "1": {
+                "position": [3, 14, 0],
+                "key": [1, 2, 3]
+            }
+        }
+    },
+    "158": {
+        "isWin": false,
+        "floor": [0],
+        "step": 158,
+        "agents": {
+            "1": {
+                "position": [3, 15, 0],
+                "key": [1, 2, 3]
+            }
+        }
+    },
+    "159": {
+        "isWin": false,
+        "floor": [0],
+        "step": 159,
+        "agents": {
+            "1": {
+                "position": [4, 16, 0],
+                "key": [1, 2, 3]
+            }
+        }
+    },
+    "160": {
+        "isWin": false,
+        "floor": [0],
+        "step": 160,
+        "agents": {
+            "1": {
+                "position": [5, 16, 0],
+                "key": [1, 2, 3]
+            }
+        }
+    },
+    "161": {
+        "isWin": false,
+        "floor": [0],
+        "step": 161,
+        "agents": {
+            "1": {
+                "position": [6, 16, 0],
+                "key": [1, 2, 3]
+            }
+        }
+    },
+    "162": {
+        "isWin": false,
+        "floor": [0],
+        "step": 162,
+        "agents": {
+            "1": {
+                "position": [7, 16, 0],
+                "key": [1, 2, 3]
+            }
+        }
+    },
+    "163": {
+        "isWin": false,
+        "floor": [0],
+        "step": 163,
+        "agents": {
+            "1": {
+                "position": [7, 17, 0],
+                "key": [1, 2, 3]
+            }
+        }
+    },
+    "164": {
+        "isWin": false,
+        "floor": [0],
+        "step": 164,
+        "agents": {
+            "1": {
+                "position": [8, 17, 0],
+                "key": [1, 2, 3]
+            }
+        }
+    },
+    "165": {
+        "isWin": false,
+        "floor": [0],
+        "step": 165,
+        "agents": {
+            "1": {
+                "position": [8, 18, 0],
+                "key": [1, 2, 3]
+            }
+        }
+    },
+    "166": {
+        "isWin": false,
+        "floor": [0],
+        "step": 166,
+        "agents": {
+            "1": {
+                "position": [9, 19, 0],
+                "key": [1, 2, 3]
+            }
+        }
+    },
+    "167": {
+        "isWin": false,
+        "floor": [0],
+        "step": 167,
+        "agents": {
+            "1": {
+                "position": [10, 18, 0],
+                "key": [1, 2, 3]
+            }
+        }
+    },
+    "168": {
+        "isWin": false,
+        "floor": [0],
+        "step": 168,
+        "agents": {
+            "1": {
+                "position": [11, 18, 0],
+                "key": [1, 2, 3]
+            }
+        }
+    },
+    "169": {
+        "isWin": false,
+        "floor": [0],
+        "step": 169,
+        "agents": {
+            "1": {
+                "position": [12, 18, 0],
+                "key": [1, 2, 3]
+            }
+        }
+    },
+    "170": {
+        "isWin": false,
+        "floor": [0],
+        "step": 170,
+        "agents": {
+            "1": {
+                "position": [13, 18, 0],
+                "key": [1, 2, 3]
+            }
+        }
+    },
+    "171": {
+        "isWin": false,
+        "floor": [0],
+        "step": 171,
+        "agents": {
+            "1": {
+                "position": [14, 18, 0],
+                "key": [1, 2, 3]
+            }
+        }
+    },
+    "172": {
+        "isWin": false,
+        "floor": [0],
+        "step": 172,
+        "agents": {
+            "1": {
+                "position": [14, 17, 0],
+                "key": [1, 2, 3]
+            }
+        }
+    },
+    "173": {
+        "isWin": false,
+        "floor": [0],
+        "step": 173,
+        "agents": {
+            "1": {
+                "position": [15, 16, 0],
+                "key": [1, 2, 3]
+            }
+        }
+    },
+    "174": {
+        "isWin": false,
+        "floor": [0],
+        "step": 174,
+        "agents": {
+            "1": {
+                "position": [16, 15, 0],
+                "key": [1, 2, 3]
+            }
+        }
+    },
+    "175": {
+        "isWin": false,
+        "floor": [0],
+        "step": 175,
+        "agents": {
+            "1": {
+                "position": [17, 14, 0],
+                "key": [1, 2, 3]
+            }
+        }
+    },
+    "176": {
+        "isWin": false,
+        "floor": [0],
+        "step": 176,
+        "agents": {
+            "1": {
+                "position": [16, 13, 0],
+                "key": [1, 2, 3]
+            }
+        }
+    },
+    "177": {
+        "isWin": false,
+        "floor": [0],
+        "step": 177,
+        "agents": {
+            "1": {
+                "position": [17, 12, 0],
+                "key": [1, 2, 3]
+            }
+        }
+    },
+    "178": {
+        "isWin": false,
+        "floor": [0],
+        "step": 178,
+        "agents": {
+            "1": {
+                "position": [17, 11, 0],
+                "key": [1, 2, 3]
+            }
+        }
+    },
+    "179": {
+        "isWin": false,
+        "floor": [0],
+        "step": 179,
+        "agents": {
+            "1": {
+                "position": [17, 10, 0],
+                "key": [1, 2, 3]
+            }
+        }
+    },
+    "180": {
+        "isWin": false,
+        "floor": [0],
+        "step": 180,
+        "agents": {
+            "1": {
+                "position": [17, 9, 0],
+                "key": [1, 2, 3]
+            }
+        }
+    },
+    "181": {
+        "isWin": false,
+        "floor": [0],
+        "step": 181,
+        "agents": {
+            "1": {
+                "position": [16, 8, 0],
+                "key": [1, 2, 3]
+            }
+        }
+    },
+    "182": {
+        "isWin": false,
+        "floor": [0],
+        "step": 182,
+        "agents": {
+            "1": {
+                "position": [17, 7, 0],
+                "key": [1, 2, 3]
+            }
+        }
+    },
+    "183": {
+        "isWin": false,
+        "floor": [0],
+        "step": 183,
+        "agents": {
+            "1": {
+                "position": [16, 6, 0],
+                "key": [1, 2, 3]
+            }
+        }
+    },
+    "184": {
+        "isWin": false,
+        "floor": [0],
+        "step": 184,
+        "agents": {
+            "1": {
+                "position": [17, 5, 0],
+                "key": [1, 2, 3]
+            }
+        }
+    },
+    "185": {
+        "isWin": false,
+        "floor": [0],
+        "step": 185,
+        "agents": {
+            "1": {
+                "position": [16, 4, 0],
+                "key": [1, 2, 3]
+            }
+        }
+    },
+    "186": {
+        "isWin": false,
+        "floor": [0],
+        "step": 186,
+        "agents": {
+            "1": {
+                "position": [15, 3, 0],
+                "key": [1, 2, 3]
+            }
+        }
+    },
+    "187": {
+        "isWin": false,
+        "floor": [0],
+        "step": 187,
+        "agents": {
+            "1": {
+                "position": [14, 3, 0],
+                "key": [1, 2, 3]
+            }
+        }
+    },
+    "188": {
+        "isWin": false,
+        "floor": [0],
+        "step": 188,
+        "agents": {
+            "1": {
+                "position": [13, 3, 0],
+                "key": [1, 2, 3]
+            }
+        }
+    },
+    "189": {
+        "isWin": false,
+        "floor": [0],
+        "step": 189,
+        "agents": {
+            "1": {
+                "position": [12, 3, 0],
+                "key": [1, 2, 3]
+            }
+        }
+    },
+    "190": {
+        "isWin": false,
+        "floor": [0],
+        "step": 190,
+        "agents": {
+            "1": {
+                "position": [11, 3, 0],
+                "key": [1, 2, 3]
+            }
+        }
+    },
+    "191": {
+        "isWin": false,
+        "floor": [0],
+        "step": 191,
+        "agents": {
+            "1": {
+                "position": [10, 3, 0],
+                "key": [1, 2, 3]
+            }
+        }
+    },
+    "192": {
+        "isWin": false,
+        "floor": [0],
+        "step": 192,
+        "agents": {
+            "1": {
+                "position": [9, 3, 0],
+                "key": [1, 2, 3]
+            }
+        }
+    },
+    "193": {
+        "isWin": false,
+        "floor": [0],
+        "step": 193,
+        "agents": {
+            "1": {
+                "position": [8, 3, 0],
+                "key": [1, 2, 3]
+            }
+        }
+    },
+    "194": {
+        "isWin": false,
+        "floor": [0],
+        "step": 194,
+        "agents": {
+            "1": {
+                "position": [7, 3, 0],
+                "key": [1, 2, 3]
+            }
+        }
+    },
+    "195": {
+        "isWin": false,
+        "floor": [0],
+        "step": 195,
+        "agents": {
+            "1": {
+                "position": [6, 3, 0],
+                "key": [1, 2, 3]
+            }
+        }
+    },
+    "196": {
+        "isWin": false,
+        "floor": [0],
+        "step": 196,
+        "agents": {
+            "1": {
+                "position": [5, 3, 0],
+                "key": [1, 2, 3]
+            }
+        }
+    },
+    "197": {
+        "isWin": false,
+        "floor": [0],
+        "step": 197,
+        "agents": {
+            "1": {
+                "position": [5, 4, 0],
+                "key": [1, 2, 3]
+            }
+        }
+    },
+    "198": {
+        "isWin": false,
+        "floor": [0],
+        "step": 198,
+        "agents": {
+            "1": {
+                "position": [5, 5, 0],
+                "key": [1, 2, 3]
+            }
+        }
+    },
+    "199": {
+        "isWin": false,
+        "floor": [0],
+        "step": 199,
+        "agents": {
+            "1": {
+                "position": [5, 6, 0],
+                "key": [1, 2, 3]
+            }
+        }
+    },
+    "200": {
+        "isWin": false,
+        "floor": [0],
+        "step": 200,
+        "agents": {
+            "1": {
+                "position": [5, 7, 0],
+                "key": [1, 2, 3]
+            }
+        }
+    },
+    "201": {
+        "isWin": false,
+        "floor": [0],
+        "step": 201,
+        "agents": {
+            "1": {
+                "position": [5, 8, 0],
+                "key": [1, 2, 3]
+            }
+        }
+    },
+    "202": {
+        "isWin": false,
+        "floor": [0],
+        "step": 202,
+        "agents": {
+            "1": {
+                "position": [5, 9, 0],
+                "key": [1, 2, 3]
+            }
+        }
+    },
+    "203": {
+        "isWin": false,
+        "floor": [0],
+        "step": 203,
+        "agents": {
+            "1": {
+                "position": [5, 10, 0],
+                "key": [1, 2, 3]
+            }
+        }
+    },
+    "204": {
+        "isWin": false,
+        "floor": [0],
+        "step": 204,
+        "agents": {
+            "1": {
+                "position": [5, 11, 0],
+                "key": [1, 2, 3]
+            }
+        }
+    },
+    "205": {
+        "isWin": false,
+        "floor": [0],
+        "step": 205,
+        "agents": {
+            "1": {
+                "position": [5, 12, 0],
+                "key": [1, 2, 3]
+            }
+        }
+    },
+    "206": {
+        "isWin": false,
+        "floor": [0],
+        "step": 206,
+        "agents": {
+            "1": {
+                "position": [5, 13, 0],
+                "key": [1, 2, 3]
+            }
+        }
+    },
+    "207": {
+        "isWin": false,
+        "floor": [0],
+        "step": 207,
+        "agents": {
+            "1": {
+                "position": [6, 13, 0],
+                "key": [1, 2, 3]
+            }
+        }
+    },
+    "208": {
+        "isWin": false,
+        "floor": [0],
+        "step": 208,
+        "agents": {
+            "1": {
+                "position": [6, 14, 0],
+                "key": [1, 2, 3]
+            }
+        }
+    },
+    "209": {
+        "isWin": false,
+        "floor": [0],
+        "step": 209,
+        "agents": {
+            "1": {
+                "position": [7, 14, 0],
+                "key": [1, 2, 3]
+            }
+        }
+    },
+    "210": {
+        "isWin": false,
+        "floor": [0],
+        "step": 210,
+        "agents": {
+            "1": {
+                "position": [8, 14, 0],
+                "key": [1, 2, 3]
+            }
+        }
+    },
+    "211": {
+        "isWin": false,
+        "floor": [0],
+        "step": 211,
+        "agents": {
+            "1": {
+                "position": [9, 14, 0],
+                "key": [1, 2, 3]
+            }
+        }
+    },
+    "212": {
+        "isWin": false,
+        "floor": [0],
+        "step": 212,
+        "agents": {
+            "1": {
+                "position": [10, 14, 0],
+                "key": [1, 2, 3]
+            }
+        }
+    },
+    "213": {
+        "isWin": false,
+        "floor": [0],
+        "step": 213,
+        "agents": {
+            "1": {
+                "position": [11, 14, 0],
+                "key": [1, 2, 3]
+            }
+        }
+    },
+    "214": {
+        "isWin": false,
+        "floor": [0],
+        "step": 214,
+        "agents": {
+            "1": {
+                "position": [12, 14, 0],
+                "key": [1, 2, 3]
+            }
+        }
+    },
+    "215": {
+        "isWin": false,
+        "floor": [0],
+        "step": 215,
+        "agents": {
+            "1": {
+                "position": [13, 14, 0],
+                "key": [1, 2, 3]
+            }
+        }
+    },
+    "216": {
+        "isWin": false,
+        "floor": [0],
+        "step": 216,
+        "agents": {
+            "1": {
+                "position": [14, 14, 0],
+                "key": [1, 2, 3]
+            }
+        }
+    },
+    "217": {
+        "isWin": false,
+        "floor": [0],
+        "step": 217,
+        "agents": {
+            "1": {
+                "position": [14, 13, 0],
+                "key": [1, 2, 3]
+            }
+        }
+    },
+    "218": {
+        "isWin": false,
+        "floor": [0],
+        "step": 218,
+        "agents": {
+            "1": {
+                "position": [14, 12, 0],
+                "key": [1, 2, 3]
+            }
+        }
+    },
+    "219": {
+        "isWin": false,
+        "floor": [0],
+        "step": 219,
+        "agents": {
+            "1": {
+                "position": [14, 11, 0],
+                "key": [1, 2, 3]
+            }
+        }
+    },
+    "220": {
+        "isWin": false,
+        "floor": [0],
+        "step": 220,
+        "agents": {
+            "1": {
+                "position": [14, 10, 0],
+                "key": [1, 2, 3]
+            }
+        }
+    },
+    "221": {
+        "isWin": false,
+        "floor": [0],
+        "step": 221,
+        "agents": {
+            "1": {
+                "position": [15, 10, 0],
+                "key": [1, 2, 3, 6]
+            }
+        }
+    },
+    "222": {
+        "isWin": false,
+        "floor": [0],
+        "step": 222,
+        "agents": {
+            "1": {
+                "position": [14, 10, 0],
+                "key": [1, 2, 3, 6]
+            }
+        }
+    },
+    "223": {
+        "isWin": false,
+        "floor": [0],
+        "step": 223,
+        "agents": {
+            "1": {
+                "position": [14, 11, 0],
+                "key": [1, 2, 3, 6]
+            }
+        }
+    },
+    "224": {
+        "isWin": false,
+        "floor": [0],
+        "step": 224,
+        "agents": {
+            "1": {
+                "position": [14, 12, 0],
+                "key": [1, 2, 3, 6]
+            }
+        }
+    },
+    "225": {
+        "isWin": false,
+        "floor": [0],
+        "step": 225,
+        "agents": {
+            "1": {
+                "position": [14, 13, 0],
+                "key": [1, 2, 3, 6]
+            }
+        }
+    },
+    "226": {
+        "isWin": false,
+        "floor": [0],
+        "step": 226,
+        "agents": {
+            "1": {
+                "position": [14, 14, 0],
+                "key": [1, 2, 3, 6]
+            }
+        }
+    },
+    "227": {
+        "isWin": false,
+        "floor": [0],
+        "step": 227,
+        "agents": {
+            "1": {
+                "position": [13, 14, 0],
+                "key": [1, 2, 3, 6]
+            }
+        }
+    },
+    "228": {
+        "isWin": false,
+        "floor": [0],
+        "step": 228,
+        "agents": {
+            "1": {
+                "position": [12, 14, 0],
+                "key": [1, 2, 3, 6]
+            }
+        }
+    },
+    "229": {
+        "isWin": false,
+        "floor": [0],
+        "step": 229,
+        "agents": {
+            "1": {
+                "position": [11, 14, 0],
+                "key": [1, 2, 3, 6]
+            }
+        }
+    },
+    "230": {
+        "isWin": false,
+        "floor": [0],
+        "step": 230,
+        "agents": {
+            "1": {
+                "position": [10, 14, 0],
+                "key": [1, 2, 3, 6]
+            }
+        }
+    },
+    "231": {
+        "isWin": false,
+        "floor": [0],
+        "step": 231,
+        "agents": {
+            "1": {
+                "position": [9, 14, 0],
+                "key": [1, 2, 3, 6]
+            }
+        }
+    },
+    "232": {
+        "isWin": false,
+        "floor": [0],
+        "step": 232,
+        "agents": {
+            "1": {
+                "position": [8, 14, 0],
+                "key": [1, 2, 3, 6]
+            }
+        }
+    },
+    "233": {
+        "isWin": false,
+        "floor": [0],
+        "step": 233,
+        "agents": {
+            "1": {
+                "position": [7, 14, 0],
+                "key": [1, 2, 3, 6]
+            }
+        }
+    },
+    "234": {
+        "isWin": false,
+        "floor": [0],
+        "step": 234,
+        "agents": {
+            "1": {
+                "position": [6, 14, 0],
+                "key": [1, 2, 3, 6]
+            }
+        }
+    },
+    "235": {
+        "isWin": false,
+        "floor": [0],
+        "step": 235,
+        "agents": {
+            "1": {
+                "position": [6, 13, 0],
+                "key": [1, 2, 3, 6]
+            }
+        }
+    },
+    "236": {
+        "isWin": false,
+        "floor": [0],
+        "step": 236,
+        "agents": {
+            "1": {
+                "position": [5, 13, 0],
+                "key": [1, 2, 3, 6]
+            }
+        }
+    },
+    "237": {
+        "isWin": false,
+        "floor": [0],
+        "step": 237,
+        "agents": {
+            "1": {
+                "position": [5, 12, 0],
+                "key": [1, 2, 3, 6]
+            }
+        }
+    },
+    "238": {
+        "isWin": false,
+        "floor": [0],
+        "step": 238,
+        "agents": {
+            "1": {
+                "position": [5, 11, 0],
+                "key": [1, 2, 3, 6]
+            }
+        }
+    },
+    "239": {
+        "isWin": false,
+        "floor": [0],
+        "step": 239,
+        "agents": {
+            "1": {
+                "position": [5, 10, 0],
+                "key": [1, 2, 3, 6]
+            }
+        }
+    },
+    "240": {
+        "isWin": false,
+        "floor": [0],
+        "step": 240,
+        "agents": {
+            "1": {
+                "position": [5, 9, 0],
+                "key": [1, 2, 3, 6]
+            }
+        }
+    },
+    "241": {
+        "isWin": false,
+        "floor": [0],
+        "step": 241,
+        "agents": {
+            "1": {
+                "position": [5, 8, 0],
+                "key": [1, 2, 3, 6]
+            }
+        }
+    },
+    "242": {
+        "isWin": false,
+        "floor": [0],
+        "step": 242,
+        "agents": {
+            "1": {
+                "position": [5, 7, 0],
+                "key": [1, 2, 3, 6]
+            }
+        }
+    },
+    "243": {
+        "isWin": false,
+        "floor": [0],
+        "step": 243,
+        "agents": {
+            "1": {
+                "position": [5, 6, 0],
+                "key": [1, 2, 3, 6]
+            }
+        }
+    },
+    "244": {
+        "isWin": false,
+        "floor": [0],
+        "step": 244,
+        "agents": {
+            "1": {
+                "position": [5, 5, 0],
+                "key": [1, 2, 3, 6]
+            }
+        }
+    },
+    "245": {
+        "isWin": false,
+        "floor": [0],
+        "step": 245,
+        "agents": {
+            "1": {
+                "position": [5, 4, 0],
+                "key": [1, 2, 3, 6]
+            }
+        }
+    },
+    "246": {
+        "isWin": false,
+        "floor": [0],
+        "step": 246,
+        "agents": {
+            "1": {
+                "position": [5, 3, 0],
+                "key": [1, 2, 3, 6]
+            }
+        }
+    },
+    "247": {
+        "isWin": false,
+        "floor": [0],
+        "step": 247,
+        "agents": {
+            "1": {
+                "position": [6, 3, 0],
+                "key": [1, 2, 3, 6]
+            }
+        }
+    },
+    "248": {
+        "isWin": false,
+        "floor": [0],
+        "step": 248,
+        "agents": {
+            "1": {
+                "position": [7, 3, 0],
+                "key": [1, 2, 3, 6]
+            }
+        }
+    },
+    "249": {
+        "isWin": false,
+        "floor": [0],
+        "step": 249,
+        "agents": {
+            "1": {
+                "position": [8, 3, 0],
+                "key": [1, 2, 3, 6]
+            }
+        }
+    },
+    "250": {
+        "isWin": false,
+        "floor": [0],
+        "step": 250,
+        "agents": {
+            "1": {
+                "position": [9, 3, 0],
+                "key": [1, 2, 3, 6]
+            }
+        }
+    },
+    "251": {
+        "isWin": false,
+        "floor": [0],
+        "step": 251,
+        "agents": {
+            "1": {
+                "position": [10, 3, 0],
+                "key": [1, 2, 3, 6]
+            }
+        }
+    },
+    "252": {
+        "isWin": false,
+        "floor": [0],
+        "step": 252,
+        "agents": {
+            "1": {
+                "position": [11, 3, 0],
+                "key": [1, 2, 3, 6]
+            }
+        }
+    },
+    "253": {
+        "isWin": false,
+        "floor": [0],
+        "step": 253,
+        "agents": {
+            "1": {
+                "position": [12, 3, 0],
+                "key": [1, 2, 3, 6]
+            }
+        }
+    },
+    "254": {
+        "isWin": false,
+        "floor": [0],
+        "step": 254,
+        "agents": {
+            "1": {
+                "position": [13, 3, 0],
+                "key": [1, 2, 3, 6]
+            }
+        }
+    },
+    "255": {
+        "isWin": false,
+        "floor": [0],
+        "step": 255,
+        "agents": {
+            "1": {
+                "position": [14, 3, 0],
+                "key": [1, 2, 3, 6]
+            }
+        }
+    },
+    "256": {
+        "isWin": false,
+        "floor": [0],
+        "step": 256,
+        "agents": {
+            "1": {
+                "position": [15, 3, 0],
+                "key": [1, 2, 3, 6]
+            }
+        }
+    },
+    "257": {
+        "isWin": false,
+        "floor": [0],
+        "step": 257,
+        "agents": {
+            "1": {
+                "position": [16, 4, 0],
+                "key": [1, 2, 3, 6]
+            }
+        }
+    },
+    "258": {
+        "isWin": false,
+        "floor": [0],
+        "step": 258,
+        "agents": {
+            "1": {
+                "position": [17, 5, 0],
+                "key": [1, 2, 3, 6]
+            }
+        }
+    },
+    "259": {
+        "isWin": false,
+        "floor": [0],
+        "step": 259,
+        "agents": {
+            "1": {
+                "position": [16, 6, 0],
+                "key": [1, 2, 3, 6]
+            }
+        }
+    },
+    "260": {
+        "isWin": false,
+        "floor": [0],
+        "step": 260,
+        "agents": {
+            "1": {
+                "position": [17, 7, 0],
+                "key": [1, 2, 3, 6]
+            }
+        }
+    },
+    "261": {
+        "isWin": false,
+        "floor": [0],
+        "step": 261,
+        "agents": {
+            "1": {
+                "position": [16, 8, 0],
+                "key": [1, 2, 3, 6]
+            }
+        }
+    },
+    "262": {
+        "isWin": false,
+        "floor": [0],
+        "step": 262,
+        "agents": {
+            "1": {
+                "position": [17, 9, 0],
+                "key": [1, 2, 3, 6]
+            }
+        }
+    },
+    "263": {
+        "isWin": false,
+        "floor": [0],
+        "step": 263,
+        "agents": {
+            "1": {
+                "position": [17, 10, 0],
+                "key": [1, 2, 3, 6]
+            }
+        }
+    },
+    "264": {
+        "isWin": false,
+        "floor": [0],
+        "step": 264,
+        "agents": {
+            "1": {
+                "position": [17, 11, 0],
+                "key": [1, 2, 3, 6]
+            }
+        }
+    },
+    "265": {
+        "isWin": false,
+        "floor": [0],
+        "step": 265,
+        "agents": {
+            "1": {
+                "position": [16, 12, 0],
+                "key": [1, 2, 3, 6]
+            }
+        }
+    },
+    "266": {
+        "isWin": false,
+        "floor": [0],
+        "step": 266,
+        "agents": {
+            "1": {
+                "position": [17, 13, 0],
+                "key": [1, 2, 3, 6]
+            }
+        }
+    },
+    "267": {
+        "isWin": false,
+        "floor": [0],
+        "step": 267,
+        "agents": {
+            "1": {
+                "position": [16, 14, 0],
+                "key": [1, 2, 3, 6]
+            }
+        }
+    },
+    "268": {
+        "isWin": false,
+        "floor": [0],
+        "step": 268,
+        "agents": {
+            "1": {
+                "position": [17, 15, 0],
+                "key": [1, 2, 3, 6]
+            }
+        }
+    },
+    "269": {
+        "isWin": false,
+        "floor": [0],
+        "step": 269,
+        "agents": {
+            "1": {
+                "position": [16, 16, 0],
+                "key": [1, 2, 3, 6]
+            }
+        }
+    },
+    "270": {
+        "isWin": false,
+        "floor": [0],
+        "step": 270,
+        "agents": {
+            "1": {
+                "position": [15, 16, 0],
+                "key": [1, 2, 3, 6]
+            }
+        }
+    },
+    "271": {
+        "isWin": false,
+        "floor": [0],
+        "step": 271,
+        "agents": {
+            "1": {
+                "position": [14, 17, 0],
+                "key": [1, 2, 3, 6]
+            }
+        }
+    },
+    "272": {
+        "isWin": false,
+        "floor": [0],
+        "step": 272,
+        "agents": {
+            "1": {
+                "position": [14, 18, 0],
+                "key": [1, 2, 3, 6]
+            }
+        }
+    },
+    "273": {
+        "isWin": false,
+        "floor": [0],
+        "step": 273,
+        "agents": {
+            "1": {
+                "position": [13, 18, 0],
+                "key": [1, 2, 3, 6]
+            }
+        }
+    },
+    "274": {
+        "isWin": false,
+        "floor": [0],
+        "step": 274,
+        "agents": {
+            "1": {
+                "position": [12, 18, 0],
+                "key": [1, 2, 3, 6]
+            }
+        }
+    },
+    "275": {
+        "isWin": false,
+        "floor": [0],
+        "step": 275,
+        "agents": {
+            "1": {
+                "position": [11, 18, 0],
+                "key": [1, 2, 3, 6]
+            }
+        }
+    },
+    "276": {
+        "isWin": false,
+        "floor": [0],
+        "step": 276,
+        "agents": {
+            "1": {
+                "position": [10, 19, 0],
+                "key": [1, 2, 3, 6]
+            }
+        }
+    },
+    "277": {
+        "isWin": false,
+        "floor": [0],
+        "step": 277,
+        "agents": {
+            "1": {
+                "position": [9, 18, 0],
+                "key": [1, 2, 3, 6]
+            }
+        }
+    },
+    "278": {
+        "isWin": false,
+        "floor": [0],
+        "step": 278,
+        "agents": {
+            "1": {
+                "position": [8, 18, 0],
+                "key": [1, 2, 3, 6]
+            }
+        }
+    },
+    "279": {
+        "isWin": false,
+        "floor": [0],
+        "step": 279,
+        "agents": {
+            "1": {
+                "position": [8, 17, 0],
+                "key": [1, 2, 3, 6]
+            }
+        }
+    },
+    "280": {
+        "isWin": false,
+        "floor": [0],
+        "step": 280,
+        "agents": {
+            "1": {
+                "position": [8, 16, 0],
+                "key": [1, 2, 3, 6]
+            }
+        }
+    },
+    "281": {
+        "isWin": false,
+        "floor": [0],
+        "step": 281,
+        "agents": {
+            "1": {
+                "position": [9, 16, 0],
+                "key": [1, 2, 3, 4, 6]
+            }
+        }
+    },
+    "282": {
+        "isWin": false,
+        "floor": [0],
+        "step": 282,
+        "agents": {
+            "1": {
+                "position": [8, 16, 0],
+                "key": [1, 2, 3, 4, 6]
+            }
+        }
+    },
+    "283": {
+        "isWin": false,
+        "floor": [0],
+        "step": 283,
+        "agents": {
+            "1": {
+                "position": [8, 17, 0],
+                "key": [1, 2, 3, 4, 6]
+            }
+        }
+    },
+    "284": {
+        "isWin": false,
+        "floor": [0],
+        "step": 284,
+        "agents": {
+            "1": {
+                "position": [8, 18, 0],
+                "key": [1, 2, 3, 4, 6]
+            }
+        }
+    },
+    "285": {
+        "isWin": false,
+        "floor": [0],
+        "step": 285,
+        "agents": {
+            "1": {
+                "position": [9, 19, 0],
+                "key": [1, 2, 3, 4, 6]
+            }
+        }
+    },
+    "286": {
+        "isWin": false,
+        "floor": [0],
+        "step": 286,
+        "agents": {
+            "1": {
+                "position": [10, 18, 0],
+                "key": [1, 2, 3, 4, 6]
+            }
+        }
+    },
+    "287": {
+        "isWin": false,
+        "floor": [0],
+        "step": 287,
+        "agents": {
+            "1": {
+                "position": [11, 18, 0],
+                "key": [1, 2, 3, 4, 6]
+            }
+        }
+    },
+    "288": {
+        "isWin": false,
+        "floor": [0],
+        "step": 288,
+        "agents": {
+            "1": {
+                "position": [12, 18, 0],
+                "key": [1, 2, 3, 4, 6]
+            }
+        }
+    },
+    "289": {
+        "isWin": false,
+        "floor": [0],
+        "step": 289,
+        "agents": {
+            "1": {
+                "position": [13, 18, 0],
+                "key": [1, 2, 3, 4, 6]
+            }
+        }
+    },
+    "290": {
+        "isWin": false,
+        "floor": [0],
+        "step": 290,
+        "agents": {
+            "1": {
+                "position": [14, 18, 0],
+                "key": [1, 2, 3, 4, 6]
+            }
+        }
+    },
+    "291": {
+        "isWin": false,
+        "floor": [0],
+        "step": 291,
+        "agents": {
+            "1": {
+                "position": [14, 17, 0],
+                "key": [1, 2, 3, 4, 6]
+            }
+        }
+    },
+    "292": {
+        "isWin": false,
+        "floor": [0],
+        "step": 292,
+        "agents": {
+            "1": {
+                "position": [15, 16, 0],
+                "key": [1, 2, 3, 4, 6]
+            }
+        }
+    },
+    "293": {
+        "isWin": false,
+        "floor": [0],
+        "step": 293,
+        "agents": {
+            "1": {
+                "position": [16, 15, 0],
+                "key": [1, 2, 3, 4, 6]
+            }
+        }
+    },
+    "294": {
+        "isWin": false,
+        "floor": [0],
+        "step": 294,
+        "agents": {
+            "1": {
+                "position": [17, 14, 0],
+                "key": [1, 2, 3, 4, 6]
+            }
+        }
+    },
+    "295": {
+        "isWin": false,
+        "floor": [0],
+        "step": 295,
+        "agents": {
+            "1": {
+                "position": [16, 13, 0],
+                "key": [1, 2, 3, 4, 6]
+            }
+        }
+    },
+    "296": {
+        "isWin": false,
+        "floor": [0],
+        "step": 296,
+        "agents": {
+            "1": {
+                "position": [17, 12, 0],
+                "key": [1, 2, 3, 4, 6]
+            }
+        }
+    },
+    "297": {
+        "isWin": false,
+        "floor": [0],
+        "step": 297,
+        "agents": {
+            "1": {
+                "position": [17, 11, 0],
+                "key": [1, 2, 3, 4, 6]
+            }
+        }
+    },
+    "298": {
+        "isWin": false,
+        "floor": [0],
+        "step": 298,
+        "agents": {
+            "1": {
+                "position": [17, 10, 0],
+                "key": [1, 2, 3, 4, 6]
+            }
+        }
+    },
+    "299": {
+        "isWin": false,
+        "floor": [0],
+        "step": 299,
+        "agents": {
+            "1": {
+                "position": [17, 9, 0],
+                "key": [1, 2, 3, 4, 6]
+            }
+        }
+    },
+    "300": {
+        "isWin": false,
+        "floor": [0],
+        "step": 300,
+        "agents": {
+            "1": {
+                "position": [16, 8, 0],
+                "key": [1, 2, 3, 4, 6]
+            }
+        }
+    },
+    "301": {
+        "isWin": false,
+        "floor": [0],
+        "step": 301,
+        "agents": {
+            "1": {
+                "position": [17, 7, 0],
+                "key": [1, 2, 3, 4, 6]
+            }
+        }
+    },
+    "302": {
+        "isWin": false,
+        "floor": [0],
+        "step": 302,
+        "agents": {
+            "1": {
+                "position": [16, 6, 0],
+                "key": [1, 2, 3, 4, 6]
+            }
+        }
+    },
+    "303": {
+        "isWin": false,
+        "floor": [0],
+        "step": 303,
+        "agents": {
+            "1": {
+                "position": [17, 5, 0],
+                "key": [1, 2, 3, 4, 6]
+            }
+        }
+    },
+    "304": {
+        "isWin": false,
+        "floor": [0],
+        "step": 304,
+        "agents": {
+            "1": {
+                "position": [16, 4, 0],
+                "key": [1, 2, 3, 4, 6]
+            }
+        }
+    },
+    "305": {
+        "isWin": false,
+        "floor": [0],
+        "step": 305,
+        "agents": {
+            "1": {
+                "position": [15, 3, 0],
+                "key": [1, 2, 3, 4, 6]
+            }
+        }
+    },
+    "306": {
+        "isWin": false,
+        "floor": [0],
+        "step": 306,
+        "agents": {
+            "1": {
+                "position": [14, 3, 0],
+                "key": [1, 2, 3, 4, 6]
+            }
+        }
+    },
+    "307": {
+        "isWin": false,
+        "floor": [0],
+        "step": 307,
+        "agents": {
+            "1": {
+                "position": [13, 3, 0],
+                "key": [1, 2, 3, 4, 6]
+            }
+        }
+    },
+    "308": {
+        "isWin": false,
+        "floor": [0],
+        "step": 308,
+        "agents": {
+            "1": {
+                "position": [12, 3, 0],
+                "key": [1, 2, 3, 4, 6]
+            }
+        }
+    },
+    "309": {
+        "isWin": false,
+        "floor": [0],
+        "step": 309,
+        "agents": {
+            "1": {
+                "position": [11, 3, 0],
+                "key": [1, 2, 3, 4, 6]
+            }
+        }
+    },
+    "310": {
+        "isWin": false,
+        "floor": [0],
+        "step": 310,
+        "agents": {
+            "1": {
+                "position": [10, 3, 0],
+                "key": [1, 2, 3, 4, 6]
+            }
+        }
+    },
+    "311": {
+        "isWin": false,
+        "floor": [0],
+        "step": 311,
+        "agents": {
+            "1": {
+                "position": [9, 3, 0],
+                "key": [1, 2, 3, 4, 6]
+            }
+        }
+    },
+    "312": {
+        "isWin": false,
+        "floor": [0],
+        "step": 312,
+        "agents": {
+            "1": {
+                "position": [8, 3, 0],
+                "key": [1, 2, 3, 4, 6]
+            }
+        }
+    },
+    "313": {
+        "isWin": false,
+        "floor": [0],
+        "step": 313,
+        "agents": {
+            "1": {
+                "position": [7, 3, 0],
+                "key": [1, 2, 3, 4, 6]
+            }
+        }
+    },
+    "314": {
+        "isWin": false,
+        "floor": [0],
+        "step": 314,
+        "agents": {
+            "1": {
+                "position": [6, 3, 0],
+                "key": [1, 2, 3, 4, 6]
+            }
+        }
+    },
+    "315": {
+        "isWin": false,
+        "floor": [0],
+        "step": 315,
+        "agents": {
+            "1": {
+                "position": [5, 3, 0],
+                "key": [1, 2, 3, 4, 6]
+            }
+        }
+    },
+    "316": {
+        "isWin": false,
+        "floor": [0],
+        "step": 316,
+        "agents": {
+            "1": {
+                "position": [5, 4, 0],
+                "key": [1, 2, 3, 4, 6]
+            }
+        }
+    },
+    "317": {
+        "isWin": false,
+        "floor": [0],
+        "step": 317,
+        "agents": {
+            "1": {
+                "position": [5, 5, 0],
+                "key": [1, 2, 3, 4, 6]
+            }
+        }
+    },
+    "318": {
+        "isWin": false,
+        "floor": [0],
+        "step": 318,
+        "agents": {
+            "1": {
+                "position": [5, 6, 0],
+                "key": [1, 2, 3, 4, 6]
+            }
+        }
+    },
+    "319": {
+        "isWin": false,
+        "floor": [0],
+        "step": 319,
+        "agents": {
+            "1": {
+                "position": [5, 7, 0],
+                "key": [1, 2, 3, 4, 6]
+            }
+        }
+    },
+    "320": {
+        "isWin": false,
+        "floor": [0],
+        "step": 320,
+        "agents": {
+            "1": {
+                "position": [5, 8, 0],
+                "key": [1, 2, 3, 4, 6]
+            }
+        }
+    },
+    "321": {
+        "isWin": false,
+        "floor": [0],
+        "step": 321,
+        "agents": {
+            "1": {
+                "position": [5, 9, 0],
+                "key": [1, 2, 3, 4, 6]
+            }
+        }
+    },
+    "322": {
+        "isWin": false,
+        "floor": [0],
+        "step": 322,
+        "agents": {
+            "1": {
+                "position": [5, 10, 0],
+                "key": [1, 2, 3, 4, 6]
+            }
+        }
+    },
+    "323": {
+        "isWin": false,
+        "floor": [0],
+        "step": 323,
+        "agents": {
+            "1": {
+                "position": [5, 11, 0],
+                "key": [1, 2, 3, 4, 6]
+            }
+        }
+    },
+    "324": {
+        "isWin": false,
+        "floor": [0],
+        "step": 324,
+        "agents": {
+            "1": {
+                "position": [5, 12, 0],
+                "key": [1, 2, 3, 4, 6]
+            }
+        }
+    },
+    "325": {
+        "isWin": false,
+        "floor": [0],
+        "step": 325,
+        "agents": {
+            "1": {
+                "position": [5, 13, 0],
+                "key": [1, 2, 3, 4, 6]
+            }
+        }
+    },
+    "326": {
+        "isWin": false,
+        "floor": [0],
+        "step": 326,
+        "agents": {
+            "1": {
+                "position": [6, 13, 0],
+                "key": [1, 2, 3, 4, 6]
+            }
+        }
+    },
+    "327": {
+        "isWin": false,
+        "floor": [0],
+        "step": 327,
+        "agents": {
+            "1": {
+                "position": [6, 14, 0],
+                "key": [1, 2, 3, 4, 6]
+            }
+        }
+    },
+    "328": {
+        "isWin": false,
+        "floor": [0],
+        "step": 328,
+        "agents": {
+            "1": {
+                "position": [7, 14, 0],
+                "key": [1, 2, 3, 4, 6]
+            }
+        }
+    },
+    "329": {
+        "isWin": false,
+        "floor": [0],
+        "step": 329,
+        "agents": {
+            "1": {
+                "position": [8, 14, 0],
+                "key": [1, 2, 3, 4, 6]
+            }
+        }
+    },
+    "330": {
+        "isWin": false,
+        "floor": [0],
+        "step": 330,
+        "agents": {
+            "1": {
+                "position": [9, 14, 0],
+                "key": [1, 2, 3, 4, 6]
+            }
+        }
+    },
+    "331": {
+        "isWin": false,
+        "floor": [0],
+        "step": 331,
+        "agents": {
+            "1": {
+                "position": [10, 14, 0],
+                "key": [1, 2, 3, 4, 6]
+            }
+        }
+    },
+    "332": {
+        "isWin": false,
+        "floor": [0],
+        "step": 332,
+        "agents": {
+            "1": {
+                "position": [11, 14, 0],
+                "key": [1, 2, 3, 4, 6]
+            }
+        }
+    },
+    "333": {
+        "isWin": false,
+        "floor": [0],
+        "step": 333,
+        "agents": {
+            "1": {
+                "position": [12, 14, 0],
+                "key": [1, 2, 3, 4, 6]
+            }
+        }
+    },
+    "334": {
+        "isWin": false,
+        "floor": [0],
+        "step": 334,
+        "agents": {
+            "1": {
+                "position": [13, 14, 0],
+                "key": [1, 2, 3, 4, 6]
+            }
+        }
+    },
+    "335": {
+        "isWin": false,
+        "floor": [0],
+        "step": 335,
+        "agents": {
+            "1": {
+                "position": [14, 14, 0],
+                "key": [1, 2, 3, 4, 6]
+            }
+        }
+    },
+    "336": {
+        "isWin": false,
+        "floor": [0],
+        "step": 336,
+        "agents": {
+            "1": {
+                "position": [14, 13, 0],
+                "key": [1, 2, 3, 4, 6]
+            }
+        }
+    },
+    "337": {
+        "isWin": false,
+        "floor": [0],
+        "step": 337,
+        "agents": {
+            "1": {
+                "position": [14, 12, 0],
+                "key": [1, 2, 3, 4, 6]
+            }
+        }
+    },
+    "338": {
+        "isWin": false,
+        "floor": [0],
+        "step": 338,
+        "agents": {
+            "1": {
+                "position": [14, 11, 0],
+                "key": [1, 2, 3, 4, 6]
+            }
+        }
+    },
+    "339": {
+        "isWin": false,
+        "floor": [0],
+        "step": 339,
+        "agents": {
+            "1": {
+                "position": [13, 10, 0],
+                "key": [1, 2, 3, 4, 6]
+            }
+        }
+    },
+    "340": {
+        "isWin": false,
+        "floor": [0],
+        "step": 340,
+        "agents": {
+            "1": {
+                "position": [14, 9, 0],
+                "key": [1, 2, 3, 4, 6]
+            }
+        }
+    },
+    "341": {
+        "isWin": false,
+        "floor": [0],
+        "step": 341,
+        "agents": {
+            "1": {
+                "position": [13, 8, 0],
+                "key": [1, 2, 3, 4, 6]
+            }
+        }
+    },
+    "342": {
+        "isWin": false,
+        "floor": [0],
+        "step": 342,
+        "agents": {
+            "1": {
+                "position": [12, 8, 0],
+                "key": [1, 2, 3, 4, 6]
+            }
+        }
+    },
+    "343": {
+        "isWin": false,
+        "floor": [0],
+        "step": 343,
+        "agents": {
+            "1": {
+                "position": [12, 7, 0],
+                "key": [1, 2, 3, 4, 6]
+            }
+        }
+    },
+    "344": {
+        "isWin": false,
+        "floor": [0],
+        "step": 344,
+        "agents": {
+            "1": {
+                "position": [12, 6, 0],
+                "key": [1, 2, 3, 4, 6]
+            }
+        }
+    },
+    "345": {
+        "isWin": false,
+        "floor": [0],
+        "step": 345,
+        "agents": {
+            "1": {
+                "position": [12, 5, 0],
+                "key": [1, 2, 3, 4, 6]
+            }
+        }
+    },
+    "346": {
+        "isWin": false,
+        "floor": [0],
+        "step": 346,
+        "agents": {
+            "1": {
+                "position": [11, 5, 0],
+                "key": [1, 2, 3, 4, 6]
+            }
+        }
+    },
+    "347": {
+        "isWin": false,
+        "floor": [0],
+        "step": 347,
+        "agents": {
+            "1": {
+                "position": [10, 5, 0],
+                "key": [1, 2, 3, 4, 6]
+            }
+        }
+    },
+    "348": {
+        "isWin": false,
+        "floor": [0],
+        "step": 348,
+        "agents": {
+            "1": {
+                "position": [9, 5, 0],
+                "key": [1, 2, 3, 4, 6]
+            }
+        }
+    },
+    "349": {
+        "isWin": false,
+        "floor": [0],
+        "step": 349,
+        "agents": {
+            "1": {
+                "position": [8, 5, 0],
+                "key": [1, 2, 3, 4, 6]
+            }
+        }
+    },
+    "350": {
+        "isWin": false,
+        "floor": [0],
+        "step": 350,
+        "agents": {
+            "1": {
+                "position": [7, 5, 0],
+                "key": [1, 2, 3, 4, 6]
+            }
+        }
+    },
+    "351": {
+        "isWin": false,
+        "floor": [0],
+        "step": 351,
+        "agents": {
+            "1": {
+                "position": [7, 6, 0],
+                "key": [1, 2, 3, 4, 6]
+            }
+        }
+    },
+    "352": {
+        "isWin": false,
+        "floor": [0],
+        "step": 352,
+        "agents": {
+            "1": {
+                "position": [7, 7, 0],
+                "key": [1, 2, 3, 4, 6]
+            }
+        }
+    },
+    "353": {
+        "isWin": false,
+        "floor": [0],
+        "step": 353,
+        "agents": {
+            "1": {
+                "position": [7, 8, 0],
+                "key": [1, 2, 3, 4, 6]
+            }
+        }
+    },
+    "354": {
+        "isWin": false,
+        "floor": [0],
+        "step": 354,
+        "agents": {
+            "1": {
+                "position": [7, 9, 0],
+                "key": [1, 2, 3, 4, 6]
+            }
+        }
+    },
+    "355": {
+        "isWin": false,
+        "floor": [0],
+        "step": 355,
+        "agents": {
+            "1": {
+                "position": [7, 10, 0],
+                "key": [1, 2, 3, 4, 6]
+            }
+        }
+    },
+    "356": {
+        "isWin": false,
+        "floor": [0],
+        "step": 356,
+        "agents": {
+            "1": {
+                "position": [7, 11, 0],
+                "key": [1, 2, 3, 4, 6]
+            }
+        }
+    },
+    "357": {
+        "isWin": false,
+        "floor": [0],
+        "step": 357,
+        "agents": {
+            "1": {
+                "position": [7, 12, 0],
+                "key": [1, 2, 3, 4, 6]
+            }
+        }
+    },
+    "358": {
+        "isWin": false,
+        "floor": [0],
+        "step": 358,
+        "agents": {
+            "1": {
+                "position": [8, 12, 0],
+                "key": [1, 2, 3, 4, 6]
+            }
+        }
+    },
+    "359": {
+        "isWin": false,
+        "floor": [0],
+        "step": 359,
+        "agents": {
+            "1": {
+                "position": [9, 12, 0],
+                "key": [1, 2, 3, 4, 6]
+            }
+        }
+    },
+    "360": {
+        "isWin": false,
+        "floor": [0],
+        "step": 360,
+        "agents": {
+            "1": {
+                "position": [10, 12, 0],
+                "key": [1, 2, 3, 4, 6]
+            }
+        }
+    },
+    "361": {
+        "isWin": false,
+        "floor": [0],
+        "step": 361,
+        "agents": {
+            "1": {
+                "position": [10, 11, 0],
+                "key": [1, 2, 3, 4, 6]
+            }
+        }
+    },
+    "362": {
+        "isWin": false,
+        "floor": [0],
+        "step": 362,
+        "agents": {
+            "1": {
+                "position": [10, 10, 0],
+                "key": [1, 2, 3, 4, 6]
+            }
+        }
+    },
+    "363": {
+        "isWin": false,
+        "floor": [0],
+        "step": 363,
+        "agents": {
+            "1": {
+                "position": [9, 9, 0],
+                "key": [1, 2, 3, 4, 6]
+            }
+        }
+    },
+    "364": {
+        "isWin": false,
+        "floor": [0],
+        "step": 364,
+        "agents": {
+            "1": {
+                "position": [10, 8, 0],
+                "key": [1, 2, 3, 4, 6]
+            }
+        }
+    },
+    "365": {
+        "isWin": false,
+        "floor": [0],
+        "step": 365,
+        "agents": {
+            "1": {
+                "position": [10, 7, 0],
+                "key": [1, 2, 3, 4, 5, 6]
+            }
+        }
+    },
+    "366": {
+        "isWin": false,
+        "floor": [0],
+        "step": 366,
+        "agents": {
+            "1": {
+                "position": [9, 8, 0],
+                "key": [1, 2, 3, 4, 5, 6]
+            }
+        }
+    },
+    "367": {
+        "isWin": false,
+        "floor": [0],
+        "step": 367,
+        "agents": {
+            "1": {
+                "position": [10, 9, 0],
+                "key": [1, 2, 3, 4, 5, 6]
+            }
+        }
+    },
+    "368": {
+        "isWin": false,
+        "floor": [0],
+        "step": 368,
+        "agents": {
+            "1": {
+                "position": [10, 10, 0],
+                "key": [1, 2, 3, 4, 5, 6]
+            }
+        }
+    },
+    "369": {
+        "isWin": false,
+        "floor": [0],
+        "step": 369,
+        "agents": {
+            "1": {
+                "position": [10, 11, 0],
+                "key": [1, 2, 3, 4, 5, 6]
+            }
+        }
+    },
+    "370": {
+        "isWin": false,
+        "floor": [0],
+        "step": 370,
+        "agents": {
+            "1": {
+                "position": [10, 12, 0],
+                "key": [1, 2, 3, 4, 5, 6]
+            }
+        }
+    },
+    "371": {
+        "isWin": false,
+        "floor": [0],
+        "step": 371,
+        "agents": {
+            "1": {
+                "position": [9, 12, 0],
+                "key": [1, 2, 3, 4, 5, 6]
+            }
+        }
+    },
+    "372": {
+        "isWin": false,
+        "floor": [0],
+        "step": 372,
+        "agents": {
+            "1": {
+                "position": [8, 12, 0],
+                "key": [1, 2, 3, 4, 5, 6]
+            }
+        }
+    },
+    "373": {
+        "isWin": false,
+        "floor": [0],
+        "step": 373,
+        "agents": {
+            "1": {
+                "position": [7, 12, 0],
+                "key": [1, 2, 3, 4, 5, 6]
+            }
+        }
+    },
+    "374": {
+        "isWin": false,
+        "floor": [0],
+        "step": 374,
+        "agents": {
+            "1": {
+                "position": [7, 11, 0],
+                "key": [1, 2, 3, 4, 5, 6]
+            }
+        }
+    },
+    "375": {
+        "isWin": false,
+        "floor": [0],
+        "step": 375,
+        "agents": {
+            "1": {
+                "position": [7, 10, 0],
+                "key": [1, 2, 3, 4, 5, 6]
+            }
+        }
+    },
+    "376": {
+        "isWin": false,
+        "floor": [0],
+        "step": 376,
+        "agents": {
+            "1": {
+                "position": [7, 9, 0],
+                "key": [1, 2, 3, 4, 5, 6]
+            }
+        }
+    },
+    "377": {
+        "isWin": false,
+        "floor": [0],
+        "step": 377,
+        "agents": {
+            "1": {
+                "position": [7, 8, 0],
+                "key": [1, 2, 3, 4, 5, 6]
+            }
+        }
+    },
+    "378": {
+        "isWin": false,
+        "floor": [0],
+        "step": 378,
+        "agents": {
+            "1": {
+                "position": [7, 7, 0],
+                "key": [1, 2, 3, 4, 5, 6]
+            }
+        }
+    },
+    "379": {
+        "isWin": false,
+        "floor": [0],
+        "step": 379,
+        "agents": {
+            "1": {
+                "position": [7, 6, 0],
+                "key": [1, 2, 3, 4, 5, 6]
+            }
+        }
+    },
+    "380": {
+        "isWin": false,
+        "floor": [0],
+        "step": 380,
+        "agents": {
+            "1": {
+                "position": [7, 5, 0],
+                "key": [1, 2, 3, 4, 5, 6]
+            }
+        }
+    },
+    "381": {
+        "isWin": false,
+        "floor": [0],
+        "step": 381,
+        "agents": {
+            "1": {
+                "position": [8, 5, 0],
+                "key": [1, 2, 3, 4, 5, 6]
+            }
+        }
+    },
+    "382": {
+        "isWin": false,
+        "floor": [0],
+        "step": 382,
+        "agents": {
+            "1": {
+                "position": [9, 5, 0],
+                "key": [1, 2, 3, 4, 5, 6]
+            }
+        }
+    },
+    "383": {
+        "isWin": false,
+        "floor": [0],
+        "step": 383,
+        "agents": {
+            "1": {
+                "position": [10, 5, 0],
+                "key": [1, 2, 3, 4, 5, 6]
+            }
+        }
+    },
+    "384": {
+        "isWin": false,
+        "floor": [0],
+        "step": 384,
+        "agents": {
+            "1": {
+                "position": [11, 5, 0],
+                "key": [1, 2, 3, 4, 5, 6]
+            }
+        }
+    },
+    "385": {
+        "isWin": false,
+        "floor": [0],
+        "step": 385,
+        "agents": {
+            "1": {
+                "position": [12, 5, 0],
+                "key": [1, 2, 3, 4, 5, 6]
+            }
+        }
+    },
+    "386": {
+        "isWin": false,
+        "floor": [0],
+        "step": 386,
+        "agents": {
+            "1": {
+                "position": [12, 6, 0],
+                "key": [1, 2, 3, 4, 5, 6]
+            }
+        }
+    },
+    "387": {
+        "isWin": false,
+        "floor": [0],
+        "step": 387,
+        "agents": {
+            "1": {
+                "position": [12, 7, 0],
+                "key": [1, 2, 3, 4, 5, 6]
+            }
+        }
+    },
+    "388": {
+        "isWin": false,
+        "floor": [0],
+        "step": 388,
+        "agents": {
+            "1": {
+                "position": [12, 8, 0],
+                "key": [1, 2, 3, 4, 5, 6]
+            }
+        }
+    },
+    "389": {
+        "isWin": false,
+        "floor": [0],
+        "step": 389,
+        "agents": {
+            "1": {
+                "position": [13, 8, 0],
+                "key": [1, 2, 3, 4, 5, 6]
+            }
+        }
+    },
+    "390": {
+        "isWin": false,
+        "floor": [0],
+        "step": 390,
+        "agents": {
+            "1": {
+                "position": [14, 9, 0],
+                "key": [1, 2, 3, 4, 5, 6]
+            }
+        }
+    },
+    "391": {
+        "isWin": false,
+        "floor": [0],
+        "step": 391,
+        "agents": {
+            "1": {
+                "position": [13, 10, 0],
+                "key": [1, 2, 3, 4, 5, 6]
+            }
+        }
+    },
+    "392": {
+        "isWin": false,
+        "floor": [0],
+        "step": 392,
+        "agents": {
+            "1": {
+                "position": [14, 11, 0],
+                "key": [1, 2, 3, 4, 5, 6]
+            }
+        }
+    },
+    "393": {
+        "isWin": false,
+        "floor": [0],
+        "step": 393,
+        "agents": {
+            "1": {
+                "position": [14, 12, 0],
+                "key": [1, 2, 3, 4, 5, 6]
+            }
+        }
+    },
+    "394": {
+        "isWin": false,
+        "floor": [0],
+        "step": 394,
+        "agents": {
+            "1": {
+                "position": [14, 13, 0],
+                "key": [1, 2, 3, 4, 5, 6]
+            }
+        }
+    },
+    "395": {
+        "isWin": false,
+        "floor": [0],
+        "step": 395,
+        "agents": {
+            "1": {
+                "position": [14, 14, 0],
+                "key": [1, 2, 3, 4, 5, 6]
+            }
+        }
+    },
+    "396": {
+        "isWin": false,
+        "floor": [0],
+        "step": 396,
+        "agents": {
+            "1": {
+                "position": [13, 14, 0],
+                "key": [1, 2, 3, 4, 5, 6]
+            }
+        }
+    },
+    "397": {
+        "isWin": false,
+        "floor": [0],
+        "step": 397,
+        "agents": {
+            "1": {
+                "position": [12, 14, 0],
+                "key": [1, 2, 3, 4, 5, 6]
+            }
+        }
+    },
+    "398": {
+        "isWin": false,
+        "floor": [0],
+        "step": 398,
+        "agents": {
+            "1": {
+                "position": [11, 14, 0],
+                "key": [1, 2, 3, 4, 5, 6]
+            }
+        }
+    },
+    "399": {
+        "isWin": false,
+        "floor": [0],
+        "step": 399,
+        "agents": {
+            "1": {
+                "position": [10, 14, 0],
+                "key": [1, 2, 3, 4, 5, 6]
+            }
+        }
+    },
+    "400": {
+        "isWin": false,
+        "floor": [0],
+        "step": 400,
+        "agents": {
+            "1": {
+                "position": [9, 14, 0],
+                "key": [1, 2, 3, 4, 5, 6]
+            }
+        }
+    },
+    "401": {
+        "isWin": false,
+        "floor": [0],
+        "step": 401,
+        "agents": {
+            "1": {
+                "position": [8, 14, 0],
+                "key": [1, 2, 3, 4, 5, 6]
+            }
+        }
+    },
+    "402": {
+        "isWin": false,
+        "floor": [0],
+        "step": 402,
+        "agents": {
+            "1": {
+                "position": [7, 14, 0],
+                "key": [1, 2, 3, 4, 5, 6]
+            }
+        }
+    },
+    "403": {
+        "isWin": false,
+        "floor": [0],
+        "step": 403,
+        "agents": {
+            "1": {
+                "position": [6, 14, 0],
+                "key": [1, 2, 3, 4, 5, 6]
+            }
+        }
+    },
+    "404": {
+        "isWin": false,
+        "floor": [0],
+        "step": 404,
+        "agents": {
+            "1": {
+                "position": [6, 13, 0],
+                "key": [1, 2, 3, 4, 5, 6]
+            }
+        }
+    },
+    "405": {
+        "isWin": false,
+        "floor": [0],
+        "step": 405,
+        "agents": {
+            "1": {
+                "position": [5, 13, 0],
+                "key": [1, 2, 3, 4, 5, 6]
+            }
+        }
+    },
+    "406": {
+        "isWin": false,
+        "floor": [0],
+        "step": 406,
+        "agents": {
+            "1": {
+                "position": [5, 12, 0],
+                "key": [1, 2, 3, 4, 5, 6]
+            }
+        }
+    },
+    "407": {
+        "isWin": false,
+        "floor": [0],
+        "step": 407,
+        "agents": {
+            "1": {
+                "position": [5, 11, 0],
+                "key": [1, 2, 3, 4, 5, 6]
+            }
+        }
+    },
+    "408": {
+        "isWin": false,
+        "floor": [0],
+        "step": 408,
+        "agents": {
+            "1": {
+                "position": [5, 10, 0],
+                "key": [1, 2, 3, 4, 5, 6]
+            }
+        }
+    },
+    "409": {
+        "isWin": false,
+        "floor": [0],
+        "step": 409,
+        "agents": {
+            "1": {
+                "position": [5, 9, 0],
+                "key": [1, 2, 3, 4, 5, 6]
+            }
+        }
+    },
+    "410": {
+        "isWin": false,
+        "floor": [0],
+        "step": 410,
+        "agents": {
+            "1": {
+                "position": [5, 8, 0],
+                "key": [1, 2, 3, 4, 5, 6]
+            }
+        }
+    },
+    "411": {
+        "isWin": false,
+        "floor": [0],
+        "step": 411,
+        "agents": {
+            "1": {
+                "position": [5, 7, 0],
+                "key": [1, 2, 3, 4, 5, 6]
+            }
+        }
+    },
+    "412": {
+        "isWin": false,
+        "floor": [0],
+        "step": 412,
+        "agents": {
+            "1": {
+                "position": [5, 6, 0],
+                "key": [1, 2, 3, 4, 5, 6]
+            }
+        }
+    },
+    "413": {
+        "isWin": false,
+        "floor": [0],
+        "step": 413,
+        "agents": {
+            "1": {
+                "position": [5, 5, 0],
+                "key": [1, 2, 3, 4, 5, 6]
+            }
+        }
+    },
+    "414": {
+        "isWin": false,
+        "floor": [0],
+        "step": 414,
+        "agents": {
+            "1": {
+                "position": [5, 4, 0],
+                "key": [1, 2, 3, 4, 5, 6]
+            }
+        }
+    },
+    "415": {
+        "isWin": false,
+        "floor": [0],
+        "step": 415,
+        "agents": {
+            "1": {
+                "position": [5, 3, 0],
+                "key": [1, 2, 3, 4, 5, 6]
+            }
+        }
+    },
+    "416": {
+        "isWin": false,
+        "floor": [0],
+        "step": 416,
+        "agents": {
+            "1": {
+                "position": [6, 3, 0],
+                "key": [1, 2, 3, 4, 5, 6]
+            }
+        }
+    },
+    "417": {
+        "isWin": false,
+        "floor": [0],
+        "step": 417,
+        "agents": {
+            "1": {
+                "position": [7, 3, 0],
+                "key": [1, 2, 3, 4, 5, 6]
+            }
+        }
+    },
+    "418": {
+        "isWin": false,
+        "floor": [0],
+        "step": 418,
+        "agents": {
+            "1": {
+                "position": [8, 3, 0],
+                "key": [1, 2, 3, 4, 5, 6]
+            }
+        }
+    },
+    "419": {
+        "isWin": false,
+        "floor": [0],
+        "step": 419,
+        "agents": {
+            "1": {
+                "position": [9, 3, 0],
+                "key": [1, 2, 3, 4, 5, 6]
+            }
+        }
+    },
+    "420": {
+        "isWin": false,
+        "floor": [0],
+        "step": 420,
+        "agents": {
+            "1": {
+                "position": [10, 3, 0],
+                "key": [1, 2, 3, 4, 5, 6]
+            }
+        }
+    },
+    "421": {
+        "isWin": false,
+        "floor": [0],
+        "step": 421,
+        "agents": {
+            "1": {
+                "position": [11, 3, 0],
+                "key": [1, 2, 3, 4, 5, 6]
+            }
+        }
+    },
+    "422": {
+        "isWin": false,
+        "floor": [0],
+        "step": 422,
+        "agents": {
+            "1": {
+                "position": [12, 3, 0],
+                "key": [1, 2, 3, 4, 5, 6]
+            }
+        }
+    },
+    "423": {
+        "isWin": false,
+        "floor": [0],
+        "step": 423,
+        "agents": {
+            "1": {
+                "position": [13, 3, 0],
+                "key": [1, 2, 3, 4, 5, 6]
+            }
+        }
+    },
+    "424": {
+        "isWin": false,
+        "floor": [0],
+        "step": 424,
+        "agents": {
+            "1": {
+                "position": [14, 3, 0],
+                "key": [1, 2, 3, 4, 5, 6]
+            }
+        }
+    },
+    "425": {
+        "isWin": false,
+        "floor": [0],
+        "step": 425,
+        "agents": {
+            "1": {
+                "position": [15, 3, 0],
+                "key": [1, 2, 3, 4, 5, 6]
+            }
+        }
+    },
+    "426": {
+        "isWin": false,
+        "floor": [0],
+        "step": 426,
+        "agents": {
+            "1": {
+                "position": [16, 4, 0],
+                "key": [1, 2, 3, 4, 5, 6]
+            }
+        }
+    },
+    "427": {
+        "isWin": false,
+        "floor": [0],
+        "step": 427,
+        "agents": {
+            "1": {
+                "position": [17, 5, 0],
+                "key": [1, 2, 3, 4, 5, 6]
+            }
+        }
+    },
+    "428": {
+        "isWin": false,
+        "floor": [0],
+        "step": 428,
+        "agents": {
+            "1": {
+                "position": [16, 6, 0],
+                "key": [1, 2, 3, 4, 5, 6]
+            }
+        }
+    },
+    "429": {
+        "isWin": false,
+        "floor": [0],
+        "step": 429,
+        "agents": {
+            "1": {
+                "position": [17, 7, 0],
+                "key": [1, 2, 3, 4, 5, 6]
+            }
+        }
+    },
+    "430": {
+        "isWin": false,
+        "floor": [0],
+        "step": 430,
+        "agents": {
+            "1": {
+                "position": [16, 8, 0],
+                "key": [1, 2, 3, 4, 5, 6]
+            }
+        }
+    },
+    "431": {
+        "isWin": false,
+        "floor": [0],
+        "step": 431,
+        "agents": {
+            "1": {
+                "position": [17, 9, 0],
+                "key": [1, 2, 3, 4, 5, 6]
+            }
+        }
+    },
+    "432": {
+        "isWin": false,
+        "floor": [0],
+        "step": 432,
+        "agents": {
+            "1": {
+                "position": [17, 10, 0],
+                "key": [1, 2, 3, 4, 5, 6]
+            }
+        }
+    },
+    "433": {
+        "isWin": false,
+        "floor": [0],
+        "step": 433,
+        "agents": {
+            "1": {
+                "position": [17, 11, 0],
+                "key": [1, 2, 3, 4, 5, 6]
+            }
+        }
+    },
+    "434": {
+        "isWin": false,
+        "floor": [0],
+        "step": 434,
+        "agents": {
+            "1": {
+                "position": [16, 12, 0],
+                "key": [1, 2, 3, 4, 5, 6]
+            }
+        }
+    },
+    "435": {
+        "isWin": false,
+        "floor": [0],
+        "step": 435,
+        "agents": {
+            "1": {
+                "position": [17, 13, 0],
+                "key": [1, 2, 3, 4, 5, 6]
+            }
+        }
+    },
+    "436": {
+        "isWin": false,
+        "floor": [0],
+        "step": 436,
+        "agents": {
+            "1": {
+                "position": [16, 14, 0],
+                "key": [1, 2, 3, 4, 5, 6]
+            }
+        }
+    },
+    "437": {
+        "isWin": false,
+        "floor": [0],
+        "step": 437,
+        "agents": {
+            "1": {
+                "position": [17, 15, 0],
+                "key": [1, 2, 3, 4, 5, 6]
+            }
+        }
+    },
+    "438": {
+        "isWin": false,
+        "floor": [0],
+        "step": 438,
+        "agents": {
+            "1": {
+                "position": [16, 16, 0],
+                "key": [1, 2, 3, 4, 5, 6]
+            }
+        }
+    },
+    "439": {
+        "isWin": false,
+        "floor": [0],
+        "step": 439,
+        "agents": {
+            "1": {
+                "position": [15, 16, 0],
+                "key": [1, 2, 3, 4, 5, 6]
+            }
+        }
+    },
+    "440": {
+        "isWin": false,
+        "floor": [0],
+        "step": 440,
+        "agents": {
+            "1": {
+                "position": [14, 17, 0],
+                "key": [1, 2, 3, 4, 5, 6]
+            }
+        }
+    },
+    "441": {
+        "isWin": false,
+        "floor": [0],
+        "step": 441,
+        "agents": {
+            "1": {
+                "position": [14, 18, 0],
+                "key": [1, 2, 3, 4, 5, 6]
+            }
+        }
+    },
+    "442": {
+        "isWin": false,
+        "floor": [0],
+        "step": 442,
+        "agents": {
+            "1": {
+                "position": [14, 19, 0],
+                "key": [1, 2, 3, 4, 5, 6]
+            }
+        }
+    },
+    "443": {
+        "isWin": false,
+        "floor": [0],
+        "step": 443,
+        "agents": {
+            "1": {
+                "position": [15, 19, 0],
+                "key": [1, 2, 3, 4, 5, 6]
+            }
+        }
+    },
+    "444": {
+        "isWin": false,
+        "floor": [0],
+        "step": 444,
+        "agents": {
+            "1": {
+                "position": [16, 19, 0],
+                "key": [1, 2, 3, 4, 5, 6]
+            }
+        }
+    },
+    "445": {
+        "isWin": false,
+        "floor": [0],
+        "step": 445,
+        "agents": {
+            "1": {
+                "position": [17, 18, 0],
+                "key": [1, 2, 3, 4, 5, 6]
+            }
+        }
+    },
+    "446": {
+        "isWin": false,
+        "floor": [0],
+        "step": 446,
+        "agents": {
+            "1": {
+                "position": [18, 19, 0],
+                "key": [1, 2, 3, 4, 5, 6]
+            }
+        }
+    },
+    "447": {
+        "isWin": false,
+        "floor": [0],
+        "step": 447,
+        "agents": {
+            "1": {
+                "position": [19, 18, 0],
+                "key": [1, 2, 3, 4, 5, 6]
+            }
+        }
+    },
+    "448": {
+        "isWin": false,
+        "floor": [0],
+        "step": 448,
+        "agents": {
+            "1": {
+                "position": [19, 17, 0],
+                "key": [1, 2, 3, 4, 5, 6]
+            }
+        }
+    },
+    "449": {
+        "isWin": false,
+        "floor": [0],
+        "step": 449,
+        "agents": {
+            "1": {
+                "position": [19, 16, 0],
+                "key": [1, 2, 3, 4, 5, 6]
+            }
+        }
+    },
+    "450": {
+        "isWin": false,
+        "floor": [0],
+        "step": 450,
+        "agents": {
+            "1": {
+                "position": [19, 15, 0],
+                "key": [1, 2, 3, 4, 5, 6]
+            }
+        }
+    },
+    "451": {
+        "isWin": false,
+        "floor": [0],
+        "step": 451,
+        "agents": {
+            "1": {
+                "position": [19, 14, 0],
+                "key": [1, 2, 3, 4, 5, 6]
+            }
+        }
+    },
+    "452": {
+        "isWin": false,
+        "floor": [0],
+        "step": 452,
+        "agents": {
+            "1": {
+                "position": [19, 13, 0],
+                "key": [1, 2, 3, 4, 5, 6]
+            }
+        }
+    },
+    "453": {
+        "isWin": false,
+        "floor": [0],
+        "step": 453,
+        "agents": {
+            "1": {
+                "position": [19, 12, 0],
+                "key": [1, 2, 3, 4, 5, 6]
+            }
+        }
+    },
+    "454": {
+        "isWin": false,
+        "floor": [0],
+        "step": 454,
+        "agents": {
+            "1": {
+                "position": [19, 11, 0],
+                "key": [1, 2, 3, 4, 5, 6]
+            }
+        }
+    },
+    "455": {
+        "isWin": false,
+        "floor": [0],
+        "step": 455,
+        "agents": {
+            "1": {
+                "position": [19, 10, 0],
+                "key": [1, 2, 3, 4, 5, 6]
+            }
+        }
+    },
+    "456": {
+        "isWin": false,
+        "floor": [0],
+        "step": 456,
+        "agents": {
+            "1": {
+                "position": [19, 9, 0],
+                "key": [1, 2, 3, 4, 5, 6]
+            }
+        }
+    },
+    "457": {
+        "isWin": false,
+        "floor": [0],
+        "step": 457,
+        "agents": {
+            "1": {
+                "position": [19, 8, 0],
+                "key": [1, 2, 3, 4, 5, 6]
+            }
+        }
+    },
+    "458": {
+        "isWin": false,
+        "floor": [0],
+        "step": 458,
+        "agents": {
+            "1": {
+                "position": [19, 7, 0],
+                "key": [1, 2, 3, 4, 5, 6]
+            }
+        }
+    },
+    "459": {
+        "isWin": false,
+        "floor": [0],
+        "step": 459,
+        "agents": {
+            "1": {
+                "position": [19, 6, 0],
+                "key": [1, 2, 3, 4, 5, 6]
+            }
+        }
+    },
+    "460": {
+        "isWin": false,
+        "floor": [0],
+        "step": 460,
+        "agents": {
+            "1": {
+                "position": [19, 5, 0],
+                "key": [1, 2, 3, 4, 5, 6]
+            }
+        }
+    },
+    "461": {
+        "isWin": false,
+        "floor": [0],
+        "step": 461,
+        "agents": {
+            "1": {
+                "position": [19, 4, 0],
+                "key": [1, 2, 3, 4, 5, 6]
+            }
+        }
+    },
+    "462": {
+        "isWin": false,
+        "floor": [0],
+        "step": 462,
+        "agents": {
+            "1": {
+                "position": [19, 3, 0],
+                "key": [1, 2, 3, 4, 5, 6]
+            }
+        }
+    },
+    "463": {
+        "isWin": false,
+        "floor": [0],
+        "step": 463,
+        "agents": {
+            "1": {
+                "position": [19, 2, 0],
+                "key": [1, 2, 3, 4, 5, 6]
+            }
+        }
+    },
+    "464": {
+        "isWin": false,
+        "floor": [0],
+        "step": 464,
+        "agents": {
+            "1": {
+                "position": [19, 1, 0],
+                "key": [1, 2, 3, 4, 5, 6]
+            }
+        }
+    },
+    "465": {
+        "isWin": false,
+        "floor": [0],
+        "step": 465,
+        "agents": {
+            "1": {
+                "position": [18, 1, 0],
+                "key": [1, 2, 3, 4, 5, 6]
+            }
+        }
+    },
+    "466": {
+        "isWin": false,
+        "floor": [0],
+        "step": 466,
+        "agents": {
+            "1": {
+                "position": [17, 1, 0],
+                "key": [1, 2, 3, 4, 5, 6]
+            }
+        }
+    },
+    "467": {
+        "isWin": true,
+        "floor": [0],
+        "step": 467,
+        "agents": {
+            "1": {
+                "position": [16, 1, 0],
+                "key": [1, 2, 3, 4, 5, 6]
+            }
+        }
+    }
+}
