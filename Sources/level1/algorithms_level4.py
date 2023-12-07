@@ -1,7 +1,7 @@
 import math
 from queue import PriorityQueue
 
-class MazerSolverLevel3:
+class MazerSolverLevel4:
     def __init__(self, mazer, nRow, mCol, nLayer = 1):
         self.mazer = mazer # 3D array (floor, row, col)
         self.nRow = nRow 
@@ -15,6 +15,8 @@ class MazerSolverLevel3:
         self.doorPos = {} # door's position
         self.upFloor = {} # up floor's position
         self.downFloor = {} # down floor's position
+        self.stepAgent = {}
+
         for layer in range(self.nLayer):
             for xCor in range(self.nRow):
                 for yCor in range(self.mCol):
@@ -107,59 +109,6 @@ class MazerSolverLevel3:
                 succ.append((xNext, yNext, layer, keyNext))
         return succ
 
-    # dfs algorithm to solve mazer 
-    def dfs(self, start, goal, key = 0):
-        visited = dict()
-        stack = [start + (key, )]
-        visited[start + (key, )] = None
-        solution = False
-        while stack:
-            xCor, yCor, layer, key = stack.pop()
-            if self.goalTest((xCor, yCor, layer), goal):
-                solution = True
-                break
-            for xNext, yNext, layerNext, keyNext in self.succesor(xCor, yCor, layer, key):
-                if (xNext, yNext, layerNext, keyNext) not in visited:
-                    visited[(xNext, yNext, layerNext, keyNext)] = (xCor, yCor, layer, key)
-                    stack.append((xNext, yNext, layerNext, keyNext))
-        
-        if solution:
-            path = []
-            current = goal + (key, )
-            while current:
-                path.append(current)
-                current = visited[current]
-            path.reverse()
-            return path
-        else:
-            return None
-        
-    def bfs(self, start, goal, key = 0):
-        visited = dict()
-        queue = [start + (key, )]
-        visited[start + (key, )] = None
-        solution = False
-        while queue:
-            xCor, yCor, layer, key = queue.pop(0)
-            if self.goalTest((xCor, yCor, layer), goal):
-                solution = True
-                break
-            for xNext, yNext, layerNext, keyNext in self.succesor(xCor, yCor, layer, key):
-                if (xNext, yNext, layerNext, keyNext) not in visited:
-                    visited[(xNext, yNext, layerNext, keyNext)] = (xCor, yCor, layer, key)
-                    queue.append((xNext, yNext, layerNext, keyNext))
-        
-        if solution:
-            path = []
-            current = goal + (key, )
-            while current:
-                path.append(current)
-                current = visited[current]
-            path.reverse()
-            return path
-        else:
-            return None
-
     def getEuclidDistance(self, xCor, yCor, uCor, vCor):
         return math.sqrt((xCor - uCor) ** 2 + (yCor - vCor) ** 2)
 
@@ -193,6 +142,8 @@ class MazerSolverLevel3:
         return totalCost
 
     def astar(self, start, goal, key = 0):
+        self.genStupidAgent()
+
         visited = {}
         visited[start + (key, )] = None
 
@@ -236,5 +187,4 @@ class MazerSolverLevel3:
             return path
         else:
             return None
-    
     

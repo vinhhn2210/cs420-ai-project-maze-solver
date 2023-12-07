@@ -24,6 +24,12 @@ class SystemController:
         for file in files:
             fileName = file[:-4]
             self.mapLists[fileName] = loadMap(folderName, fileName)
+
+    def readAllFolderMap(self, folderName):
+        for level in range(1, 4):
+            mapFolderName = folderName + f'/level{level}'
+            self.readFolderMap(mapFolderName)
+
     
     def displayMap(self, mapName):
         self.mapLists[mapName].display()
@@ -104,7 +110,7 @@ class SystemController:
         if mapLevel == 2:
             MazeSolver = MazerSolverLevel2(self.mapLists[mapName].mazer, self.mapLists[mapName].nRow, self.mapLists[mapName].mCol, self.mapLists[mapName].nLayer)
         else:
-            MazeSolver = MazerSolverLevel1(self.mapLists[mapName].mazer, self.mapLists[mapName].nRow, self.mapLists[mapName].mCol, self.mapLists[mapName].nLayer)
+            MazeSolver = MazerSolverLevel3(self.mapLists[mapName].mazer, self.mapLists[mapName].nRow, self.mapLists[mapName].mCol, self.mapLists[mapName].nLayer)
         
         start = MazeSolver.agentPosition('A1')
         goal = MazeSolver.goalPosition('T1')
@@ -143,7 +149,8 @@ if __name__ == '__main__':
         print('Example: python3 system.py Map_folder')
         exit()
     system = SystemController()
-    system.readFolderMap(sys.argv[1])
+    system.readAllFolderMap(sys.argv[1])
+    # system.readFolderMap(sys.argv[1])
     system.solvingAllMap('dfs')
     system.solvingAllMap('bfs')
     system.solvingAllMap('astar')
