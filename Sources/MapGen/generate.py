@@ -210,12 +210,14 @@ def load_maze(path):
         line = line.strip().split(',')
         height = int(line[0])
         width = int(line[1])
+        print(Fore.WHITE + '\nHeight: ' + str(height) + ' Width: ' + str(width) + '\n')
         # while the line is not empty
         while (True):
             readline = infile.readline()
             if (readline == ''):
                 break
-            print(print(Fore.YELLOW + readline, end=" "))
+            if (readline != None):
+                print(Fore.YELLOW + readline, end=" ")
             maze = []
             for i in range(height):
                 line = infile.readline()
@@ -223,8 +225,26 @@ def load_maze(path):
                 maze.append(line)
             visualize(maze)
         return maze
-maze = generate_map(20, 20, 1)
 # export_maze(maze, 'Map/level1-tmp.txt')
 
-maze = load_maze('Map/level3/input1-level3.txt')
+# maze = load_maze('Map/level3/input1-level3.txt')
 # visualize(maze)
+
+import sys
+
+if __name__ == '__main__':
+    op = sys.argv[1]
+    if (op == '-f'):
+        folder = sys.argv[2]
+        # list all files in folder
+        import os
+        files = os.listdir(folder)
+        files.sort()
+        for i in files: 
+            if(i.endswith('.txt')):
+                print(Fore.YELLOW + i)
+                maze = load_maze(folder + '/' + i)
+    elif (op == '-s'):
+        file = sys.argv[2]
+        print(Fore.YELLOW + file)
+        maze = load_maze(file)
