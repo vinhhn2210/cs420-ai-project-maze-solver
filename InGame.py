@@ -169,8 +169,8 @@ class InGame:
 				A, B, C = preTuple[0], preTuple[1], preTuple[2]
 				if Z != C:
 					self.curFloor = Z
-					print(Z, X, Y)
-					self.gameMap[Z].getCell(X, Y).updateAgent(i)
+					# print(Z, X, Y)
+					self.gameMap[Z].getCell(X, Y).updateAgent(i, 0)
 					self.agentList[i - 1].updateAgentInStair(self.gameMap[Z].getCell(X, Y))
 					continue
 
