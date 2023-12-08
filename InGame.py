@@ -229,6 +229,9 @@ class InGame:
 				self.run = False
 				break		
 
+			self.pauseButton[self.isPause].draw(self.gameScreen)
+			pygame.display.update()
+
 		self.initTick = pygame.time.get_ticks()
 
 
@@ -271,7 +274,7 @@ class InGame:
 
 			# Draw window
 			self.gameScreen.blit(self.gameBackground, (0, 0))
-			self.pauseButton[0].draw(self.gameScreen)
+			self.pauseButton[self.isPause].draw(self.gameScreen)
 			self.menuButton.draw(self.gameScreen)
 			self.timeText.draw(self.gameScreen)
 			self.memoryText.draw(self.gameScreen)
