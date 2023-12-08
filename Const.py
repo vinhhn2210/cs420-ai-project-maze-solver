@@ -54,6 +54,9 @@ AGENT_FRAME_LIST = [
 	]
 	for i in range(1, 10)
 ]
+AGENT_AVA_LIST = [
+	pygame.image.load(f'Assets/Images/InGame/Agent/agent{i}-left-0.png')
+for i in range(1, 10)]
 
 PAUSE_BUTTON = [
 	pygame.image.load('Assets/Images/InGame/Pause_button.png'),
