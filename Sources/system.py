@@ -131,7 +131,6 @@ class SystemController:
 
     def solvingAllMap(self, algorithm):
         for mapName in self.mapLists:
-            # if mapName == 'input5-level3':
             self.solving(mapName, algorithm)
 
     def solveAStarMap(self):
