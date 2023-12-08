@@ -127,7 +127,7 @@ class InGame:
 		self.clock = pygame.time.Clock()
 		self.isEndGame = False
 		self.initTick = pygame.time.get_ticks()
-		self.stepTime = 10 / len(self.jsonData)
+		self.stepTime = 10 / len(self.jsonData) * self.totalFloor
 		# print(self.stepTime)
 
 		self.updateMap()

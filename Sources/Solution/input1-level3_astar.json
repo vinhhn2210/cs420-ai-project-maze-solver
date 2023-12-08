@@ -576,7 +576,7 @@
         "step": 49,
         "agents": {
             "1": {
-                "position": [1, 3, 1],
+                "position": [0, 3, 1],
                 "key": [3]
             }
         }
@@ -697,7 +697,7 @@
         "step": 60,
         "agents": {
             "1": {
-                "position": [0, 7, 0],
+                "position": [0, 5, 0],
                 "key": [1, 3]
             }
         }
@@ -708,7 +708,7 @@
         "step": 61,
         "agents": {
             "1": {
-                "position": [0, 8, 0],
+                "position": [1, 5, 0],
                 "key": [1, 3]
             }
         }
@@ -719,7 +719,7 @@
         "step": 62,
         "agents": {
             "1": {
-                "position": [1, 8, 0],
+                "position": [2, 5, 0],
                 "key": [1, 3]
             }
         }
@@ -730,7 +730,7 @@
         "step": 63,
         "agents": {
             "1": {
-                "position": [2, 8, 0],
+                "position": [2, 4, 0],
                 "key": [1, 3]
             }
         }
@@ -741,7 +741,7 @@
         "step": 64,
         "agents": {
             "1": {
-                "position": [2, 7, 0],
+                "position": [3, 3, 0],
                 "key": [1, 3]
             }
         }
@@ -752,7 +752,7 @@
         "step": 65,
         "agents": {
             "1": {
-                "position": [2, 6, 0],
+                "position": [3, 2, 0],
                 "key": [1, 3]
             }
         }
@@ -763,7 +763,7 @@
         "step": 66,
         "agents": {
             "1": {
-                "position": [2, 5, 0],
+                "position": [3, 1, 0],
                 "key": [1, 3]
             }
         }
@@ -774,7 +774,7 @@
         "step": 67,
         "agents": {
             "1": {
-                "position": [2, 4, 0],
+                "position": [3, 0, 0],
                 "key": [1, 3]
             }
         }
@@ -785,7 +785,7 @@
         "step": 68,
         "agents": {
             "1": {
-                "position": [3, 3, 0],
+                "position": [2, 0, 0],
                 "key": [1, 3]
             }
         }
@@ -796,59 +796,15 @@
         "step": 69,
         "agents": {
             "1": {
-                "position": [3, 2, 0],
-                "key": [1, 3]
-            }
-        }
-    },
-    "70": {
-        "isWin": false,
-        "floor": [0],
-        "step": 70,
-        "agents": {
-            "1": {
-                "position": [3, 1, 0],
-                "key": [1, 3]
-            }
-        }
-    },
-    "71": {
-        "isWin": false,
-        "floor": [0],
-        "step": 71,
-        "agents": {
-            "1": {
-                "position": [3, 0, 0],
-                "key": [1, 3]
-            }
-        }
-    },
-    "72": {
-        "isWin": false,
-        "floor": [0],
-        "step": 72,
-        "agents": {
-            "1": {
-                "position": [2, 0, 0],
-                "key": [1, 3]
-            }
-        }
-    },
-    "73": {
-        "isWin": false,
-        "floor": [0],
-        "step": 73,
-        "agents": {
-            "1": {
                 "position": [1, 0, 0],
                 "key": [1, 3]
             }
         }
     },
-    "74": {
+    "70": {
         "isWin": true,
         "floor": [0],
-        "step": 74,
+        "step": 70,
         "agents": {
             "1": {
                 "position": [0, 0, 0],

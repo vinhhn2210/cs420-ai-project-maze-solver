@@ -103,11 +103,11 @@
     },
     "3": {
         "isWin": false,
-        "floor": [0],
+        "floor": [1],
         "step": 3,
         "agents": {
             "1": {
-                "position": [8, 7, 0],
+                "position": [8, 7, 1],
                 "key": []
             }
         }
@@ -118,7 +118,7 @@
         "step": 4,
         "agents": {
             "1": {
-                "position": [9, 6, 0],
+                "position": [8, 7, 0],
                 "key": []
             }
         }
@@ -129,7 +129,7 @@
         "step": 5,
         "agents": {
             "1": {
-                "position": [9, 5, 0],
+                "position": [9, 6, 0],
                 "key": []
             }
         }
@@ -140,7 +140,7 @@
         "step": 6,
         "agents": {
             "1": {
-                "position": [9, 4, 0],
+                "position": [9, 5, 0],
                 "key": []
             }
         }
@@ -151,7 +151,7 @@
         "step": 7,
         "agents": {
             "1": {
-                "position": [9, 3, 0],
+                "position": [9, 4, 0],
                 "key": []
             }
         }
@@ -162,7 +162,7 @@
         "step": 8,
         "agents": {
             "1": {
-                "position": [9, 2, 0],
+                "position": [9, 3, 0],
                 "key": []
             }
         }
@@ -173,7 +173,7 @@
         "step": 9,
         "agents": {
             "1": {
-                "position": [9, 1, 0],
+                "position": [9, 2, 0],
                 "key": []
             }
         }
@@ -184,7 +184,7 @@
         "step": 10,
         "agents": {
             "1": {
-                "position": [9, 0, 0],
+                "position": [9, 1, 0],
                 "key": []
             }
         }
@@ -195,7 +195,7 @@
         "step": 11,
         "agents": {
             "1": {
-                "position": [8, 0, 0],
+                "position": [9, 0, 0],
                 "key": []
             }
         }
@@ -206,7 +206,7 @@
         "step": 12,
         "agents": {
             "1": {
-                "position": [7, 0, 0],
+                "position": [8, 0, 0],
                 "key": []
             }
         }
@@ -217,7 +217,7 @@
         "step": 13,
         "agents": {
             "1": {
-                "position": [6, 0, 0],
+                "position": [7, 0, 0],
                 "key": []
             }
         }
@@ -228,7 +228,7 @@
         "step": 14,
         "agents": {
             "1": {
-                "position": [5, 0, 0],
+                "position": [6, 0, 0],
                 "key": []
             }
         }
@@ -239,7 +239,7 @@
         "step": 15,
         "agents": {
             "1": {
-                "position": [4, 1, 0],
+                "position": [5, 0, 0],
                 "key": []
             }
         }
@@ -250,7 +250,7 @@
         "step": 16,
         "agents": {
             "1": {
-                "position": [3, 0, 0],
+                "position": [4, 1, 0],
                 "key": []
             }
         }
@@ -261,7 +261,7 @@
         "step": 17,
         "agents": {
             "1": {
-                "position": [2, 0, 0],
+                "position": [3, 0, 0],
                 "key": []
             }
         }
@@ -272,7 +272,7 @@
         "step": 18,
         "agents": {
             "1": {
-                "position": [1, 0, 0],
+                "position": [2, 0, 0],
                 "key": []
             }
         }
@@ -283,7 +283,7 @@
         "step": 19,
         "agents": {
             "1": {
-                "position": [0, 1, 0],
+                "position": [1, 0, 0],
                 "key": []
             }
         }
@@ -294,7 +294,7 @@
         "step": 20,
         "agents": {
             "1": {
-                "position": [1, 2, 0],
+                "position": [0, 1, 0],
                 "key": []
             }
         }
@@ -305,7 +305,7 @@
         "step": 21,
         "agents": {
             "1": {
-                "position": [0, 3, 0],
+                "position": [1, 2, 0],
                 "key": []
             }
         }
@@ -316,7 +316,7 @@
         "step": 22,
         "agents": {
             "1": {
-                "position": [1, 4, 0],
+                "position": [0, 3, 0],
                 "key": []
             }
         }
@@ -327,7 +327,7 @@
         "step": 23,
         "agents": {
             "1": {
-                "position": [0, 5, 0],
+                "position": [1, 4, 0],
                 "key": []
             }
         }
@@ -338,7 +338,7 @@
         "step": 24,
         "agents": {
             "1": {
-                "position": [1, 6, 0],
+                "position": [0, 5, 0],
                 "key": []
             }
         }
@@ -349,7 +349,7 @@
         "step": 25,
         "agents": {
             "1": {
-                "position": [0, 7, 0],
+                "position": [1, 6, 0],
                 "key": []
             }
         }
@@ -360,7 +360,7 @@
         "step": 26,
         "agents": {
             "1": {
-                "position": [1, 8, 0],
+                "position": [0, 7, 0],
                 "key": []
             }
         }
@@ -371,7 +371,7 @@
         "step": 27,
         "agents": {
             "1": {
-                "position": [0, 9, 0],
+                "position": [1, 8, 0],
                 "key": []
             }
         }
@@ -382,7 +382,7 @@
         "step": 28,
         "agents": {
             "1": {
-                "position": [1, 10, 0],
+                "position": [0, 9, 0],
                 "key": []
             }
         }
@@ -393,7 +393,7 @@
         "step": 29,
         "agents": {
             "1": {
-                "position": [0, 11, 0],
+                "position": [1, 10, 0],
                 "key": []
             }
         }
@@ -404,7 +404,7 @@
         "step": 30,
         "agents": {
             "1": {
-                "position": [1, 12, 0],
+                "position": [0, 11, 0],
                 "key": []
             }
         }
@@ -415,7 +415,7 @@
         "step": 31,
         "agents": {
             "1": {
-                "position": [0, 13, 0],
+                "position": [1, 12, 0],
                 "key": []
             }
         }
@@ -426,7 +426,7 @@
         "step": 32,
         "agents": {
             "1": {
-                "position": [1, 14, 0],
+                "position": [0, 13, 0],
                 "key": []
             }
         }
@@ -437,7 +437,7 @@
         "step": 33,
         "agents": {
             "1": {
-                "position": [0, 15, 0],
+                "position": [1, 14, 0],
                 "key": []
             }
         }
@@ -448,7 +448,7 @@
         "step": 34,
         "agents": {
             "1": {
-                "position": [1, 16, 0],
+                "position": [0, 15, 0],
                 "key": []
             }
         }
@@ -459,7 +459,7 @@
         "step": 35,
         "agents": {
             "1": {
-                "position": [0, 17, 0],
+                "position": [1, 16, 0],
                 "key": []
             }
         }
@@ -470,7 +470,7 @@
         "step": 36,
         "agents": {
             "1": {
-                "position": [1, 18, 0],
+                "position": [0, 17, 0],
                 "key": []
             }
         }
@@ -481,7 +481,7 @@
         "step": 37,
         "agents": {
             "1": {
-                "position": [0, 19, 0],
+                "position": [1, 18, 0],
                 "key": []
             }
         }
@@ -492,7 +492,7 @@
         "step": 38,
         "agents": {
             "1": {
-                "position": [1, 20, 0],
+                "position": [0, 19, 0],
                 "key": []
             }
         }
@@ -503,7 +503,7 @@
         "step": 39,
         "agents": {
             "1": {
-                "position": [0, 21, 0],
+                "position": [1, 20, 0],
                 "key": []
             }
         }
@@ -514,7 +514,7 @@
         "step": 40,
         "agents": {
             "1": {
-                "position": [1, 22, 0],
+                "position": [0, 21, 0],
                 "key": []
             }
         }
@@ -525,7 +525,7 @@
         "step": 41,
         "agents": {
             "1": {
-                "position": [0, 23, 0],
+                "position": [1, 22, 0],
                 "key": []
             }
         }
@@ -536,7 +536,7 @@
         "step": 42,
         "agents": {
             "1": {
-                "position": [1, 24, 0],
+                "position": [0, 23, 0],
                 "key": []
             }
         }
@@ -547,7 +547,7 @@
         "step": 43,
         "agents": {
             "1": {
-                "position": [2, 23, 0],
+                "position": [1, 24, 0],
                 "key": []
             }
         }
@@ -558,7 +558,7 @@
         "step": 44,
         "agents": {
             "1": {
-                "position": [3, 24, 0],
+                "position": [2, 23, 0],
                 "key": []
             }
         }
@@ -569,7 +569,7 @@
         "step": 45,
         "agents": {
             "1": {
-                "position": [4, 23, 0],
+                "position": [3, 24, 0],
                 "key": []
             }
         }
@@ -580,7 +580,7 @@
         "step": 46,
         "agents": {
             "1": {
-                "position": [5, 24, 0],
+                "position": [4, 23, 0],
                 "key": []
             }
         }
@@ -591,7 +591,7 @@
         "step": 47,
         "agents": {
             "1": {
-                "position": [6, 23, 0],
+                "position": [5, 24, 0],
                 "key": []
             }
         }
@@ -602,7 +602,7 @@
         "step": 48,
         "agents": {
             "1": {
-                "position": [7, 24, 0],
+                "position": [6, 23, 0],
                 "key": []
             }
         }
@@ -613,7 +613,7 @@
         "step": 49,
         "agents": {
             "1": {
-                "position": [8, 23, 0],
+                "position": [7, 24, 0],
                 "key": []
             }
         }
@@ -624,7 +624,7 @@
         "step": 50,
         "agents": {
             "1": {
-                "position": [9, 24, 0],
+                "position": [8, 23, 0],
                 "key": []
             }
         }
@@ -635,7 +635,7 @@
         "step": 51,
         "agents": {
             "1": {
-                "position": [10, 23, 0],
+                "position": [9, 24, 0],
                 "key": []
             }
         }
@@ -646,7 +646,7 @@
         "step": 52,
         "agents": {
             "1": {
-                "position": [11, 24, 0],
+                "position": [10, 23, 0],
                 "key": []
             }
         }
@@ -657,7 +657,7 @@
         "step": 53,
         "agents": {
             "1": {
-                "position": [12, 23, 0],
+                "position": [11, 24, 0],
                 "key": []
             }
         }
@@ -668,7 +668,7 @@
         "step": 54,
         "agents": {
             "1": {
-                "position": [13, 24, 0],
+                "position": [12, 23, 0],
                 "key": []
             }
         }
@@ -679,7 +679,7 @@
         "step": 55,
         "agents": {
             "1": {
-                "position": [14, 23, 0],
+                "position": [13, 24, 0],
                 "key": []
             }
         }
@@ -690,7 +690,7 @@
         "step": 56,
         "agents": {
             "1": {
-                "position": [15, 24, 0],
+                "position": [14, 23, 0],
                 "key": []
             }
         }
@@ -701,7 +701,7 @@
         "step": 57,
         "agents": {
             "1": {
-                "position": [16, 23, 0],
+                "position": [15, 24, 0],
                 "key": []
             }
         }
@@ -712,7 +712,7 @@
         "step": 58,
         "agents": {
             "1": {
-                "position": [17, 24, 0],
+                "position": [16, 23, 0],
                 "key": []
             }
         }
@@ -723,7 +723,7 @@
         "step": 59,
         "agents": {
             "1": {
-                "position": [18, 23, 0],
+                "position": [17, 24, 0],
                 "key": []
             }
         }
@@ -734,7 +734,7 @@
         "step": 60,
         "agents": {
             "1": {
-                "position": [19, 24, 0],
+                "position": [18, 23, 0],
                 "key": []
             }
         }
@@ -745,7 +745,7 @@
         "step": 61,
         "agents": {
             "1": {
-                "position": [20, 23, 0],
+                "position": [19, 24, 0],
                 "key": []
             }
         }
@@ -756,7 +756,7 @@
         "step": 62,
         "agents": {
             "1": {
-                "position": [21, 24, 0],
+                "position": [20, 23, 0],
                 "key": []
             }
         }
@@ -767,8 +767,8 @@
         "step": 63,
         "agents": {
             "1": {
-                "position": [22, 23, 0],
-                "key": [1]
+                "position": [21, 24, 0],
+                "key": []
             }
         }
     },
@@ -778,7 +778,7 @@
         "step": 64,
         "agents": {
             "1": {
-                "position": [21, 24, 0],
+                "position": [22, 23, 0],
                 "key": [1]
             }
         }
@@ -789,7 +789,7 @@
         "step": 65,
         "agents": {
             "1": {
-                "position": [20, 23, 0],
+                "position": [21, 24, 0],
                 "key": [1]
             }
         }
@@ -800,7 +800,7 @@
         "step": 66,
         "agents": {
             "1": {
-                "position": [19, 24, 0],
+                "position": [20, 23, 0],
                 "key": [1]
             }
         }
@@ -811,7 +811,7 @@
         "step": 67,
         "agents": {
             "1": {
-                "position": [18, 23, 0],
+                "position": [19, 24, 0],
                 "key": [1]
             }
         }
@@ -822,7 +822,7 @@
         "step": 68,
         "agents": {
             "1": {
-                "position": [17, 24, 0],
+                "position": [18, 23, 0],
                 "key": [1]
             }
         }
@@ -833,7 +833,7 @@
         "step": 69,
         "agents": {
             "1": {
-                "position": [16, 23, 0],
+                "position": [17, 24, 0],
                 "key": [1]
             }
         }
@@ -844,7 +844,7 @@
         "step": 70,
         "agents": {
             "1": {
-                "position": [15, 24, 0],
+                "position": [16, 23, 0],
                 "key": [1]
             }
         }
@@ -855,7 +855,7 @@
         "step": 71,
         "agents": {
             "1": {
-                "position": [14, 23, 0],
+                "position": [15, 24, 0],
                 "key": [1]
             }
         }
@@ -866,7 +866,7 @@
         "step": 72,
         "agents": {
             "1": {
-                "position": [13, 24, 0],
+                "position": [14, 23, 0],
                 "key": [1]
             }
         }
@@ -877,7 +877,7 @@
         "step": 73,
         "agents": {
             "1": {
-                "position": [12, 23, 0],
+                "position": [13, 24, 0],
                 "key": [1]
             }
         }
@@ -888,7 +888,7 @@
         "step": 74,
         "agents": {
             "1": {
-                "position": [11, 24, 0],
+                "position": [12, 23, 0],
                 "key": [1]
             }
         }
@@ -899,7 +899,7 @@
         "step": 75,
         "agents": {
             "1": {
-                "position": [10, 23, 0],
+                "position": [11, 24, 0],
                 "key": [1]
             }
         }
@@ -910,7 +910,7 @@
         "step": 76,
         "agents": {
             "1": {
-                "position": [9, 24, 0],
+                "position": [10, 23, 0],
                 "key": [1]
             }
         }
@@ -921,7 +921,7 @@
         "step": 77,
         "agents": {
             "1": {
-                "position": [8, 23, 0],
+                "position": [9, 24, 0],
                 "key": [1]
             }
         }
@@ -932,7 +932,7 @@
         "step": 78,
         "agents": {
             "1": {
-                "position": [7, 24, 0],
+                "position": [8, 23, 0],
                 "key": [1]
             }
         }
@@ -943,7 +943,7 @@
         "step": 79,
         "agents": {
             "1": {
-                "position": [6, 23, 0],
+                "position": [7, 24, 0],
                 "key": [1]
             }
         }
@@ -954,7 +954,7 @@
         "step": 80,
         "agents": {
             "1": {
-                "position": [5, 24, 0],
+                "position": [6, 23, 0],
                 "key": [1]
             }
         }
@@ -965,7 +965,7 @@
         "step": 81,
         "agents": {
             "1": {
-                "position": [4, 23, 0],
+                "position": [5, 24, 0],
                 "key": [1]
             }
         }
@@ -976,7 +976,7 @@
         "step": 82,
         "agents": {
             "1": {
-                "position": [3, 24, 0],
+                "position": [4, 23, 0],
                 "key": [1]
             }
         }
@@ -987,7 +987,7 @@
         "step": 83,
         "agents": {
             "1": {
-                "position": [2, 23, 0],
+                "position": [3, 24, 0],
                 "key": [1]
             }
         }
@@ -998,7 +998,7 @@
         "step": 84,
         "agents": {
             "1": {
-                "position": [1, 24, 0],
+                "position": [2, 23, 0],
                 "key": [1]
             }
         }
@@ -1009,7 +1009,7 @@
         "step": 85,
         "agents": {
             "1": {
-                "position": [0, 23, 0],
+                "position": [1, 24, 0],
                 "key": [1]
             }
         }
@@ -1020,7 +1020,7 @@
         "step": 86,
         "agents": {
             "1": {
-                "position": [1, 22, 0],
+                "position": [0, 23, 0],
                 "key": [1]
             }
         }
@@ -1031,7 +1031,7 @@
         "step": 87,
         "agents": {
             "1": {
-                "position": [0, 21, 0],
+                "position": [1, 22, 0],
                 "key": [1]
             }
         }
@@ -1042,7 +1042,7 @@
         "step": 88,
         "agents": {
             "1": {
-                "position": [1, 20, 0],
+                "position": [0, 21, 0],
                 "key": [1]
             }
         }
@@ -1053,7 +1053,7 @@
         "step": 89,
         "agents": {
             "1": {
-                "position": [0, 19, 0],
+                "position": [1, 20, 0],
                 "key": [1]
             }
         }
@@ -1064,7 +1064,7 @@
         "step": 90,
         "agents": {
             "1": {
-                "position": [1, 18, 0],
+                "position": [0, 19, 0],
                 "key": [1]
             }
         }
@@ -1075,7 +1075,7 @@
         "step": 91,
         "agents": {
             "1": {
-                "position": [0, 17, 0],
+                "position": [1, 18, 0],
                 "key": [1]
             }
         }
@@ -1086,7 +1086,7 @@
         "step": 92,
         "agents": {
             "1": {
-                "position": [1, 16, 0],
+                "position": [0, 17, 0],
                 "key": [1]
             }
         }
@@ -1097,7 +1097,7 @@
         "step": 93,
         "agents": {
             "1": {
-                "position": [0, 15, 0],
+                "position": [1, 16, 0],
                 "key": [1]
             }
         }
@@ -1108,7 +1108,7 @@
         "step": 94,
         "agents": {
             "1": {
-                "position": [1, 14, 0],
+                "position": [0, 15, 0],
                 "key": [1]
             }
         }
@@ -1119,7 +1119,7 @@
         "step": 95,
         "agents": {
             "1": {
-                "position": [0, 13, 0],
+                "position": [1, 14, 0],
                 "key": [1]
             }
         }
@@ -1130,7 +1130,7 @@
         "step": 96,
         "agents": {
             "1": {
-                "position": [1, 12, 0],
+                "position": [0, 13, 0],
                 "key": [1]
             }
         }
@@ -1141,7 +1141,7 @@
         "step": 97,
         "agents": {
             "1": {
-                "position": [0, 11, 0],
+                "position": [1, 12, 0],
                 "key": [1]
             }
         }
@@ -1152,7 +1152,7 @@
         "step": 98,
         "agents": {
             "1": {
-                "position": [1, 10, 0],
+                "position": [0, 11, 0],
                 "key": [1]
             }
         }
@@ -1163,7 +1163,7 @@
         "step": 99,
         "agents": {
             "1": {
-                "position": [0, 9, 0],
+                "position": [1, 10, 0],
                 "key": [1]
             }
         }
@@ -1174,7 +1174,7 @@
         "step": 100,
         "agents": {
             "1": {
-                "position": [1, 8, 0],
+                "position": [0, 9, 0],
                 "key": [1]
             }
         }
@@ -1185,7 +1185,7 @@
         "step": 101,
         "agents": {
             "1": {
-                "position": [0, 7, 0],
+                "position": [1, 8, 0],
                 "key": [1]
             }
         }
@@ -1196,7 +1196,7 @@
         "step": 102,
         "agents": {
             "1": {
-                "position": [1, 6, 0],
+                "position": [0, 7, 0],
                 "key": [1]
             }
         }
@@ -1207,7 +1207,7 @@
         "step": 103,
         "agents": {
             "1": {
-                "position": [0, 5, 0],
+                "position": [1, 6, 0],
                 "key": [1]
             }
         }
@@ -1218,7 +1218,7 @@
         "step": 104,
         "agents": {
             "1": {
-                "position": [1, 4, 0],
+                "position": [0, 5, 0],
                 "key": [1]
             }
         }
@@ -1229,7 +1229,7 @@
         "step": 105,
         "agents": {
             "1": {
-                "position": [0, 3, 0],
+                "position": [1, 4, 0],
                 "key": [1]
             }
         }
@@ -1240,7 +1240,7 @@
         "step": 106,
         "agents": {
             "1": {
-                "position": [1, 2, 0],
+                "position": [0, 3, 0],
                 "key": [1]
             }
         }
@@ -1251,7 +1251,7 @@
         "step": 107,
         "agents": {
             "1": {
-                "position": [0, 1, 0],
+                "position": [1, 2, 0],
                 "key": [1]
             }
         }
@@ -1262,7 +1262,7 @@
         "step": 108,
         "agents": {
             "1": {
-                "position": [1, 0, 0],
+                "position": [0, 1, 0],
                 "key": [1]
             }
         }
@@ -1273,7 +1273,7 @@
         "step": 109,
         "agents": {
             "1": {
-                "position": [2, 0, 0],
+                "position": [1, 0, 0],
                 "key": [1]
             }
         }
@@ -1284,7 +1284,7 @@
         "step": 110,
         "agents": {
             "1": {
-                "position": [3, 0, 0],
+                "position": [2, 0, 0],
                 "key": [1]
             }
         }
@@ -1295,7 +1295,7 @@
         "step": 111,
         "agents": {
             "1": {
-                "position": [4, 1, 0],
+                "position": [3, 0, 0],
                 "key": [1]
             }
         }
@@ -1306,7 +1306,7 @@
         "step": 112,
         "agents": {
             "1": {
-                "position": [5, 0, 0],
+                "position": [4, 1, 0],
                 "key": [1]
             }
         }
@@ -1317,7 +1317,7 @@
         "step": 113,
         "agents": {
             "1": {
-                "position": [6, 0, 0],
+                "position": [5, 0, 0],
                 "key": [1]
             }
         }
@@ -1328,7 +1328,7 @@
         "step": 114,
         "agents": {
             "1": {
-                "position": [7, 0, 0],
+                "position": [6, 0, 0],
                 "key": [1]
             }
         }
@@ -1339,7 +1339,7 @@
         "step": 115,
         "agents": {
             "1": {
-                "position": [8, 0, 0],
+                "position": [7, 0, 0],
                 "key": [1]
             }
         }
@@ -1350,7 +1350,7 @@
         "step": 116,
         "agents": {
             "1": {
-                "position": [9, 0, 0],
+                "position": [8, 0, 0],
                 "key": [1]
             }
         }
@@ -1361,7 +1361,7 @@
         "step": 117,
         "agents": {
             "1": {
-                "position": [9, 1, 0],
+                "position": [9, 0, 0],
                 "key": [1]
             }
         }
@@ -1372,7 +1372,7 @@
         "step": 118,
         "agents": {
             "1": {
-                "position": [9, 2, 0],
+                "position": [9, 1, 0],
                 "key": [1]
             }
         }
@@ -1383,7 +1383,7 @@
         "step": 119,
         "agents": {
             "1": {
-                "position": [9, 3, 0],
+                "position": [9, 2, 0],
                 "key": [1]
             }
         }
@@ -1394,7 +1394,7 @@
         "step": 120,
         "agents": {
             "1": {
-                "position": [8, 4, 0],
+                "position": [9, 3, 0],
                 "key": [1]
             }
         }
@@ -1405,7 +1405,7 @@
         "step": 121,
         "agents": {
             "1": {
-                "position": [9, 5, 0],
+                "position": [8, 4, 0],
                 "key": [1]
             }
         }
@@ -1416,18 +1416,18 @@
         "step": 122,
         "agents": {
             "1": {
-                "position": [8, 7, 0],
+                "position": [9, 5, 0],
                 "key": [1]
             }
         }
     },
     "123": {
         "isWin": false,
-        "floor": [0],
+        "floor": [1],
         "step": 123,
         "agents": {
             "1": {
-                "position": [7, 6, 0],
+                "position": [8, 7, 1],
                 "key": [1]
             }
         }
@@ -1438,7 +1438,7 @@
         "step": 124,
         "agents": {
             "1": {
-                "position": [6, 7, 0],
+                "position": [8, 7, 0],
                 "key": [1]
             }
         }
@@ -1449,7 +1449,7 @@
         "step": 125,
         "agents": {
             "1": {
-                "position": [5, 7, 0],
+                "position": [7, 6, 0],
                 "key": [1]
             }
         }
@@ -1460,7 +1460,7 @@
         "step": 126,
         "agents": {
             "1": {
-                "position": [4, 7, 0],
+                "position": [6, 7, 0],
                 "key": [1]
             }
         }
@@ -1471,8 +1471,8 @@
         "step": 127,
         "agents": {
             "1": {
-                "position": [3, 7, 0],
-                "key": [1, 2]
+                "position": [5, 7, 0],
+                "key": [1]
             }
         }
     },
@@ -1482,8 +1482,8 @@
         "step": 128,
         "agents": {
             "1": {
-                "position": [3, 6, 0],
-                "key": [1, 2]
+                "position": [4, 7, 0],
+                "key": [1]
             }
         }
     },
@@ -1493,7 +1493,7 @@
         "step": 129,
         "agents": {
             "1": {
-                "position": [3, 5, 0],
+                "position": [3, 7, 0],
                 "key": [1, 2]
             }
         }
@@ -1504,7 +1504,7 @@
         "step": 130,
         "agents": {
             "1": {
-                "position": [3, 4, 0],
+                "position": [3, 6, 0],
                 "key": [1, 2]
             }
         }
@@ -1515,7 +1515,7 @@
         "step": 131,
         "agents": {
             "1": {
-                "position": [3, 3, 0],
+                "position": [3, 5, 0],
                 "key": [1, 2]
             }
         }
@@ -1526,7 +1526,7 @@
         "step": 132,
         "agents": {
             "1": {
-                "position": [3, 2, 0],
+                "position": [3, 4, 0],
                 "key": [1, 2]
             }
         }
@@ -1537,7 +1537,7 @@
         "step": 133,
         "agents": {
             "1": {
-                "position": [3, 1, 0],
+                "position": [3, 3, 0],
                 "key": [1, 2]
             }
         }
@@ -1548,7 +1548,7 @@
         "step": 134,
         "agents": {
             "1": {
-                "position": [4, 0, 0],
+                "position": [3, 2, 0],
                 "key": [1, 2]
             }
         }
@@ -1559,7 +1559,7 @@
         "step": 135,
         "agents": {
             "1": {
-                "position": [5, 0, 0],
+                "position": [3, 1, 0],
                 "key": [1, 2]
             }
         }
@@ -1570,7 +1570,7 @@
         "step": 136,
         "agents": {
             "1": {
-                "position": [6, 0, 0],
+                "position": [4, 0, 0],
                 "key": [1, 2]
             }
         }
@@ -1581,7 +1581,7 @@
         "step": 137,
         "agents": {
             "1": {
-                "position": [7, 0, 0],
+                "position": [5, 0, 0],
                 "key": [1, 2]
             }
         }
@@ -1592,7 +1592,7 @@
         "step": 138,
         "agents": {
             "1": {
-                "position": [8, 0, 0],
+                "position": [6, 0, 0],
                 "key": [1, 2]
             }
         }
@@ -1603,7 +1603,7 @@
         "step": 139,
         "agents": {
             "1": {
-                "position": [9, 0, 0],
+                "position": [7, 0, 0],
                 "key": [1, 2]
             }
         }
@@ -1614,7 +1614,7 @@
         "step": 140,
         "agents": {
             "1": {
-                "position": [9, 1, 0],
+                "position": [8, 0, 0],
                 "key": [1, 2]
             }
         }
@@ -1625,7 +1625,7 @@
         "step": 141,
         "agents": {
             "1": {
-                "position": [9, 2, 0],
+                "position": [9, 0, 0],
                 "key": [1, 2]
             }
         }
@@ -1636,7 +1636,7 @@
         "step": 142,
         "agents": {
             "1": {
-                "position": [9, 3, 0],
+                "position": [9, 1, 0],
                 "key": [1, 2]
             }
         }
@@ -1647,7 +1647,7 @@
         "step": 143,
         "agents": {
             "1": {
-                "position": [8, 4, 0],
+                "position": [9, 2, 0],
                 "key": [1, 2]
             }
         }
@@ -1658,29 +1658,29 @@
         "step": 144,
         "agents": {
             "1": {
-                "position": [9, 5, 0],
+                "position": [9, 3, 0],
                 "key": [1, 2]
             }
         }
     },
     "145": {
         "isWin": false,
-        "floor": [1],
+        "floor": [0],
         "step": 145,
         "agents": {
             "1": {
-                "position": [8, 7, 1],
+                "position": [8, 4, 0],
                 "key": [1, 2]
             }
         }
     },
     "146": {
         "isWin": false,
-        "floor": [1],
+        "floor": [0],
         "step": 146,
         "agents": {
             "1": {
-                "position": [9, 6, 1],
+                "position": [9, 5, 0],
                 "key": [1, 2]
             }
         }
@@ -1691,7 +1691,7 @@
         "step": 147,
         "agents": {
             "1": {
-                "position": [8, 5, 1],
+                "position": [8, 7, 1],
                 "key": [1, 2]
             }
         }
@@ -1702,7 +1702,7 @@
         "step": 148,
         "agents": {
             "1": {
-                "position": [9, 4, 1],
+                "position": [9, 6, 1],
                 "key": [1, 2]
             }
         }
@@ -1713,7 +1713,7 @@
         "step": 149,
         "agents": {
             "1": {
-                "position": [9, 3, 1],
+                "position": [8, 5, 1],
                 "key": [1, 2]
             }
         }
@@ -1724,7 +1724,7 @@
         "step": 150,
         "agents": {
             "1": {
-                "position": [9, 2, 1],
+                "position": [9, 4, 1],
                 "key": [1, 2]
             }
         }
@@ -1735,7 +1735,7 @@
         "step": 151,
         "agents": {
             "1": {
-                "position": [9, 1, 1],
+                "position": [9, 3, 1],
                 "key": [1, 2]
             }
         }
@@ -1746,7 +1746,7 @@
         "step": 152,
         "agents": {
             "1": {
-                "position": [9, 0, 1],
+                "position": [9, 2, 1],
                 "key": [1, 2]
             }
         }
@@ -1757,7 +1757,7 @@
         "step": 153,
         "agents": {
             "1": {
-                "position": [8, 0, 1],
+                "position": [9, 1, 1],
                 "key": [1, 2]
             }
         }
@@ -1768,7 +1768,7 @@
         "step": 154,
         "agents": {
             "1": {
-                "position": [7, 0, 1],
+                "position": [9, 0, 1],
                 "key": [1, 2]
             }
         }
@@ -1779,7 +1779,7 @@
         "step": 155,
         "agents": {
             "1": {
-                "position": [6, 0, 1],
+                "position": [8, 0, 1],
                 "key": [1, 2]
             }
         }
@@ -1790,7 +1790,7 @@
         "step": 156,
         "agents": {
             "1": {
-                "position": [5, 0, 1],
+                "position": [7, 0, 1],
                 "key": [1, 2]
             }
         }
@@ -1801,7 +1801,7 @@
         "step": 157,
         "agents": {
             "1": {
-                "position": [4, 1, 1],
+                "position": [6, 0, 1],
                 "key": [1, 2]
             }
         }
@@ -1812,7 +1812,7 @@
         "step": 158,
         "agents": {
             "1": {
-                "position": [3, 0, 1],
+                "position": [5, 0, 1],
                 "key": [1, 2]
             }
         }
@@ -1823,7 +1823,7 @@
         "step": 159,
         "agents": {
             "1": {
-                "position": [2, 0, 1],
+                "position": [4, 1, 1],
                 "key": [1, 2]
             }
         }
@@ -1834,7 +1834,7 @@
         "step": 160,
         "agents": {
             "1": {
-                "position": [1, 0, 1],
+                "position": [3, 0, 1],
                 "key": [1, 2]
             }
         }
@@ -1845,7 +1845,7 @@
         "step": 161,
         "agents": {
             "1": {
-                "position": [0, 1, 1],
+                "position": [2, 0, 1],
                 "key": [1, 2]
             }
         }
@@ -1856,7 +1856,7 @@
         "step": 162,
         "agents": {
             "1": {
-                "position": [1, 2, 1],
+                "position": [1, 0, 1],
                 "key": [1, 2]
             }
         }
@@ -1867,7 +1867,7 @@
         "step": 163,
         "agents": {
             "1": {
-                "position": [0, 3, 1],
+                "position": [0, 1, 1],
                 "key": [1, 2]
             }
         }
@@ -1878,7 +1878,7 @@
         "step": 164,
         "agents": {
             "1": {
-                "position": [1, 4, 1],
+                "position": [1, 2, 1],
                 "key": [1, 2]
             }
         }
@@ -1889,7 +1889,7 @@
         "step": 165,
         "agents": {
             "1": {
-                "position": [0, 5, 1],
+                "position": [0, 3, 1],
                 "key": [1, 2]
             }
         }
@@ -1900,7 +1900,7 @@
         "step": 166,
         "agents": {
             "1": {
-                "position": [1, 6, 1],
+                "position": [1, 4, 1],
                 "key": [1, 2]
             }
         }
@@ -1911,7 +1911,7 @@
         "step": 167,
         "agents": {
             "1": {
-                "position": [0, 7, 1],
+                "position": [0, 5, 1],
                 "key": [1, 2]
             }
         }
@@ -1922,7 +1922,7 @@
         "step": 168,
         "agents": {
             "1": {
-                "position": [1, 8, 1],
+                "position": [1, 6, 1],
                 "key": [1, 2]
             }
         }
@@ -1933,7 +1933,7 @@
         "step": 169,
         "agents": {
             "1": {
-                "position": [0, 9, 1],
+                "position": [0, 7, 1],
                 "key": [1, 2]
             }
         }
@@ -1944,7 +1944,7 @@
         "step": 170,
         "agents": {
             "1": {
-                "position": [1, 10, 1],
+                "position": [1, 8, 1],
                 "key": [1, 2]
             }
         }
@@ -1955,7 +1955,7 @@
         "step": 171,
         "agents": {
             "1": {
-                "position": [0, 11, 1],
+                "position": [0, 9, 1],
                 "key": [1, 2]
             }
         }
@@ -1966,7 +1966,7 @@
         "step": 172,
         "agents": {
             "1": {
-                "position": [1, 12, 1],
+                "position": [1, 10, 1],
                 "key": [1, 2]
             }
         }
@@ -1977,7 +1977,7 @@
         "step": 173,
         "agents": {
             "1": {
-                "position": [0, 13, 1],
+                "position": [0, 11, 1],
                 "key": [1, 2]
             }
         }
@@ -1988,7 +1988,7 @@
         "step": 174,
         "agents": {
             "1": {
-                "position": [1, 14, 1],
+                "position": [1, 12, 1],
                 "key": [1, 2]
             }
         }
@@ -1999,7 +1999,7 @@
         "step": 175,
         "agents": {
             "1": {
-                "position": [0, 15, 1],
+                "position": [0, 13, 1],
                 "key": [1, 2]
             }
         }
@@ -2010,7 +2010,7 @@
         "step": 176,
         "agents": {
             "1": {
-                "position": [1, 16, 1],
+                "position": [1, 14, 1],
                 "key": [1, 2]
             }
         }
@@ -2021,7 +2021,7 @@
         "step": 177,
         "agents": {
             "1": {
-                "position": [0, 17, 1],
+                "position": [0, 15, 1],
                 "key": [1, 2]
             }
         }
@@ -2032,7 +2032,7 @@
         "step": 178,
         "agents": {
             "1": {
-                "position": [1, 18, 1],
+                "position": [1, 16, 1],
                 "key": [1, 2]
             }
         }
@@ -2043,7 +2043,7 @@
         "step": 179,
         "agents": {
             "1": {
-                "position": [0, 19, 1],
+                "position": [0, 17, 1],
                 "key": [1, 2]
             }
         }
@@ -2054,7 +2054,7 @@
         "step": 180,
         "agents": {
             "1": {
-                "position": [1, 20, 1],
+                "position": [1, 18, 1],
                 "key": [1, 2]
             }
         }
@@ -2065,7 +2065,7 @@
         "step": 181,
         "agents": {
             "1": {
-                "position": [0, 21, 1],
+                "position": [0, 19, 1],
                 "key": [1, 2]
             }
         }
@@ -2076,7 +2076,7 @@
         "step": 182,
         "agents": {
             "1": {
-                "position": [1, 22, 1],
+                "position": [1, 20, 1],
                 "key": [1, 2]
             }
         }
@@ -2087,7 +2087,7 @@
         "step": 183,
         "agents": {
             "1": {
-                "position": [0, 23, 1],
+                "position": [0, 21, 1],
                 "key": [1, 2]
             }
         }
@@ -2098,7 +2098,7 @@
         "step": 184,
         "agents": {
             "1": {
-                "position": [1, 24, 1],
+                "position": [1, 22, 1],
                 "key": [1, 2]
             }
         }
@@ -2109,7 +2109,7 @@
         "step": 185,
         "agents": {
             "1": {
-                "position": [2, 23, 1],
+                "position": [0, 23, 1],
                 "key": [1, 2]
             }
         }
@@ -2120,7 +2120,7 @@
         "step": 186,
         "agents": {
             "1": {
-                "position": [3, 24, 1],
+                "position": [1, 24, 1],
                 "key": [1, 2]
             }
         }
@@ -2131,7 +2131,7 @@
         "step": 187,
         "agents": {
             "1": {
-                "position": [4, 23, 1],
+                "position": [2, 23, 1],
                 "key": [1, 2]
             }
         }
@@ -2142,7 +2142,7 @@
         "step": 188,
         "agents": {
             "1": {
-                "position": [5, 24, 1],
+                "position": [3, 24, 1],
                 "key": [1, 2]
             }
         }
@@ -2153,7 +2153,7 @@
         "step": 189,
         "agents": {
             "1": {
-                "position": [6, 23, 1],
+                "position": [4, 23, 1],
                 "key": [1, 2]
             }
         }
@@ -2164,7 +2164,7 @@
         "step": 190,
         "agents": {
             "1": {
-                "position": [7, 24, 1],
+                "position": [5, 24, 1],
                 "key": [1, 2]
             }
         }
@@ -2175,7 +2175,7 @@
         "step": 191,
         "agents": {
             "1": {
-                "position": [8, 23, 1],
+                "position": [6, 23, 1],
                 "key": [1, 2]
             }
         }
@@ -2186,7 +2186,7 @@
         "step": 192,
         "agents": {
             "1": {
-                "position": [9, 24, 1],
+                "position": [7, 24, 1],
                 "key": [1, 2]
             }
         }
@@ -2197,7 +2197,7 @@
         "step": 193,
         "agents": {
             "1": {
-                "position": [10, 23, 1],
+                "position": [8, 23, 1],
                 "key": [1, 2]
             }
         }
@@ -2208,7 +2208,7 @@
         "step": 194,
         "agents": {
             "1": {
-                "position": [11, 24, 1],
+                "position": [9, 24, 1],
                 "key": [1, 2]
             }
         }
@@ -2219,7 +2219,7 @@
         "step": 195,
         "agents": {
             "1": {
-                "position": [12, 23, 1],
+                "position": [10, 23, 1],
                 "key": [1, 2]
             }
         }
@@ -2230,7 +2230,7 @@
         "step": 196,
         "agents": {
             "1": {
-                "position": [13, 24, 1],
+                "position": [11, 24, 1],
                 "key": [1, 2]
             }
         }
@@ -2241,7 +2241,7 @@
         "step": 197,
         "agents": {
             "1": {
-                "position": [14, 23, 1],
+                "position": [12, 23, 1],
                 "key": [1, 2]
             }
         }
@@ -2252,7 +2252,7 @@
         "step": 198,
         "agents": {
             "1": {
-                "position": [15, 24, 1],
+                "position": [13, 24, 1],
                 "key": [1, 2]
             }
         }
@@ -2263,7 +2263,7 @@
         "step": 199,
         "agents": {
             "1": {
-                "position": [16, 23, 1],
+                "position": [14, 23, 1],
                 "key": [1, 2]
             }
         }
@@ -2274,7 +2274,7 @@
         "step": 200,
         "agents": {
             "1": {
-                "position": [17, 24, 1],
+                "position": [15, 24, 1],
                 "key": [1, 2]
             }
         }
@@ -2285,7 +2285,7 @@
         "step": 201,
         "agents": {
             "1": {
-                "position": [18, 23, 1],
+                "position": [16, 23, 1],
                 "key": [1, 2]
             }
         }
@@ -2296,7 +2296,7 @@
         "step": 202,
         "agents": {
             "1": {
-                "position": [19, 24, 1],
+                "position": [17, 24, 1],
                 "key": [1, 2]
             }
         }
@@ -2307,7 +2307,7 @@
         "step": 203,
         "agents": {
             "1": {
-                "position": [20, 23, 1],
+                "position": [18, 23, 1],
                 "key": [1, 2]
             }
         }
@@ -2318,8 +2318,8 @@
         "step": 204,
         "agents": {
             "1": {
-                "position": [21, 24, 1],
-                "key": [1, 2, 5]
+                "position": [19, 24, 1],
+                "key": [1, 2]
             }
         }
     },
@@ -2330,7 +2330,7 @@
         "agents": {
             "1": {
                 "position": [20, 23, 1],
-                "key": [1, 2, 5]
+                "key": [1, 2]
             }
         }
     },
@@ -2340,7 +2340,7 @@
         "step": 206,
         "agents": {
             "1": {
-                "position": [19, 24, 1],
+                "position": [21, 24, 1],
                 "key": [1, 2, 5]
             }
         }
@@ -2351,7 +2351,7 @@
         "step": 207,
         "agents": {
             "1": {
-                "position": [18, 23, 1],
+                "position": [20, 23, 1],
                 "key": [1, 2, 5]
             }
         }
@@ -2362,7 +2362,7 @@
         "step": 208,
         "agents": {
             "1": {
-                "position": [17, 24, 1],
+                "position": [19, 24, 1],
                 "key": [1, 2, 5]
             }
         }
@@ -2373,7 +2373,7 @@
         "step": 209,
         "agents": {
             "1": {
-                "position": [16, 23, 1],
+                "position": [18, 23, 1],
                 "key": [1, 2, 5]
             }
         }
@@ -2384,7 +2384,7 @@
         "step": 210,
         "agents": {
             "1": {
-                "position": [15, 24, 1],
+                "position": [17, 24, 1],
                 "key": [1, 2, 5]
             }
         }
@@ -2395,7 +2395,7 @@
         "step": 211,
         "agents": {
             "1": {
-                "position": [14, 23, 1],
+                "position": [16, 23, 1],
                 "key": [1, 2, 5]
             }
         }
@@ -2406,7 +2406,7 @@
         "step": 212,
         "agents": {
             "1": {
-                "position": [13, 24, 1],
+                "position": [15, 24, 1],
                 "key": [1, 2, 5]
             }
         }
@@ -2417,7 +2417,7 @@
         "step": 213,
         "agents": {
             "1": {
-                "position": [12, 23, 1],
+                "position": [14, 23, 1],
                 "key": [1, 2, 5]
             }
         }
@@ -2428,7 +2428,7 @@
         "step": 214,
         "agents": {
             "1": {
-                "position": [11, 24, 1],
+                "position": [13, 24, 1],
                 "key": [1, 2, 5]
             }
         }
@@ -2439,7 +2439,7 @@
         "step": 215,
         "agents": {
             "1": {
-                "position": [10, 23, 1],
+                "position": [12, 23, 1],
                 "key": [1, 2, 5]
             }
         }
@@ -2450,7 +2450,7 @@
         "step": 216,
         "agents": {
             "1": {
-                "position": [9, 24, 1],
+                "position": [11, 24, 1],
                 "key": [1, 2, 5]
             }
         }
@@ -2461,7 +2461,7 @@
         "step": 217,
         "agents": {
             "1": {
-                "position": [8, 23, 1],
+                "position": [10, 23, 1],
                 "key": [1, 2, 5]
             }
         }
@@ -2472,7 +2472,7 @@
         "step": 218,
         "agents": {
             "1": {
-                "position": [7, 24, 1],
+                "position": [9, 24, 1],
                 "key": [1, 2, 5]
             }
         }
@@ -2483,7 +2483,7 @@
         "step": 219,
         "agents": {
             "1": {
-                "position": [6, 23, 1],
+                "position": [8, 23, 1],
                 "key": [1, 2, 5]
             }
         }
@@ -2494,7 +2494,7 @@
         "step": 220,
         "agents": {
             "1": {
-                "position": [5, 24, 1],
+                "position": [7, 24, 1],
                 "key": [1, 2, 5]
             }
         }
@@ -2505,7 +2505,7 @@
         "step": 221,
         "agents": {
             "1": {
-                "position": [4, 23, 1],
+                "position": [6, 23, 1],
                 "key": [1, 2, 5]
             }
         }
@@ -2516,7 +2516,7 @@
         "step": 222,
         "agents": {
             "1": {
-                "position": [3, 24, 1],
+                "position": [5, 24, 1],
                 "key": [1, 2, 5]
             }
         }
@@ -2527,7 +2527,7 @@
         "step": 223,
         "agents": {
             "1": {
-                "position": [2, 23, 1],
+                "position": [4, 23, 1],
                 "key": [1, 2, 5]
             }
         }
@@ -2538,7 +2538,7 @@
         "step": 224,
         "agents": {
             "1": {
-                "position": [1, 24, 1],
+                "position": [3, 24, 1],
                 "key": [1, 2, 5]
             }
         }
@@ -2549,7 +2549,7 @@
         "step": 225,
         "agents": {
             "1": {
-                "position": [0, 23, 1],
+                "position": [2, 23, 1],
                 "key": [1, 2, 5]
             }
         }
@@ -2560,7 +2560,7 @@
         "step": 226,
         "agents": {
             "1": {
-                "position": [1, 22, 1],
+                "position": [1, 24, 1],
                 "key": [1, 2, 5]
             }
         }
@@ -2571,7 +2571,7 @@
         "step": 227,
         "agents": {
             "1": {
-                "position": [0, 21, 1],
+                "position": [0, 23, 1],
                 "key": [1, 2, 5]
             }
         }
@@ -2582,7 +2582,7 @@
         "step": 228,
         "agents": {
             "1": {
-                "position": [1, 20, 1],
+                "position": [1, 22, 1],
                 "key": [1, 2, 5]
             }
         }
@@ -2593,7 +2593,7 @@
         "step": 229,
         "agents": {
             "1": {
-                "position": [0, 19, 1],
+                "position": [0, 21, 1],
                 "key": [1, 2, 5]
             }
         }
@@ -2604,7 +2604,7 @@
         "step": 230,
         "agents": {
             "1": {
-                "position": [1, 18, 1],
+                "position": [1, 20, 1],
                 "key": [1, 2, 5]
             }
         }
@@ -2615,7 +2615,7 @@
         "step": 231,
         "agents": {
             "1": {
-                "position": [2, 17, 1],
+                "position": [0, 19, 1],
                 "key": [1, 2, 5]
             }
         }
@@ -2626,7 +2626,7 @@
         "step": 232,
         "agents": {
             "1": {
-                "position": [3, 18, 1],
+                "position": [1, 18, 1],
                 "key": [1, 2, 5]
             }
         }
@@ -2637,7 +2637,7 @@
         "step": 233,
         "agents": {
             "1": {
-                "position": [4, 19, 1],
+                "position": [2, 17, 1],
                 "key": [1, 2, 5]
             }
         }
@@ -2648,7 +2648,7 @@
         "step": 234,
         "agents": {
             "1": {
-                "position": [5, 20, 1],
+                "position": [3, 18, 1],
                 "key": [1, 2, 5]
             }
         }
@@ -2659,7 +2659,7 @@
         "step": 235,
         "agents": {
             "1": {
-                "position": [6, 21, 1],
+                "position": [4, 19, 1],
                 "key": [1, 2, 5]
             }
         }
@@ -2670,7 +2670,7 @@
         "step": 236,
         "agents": {
             "1": {
-                "position": [7, 20, 1],
+                "position": [5, 20, 1],
                 "key": [1, 2, 5]
             }
         }
@@ -2681,7 +2681,7 @@
         "step": 237,
         "agents": {
             "1": {
-                "position": [8, 21, 1],
+                "position": [6, 21, 1],
                 "key": [1, 2, 5]
             }
         }
@@ -2692,7 +2692,7 @@
         "step": 238,
         "agents": {
             "1": {
-                "position": [9, 20, 1],
+                "position": [7, 20, 1],
                 "key": [1, 2, 5]
             }
         }
@@ -2703,7 +2703,7 @@
         "step": 239,
         "agents": {
             "1": {
-                "position": [10, 21, 1],
+                "position": [8, 21, 1],
                 "key": [1, 2, 5]
             }
         }
@@ -2714,7 +2714,7 @@
         "step": 240,
         "agents": {
             "1": {
-                "position": [11, 20, 1],
+                "position": [9, 20, 1],
                 "key": [1, 2, 5]
             }
         }
@@ -2725,8 +2725,8 @@
         "step": 241,
         "agents": {
             "1": {
-                "position": [12, 21, 1],
-                "key": [1, 2, 5, 8]
+                "position": [10, 21, 1],
+                "key": [1, 2, 5]
             }
         }
     },
@@ -2736,8 +2736,8 @@
         "step": 242,
         "agents": {
             "1": {
-                "position": [13, 20, 1],
-                "key": [1, 2, 5, 8]
+                "position": [11, 20, 1],
+                "key": [1, 2, 5]
             }
         }
     },
@@ -2747,7 +2747,7 @@
         "step": 243,
         "agents": {
             "1": {
-                "position": [14, 21, 1],
+                "position": [12, 21, 1],
                 "key": [1, 2, 5, 8]
             }
         }
@@ -2758,7 +2758,7 @@
         "step": 244,
         "agents": {
             "1": {
-                "position": [15, 20, 1],
+                "position": [13, 20, 1],
                 "key": [1, 2, 5, 8]
             }
         }
@@ -2769,7 +2769,7 @@
         "step": 245,
         "agents": {
             "1": {
-                "position": [16, 21, 1],
+                "position": [14, 21, 1],
                 "key": [1, 2, 5, 8]
             }
         }
@@ -2780,7 +2780,7 @@
         "step": 246,
         "agents": {
             "1": {
-                "position": [17, 20, 1],
+                "position": [15, 20, 1],
                 "key": [1, 2, 5, 8]
             }
         }
@@ -2791,7 +2791,7 @@
         "step": 247,
         "agents": {
             "1": {
-                "position": [18, 19, 1],
+                "position": [16, 21, 1],
                 "key": [1, 2, 5, 8]
             }
         }
@@ -2802,7 +2802,7 @@
         "step": 248,
         "agents": {
             "1": {
-                "position": [17, 18, 1],
+                "position": [17, 20, 1],
                 "key": [1, 2, 5, 8]
             }
         }
@@ -2813,7 +2813,7 @@
         "step": 249,
         "agents": {
             "1": {
-                "position": [16, 17, 1],
+                "position": [18, 19, 1],
                 "key": [1, 2, 5, 8]
             }
         }
@@ -2824,7 +2824,7 @@
         "step": 250,
         "agents": {
             "1": {
-                "position": [15, 18, 1],
+                "position": [17, 18, 1],
                 "key": [1, 2, 5, 8]
             }
         }
@@ -2835,7 +2835,7 @@
         "step": 251,
         "agents": {
             "1": {
-                "position": [14, 17, 1],
+                "position": [16, 17, 1],
                 "key": [1, 2, 5, 8]
             }
         }
@@ -2846,7 +2846,7 @@
         "step": 252,
         "agents": {
             "1": {
-                "position": [13, 18, 1],
+                "position": [15, 18, 1],
                 "key": [1, 2, 5, 8]
             }
         }
@@ -2857,7 +2857,7 @@
         "step": 253,
         "agents": {
             "1": {
-                "position": [12, 17, 1],
+                "position": [14, 17, 1],
                 "key": [1, 2, 5, 8]
             }
         }
@@ -2868,7 +2868,7 @@
         "step": 254,
         "agents": {
             "1": {
-                "position": [11, 18, 1],
+                "position": [13, 18, 1],
                 "key": [1, 2, 5, 8]
             }
         }
@@ -2879,7 +2879,7 @@
         "step": 255,
         "agents": {
             "1": {
-                "position": [10, 19, 1],
+                "position": [12, 17, 1],
                 "key": [1, 2, 5, 8]
             }
         }
@@ -2890,7 +2890,7 @@
         "step": 256,
         "agents": {
             "1": {
-                "position": [9, 20, 1],
+                "position": [11, 18, 1],
                 "key": [1, 2, 5, 8]
             }
         }
@@ -2901,7 +2901,7 @@
         "step": 257,
         "agents": {
             "1": {
-                "position": [8, 21, 1],
+                "position": [10, 19, 1],
                 "key": [1, 2, 5, 8]
             }
         }
@@ -2912,7 +2912,7 @@
         "step": 258,
         "agents": {
             "1": {
-                "position": [7, 20, 1],
+                "position": [9, 20, 1],
                 "key": [1, 2, 5, 8]
             }
         }
@@ -2923,7 +2923,7 @@
         "step": 259,
         "agents": {
             "1": {
-                "position": [6, 21, 1],
+                "position": [8, 21, 1],
                 "key": [1, 2, 5, 8]
             }
         }
@@ -2934,7 +2934,7 @@
         "step": 260,
         "agents": {
             "1": {
-                "position": [5, 20, 1],
+                "position": [7, 20, 1],
                 "key": [1, 2, 5, 8]
             }
         }
@@ -2945,7 +2945,7 @@
         "step": 261,
         "agents": {
             "1": {
-                "position": [4, 21, 1],
+                "position": [6, 21, 1],
                 "key": [1, 2, 5, 8]
             }
         }
@@ -2956,7 +2956,7 @@
         "step": 262,
         "agents": {
             "1": {
-                "position": [3, 20, 1],
+                "position": [5, 20, 1],
                 "key": [1, 2, 5, 8]
             }
         }
@@ -2967,7 +2967,7 @@
         "step": 263,
         "agents": {
             "1": {
-                "position": [3, 19, 1],
+                "position": [4, 21, 1],
                 "key": [1, 2, 5, 8]
             }
         }
@@ -2978,7 +2978,7 @@
         "step": 264,
         "agents": {
             "1": {
-                "position": [4, 18, 1],
+                "position": [3, 20, 1],
                 "key": [1, 2, 5, 8]
             }
         }
@@ -2989,7 +2989,7 @@
         "step": 265,
         "agents": {
             "1": {
-                "position": [3, 17, 1],
+                "position": [3, 19, 1],
                 "key": [1, 2, 5, 8]
             }
         }
@@ -3000,7 +3000,7 @@
         "step": 266,
         "agents": {
             "1": {
-                "position": [2, 18, 1],
+                "position": [4, 18, 1],
                 "key": [1, 2, 5, 8]
             }
         }
@@ -3011,7 +3011,7 @@
         "step": 267,
         "agents": {
             "1": {
-                "position": [1, 17, 1],
+                "position": [3, 17, 1],
                 "key": [1, 2, 5, 8]
             }
         }
@@ -3022,7 +3022,7 @@
         "step": 268,
         "agents": {
             "1": {
-                "position": [0, 18, 1],
+                "position": [2, 18, 1],
                 "key": [1, 2, 5, 8]
             }
         }
@@ -3033,7 +3033,7 @@
         "step": 269,
         "agents": {
             "1": {
-                "position": [1, 19, 1],
+                "position": [1, 17, 1],
                 "key": [1, 2, 5, 8]
             }
         }
@@ -3044,7 +3044,7 @@
         "step": 270,
         "agents": {
             "1": {
-                "position": [0, 20, 1],
+                "position": [0, 18, 1],
                 "key": [1, 2, 5, 8]
             }
         }
@@ -3055,7 +3055,7 @@
         "step": 271,
         "agents": {
             "1": {
-                "position": [1, 21, 1],
+                "position": [1, 19, 1],
                 "key": [1, 2, 5, 8]
             }
         }
@@ -3066,7 +3066,7 @@
         "step": 272,
         "agents": {
             "1": {
-                "position": [0, 22, 1],
+                "position": [0, 20, 1],
                 "key": [1, 2, 5, 8]
             }
         }
@@ -3077,7 +3077,7 @@
         "step": 273,
         "agents": {
             "1": {
-                "position": [1, 23, 1],
+                "position": [1, 21, 1],
                 "key": [1, 2, 5, 8]
             }
         }
@@ -3088,7 +3088,7 @@
         "step": 274,
         "agents": {
             "1": {
-                "position": [2, 24, 1],
+                "position": [0, 22, 1],
                 "key": [1, 2, 5, 8]
             }
         }
@@ -3099,7 +3099,7 @@
         "step": 275,
         "agents": {
             "1": {
-                "position": [3, 23, 1],
+                "position": [1, 23, 1],
                 "key": [1, 2, 5, 8]
             }
         }
@@ -3110,7 +3110,7 @@
         "step": 276,
         "agents": {
             "1": {
-                "position": [4, 24, 1],
+                "position": [2, 24, 1],
                 "key": [1, 2, 5, 8]
             }
         }
@@ -3121,7 +3121,7 @@
         "step": 277,
         "agents": {
             "1": {
-                "position": [5, 23, 1],
+                "position": [3, 23, 1],
                 "key": [1, 2, 5, 8]
             }
         }
@@ -3132,7 +3132,7 @@
         "step": 278,
         "agents": {
             "1": {
-                "position": [6, 24, 1],
+                "position": [4, 24, 1],
                 "key": [1, 2, 5, 8]
             }
         }
@@ -3143,7 +3143,7 @@
         "step": 279,
         "agents": {
             "1": {
-                "position": [7, 23, 1],
+                "position": [5, 23, 1],
                 "key": [1, 2, 5, 8]
             }
         }
@@ -3154,7 +3154,7 @@
         "step": 280,
         "agents": {
             "1": {
-                "position": [8, 24, 1],
+                "position": [6, 24, 1],
                 "key": [1, 2, 5, 8]
             }
         }
@@ -3165,7 +3165,7 @@
         "step": 281,
         "agents": {
             "1": {
-                "position": [9, 23, 1],
+                "position": [7, 23, 1],
                 "key": [1, 2, 5, 8]
             }
         }
@@ -3176,7 +3176,7 @@
         "step": 282,
         "agents": {
             "1": {
-                "position": [10, 24, 1],
+                "position": [8, 24, 1],
                 "key": [1, 2, 5, 8]
             }
         }
@@ -3187,7 +3187,7 @@
         "step": 283,
         "agents": {
             "1": {
-                "position": [11, 23, 1],
+                "position": [9, 23, 1],
                 "key": [1, 2, 5, 8]
             }
         }
@@ -3198,7 +3198,7 @@
         "step": 284,
         "agents": {
             "1": {
-                "position": [12, 24, 1],
+                "position": [10, 24, 1],
                 "key": [1, 2, 5, 8]
             }
         }
@@ -3209,7 +3209,7 @@
         "step": 285,
         "agents": {
             "1": {
-                "position": [13, 23, 1],
+                "position": [11, 23, 1],
                 "key": [1, 2, 5, 8]
             }
         }
@@ -3220,7 +3220,7 @@
         "step": 286,
         "agents": {
             "1": {
-                "position": [14, 24, 1],
+                "position": [12, 24, 1],
                 "key": [1, 2, 5, 8]
             }
         }
@@ -3231,7 +3231,7 @@
         "step": 287,
         "agents": {
             "1": {
-                "position": [15, 23, 1],
+                "position": [13, 23, 1],
                 "key": [1, 2, 5, 8]
             }
         }
@@ -3242,7 +3242,7 @@
         "step": 288,
         "agents": {
             "1": {
-                "position": [16, 24, 1],
+                "position": [14, 24, 1],
                 "key": [1, 2, 5, 8]
             }
         }
@@ -3253,7 +3253,7 @@
         "step": 289,
         "agents": {
             "1": {
-                "position": [17, 23, 1],
+                "position": [15, 23, 1],
                 "key": [1, 2, 5, 8]
             }
         }
@@ -3264,7 +3264,7 @@
         "step": 290,
         "agents": {
             "1": {
-                "position": [18, 24, 1],
+                "position": [16, 24, 1],
                 "key": [1, 2, 5, 8]
             }
         }
@@ -3275,7 +3275,7 @@
         "step": 291,
         "agents": {
             "1": {
-                "position": [19, 23, 1],
+                "position": [17, 23, 1],
                 "key": [1, 2, 5, 8]
             }
         }
@@ -3286,7 +3286,7 @@
         "step": 292,
         "agents": {
             "1": {
-                "position": [20, 24, 1],
+                "position": [18, 24, 1],
                 "key": [1, 2, 5, 8]
             }
         }
@@ -3297,7 +3297,7 @@
         "step": 293,
         "agents": {
             "1": {
-                "position": [21, 23, 1],
+                "position": [19, 23, 1],
                 "key": [1, 2, 5, 8]
             }
         }
@@ -3308,8 +3308,8 @@
         "step": 294,
         "agents": {
             "1": {
-                "position": [22, 24, 1],
-                "key": [1, 2, 5, 6, 8]
+                "position": [20, 24, 1],
+                "key": [1, 2, 5, 8]
             }
         }
     },
@@ -3320,7 +3320,7 @@
         "agents": {
             "1": {
                 "position": [21, 23, 1],
-                "key": [1, 2, 5, 6, 8]
+                "key": [1, 2, 5, 8]
             }
         }
     },
@@ -3330,7 +3330,7 @@
         "step": 296,
         "agents": {
             "1": {
-                "position": [20, 24, 1],
+                "position": [22, 24, 1],
                 "key": [1, 2, 5, 6, 8]
             }
         }
@@ -3341,7 +3341,7 @@
         "step": 297,
         "agents": {
             "1": {
-                "position": [19, 23, 1],
+                "position": [21, 23, 1],
                 "key": [1, 2, 5, 6, 8]
             }
         }
@@ -3352,7 +3352,7 @@
         "step": 298,
         "agents": {
             "1": {
-                "position": [18, 24, 1],
+                "position": [20, 24, 1],
                 "key": [1, 2, 5, 6, 8]
             }
         }
@@ -3363,7 +3363,7 @@
         "step": 299,
         "agents": {
             "1": {
-                "position": [17, 23, 1],
+                "position": [19, 23, 1],
                 "key": [1, 2, 5, 6, 8]
             }
         }
@@ -3374,7 +3374,7 @@
         "step": 300,
         "agents": {
             "1": {
-                "position": [16, 24, 1],
+                "position": [18, 24, 1],
                 "key": [1, 2, 5, 6, 8]
             }
         }
@@ -3385,7 +3385,7 @@
         "step": 301,
         "agents": {
             "1": {
-                "position": [15, 23, 1],
+                "position": [17, 23, 1],
                 "key": [1, 2, 5, 6, 8]
             }
         }
@@ -3396,7 +3396,7 @@
         "step": 302,
         "agents": {
             "1": {
-                "position": [14, 24, 1],
+                "position": [16, 24, 1],
                 "key": [1, 2, 5, 6, 8]
             }
         }
@@ -3407,7 +3407,7 @@
         "step": 303,
         "agents": {
             "1": {
-                "position": [13, 23, 1],
+                "position": [15, 23, 1],
                 "key": [1, 2, 5, 6, 8]
             }
         }
@@ -3418,7 +3418,7 @@
         "step": 304,
         "agents": {
             "1": {
-                "position": [12, 24, 1],
+                "position": [14, 24, 1],
                 "key": [1, 2, 5, 6, 8]
             }
         }
@@ -3429,7 +3429,7 @@
         "step": 305,
         "agents": {
             "1": {
-                "position": [11, 23, 1],
+                "position": [13, 23, 1],
                 "key": [1, 2, 5, 6, 8]
             }
         }
@@ -3440,7 +3440,7 @@
         "step": 306,
         "agents": {
             "1": {
-                "position": [10, 24, 1],
+                "position": [12, 24, 1],
                 "key": [1, 2, 5, 6, 8]
             }
         }
@@ -3451,7 +3451,7 @@
         "step": 307,
         "agents": {
             "1": {
-                "position": [9, 23, 1],
+                "position": [11, 23, 1],
                 "key": [1, 2, 5, 6, 8]
             }
         }
@@ -3462,7 +3462,7 @@
         "step": 308,
         "agents": {
             "1": {
-                "position": [8, 24, 1],
+                "position": [10, 24, 1],
                 "key": [1, 2, 5, 6, 8]
             }
         }
@@ -3473,7 +3473,7 @@
         "step": 309,
         "agents": {
             "1": {
-                "position": [7, 23, 1],
+                "position": [9, 23, 1],
                 "key": [1, 2, 5, 6, 8]
             }
         }
@@ -3484,7 +3484,7 @@
         "step": 310,
         "agents": {
             "1": {
-                "position": [6, 24, 1],
+                "position": [8, 24, 1],
                 "key": [1, 2, 5, 6, 8]
             }
         }
@@ -3495,7 +3495,7 @@
         "step": 311,
         "agents": {
             "1": {
-                "position": [5, 23, 1],
+                "position": [7, 23, 1],
                 "key": [1, 2, 5, 6, 8]
             }
         }
@@ -3506,7 +3506,7 @@
         "step": 312,
         "agents": {
             "1": {
-                "position": [4, 24, 1],
+                "position": [6, 24, 1],
                 "key": [1, 2, 5, 6, 8]
             }
         }
@@ -3517,7 +3517,7 @@
         "step": 313,
         "agents": {
             "1": {
-                "position": [3, 23, 1],
+                "position": [5, 23, 1],
                 "key": [1, 2, 5, 6, 8]
             }
         }
@@ -3528,7 +3528,7 @@
         "step": 314,
         "agents": {
             "1": {
-                "position": [2, 24, 1],
+                "position": [4, 24, 1],
                 "key": [1, 2, 5, 6, 8]
             }
         }
@@ -3539,7 +3539,7 @@
         "step": 315,
         "agents": {
             "1": {
-                "position": [1, 23, 1],
+                "position": [3, 23, 1],
                 "key": [1, 2, 5, 6, 8]
             }
         }
@@ -3550,7 +3550,7 @@
         "step": 316,
         "agents": {
             "1": {
-                "position": [0, 22, 1],
+                "position": [2, 24, 1],
                 "key": [1, 2, 5, 6, 8]
             }
         }
@@ -3561,7 +3561,7 @@
         "step": 317,
         "agents": {
             "1": {
-                "position": [1, 21, 1],
+                "position": [1, 23, 1],
                 "key": [1, 2, 5, 6, 8]
             }
         }
@@ -3572,7 +3572,7 @@
         "step": 318,
         "agents": {
             "1": {
-                "position": [0, 20, 1],
+                "position": [0, 22, 1],
                 "key": [1, 2, 5, 6, 8]
             }
         }
@@ -3583,7 +3583,7 @@
         "step": 319,
         "agents": {
             "1": {
-                "position": [1, 19, 1],
+                "position": [1, 21, 1],
                 "key": [1, 2, 5, 6, 8]
             }
         }
@@ -3594,7 +3594,7 @@
         "step": 320,
         "agents": {
             "1": {
-                "position": [0, 18, 1],
+                "position": [0, 20, 1],
                 "key": [1, 2, 5, 6, 8]
             }
         }
@@ -3605,7 +3605,7 @@
         "step": 321,
         "agents": {
             "1": {
-                "position": [1, 17, 1],
+                "position": [1, 19, 1],
                 "key": [1, 2, 5, 6, 8]
             }
         }
@@ -3616,7 +3616,7 @@
         "step": 322,
         "agents": {
             "1": {
-                "position": [0, 16, 1],
+                "position": [0, 18, 1],
                 "key": [1, 2, 5, 6, 8]
             }
         }
@@ -3627,7 +3627,7 @@
         "step": 323,
         "agents": {
             "1": {
-                "position": [1, 15, 1],
+                "position": [1, 17, 1],
                 "key": [1, 2, 5, 6, 8]
             }
         }
@@ -3638,7 +3638,7 @@
         "step": 324,
         "agents": {
             "1": {
-                "position": [0, 14, 1],
+                "position": [0, 16, 1],
                 "key": [1, 2, 5, 6, 8]
             }
         }
@@ -3649,7 +3649,7 @@
         "step": 325,
         "agents": {
             "1": {
-                "position": [1, 13, 1],
+                "position": [1, 15, 1],
                 "key": [1, 2, 5, 6, 8]
             }
         }
@@ -3660,7 +3660,7 @@
         "step": 326,
         "agents": {
             "1": {
-                "position": [0, 12, 1],
+                "position": [0, 14, 1],
                 "key": [1, 2, 5, 6, 8]
             }
         }
@@ -3671,7 +3671,7 @@
         "step": 327,
         "agents": {
             "1": {
-                "position": [1, 11, 1],
+                "position": [1, 13, 1],
                 "key": [1, 2, 5, 6, 8]
             }
         }
@@ -3682,7 +3682,7 @@
         "step": 328,
         "agents": {
             "1": {
-                "position": [0, 10, 1],
+                "position": [0, 12, 1],
                 "key": [1, 2, 5, 6, 8]
             }
         }
@@ -3693,7 +3693,7 @@
         "step": 329,
         "agents": {
             "1": {
-                "position": [1, 9, 1],
+                "position": [1, 11, 1],
                 "key": [1, 2, 5, 6, 8]
             }
         }
@@ -3704,7 +3704,7 @@
         "step": 330,
         "agents": {
             "1": {
-                "position": [0, 8, 1],
+                "position": [0, 10, 1],
                 "key": [1, 2, 5, 6, 8]
             }
         }
@@ -3715,7 +3715,7 @@
         "step": 331,
         "agents": {
             "1": {
-                "position": [1, 7, 1],
+                "position": [1, 9, 1],
                 "key": [1, 2, 5, 6, 8]
             }
         }
@@ -3726,7 +3726,7 @@
         "step": 332,
         "agents": {
             "1": {
-                "position": [0, 6, 1],
+                "position": [0, 8, 1],
                 "key": [1, 2, 5, 6, 8]
             }
         }
@@ -3737,7 +3737,7 @@
         "step": 333,
         "agents": {
             "1": {
-                "position": [1, 5, 1],
+                "position": [1, 7, 1],
                 "key": [1, 2, 5, 6, 8]
             }
         }
@@ -3748,7 +3748,7 @@
         "step": 334,
         "agents": {
             "1": {
-                "position": [0, 4, 1],
+                "position": [0, 6, 1],
                 "key": [1, 2, 5, 6, 8]
             }
         }
@@ -3759,7 +3759,7 @@
         "step": 335,
         "agents": {
             "1": {
-                "position": [1, 3, 1],
+                "position": [1, 5, 1],
                 "key": [1, 2, 5, 6, 8]
             }
         }
@@ -3770,7 +3770,7 @@
         "step": 336,
         "agents": {
             "1": {
-                "position": [0, 2, 1],
+                "position": [0, 4, 1],
                 "key": [1, 2, 5, 6, 8]
             }
         }
@@ -3781,7 +3781,7 @@
         "step": 337,
         "agents": {
             "1": {
-                "position": [1, 1, 1],
+                "position": [1, 3, 1],
                 "key": [1, 2, 5, 6, 8]
             }
         }
@@ -3792,7 +3792,7 @@
         "step": 338,
         "agents": {
             "1": {
-                "position": [1, 0, 1],
+                "position": [0, 2, 1],
                 "key": [1, 2, 5, 6, 8]
             }
         }
@@ -3803,7 +3803,7 @@
         "step": 339,
         "agents": {
             "1": {
-                "position": [2, 0, 1],
+                "position": [1, 1, 1],
                 "key": [1, 2, 5, 6, 8]
             }
         }
@@ -3814,7 +3814,7 @@
         "step": 340,
         "agents": {
             "1": {
-                "position": [3, 0, 1],
+                "position": [1, 0, 1],
                 "key": [1, 2, 5, 6, 8]
             }
         }
@@ -3825,7 +3825,7 @@
         "step": 341,
         "agents": {
             "1": {
-                "position": [4, 1, 1],
+                "position": [2, 0, 1],
                 "key": [1, 2, 5, 6, 8]
             }
         }
@@ -3836,7 +3836,7 @@
         "step": 342,
         "agents": {
             "1": {
-                "position": [5, 0, 1],
+                "position": [3, 0, 1],
                 "key": [1, 2, 5, 6, 8]
             }
         }
@@ -3847,7 +3847,7 @@
         "step": 343,
         "agents": {
             "1": {
-                "position": [6, 0, 1],
+                "position": [4, 1, 1],
                 "key": [1, 2, 5, 6, 8]
             }
         }
@@ -3858,7 +3858,7 @@
         "step": 344,
         "agents": {
             "1": {
-                "position": [7, 0, 1],
+                "position": [5, 0, 1],
                 "key": [1, 2, 5, 6, 8]
             }
         }
@@ -3869,7 +3869,7 @@
         "step": 345,
         "agents": {
             "1": {
-                "position": [8, 0, 1],
+                "position": [6, 0, 1],
                 "key": [1, 2, 5, 6, 8]
             }
         }
@@ -3880,7 +3880,7 @@
         "step": 346,
         "agents": {
             "1": {
-                "position": [9, 0, 1],
+                "position": [7, 0, 1],
                 "key": [1, 2, 5, 6, 8]
             }
         }
@@ -3891,7 +3891,7 @@
         "step": 347,
         "agents": {
             "1": {
-                "position": [9, 1, 1],
+                "position": [8, 0, 1],
                 "key": [1, 2, 5, 6, 8]
             }
         }
@@ -3902,7 +3902,7 @@
         "step": 348,
         "agents": {
             "1": {
-                "position": [9, 2, 1],
+                "position": [9, 0, 1],
                 "key": [1, 2, 5, 6, 8]
             }
         }
@@ -3913,7 +3913,7 @@
         "step": 349,
         "agents": {
             "1": {
-                "position": [9, 3, 1],
+                "position": [9, 1, 1],
                 "key": [1, 2, 5, 6, 8]
             }
         }
@@ -3924,7 +3924,7 @@
         "step": 350,
         "agents": {
             "1": {
-                "position": [8, 4, 1],
+                "position": [9, 2, 1],
                 "key": [1, 2, 5, 6, 8]
             }
         }
@@ -3935,29 +3935,29 @@
         "step": 351,
         "agents": {
             "1": {
-                "position": [9, 5, 1],
+                "position": [9, 3, 1],
                 "key": [1, 2, 5, 6, 8]
             }
         }
     },
     "352": {
         "isWin": false,
-        "floor": [0],
+        "floor": [1],
         "step": 352,
         "agents": {
             "1": {
-                "position": [8, 7, 0],
+                "position": [8, 4, 1],
                 "key": [1, 2, 5, 6, 8]
             }
         }
     },
     "353": {
         "isWin": false,
-        "floor": [0],
+        "floor": [1],
         "step": 353,
         "agents": {
             "1": {
-                "position": [9, 6, 0],
+                "position": [9, 5, 1],
                 "key": [1, 2, 5, 6, 8]
             }
         }
@@ -3968,7 +3968,7 @@
         "step": 354,
         "agents": {
             "1": {
-                "position": [8, 5, 0],
+                "position": [8, 7, 0],
                 "key": [1, 2, 5, 6, 8]
             }
         }
@@ -3979,7 +3979,7 @@
         "step": 355,
         "agents": {
             "1": {
-                "position": [9, 4, 0],
+                "position": [9, 6, 0],
                 "key": [1, 2, 5, 6, 8]
             }
         }
@@ -3990,7 +3990,7 @@
         "step": 356,
         "agents": {
             "1": {
-                "position": [8, 3, 0],
+                "position": [8, 5, 0],
                 "key": [1, 2, 5, 6, 8]
             }
         }
@@ -4001,7 +4001,7 @@
         "step": 357,
         "agents": {
             "1": {
-                "position": [7, 3, 0],
+                "position": [9, 4, 0],
                 "key": [1, 2, 5, 6, 8]
             }
         }
@@ -4012,7 +4012,7 @@
         "step": 358,
         "agents": {
             "1": {
-                "position": [6, 4, 0],
+                "position": [8, 3, 0],
                 "key": [1, 2, 5, 6, 8]
             }
         }
@@ -4023,7 +4023,7 @@
         "step": 359,
         "agents": {
             "1": {
-                "position": [5, 5, 0],
+                "position": [7, 3, 0],
                 "key": [1, 2, 5, 6, 8]
             }
         }
@@ -4034,7 +4034,7 @@
         "step": 360,
         "agents": {
             "1": {
-                "position": [6, 6, 0],
+                "position": [6, 4, 0],
                 "key": [1, 2, 5, 6, 8]
             }
         }
@@ -4045,7 +4045,7 @@
         "step": 361,
         "agents": {
             "1": {
-                "position": [5, 7, 0],
+                "position": [5, 5, 0],
                 "key": [1, 2, 5, 6, 8]
             }
         }
@@ -4056,7 +4056,7 @@
         "step": 362,
         "agents": {
             "1": {
-                "position": [4, 7, 0],
+                "position": [6, 6, 0],
                 "key": [1, 2, 5, 6, 8]
             }
         }
@@ -4067,7 +4067,7 @@
         "step": 363,
         "agents": {
             "1": {
-                "position": [3, 7, 0],
+                "position": [5, 7, 0],
                 "key": [1, 2, 5, 6, 8]
             }
         }
@@ -4078,7 +4078,7 @@
         "step": 364,
         "agents": {
             "1": {
-                "position": [3, 6, 0],
+                "position": [4, 7, 0],
                 "key": [1, 2, 5, 6, 8]
             }
         }
@@ -4089,7 +4089,7 @@
         "step": 365,
         "agents": {
             "1": {
-                "position": [3, 5, 0],
+                "position": [3, 7, 0],
                 "key": [1, 2, 5, 6, 8]
             }
         }
@@ -4100,7 +4100,7 @@
         "step": 366,
         "agents": {
             "1": {
-                "position": [3, 4, 0],
+                "position": [3, 6, 0],
                 "key": [1, 2, 5, 6, 8]
             }
         }
@@ -4111,7 +4111,7 @@
         "step": 367,
         "agents": {
             "1": {
-                "position": [3, 3, 0],
+                "position": [3, 5, 0],
                 "key": [1, 2, 5, 6, 8]
             }
         }
@@ -4122,7 +4122,7 @@
         "step": 368,
         "agents": {
             "1": {
-                "position": [3, 2, 0],
+                "position": [3, 4, 0],
                 "key": [1, 2, 5, 6, 8]
             }
         }
@@ -4133,7 +4133,7 @@
         "step": 369,
         "agents": {
             "1": {
-                "position": [3, 1, 0],
+                "position": [3, 3, 0],
                 "key": [1, 2, 5, 6, 8]
             }
         }
@@ -4144,7 +4144,7 @@
         "step": 370,
         "agents": {
             "1": {
-                "position": [3, 0, 0],
+                "position": [3, 2, 0],
                 "key": [1, 2, 5, 6, 8]
             }
         }
@@ -4155,7 +4155,7 @@
         "step": 371,
         "agents": {
             "1": {
-                "position": [2, 0, 0],
+                "position": [3, 1, 0],
                 "key": [1, 2, 5, 6, 8]
             }
         }
@@ -4166,7 +4166,7 @@
         "step": 372,
         "agents": {
             "1": {
-                "position": [1, 0, 0],
+                "position": [3, 0, 0],
                 "key": [1, 2, 5, 6, 8]
             }
         }
@@ -4177,7 +4177,7 @@
         "step": 373,
         "agents": {
             "1": {
-                "position": [0, 1, 0],
+                "position": [2, 0, 0],
                 "key": [1, 2, 5, 6, 8]
             }
         }
@@ -4188,7 +4188,7 @@
         "step": 374,
         "agents": {
             "1": {
-                "position": [1, 2, 0],
+                "position": [1, 0, 0],
                 "key": [1, 2, 5, 6, 8]
             }
         }
@@ -4199,7 +4199,7 @@
         "step": 375,
         "agents": {
             "1": {
-                "position": [0, 3, 0],
+                "position": [0, 1, 0],
                 "key": [1, 2, 5, 6, 8]
             }
         }
@@ -4210,7 +4210,7 @@
         "step": 376,
         "agents": {
             "1": {
-                "position": [1, 4, 0],
+                "position": [1, 2, 0],
                 "key": [1, 2, 5, 6, 8]
             }
         }
@@ -4221,7 +4221,7 @@
         "step": 377,
         "agents": {
             "1": {
-                "position": [0, 5, 0],
+                "position": [0, 3, 0],
                 "key": [1, 2, 5, 6, 8]
             }
         }
@@ -4232,7 +4232,7 @@
         "step": 378,
         "agents": {
             "1": {
-                "position": [1, 6, 0],
+                "position": [1, 4, 0],
                 "key": [1, 2, 5, 6, 8]
             }
         }
@@ -4243,7 +4243,7 @@
         "step": 379,
         "agents": {
             "1": {
-                "position": [0, 7, 0],
+                "position": [0, 5, 0],
                 "key": [1, 2, 5, 6, 8]
             }
         }
@@ -4254,7 +4254,7 @@
         "step": 380,
         "agents": {
             "1": {
-                "position": [1, 8, 0],
+                "position": [1, 6, 0],
                 "key": [1, 2, 5, 6, 8]
             }
         }
@@ -4265,7 +4265,7 @@
         "step": 381,
         "agents": {
             "1": {
-                "position": [0, 9, 0],
+                "position": [0, 7, 0],
                 "key": [1, 2, 5, 6, 8]
             }
         }
@@ -4276,7 +4276,7 @@
         "step": 382,
         "agents": {
             "1": {
-                "position": [1, 10, 0],
+                "position": [1, 8, 0],
                 "key": [1, 2, 5, 6, 8]
             }
         }
@@ -4287,7 +4287,7 @@
         "step": 383,
         "agents": {
             "1": {
-                "position": [0, 11, 0],
+                "position": [0, 9, 0],
                 "key": [1, 2, 5, 6, 8]
             }
         }
@@ -4298,7 +4298,7 @@
         "step": 384,
         "agents": {
             "1": {
-                "position": [1, 12, 0],
+                "position": [1, 10, 0],
                 "key": [1, 2, 5, 6, 8]
             }
         }
@@ -4309,7 +4309,7 @@
         "step": 385,
         "agents": {
             "1": {
-                "position": [0, 13, 0],
+                "position": [0, 11, 0],
                 "key": [1, 2, 5, 6, 8]
             }
         }
@@ -4320,7 +4320,7 @@
         "step": 386,
         "agents": {
             "1": {
-                "position": [1, 14, 0],
+                "position": [1, 12, 0],
                 "key": [1, 2, 5, 6, 8]
             }
         }
@@ -4331,7 +4331,7 @@
         "step": 387,
         "agents": {
             "1": {
-                "position": [0, 15, 0],
+                "position": [0, 13, 0],
                 "key": [1, 2, 5, 6, 8]
             }
         }
@@ -4342,7 +4342,7 @@
         "step": 388,
         "agents": {
             "1": {
-                "position": [1, 16, 0],
+                "position": [1, 14, 0],
                 "key": [1, 2, 5, 6, 8]
             }
         }
@@ -4353,7 +4353,7 @@
         "step": 389,
         "agents": {
             "1": {
-                "position": [0, 17, 0],
+                "position": [0, 15, 0],
                 "key": [1, 2, 5, 6, 8]
             }
         }
@@ -4364,7 +4364,7 @@
         "step": 390,
         "agents": {
             "1": {
-                "position": [1, 18, 0],
+                "position": [1, 16, 0],
                 "key": [1, 2, 5, 6, 8]
             }
         }
@@ -4375,7 +4375,7 @@
         "step": 391,
         "agents": {
             "1": {
-                "position": [0, 19, 0],
+                "position": [0, 17, 0],
                 "key": [1, 2, 5, 6, 8]
             }
         }
@@ -4386,7 +4386,7 @@
         "step": 392,
         "agents": {
             "1": {
-                "position": [1, 20, 0],
+                "position": [1, 18, 0],
                 "key": [1, 2, 5, 6, 8]
             }
         }
@@ -4397,7 +4397,7 @@
         "step": 393,
         "agents": {
             "1": {
-                "position": [0, 21, 0],
+                "position": [0, 19, 0],
                 "key": [1, 2, 5, 6, 8]
             }
         }
@@ -4408,7 +4408,7 @@
         "step": 394,
         "agents": {
             "1": {
-                "position": [1, 22, 0],
+                "position": [1, 20, 0],
                 "key": [1, 2, 5, 6, 8]
             }
         }
@@ -4419,7 +4419,7 @@
         "step": 395,
         "agents": {
             "1": {
-                "position": [0, 23, 0],
+                "position": [0, 21, 0],
                 "key": [1, 2, 5, 6, 8]
             }
         }
@@ -4430,7 +4430,7 @@
         "step": 396,
         "agents": {
             "1": {
-                "position": [1, 24, 0],
+                "position": [1, 22, 0],
                 "key": [1, 2, 5, 6, 8]
             }
         }
@@ -4441,7 +4441,7 @@
         "step": 397,
         "agents": {
             "1": {
-                "position": [2, 23, 0],
+                "position": [0, 23, 0],
                 "key": [1, 2, 5, 6, 8]
             }
         }
@@ -4452,7 +4452,7 @@
         "step": 398,
         "agents": {
             "1": {
-                "position": [3, 24, 0],
+                "position": [1, 24, 0],
                 "key": [1, 2, 5, 6, 8]
             }
         }
@@ -4463,7 +4463,7 @@
         "step": 399,
         "agents": {
             "1": {
-                "position": [4, 23, 0],
+                "position": [2, 23, 0],
                 "key": [1, 2, 5, 6, 8]
             }
         }
@@ -4474,7 +4474,7 @@
         "step": 400,
         "agents": {
             "1": {
-                "position": [5, 24, 0],
+                "position": [3, 24, 0],
                 "key": [1, 2, 5, 6, 8]
             }
         }
@@ -4485,7 +4485,7 @@
         "step": 401,
         "agents": {
             "1": {
-                "position": [6, 23, 0],
+                "position": [4, 23, 0],
                 "key": [1, 2, 5, 6, 8]
             }
         }
@@ -4496,7 +4496,7 @@
         "step": 402,
         "agents": {
             "1": {
-                "position": [7, 24, 0],
+                "position": [5, 24, 0],
                 "key": [1, 2, 5, 6, 8]
             }
         }
@@ -4507,7 +4507,7 @@
         "step": 403,
         "agents": {
             "1": {
-                "position": [8, 23, 0],
+                "position": [6, 23, 0],
                 "key": [1, 2, 5, 6, 8]
             }
         }
@@ -4518,7 +4518,7 @@
         "step": 404,
         "agents": {
             "1": {
-                "position": [9, 24, 0],
+                "position": [7, 24, 0],
                 "key": [1, 2, 5, 6, 8]
             }
         }
@@ -4529,7 +4529,7 @@
         "step": 405,
         "agents": {
             "1": {
-                "position": [10, 23, 0],
+                "position": [8, 23, 0],
                 "key": [1, 2, 5, 6, 8]
             }
         }
@@ -4540,7 +4540,7 @@
         "step": 406,
         "agents": {
             "1": {
-                "position": [11, 24, 0],
+                "position": [9, 24, 0],
                 "key": [1, 2, 5, 6, 8]
             }
         }
@@ -4551,7 +4551,7 @@
         "step": 407,
         "agents": {
             "1": {
-                "position": [12, 23, 0],
+                "position": [10, 23, 0],
                 "key": [1, 2, 5, 6, 8]
             }
         }
@@ -4562,7 +4562,7 @@
         "step": 408,
         "agents": {
             "1": {
-                "position": [13, 24, 0],
+                "position": [11, 24, 0],
                 "key": [1, 2, 5, 6, 8]
             }
         }
@@ -4573,7 +4573,7 @@
         "step": 409,
         "agents": {
             "1": {
-                "position": [14, 23, 0],
+                "position": [12, 23, 0],
                 "key": [1, 2, 5, 6, 8]
             }
         }
@@ -4584,7 +4584,7 @@
         "step": 410,
         "agents": {
             "1": {
-                "position": [15, 24, 0],
+                "position": [13, 24, 0],
                 "key": [1, 2, 5, 6, 8]
             }
         }
@@ -4595,7 +4595,7 @@
         "step": 411,
         "agents": {
             "1": {
-                "position": [16, 23, 0],
+                "position": [14, 23, 0],
                 "key": [1, 2, 5, 6, 8]
             }
         }
@@ -4606,7 +4606,7 @@
         "step": 412,
         "agents": {
             "1": {
-                "position": [17, 24, 0],
+                "position": [15, 24, 0],
                 "key": [1, 2, 5, 6, 8]
             }
         }
@@ -4617,7 +4617,7 @@
         "step": 413,
         "agents": {
             "1": {
-                "position": [18, 23, 0],
+                "position": [16, 23, 0],
                 "key": [1, 2, 5, 6, 8]
             }
         }
@@ -4628,7 +4628,7 @@
         "step": 414,
         "agents": {
             "1": {
-                "position": [19, 24, 0],
+                "position": [17, 24, 0],
                 "key": [1, 2, 5, 6, 8]
             }
         }
@@ -4639,7 +4639,7 @@
         "step": 415,
         "agents": {
             "1": {
-                "position": [20, 23, 0],
+                "position": [18, 23, 0],
                 "key": [1, 2, 5, 6, 8]
             }
         }
@@ -4650,7 +4650,7 @@
         "step": 416,
         "agents": {
             "1": {
-                "position": [21, 24, 0],
+                "position": [19, 24, 0],
                 "key": [1, 2, 5, 6, 8]
             }
         }
@@ -4661,8 +4661,8 @@
         "step": 417,
         "agents": {
             "1": {
-                "position": [22, 24, 0],
-                "key": [1, 2, 4, 5, 6, 8]
+                "position": [20, 23, 0],
+                "key": [1, 2, 5, 6, 8]
             }
         }
     },
@@ -4672,8 +4672,8 @@
         "step": 418,
         "agents": {
             "1": {
-                "position": [21, 23, 0],
-                "key": [1, 2, 4, 5, 6, 8]
+                "position": [21, 24, 0],
+                "key": [1, 2, 5, 6, 8]
             }
         }
     },
@@ -4683,7 +4683,7 @@
         "step": 419,
         "agents": {
             "1": {
-                "position": [20, 24, 0],
+                "position": [22, 24, 0],
                 "key": [1, 2, 4, 5, 6, 8]
             }
         }
@@ -4694,7 +4694,7 @@
         "step": 420,
         "agents": {
             "1": {
-                "position": [19, 23, 0],
+                "position": [21, 23, 0],
                 "key": [1, 2, 4, 5, 6, 8]
             }
         }
@@ -4705,7 +4705,7 @@
         "step": 421,
         "agents": {
             "1": {
-                "position": [18, 24, 0],
+                "position": [20, 24, 0],
                 "key": [1, 2, 4, 5, 6, 8]
             }
         }
@@ -4716,7 +4716,7 @@
         "step": 422,
         "agents": {
             "1": {
-                "position": [17, 23, 0],
+                "position": [19, 23, 0],
                 "key": [1, 2, 4, 5, 6, 8]
             }
         }
@@ -4727,7 +4727,7 @@
         "step": 423,
         "agents": {
             "1": {
-                "position": [16, 24, 0],
+                "position": [18, 24, 0],
                 "key": [1, 2, 4, 5, 6, 8]
             }
         }
@@ -4738,7 +4738,7 @@
         "step": 424,
         "agents": {
             "1": {
-                "position": [15, 23, 0],
+                "position": [17, 23, 0],
                 "key": [1, 2, 4, 5, 6, 8]
             }
         }
@@ -4749,7 +4749,7 @@
         "step": 425,
         "agents": {
             "1": {
-                "position": [14, 24, 0],
+                "position": [16, 24, 0],
                 "key": [1, 2, 4, 5, 6, 8]
             }
         }
@@ -4760,7 +4760,7 @@
         "step": 426,
         "agents": {
             "1": {
-                "position": [13, 23, 0],
+                "position": [15, 23, 0],
                 "key": [1, 2, 4, 5, 6, 8]
             }
         }
@@ -4771,7 +4771,7 @@
         "step": 427,
         "agents": {
             "1": {
-                "position": [12, 24, 0],
+                "position": [14, 24, 0],
                 "key": [1, 2, 4, 5, 6, 8]
             }
         }
@@ -4782,7 +4782,7 @@
         "step": 428,
         "agents": {
             "1": {
-                "position": [11, 23, 0],
+                "position": [13, 23, 0],
                 "key": [1, 2, 4, 5, 6, 8]
             }
         }
@@ -4793,7 +4793,7 @@
         "step": 429,
         "agents": {
             "1": {
-                "position": [10, 24, 0],
+                "position": [12, 24, 0],
                 "key": [1, 2, 4, 5, 6, 8]
             }
         }
@@ -4804,7 +4804,7 @@
         "step": 430,
         "agents": {
             "1": {
-                "position": [9, 23, 0],
+                "position": [11, 23, 0],
                 "key": [1, 2, 4, 5, 6, 8]
             }
         }
@@ -4815,7 +4815,7 @@
         "step": 431,
         "agents": {
             "1": {
-                "position": [8, 24, 0],
+                "position": [10, 24, 0],
                 "key": [1, 2, 4, 5, 6, 8]
             }
         }
@@ -4826,7 +4826,7 @@
         "step": 432,
         "agents": {
             "1": {
-                "position": [7, 23, 0],
+                "position": [9, 23, 0],
                 "key": [1, 2, 4, 5, 6, 8]
             }
         }
@@ -4837,7 +4837,7 @@
         "step": 433,
         "agents": {
             "1": {
-                "position": [6, 24, 0],
+                "position": [8, 24, 0],
                 "key": [1, 2, 4, 5, 6, 8]
             }
         }
@@ -4848,7 +4848,7 @@
         "step": 434,
         "agents": {
             "1": {
-                "position": [5, 23, 0],
+                "position": [7, 23, 0],
                 "key": [1, 2, 4, 5, 6, 8]
             }
         }
@@ -4859,7 +4859,7 @@
         "step": 435,
         "agents": {
             "1": {
-                "position": [4, 24, 0],
+                "position": [6, 24, 0],
                 "key": [1, 2, 4, 5, 6, 8]
             }
         }
@@ -4870,7 +4870,7 @@
         "step": 436,
         "agents": {
             "1": {
-                "position": [3, 23, 0],
+                "position": [5, 23, 0],
                 "key": [1, 2, 4, 5, 6, 8]
             }
         }
@@ -4881,7 +4881,7 @@
         "step": 437,
         "agents": {
             "1": {
-                "position": [2, 24, 0],
+                "position": [4, 24, 0],
                 "key": [1, 2, 4, 5, 6, 8]
             }
         }
@@ -4892,7 +4892,7 @@
         "step": 438,
         "agents": {
             "1": {
-                "position": [1, 23, 0],
+                "position": [3, 23, 0],
                 "key": [1, 2, 4, 5, 6, 8]
             }
         }
@@ -4903,7 +4903,7 @@
         "step": 439,
         "agents": {
             "1": {
-                "position": [0, 22, 0],
+                "position": [2, 24, 0],
                 "key": [1, 2, 4, 5, 6, 8]
             }
         }
@@ -4914,7 +4914,7 @@
         "step": 440,
         "agents": {
             "1": {
-                "position": [1, 21, 0],
+                "position": [1, 23, 0],
                 "key": [1, 2, 4, 5, 6, 8]
             }
         }
@@ -4925,7 +4925,7 @@
         "step": 441,
         "agents": {
             "1": {
-                "position": [0, 20, 0],
+                "position": [0, 22, 0],
                 "key": [1, 2, 4, 5, 6, 8]
             }
         }
@@ -4936,7 +4936,7 @@
         "step": 442,
         "agents": {
             "1": {
-                "position": [1, 19, 0],
+                "position": [1, 21, 0],
                 "key": [1, 2, 4, 5, 6, 8]
             }
         }
@@ -4947,7 +4947,7 @@
         "step": 443,
         "agents": {
             "1": {
-                "position": [0, 18, 0],
+                "position": [0, 20, 0],
                 "key": [1, 2, 4, 5, 6, 8]
             }
         }
@@ -4958,7 +4958,7 @@
         "step": 444,
         "agents": {
             "1": {
-                "position": [1, 17, 0],
+                "position": [1, 19, 0],
                 "key": [1, 2, 4, 5, 6, 8]
             }
         }
@@ -4969,7 +4969,7 @@
         "step": 445,
         "agents": {
             "1": {
-                "position": [0, 16, 0],
+                "position": [0, 18, 0],
                 "key": [1, 2, 4, 5, 6, 8]
             }
         }
@@ -4980,7 +4980,7 @@
         "step": 446,
         "agents": {
             "1": {
-                "position": [1, 15, 0],
+                "position": [1, 17, 0],
                 "key": [1, 2, 4, 5, 6, 8]
             }
         }
@@ -4991,7 +4991,7 @@
         "step": 447,
         "agents": {
             "1": {
-                "position": [0, 14, 0],
+                "position": [0, 16, 0],
                 "key": [1, 2, 4, 5, 6, 8]
             }
         }
@@ -5002,7 +5002,7 @@
         "step": 448,
         "agents": {
             "1": {
-                "position": [1, 13, 0],
+                "position": [1, 15, 0],
                 "key": [1, 2, 4, 5, 6, 8]
             }
         }
@@ -5013,7 +5013,7 @@
         "step": 449,
         "agents": {
             "1": {
-                "position": [0, 12, 0],
+                "position": [0, 14, 0],
                 "key": [1, 2, 4, 5, 6, 8]
             }
         }
@@ -5024,7 +5024,7 @@
         "step": 450,
         "agents": {
             "1": {
-                "position": [1, 11, 0],
+                "position": [1, 13, 0],
                 "key": [1, 2, 4, 5, 6, 8]
             }
         }
@@ -5035,7 +5035,7 @@
         "step": 451,
         "agents": {
             "1": {
-                "position": [0, 10, 0],
+                "position": [0, 12, 0],
                 "key": [1, 2, 4, 5, 6, 8]
             }
         }
@@ -5046,7 +5046,7 @@
         "step": 452,
         "agents": {
             "1": {
-                "position": [1, 9, 0],
+                "position": [1, 11, 0],
                 "key": [1, 2, 4, 5, 6, 8]
             }
         }
@@ -5057,7 +5057,7 @@
         "step": 453,
         "agents": {
             "1": {
-                "position": [0, 8, 0],
+                "position": [0, 10, 0],
                 "key": [1, 2, 4, 5, 6, 8]
             }
         }
@@ -5068,7 +5068,7 @@
         "step": 454,
         "agents": {
             "1": {
-                "position": [1, 7, 0],
+                "position": [1, 9, 0],
                 "key": [1, 2, 4, 5, 6, 8]
             }
         }
@@ -5079,7 +5079,7 @@
         "step": 455,
         "agents": {
             "1": {
-                "position": [0, 6, 0],
+                "position": [0, 8, 0],
                 "key": [1, 2, 4, 5, 6, 8]
             }
         }
@@ -5090,7 +5090,7 @@
         "step": 456,
         "agents": {
             "1": {
-                "position": [1, 5, 0],
+                "position": [1, 7, 0],
                 "key": [1, 2, 4, 5, 6, 8]
             }
         }
@@ -5101,7 +5101,7 @@
         "step": 457,
         "agents": {
             "1": {
-                "position": [0, 4, 0],
+                "position": [0, 6, 0],
                 "key": [1, 2, 4, 5, 6, 8]
             }
         }
@@ -5112,7 +5112,7 @@
         "step": 458,
         "agents": {
             "1": {
-                "position": [1, 3, 0],
+                "position": [1, 5, 0],
                 "key": [1, 2, 4, 5, 6, 8]
             }
         }
@@ -5123,7 +5123,7 @@
         "step": 459,
         "agents": {
             "1": {
-                "position": [0, 2, 0],
+                "position": [0, 4, 0],
                 "key": [1, 2, 4, 5, 6, 8]
             }
         }
@@ -5134,7 +5134,7 @@
         "step": 460,
         "agents": {
             "1": {
-                "position": [1, 1, 0],
+                "position": [1, 3, 0],
                 "key": [1, 2, 4, 5, 6, 8]
             }
         }
@@ -5145,7 +5145,7 @@
         "step": 461,
         "agents": {
             "1": {
-                "position": [1, 0, 0],
+                "position": [0, 2, 0],
                 "key": [1, 2, 4, 5, 6, 8]
             }
         }
@@ -5156,7 +5156,7 @@
         "step": 462,
         "agents": {
             "1": {
-                "position": [2, 0, 0],
+                "position": [1, 1, 0],
                 "key": [1, 2, 4, 5, 6, 8]
             }
         }
@@ -5167,7 +5167,7 @@
         "step": 463,
         "agents": {
             "1": {
-                "position": [3, 0, 0],
+                "position": [1, 0, 0],
                 "key": [1, 2, 4, 5, 6, 8]
             }
         }
@@ -5178,7 +5178,7 @@
         "step": 464,
         "agents": {
             "1": {
-                "position": [4, 1, 0],
+                "position": [2, 0, 0],
                 "key": [1, 2, 4, 5, 6, 8]
             }
         }
@@ -5189,7 +5189,7 @@
         "step": 465,
         "agents": {
             "1": {
-                "position": [5, 0, 0],
+                "position": [3, 0, 0],
                 "key": [1, 2, 4, 5, 6, 8]
             }
         }
@@ -5200,7 +5200,7 @@
         "step": 466,
         "agents": {
             "1": {
-                "position": [6, 0, 0],
+                "position": [4, 1, 0],
                 "key": [1, 2, 4, 5, 6, 8]
             }
         }
@@ -5211,7 +5211,7 @@
         "step": 467,
         "agents": {
             "1": {
-                "position": [7, 0, 0],
+                "position": [5, 0, 0],
                 "key": [1, 2, 4, 5, 6, 8]
             }
         }
@@ -5222,7 +5222,7 @@
         "step": 468,
         "agents": {
             "1": {
-                "position": [8, 0, 0],
+                "position": [6, 0, 0],
                 "key": [1, 2, 4, 5, 6, 8]
             }
         }
@@ -5233,7 +5233,7 @@
         "step": 469,
         "agents": {
             "1": {
-                "position": [9, 0, 0],
+                "position": [7, 0, 0],
                 "key": [1, 2, 4, 5, 6, 8]
             }
         }
@@ -5244,7 +5244,7 @@
         "step": 470,
         "agents": {
             "1": {
-                "position": [9, 1, 0],
+                "position": [8, 0, 0],
                 "key": [1, 2, 4, 5, 6, 8]
             }
         }
@@ -5255,7 +5255,7 @@
         "step": 471,
         "agents": {
             "1": {
-                "position": [9, 2, 0],
+                "position": [9, 0, 0],
                 "key": [1, 2, 4, 5, 6, 8]
             }
         }
@@ -5266,7 +5266,7 @@
         "step": 472,
         "agents": {
             "1": {
-                "position": [9, 3, 0],
+                "position": [9, 1, 0],
                 "key": [1, 2, 4, 5, 6, 8]
             }
         }
@@ -5277,7 +5277,7 @@
         "step": 473,
         "agents": {
             "1": {
-                "position": [8, 4, 0],
+                "position": [9, 2, 0],
                 "key": [1, 2, 4, 5, 6, 8]
             }
         }
@@ -5288,29 +5288,29 @@
         "step": 474,
         "agents": {
             "1": {
-                "position": [9, 5, 0],
+                "position": [9, 3, 0],
                 "key": [1, 2, 4, 5, 6, 8]
             }
         }
     },
     "475": {
         "isWin": false,
-        "floor": [1],
+        "floor": [0],
         "step": 475,
         "agents": {
             "1": {
-                "position": [8, 7, 1],
+                "position": [8, 4, 0],
                 "key": [1, 2, 4, 5, 6, 8]
             }
         }
     },
     "476": {
         "isWin": false,
-        "floor": [1],
+        "floor": [0],
         "step": 476,
         "agents": {
             "1": {
-                "position": [9, 6, 1],
+                "position": [9, 5, 0],
                 "key": [1, 2, 4, 5, 6, 8]
             }
         }
@@ -5321,7 +5321,7 @@
         "step": 477,
         "agents": {
             "1": {
-                "position": [8, 5, 1],
+                "position": [8, 7, 1],
                 "key": [1, 2, 4, 5, 6, 8]
             }
         }
@@ -5332,7 +5332,7 @@
         "step": 478,
         "agents": {
             "1": {
-                "position": [9, 4, 1],
+                "position": [9, 6, 1],
                 "key": [1, 2, 4, 5, 6, 8]
             }
         }
@@ -5343,7 +5343,7 @@
         "step": 479,
         "agents": {
             "1": {
-                "position": [9, 3, 1],
+                "position": [8, 5, 1],
                 "key": [1, 2, 4, 5, 6, 8]
             }
         }
@@ -5354,7 +5354,7 @@
         "step": 480,
         "agents": {
             "1": {
-                "position": [9, 2, 1],
+                "position": [9, 4, 1],
                 "key": [1, 2, 4, 5, 6, 8]
             }
         }
@@ -5365,7 +5365,7 @@
         "step": 481,
         "agents": {
             "1": {
-                "position": [9, 1, 1],
+                "position": [9, 3, 1],
                 "key": [1, 2, 4, 5, 6, 8]
             }
         }
@@ -5376,7 +5376,7 @@
         "step": 482,
         "agents": {
             "1": {
-                "position": [9, 0, 1],
+                "position": [9, 2, 1],
                 "key": [1, 2, 4, 5, 6, 8]
             }
         }
@@ -5387,7 +5387,7 @@
         "step": 483,
         "agents": {
             "1": {
-                "position": [8, 0, 1],
+                "position": [9, 1, 1],
                 "key": [1, 2, 4, 5, 6, 8]
             }
         }
@@ -5398,7 +5398,7 @@
         "step": 484,
         "agents": {
             "1": {
-                "position": [7, 0, 1],
+                "position": [9, 0, 1],
                 "key": [1, 2, 4, 5, 6, 8]
             }
         }
@@ -5409,7 +5409,7 @@
         "step": 485,
         "agents": {
             "1": {
-                "position": [6, 0, 1],
+                "position": [8, 0, 1],
                 "key": [1, 2, 4, 5, 6, 8]
             }
         }
@@ -5420,7 +5420,7 @@
         "step": 486,
         "agents": {
             "1": {
-                "position": [5, 0, 1],
+                "position": [7, 0, 1],
                 "key": [1, 2, 4, 5, 6, 8]
             }
         }
@@ -5431,7 +5431,7 @@
         "step": 487,
         "agents": {
             "1": {
-                "position": [4, 1, 1],
+                "position": [6, 0, 1],
                 "key": [1, 2, 4, 5, 6, 8]
             }
         }
@@ -5442,7 +5442,7 @@
         "step": 488,
         "agents": {
             "1": {
-                "position": [3, 0, 1],
+                "position": [5, 0, 1],
                 "key": [1, 2, 4, 5, 6, 8]
             }
         }
@@ -5453,7 +5453,7 @@
         "step": 489,
         "agents": {
             "1": {
-                "position": [2, 0, 1],
+                "position": [4, 1, 1],
                 "key": [1, 2, 4, 5, 6, 8]
             }
         }
@@ -5464,7 +5464,7 @@
         "step": 490,
         "agents": {
             "1": {
-                "position": [1, 0, 1],
+                "position": [3, 0, 1],
                 "key": [1, 2, 4, 5, 6, 8]
             }
         }
@@ -5475,7 +5475,7 @@
         "step": 491,
         "agents": {
             "1": {
-                "position": [0, 1, 1],
+                "position": [2, 0, 1],
                 "key": [1, 2, 4, 5, 6, 8]
             }
         }
@@ -5486,7 +5486,7 @@
         "step": 492,
         "agents": {
             "1": {
-                "position": [1, 2, 1],
+                "position": [1, 0, 1],
                 "key": [1, 2, 4, 5, 6, 8]
             }
         }
@@ -5497,7 +5497,7 @@
         "step": 493,
         "agents": {
             "1": {
-                "position": [0, 3, 1],
+                "position": [0, 1, 1],
                 "key": [1, 2, 4, 5, 6, 8]
             }
         }
@@ -5508,7 +5508,7 @@
         "step": 494,
         "agents": {
             "1": {
-                "position": [1, 4, 1],
+                "position": [1, 2, 1],
                 "key": [1, 2, 4, 5, 6, 8]
             }
         }
@@ -5519,7 +5519,7 @@
         "step": 495,
         "agents": {
             "1": {
-                "position": [0, 5, 1],
+                "position": [0, 3, 1],
                 "key": [1, 2, 4, 5, 6, 8]
             }
         }
@@ -5530,7 +5530,7 @@
         "step": 496,
         "agents": {
             "1": {
-                "position": [1, 6, 1],
+                "position": [1, 4, 1],
                 "key": [1, 2, 4, 5, 6, 8]
             }
         }
@@ -5541,7 +5541,7 @@
         "step": 497,
         "agents": {
             "1": {
-                "position": [0, 7, 1],
+                "position": [0, 5, 1],
                 "key": [1, 2, 4, 5, 6, 8]
             }
         }
@@ -5552,7 +5552,7 @@
         "step": 498,
         "agents": {
             "1": {
-                "position": [1, 8, 1],
+                "position": [1, 6, 1],
                 "key": [1, 2, 4, 5, 6, 8]
             }
         }
@@ -5563,7 +5563,7 @@
         "step": 499,
         "agents": {
             "1": {
-                "position": [0, 9, 1],
+                "position": [0, 7, 1],
                 "key": [1, 2, 4, 5, 6, 8]
             }
         }
@@ -5574,7 +5574,7 @@
         "step": 500,
         "agents": {
             "1": {
-                "position": [1, 10, 1],
+                "position": [1, 8, 1],
                 "key": [1, 2, 4, 5, 6, 8]
             }
         }
@@ -5585,7 +5585,7 @@
         "step": 501,
         "agents": {
             "1": {
-                "position": [1, 11, 1],
+                "position": [0, 9, 1],
                 "key": [1, 2, 4, 5, 6, 8]
             }
         }
@@ -5596,7 +5596,7 @@
         "step": 502,
         "agents": {
             "1": {
-                "position": [2, 11, 1],
+                "position": [1, 10, 1],
                 "key": [1, 2, 4, 5, 6, 8]
             }
         }
@@ -5607,7 +5607,7 @@
         "step": 503,
         "agents": {
             "1": {
-                "position": [3, 11, 1],
+                "position": [1, 11, 1],
                 "key": [1, 2, 4, 5, 6, 8]
             }
         }
@@ -5618,7 +5618,7 @@
         "step": 504,
         "agents": {
             "1": {
-                "position": [4, 12, 1],
+                "position": [2, 11, 1],
                 "key": [1, 2, 4, 5, 6, 8]
             }
         }
@@ -5629,7 +5629,7 @@
         "step": 505,
         "agents": {
             "1": {
-                "position": [5, 13, 1],
+                "position": [3, 11, 1],
                 "key": [1, 2, 4, 5, 6, 8]
             }
         }
@@ -5640,7 +5640,7 @@
         "step": 506,
         "agents": {
             "1": {
-                "position": [6, 14, 1],
+                "position": [4, 12, 1],
                 "key": [1, 2, 4, 5, 6, 8]
             }
         }
@@ -5651,7 +5651,7 @@
         "step": 507,
         "agents": {
             "1": {
-                "position": [7, 15, 1],
+                "position": [5, 13, 1],
                 "key": [1, 2, 4, 5, 6, 8]
             }
         }
@@ -5662,7 +5662,7 @@
         "step": 508,
         "agents": {
             "1": {
-                "position": [8, 14, 1],
+                "position": [6, 14, 1],
                 "key": [1, 2, 4, 5, 6, 8]
             }
         }
@@ -5673,7 +5673,7 @@
         "step": 509,
         "agents": {
             "1": {
-                "position": [9, 15, 1],
+                "position": [7, 15, 1],
                 "key": [1, 2, 4, 5, 6, 8]
             }
         }
@@ -5684,7 +5684,7 @@
         "step": 510,
         "agents": {
             "1": {
-                "position": [10, 14, 1],
+                "position": [8, 14, 1],
                 "key": [1, 2, 4, 5, 6, 8]
             }
         }
@@ -5695,7 +5695,7 @@
         "step": 511,
         "agents": {
             "1": {
-                "position": [11, 15, 1],
+                "position": [9, 15, 1],
                 "key": [1, 2, 4, 5, 6, 8]
             }
         }
@@ -5706,7 +5706,7 @@
         "step": 512,
         "agents": {
             "1": {
-                "position": [12, 14, 1],
+                "position": [10, 14, 1],
                 "key": [1, 2, 4, 5, 6, 8]
             }
         }
@@ -5717,7 +5717,7 @@
         "step": 513,
         "agents": {
             "1": {
-                "position": [13, 15, 1],
+                "position": [11, 15, 1],
                 "key": [1, 2, 4, 5, 6, 8]
             }
         }
@@ -5728,7 +5728,7 @@
         "step": 514,
         "agents": {
             "1": {
-                "position": [14, 14, 1],
+                "position": [12, 14, 1],
                 "key": [1, 2, 4, 5, 6, 8]
             }
         }
@@ -5739,7 +5739,7 @@
         "step": 515,
         "agents": {
             "1": {
-                "position": [15, 15, 1],
+                "position": [13, 15, 1],
                 "key": [1, 2, 4, 5, 6, 8]
             }
         }
@@ -5750,7 +5750,7 @@
         "step": 516,
         "agents": {
             "1": {
-                "position": [16, 14, 1],
+                "position": [14, 14, 1],
                 "key": [1, 2, 4, 5, 6, 8]
             }
         }
@@ -5761,7 +5761,7 @@
         "step": 517,
         "agents": {
             "1": {
-                "position": [17, 15, 1],
+                "position": [15, 15, 1],
                 "key": [1, 2, 4, 5, 6, 8]
             }
         }
@@ -5772,7 +5772,7 @@
         "step": 518,
         "agents": {
             "1": {
-                "position": [18, 14, 1],
+                "position": [16, 14, 1],
                 "key": [1, 2, 4, 5, 6, 8]
             }
         }
@@ -5783,7 +5783,7 @@
         "step": 519,
         "agents": {
             "1": {
-                "position": [19, 15, 1],
+                "position": [17, 15, 1],
                 "key": [1, 2, 4, 5, 6, 8]
             }
         }
@@ -5794,7 +5794,7 @@
         "step": 520,
         "agents": {
             "1": {
-                "position": [20, 14, 1],
+                "position": [18, 14, 1],
                 "key": [1, 2, 4, 5, 6, 8]
             }
         }
@@ -5805,7 +5805,7 @@
         "step": 521,
         "agents": {
             "1": {
-                "position": [21, 15, 1],
+                "position": [19, 15, 1],
                 "key": [1, 2, 4, 5, 6, 8]
             }
         }
@@ -5816,7 +5816,7 @@
         "step": 522,
         "agents": {
             "1": {
-                "position": [22, 16, 1],
+                "position": [20, 14, 1],
                 "key": [1, 2, 4, 5, 6, 8]
             }
         }
@@ -5827,7 +5827,7 @@
         "step": 523,
         "agents": {
             "1": {
-                "position": [23, 15, 1],
+                "position": [21, 15, 1],
                 "key": [1, 2, 4, 5, 6, 8]
             }
         }
@@ -5838,7 +5838,7 @@
         "step": 524,
         "agents": {
             "1": {
-                "position": [24, 14, 1],
+                "position": [22, 16, 1],
                 "key": [1, 2, 4, 5, 6, 8]
             }
         }
@@ -5849,7 +5849,7 @@
         "step": 525,
         "agents": {
             "1": {
-                "position": [23, 13, 1],
+                "position": [23, 15, 1],
                 "key": [1, 2, 4, 5, 6, 8]
             }
         }
@@ -5860,7 +5860,7 @@
         "step": 526,
         "agents": {
             "1": {
-                "position": [24, 12, 1],
+                "position": [24, 14, 1],
                 "key": [1, 2, 4, 5, 6, 8]
             }
         }
@@ -5871,7 +5871,7 @@
         "step": 527,
         "agents": {
             "1": {
-                "position": [23, 11, 1],
+                "position": [23, 13, 1],
                 "key": [1, 2, 4, 5, 6, 8]
             }
         }
@@ -5882,7 +5882,7 @@
         "step": 528,
         "agents": {
             "1": {
-                "position": [24, 10, 1],
+                "position": [24, 12, 1],
                 "key": [1, 2, 4, 5, 6, 8]
             }
         }
@@ -5893,7 +5893,7 @@
         "step": 529,
         "agents": {
             "1": {
-                "position": [23, 9, 1],
+                "position": [23, 11, 1],
                 "key": [1, 2, 4, 5, 6, 8]
             }
         }
@@ -5904,7 +5904,7 @@
         "step": 530,
         "agents": {
             "1": {
-                "position": [24, 8, 1],
+                "position": [24, 10, 1],
                 "key": [1, 2, 4, 5, 6, 8]
             }
         }
@@ -5915,7 +5915,7 @@
         "step": 531,
         "agents": {
             "1": {
-                "position": [23, 7, 1],
+                "position": [23, 9, 1],
                 "key": [1, 2, 4, 5, 6, 8]
             }
         }
@@ -5926,7 +5926,7 @@
         "step": 532,
         "agents": {
             "1": {
-                "position": [24, 6, 1],
+                "position": [24, 8, 1],
                 "key": [1, 2, 4, 5, 6, 8]
             }
         }
@@ -5937,7 +5937,7 @@
         "step": 533,
         "agents": {
             "1": {
-                "position": [23, 5, 1],
+                "position": [23, 7, 1],
                 "key": [1, 2, 4, 5, 6, 8]
             }
         }
@@ -5948,7 +5948,7 @@
         "step": 534,
         "agents": {
             "1": {
-                "position": [24, 4, 1],
+                "position": [24, 6, 1],
                 "key": [1, 2, 4, 5, 6, 8]
             }
         }
@@ -5959,7 +5959,7 @@
         "step": 535,
         "agents": {
             "1": {
-                "position": [23, 3, 1],
+                "position": [23, 5, 1],
                 "key": [1, 2, 4, 5, 6, 8]
             }
         }
@@ -5970,7 +5970,7 @@
         "step": 536,
         "agents": {
             "1": {
-                "position": [24, 2, 1],
+                "position": [24, 4, 1],
                 "key": [1, 2, 4, 5, 6, 8]
             }
         }
@@ -5981,7 +5981,7 @@
         "step": 537,
         "agents": {
             "1": {
-                "position": [23, 1, 1],
+                "position": [23, 3, 1],
                 "key": [1, 2, 4, 5, 6, 8]
             }
         }
@@ -5992,8 +5992,8 @@
         "step": 538,
         "agents": {
             "1": {
-                "position": [24, 0, 1],
-                "key": [1, 2, 4, 5, 6, 8, 13]
+                "position": [24, 2, 1],
+                "key": [1, 2, 4, 5, 6, 8]
             }
         }
     },
@@ -6004,7 +6004,7 @@
         "agents": {
             "1": {
                 "position": [23, 1, 1],
-                "key": [1, 2, 4, 5, 6, 8, 13]
+                "key": [1, 2, 4, 5, 6, 8]
             }
         }
     },
@@ -6014,7 +6014,7 @@
         "step": 540,
         "agents": {
             "1": {
-                "position": [24, 2, 1],
+                "position": [24, 0, 1],
                 "key": [1, 2, 4, 5, 6, 8, 13]
             }
         }
@@ -6025,7 +6025,7 @@
         "step": 541,
         "agents": {
             "1": {
-                "position": [23, 3, 1],
+                "position": [23, 1, 1],
                 "key": [1, 2, 4, 5, 6, 8, 13]
             }
         }
@@ -6036,7 +6036,7 @@
         "step": 542,
         "agents": {
             "1": {
-                "position": [24, 4, 1],
+                "position": [24, 2, 1],
                 "key": [1, 2, 4, 5, 6, 8, 13]
             }
         }
@@ -6047,7 +6047,7 @@
         "step": 543,
         "agents": {
             "1": {
-                "position": [23, 5, 1],
+                "position": [23, 3, 1],
                 "key": [1, 2, 4, 5, 6, 8, 13]
             }
         }
@@ -6058,7 +6058,7 @@
         "step": 544,
         "agents": {
             "1": {
-                "position": [24, 6, 1],
+                "position": [24, 4, 1],
                 "key": [1, 2, 4, 5, 6, 8, 13]
             }
         }
@@ -6069,7 +6069,7 @@
         "step": 545,
         "agents": {
             "1": {
-                "position": [23, 7, 1],
+                "position": [23, 5, 1],
                 "key": [1, 2, 4, 5, 6, 8, 13]
             }
         }
@@ -6080,7 +6080,7 @@
         "step": 546,
         "agents": {
             "1": {
-                "position": [24, 8, 1],
+                "position": [24, 6, 1],
                 "key": [1, 2, 4, 5, 6, 8, 13]
             }
         }
@@ -6091,7 +6091,7 @@
         "step": 547,
         "agents": {
             "1": {
-                "position": [23, 9, 1],
+                "position": [23, 7, 1],
                 "key": [1, 2, 4, 5, 6, 8, 13]
             }
         }
@@ -6102,7 +6102,7 @@
         "step": 548,
         "agents": {
             "1": {
-                "position": [24, 10, 1],
+                "position": [24, 8, 1],
                 "key": [1, 2, 4, 5, 6, 8, 13]
             }
         }
@@ -6113,7 +6113,7 @@
         "step": 549,
         "agents": {
             "1": {
-                "position": [23, 11, 1],
+                "position": [23, 9, 1],
                 "key": [1, 2, 4, 5, 6, 8, 13]
             }
         }
@@ -6124,7 +6124,7 @@
         "step": 550,
         "agents": {
             "1": {
-                "position": [24, 12, 1],
+                "position": [24, 10, 1],
                 "key": [1, 2, 4, 5, 6, 8, 13]
             }
         }
@@ -6135,7 +6135,7 @@
         "step": 551,
         "agents": {
             "1": {
-                "position": [23, 13, 1],
+                "position": [23, 11, 1],
                 "key": [1, 2, 4, 5, 6, 8, 13]
             }
         }
@@ -6146,7 +6146,7 @@
         "step": 552,
         "agents": {
             "1": {
-                "position": [24, 14, 1],
+                "position": [24, 12, 1],
                 "key": [1, 2, 4, 5, 6, 8, 13]
             }
         }
@@ -6157,7 +6157,7 @@
         "step": 553,
         "agents": {
             "1": {
-                "position": [23, 15, 1],
+                "position": [23, 13, 1],
                 "key": [1, 2, 4, 5, 6, 8, 13]
             }
         }
@@ -6168,7 +6168,7 @@
         "step": 554,
         "agents": {
             "1": {
-                "position": [22, 16, 1],
+                "position": [24, 14, 1],
                 "key": [1, 2, 4, 5, 6, 8, 13]
             }
         }
@@ -6179,7 +6179,7 @@
         "step": 555,
         "agents": {
             "1": {
-                "position": [21, 15, 1],
+                "position": [23, 15, 1],
                 "key": [1, 2, 4, 5, 6, 8, 13]
             }
         }
@@ -6190,7 +6190,7 @@
         "step": 556,
         "agents": {
             "1": {
-                "position": [20, 14, 1],
+                "position": [22, 16, 1],
                 "key": [1, 2, 4, 5, 6, 8, 13]
             }
         }
@@ -6201,7 +6201,7 @@
         "step": 557,
         "agents": {
             "1": {
-                "position": [21, 13, 1],
+                "position": [21, 15, 1],
                 "key": [1, 2, 4, 5, 6, 8, 13]
             }
         }
@@ -6212,7 +6212,7 @@
         "step": 558,
         "agents": {
             "1": {
-                "position": [20, 12, 1],
+                "position": [20, 14, 1],
                 "key": [1, 2, 4, 5, 6, 8, 13]
             }
         }
@@ -6223,7 +6223,7 @@
         "step": 559,
         "agents": {
             "1": {
-                "position": [21, 11, 1],
+                "position": [21, 13, 1],
                 "key": [1, 2, 4, 5, 6, 8, 13]
             }
         }
@@ -6234,7 +6234,7 @@
         "step": 560,
         "agents": {
             "1": {
-                "position": [20, 10, 1],
+                "position": [20, 12, 1],
                 "key": [1, 2, 4, 5, 6, 8, 13]
             }
         }
@@ -6245,7 +6245,7 @@
         "step": 561,
         "agents": {
             "1": {
-                "position": [21, 9, 1],
+                "position": [21, 11, 1],
                 "key": [1, 2, 4, 5, 6, 8, 13]
             }
         }
@@ -6256,7 +6256,7 @@
         "step": 562,
         "agents": {
             "1": {
-                "position": [20, 8, 1],
+                "position": [20, 10, 1],
                 "key": [1, 2, 4, 5, 6, 8, 13]
             }
         }
@@ -6267,7 +6267,7 @@
         "step": 563,
         "agents": {
             "1": {
-                "position": [21, 7, 1],
+                "position": [21, 9, 1],
                 "key": [1, 2, 4, 5, 6, 8, 13]
             }
         }
@@ -6278,7 +6278,7 @@
         "step": 564,
         "agents": {
             "1": {
-                "position": [20, 6, 1],
+                "position": [20, 8, 1],
                 "key": [1, 2, 4, 5, 6, 8, 13]
             }
         }
@@ -6289,7 +6289,7 @@
         "step": 565,
         "agents": {
             "1": {
-                "position": [21, 5, 1],
+                "position": [21, 7, 1],
                 "key": [1, 2, 4, 5, 6, 8, 13]
             }
         }
@@ -6300,7 +6300,7 @@
         "step": 566,
         "agents": {
             "1": {
-                "position": [20, 4, 1],
+                "position": [20, 6, 1],
                 "key": [1, 2, 4, 5, 6, 8, 13]
             }
         }
@@ -6311,7 +6311,7 @@
         "step": 567,
         "agents": {
             "1": {
-                "position": [21, 3, 1],
+                "position": [21, 5, 1],
                 "key": [1, 2, 4, 5, 6, 8, 13]
             }
         }
@@ -6322,7 +6322,7 @@
         "step": 568,
         "agents": {
             "1": {
-                "position": [20, 2, 1],
+                "position": [20, 4, 1],
                 "key": [1, 2, 4, 5, 6, 8, 13]
             }
         }
@@ -6333,7 +6333,7 @@
         "step": 569,
         "agents": {
             "1": {
-                "position": [21, 1, 1],
+                "position": [21, 3, 1],
                 "key": [1, 2, 4, 5, 6, 8, 13]
             }
         }
@@ -6344,7 +6344,7 @@
         "step": 570,
         "agents": {
             "1": {
-                "position": [20, 0, 1],
+                "position": [20, 2, 1],
                 "key": [1, 2, 4, 5, 6, 8, 13]
             }
         }
@@ -6355,7 +6355,7 @@
         "step": 571,
         "agents": {
             "1": {
-                "position": [19, 0, 1],
+                "position": [21, 1, 1],
                 "key": [1, 2, 4, 5, 6, 8, 13]
             }
         }
@@ -6366,7 +6366,7 @@
         "step": 572,
         "agents": {
             "1": {
-                "position": [18, 1, 1],
+                "position": [20, 0, 1],
                 "key": [1, 2, 4, 5, 6, 8, 13]
             }
         }
@@ -6377,7 +6377,7 @@
         "step": 573,
         "agents": {
             "1": {
-                "position": [17, 2, 1],
+                "position": [19, 0, 1],
                 "key": [1, 2, 4, 5, 6, 8, 13]
             }
         }
@@ -6388,7 +6388,7 @@
         "step": 574,
         "agents": {
             "1": {
-                "position": [18, 3, 1],
+                "position": [18, 1, 1],
                 "key": [1, 2, 4, 5, 6, 8, 13]
             }
         }
@@ -6399,7 +6399,7 @@
         "step": 575,
         "agents": {
             "1": {
-                "position": [17, 4, 1],
+                "position": [17, 2, 1],
                 "key": [1, 2, 4, 5, 6, 8, 13]
             }
         }
@@ -6410,7 +6410,7 @@
         "step": 576,
         "agents": {
             "1": {
-                "position": [18, 5, 1],
+                "position": [18, 3, 1],
                 "key": [1, 2, 4, 5, 6, 8, 13]
             }
         }
@@ -6421,7 +6421,7 @@
         "step": 577,
         "agents": {
             "1": {
-                "position": [17, 6, 1],
+                "position": [17, 4, 1],
                 "key": [1, 2, 4, 5, 6, 8, 13]
             }
         }
@@ -6432,7 +6432,7 @@
         "step": 578,
         "agents": {
             "1": {
-                "position": [18, 7, 1],
+                "position": [18, 5, 1],
                 "key": [1, 2, 4, 5, 6, 8, 13]
             }
         }
@@ -6443,7 +6443,7 @@
         "step": 579,
         "agents": {
             "1": {
-                "position": [17, 8, 1],
+                "position": [17, 6, 1],
                 "key": [1, 2, 4, 5, 6, 8, 13]
             }
         }
@@ -6454,7 +6454,7 @@
         "step": 580,
         "agents": {
             "1": {
-                "position": [18, 9, 1],
+                "position": [18, 7, 1],
                 "key": [1, 2, 4, 5, 6, 8, 13]
             }
         }
@@ -6465,7 +6465,7 @@
         "step": 581,
         "agents": {
             "1": {
-                "position": [17, 10, 1],
+                "position": [17, 8, 1],
                 "key": [1, 2, 4, 5, 6, 8, 13]
             }
         }
@@ -6476,7 +6476,7 @@
         "step": 582,
         "agents": {
             "1": {
-                "position": [18, 11, 1],
+                "position": [18, 9, 1],
                 "key": [1, 2, 4, 5, 6, 8, 13]
             }
         }
@@ -6487,7 +6487,7 @@
         "step": 583,
         "agents": {
             "1": {
-                "position": [17, 12, 1],
+                "position": [17, 10, 1],
                 "key": [1, 2, 4, 5, 6, 8, 13]
             }
         }
@@ -6498,7 +6498,7 @@
         "step": 584,
         "agents": {
             "1": {
-                "position": [18, 13, 1],
+                "position": [18, 11, 1],
                 "key": [1, 2, 4, 5, 6, 8, 13]
             }
         }
@@ -6509,7 +6509,7 @@
         "step": 585,
         "agents": {
             "1": {
-                "position": [17, 14, 1],
+                "position": [17, 12, 1],
                 "key": [1, 2, 4, 5, 6, 8, 13]
             }
         }
@@ -6520,7 +6520,7 @@
         "step": 586,
         "agents": {
             "1": {
-                "position": [16, 15, 1],
+                "position": [18, 13, 1],
                 "key": [1, 2, 4, 5, 6, 8, 13]
             }
         }
@@ -6531,7 +6531,7 @@
         "step": 587,
         "agents": {
             "1": {
-                "position": [15, 14, 1],
+                "position": [17, 14, 1],
                 "key": [1, 2, 4, 5, 6, 8, 13]
             }
         }
@@ -6542,7 +6542,7 @@
         "step": 588,
         "agents": {
             "1": {
-                "position": [14, 15, 1],
+                "position": [16, 15, 1],
                 "key": [1, 2, 4, 5, 6, 8, 13]
             }
         }
@@ -6553,7 +6553,7 @@
         "step": 589,
         "agents": {
             "1": {
-                "position": [13, 14, 1],
+                "position": [15, 14, 1],
                 "key": [1, 2, 4, 5, 6, 8, 13]
             }
         }
@@ -6564,7 +6564,7 @@
         "step": 590,
         "agents": {
             "1": {
-                "position": [12, 15, 1],
+                "position": [14, 15, 1],
                 "key": [1, 2, 4, 5, 6, 8, 13]
             }
         }
@@ -6575,7 +6575,7 @@
         "step": 591,
         "agents": {
             "1": {
-                "position": [11, 14, 1],
+                "position": [13, 14, 1],
                 "key": [1, 2, 4, 5, 6, 8, 13]
             }
         }
@@ -6586,7 +6586,7 @@
         "step": 592,
         "agents": {
             "1": {
-                "position": [10, 15, 1],
+                "position": [12, 15, 1],
                 "key": [1, 2, 4, 5, 6, 8, 13]
             }
         }
@@ -6597,7 +6597,7 @@
         "step": 593,
         "agents": {
             "1": {
-                "position": [9, 14, 1],
+                "position": [11, 14, 1],
                 "key": [1, 2, 4, 5, 6, 8, 13]
             }
         }
@@ -6608,7 +6608,7 @@
         "step": 594,
         "agents": {
             "1": {
-                "position": [8, 15, 1],
+                "position": [10, 15, 1],
                 "key": [1, 2, 4, 5, 6, 8, 13]
             }
         }
@@ -6619,7 +6619,7 @@
         "step": 595,
         "agents": {
             "1": {
-                "position": [7, 14, 1],
+                "position": [9, 14, 1],
                 "key": [1, 2, 4, 5, 6, 8, 13]
             }
         }
@@ -6630,7 +6630,7 @@
         "step": 596,
         "agents": {
             "1": {
-                "position": [6, 15, 1],
+                "position": [8, 15, 1],
                 "key": [1, 2, 4, 5, 6, 8, 13]
             }
         }
@@ -6641,7 +6641,7 @@
         "step": 597,
         "agents": {
             "1": {
-                "position": [5, 14, 1],
+                "position": [7, 14, 1],
                 "key": [1, 2, 4, 5, 6, 8, 13]
             }
         }
@@ -6652,7 +6652,7 @@
         "step": 598,
         "agents": {
             "1": {
-                "position": [4, 15, 1],
+                "position": [6, 15, 1],
                 "key": [1, 2, 4, 5, 6, 8, 13]
             }
         }
@@ -6663,7 +6663,7 @@
         "step": 599,
         "agents": {
             "1": {
-                "position": [3, 14, 1],
+                "position": [5, 14, 1],
                 "key": [1, 2, 4, 5, 6, 8, 13]
             }
         }
@@ -6674,7 +6674,7 @@
         "step": 600,
         "agents": {
             "1": {
-                "position": [3, 13, 1],
+                "position": [4, 15, 1],
                 "key": [1, 2, 4, 5, 6, 8, 13]
             }
         }
@@ -6685,7 +6685,7 @@
         "step": 601,
         "agents": {
             "1": {
-                "position": [4, 12, 1],
+                "position": [3, 14, 1],
                 "key": [1, 2, 4, 5, 6, 8, 13]
             }
         }
@@ -6696,7 +6696,7 @@
         "step": 602,
         "agents": {
             "1": {
-                "position": [3, 11, 1],
+                "position": [3, 13, 1],
                 "key": [1, 2, 4, 5, 6, 8, 13]
             }
         }
@@ -6707,7 +6707,7 @@
         "step": 603,
         "agents": {
             "1": {
-                "position": [2, 11, 1],
+                "position": [4, 12, 1],
                 "key": [1, 2, 4, 5, 6, 8, 13]
             }
         }
@@ -6718,7 +6718,7 @@
         "step": 604,
         "agents": {
             "1": {
-                "position": [1, 11, 1],
+                "position": [3, 11, 1],
                 "key": [1, 2, 4, 5, 6, 8, 13]
             }
         }
@@ -6729,7 +6729,7 @@
         "step": 605,
         "agents": {
             "1": {
-                "position": [0, 10, 1],
+                "position": [2, 11, 1],
                 "key": [1, 2, 4, 5, 6, 8, 13]
             }
         }
@@ -6740,7 +6740,7 @@
         "step": 606,
         "agents": {
             "1": {
-                "position": [1, 9, 1],
+                "position": [1, 11, 1],
                 "key": [1, 2, 4, 5, 6, 8, 13]
             }
         }
@@ -6751,7 +6751,7 @@
         "step": 607,
         "agents": {
             "1": {
-                "position": [0, 8, 1],
+                "position": [0, 10, 1],
                 "key": [1, 2, 4, 5, 6, 8, 13]
             }
         }
@@ -6762,7 +6762,7 @@
         "step": 608,
         "agents": {
             "1": {
-                "position": [1, 7, 1],
+                "position": [1, 9, 1],
                 "key": [1, 2, 4, 5, 6, 8, 13]
             }
         }
@@ -6773,7 +6773,7 @@
         "step": 609,
         "agents": {
             "1": {
-                "position": [0, 6, 1],
+                "position": [0, 8, 1],
                 "key": [1, 2, 4, 5, 6, 8, 13]
             }
         }
@@ -6784,7 +6784,7 @@
         "step": 610,
         "agents": {
             "1": {
-                "position": [1, 5, 1],
+                "position": [1, 7, 1],
                 "key": [1, 2, 4, 5, 6, 8, 13]
             }
         }
@@ -6795,7 +6795,7 @@
         "step": 611,
         "agents": {
             "1": {
-                "position": [0, 4, 1],
+                "position": [0, 6, 1],
                 "key": [1, 2, 4, 5, 6, 8, 13]
             }
         }
@@ -6806,7 +6806,7 @@
         "step": 612,
         "agents": {
             "1": {
-                "position": [1, 3, 1],
+                "position": [1, 5, 1],
                 "key": [1, 2, 4, 5, 6, 8, 13]
             }
         }
@@ -6817,7 +6817,7 @@
         "step": 613,
         "agents": {
             "1": {
-                "position": [0, 2, 1],
+                "position": [0, 4, 1],
                 "key": [1, 2, 4, 5, 6, 8, 13]
             }
         }
@@ -6828,7 +6828,7 @@
         "step": 614,
         "agents": {
             "1": {
-                "position": [1, 1, 1],
+                "position": [1, 3, 1],
                 "key": [1, 2, 4, 5, 6, 8, 13]
             }
         }
@@ -6839,7 +6839,7 @@
         "step": 615,
         "agents": {
             "1": {
-                "position": [1, 0, 1],
+                "position": [0, 2, 1],
                 "key": [1, 2, 4, 5, 6, 8, 13]
             }
         }
@@ -6850,7 +6850,7 @@
         "step": 616,
         "agents": {
             "1": {
-                "position": [2, 0, 1],
+                "position": [1, 1, 1],
                 "key": [1, 2, 4, 5, 6, 8, 13]
             }
         }
@@ -6861,7 +6861,7 @@
         "step": 617,
         "agents": {
             "1": {
-                "position": [3, 0, 1],
+                "position": [1, 0, 1],
                 "key": [1, 2, 4, 5, 6, 8, 13]
             }
         }
@@ -6872,7 +6872,7 @@
         "step": 618,
         "agents": {
             "1": {
-                "position": [4, 1, 1],
+                "position": [2, 0, 1],
                 "key": [1, 2, 4, 5, 6, 8, 13]
             }
         }
@@ -6883,7 +6883,7 @@
         "step": 619,
         "agents": {
             "1": {
-                "position": [5, 0, 1],
+                "position": [3, 0, 1],
                 "key": [1, 2, 4, 5, 6, 8, 13]
             }
         }
@@ -6894,7 +6894,7 @@
         "step": 620,
         "agents": {
             "1": {
-                "position": [6, 0, 1],
+                "position": [4, 1, 1],
                 "key": [1, 2, 4, 5, 6, 8, 13]
             }
         }
@@ -6905,7 +6905,7 @@
         "step": 621,
         "agents": {
             "1": {
-                "position": [7, 0, 1],
+                "position": [5, 0, 1],
                 "key": [1, 2, 4, 5, 6, 8, 13]
             }
         }
@@ -6916,7 +6916,7 @@
         "step": 622,
         "agents": {
             "1": {
-                "position": [8, 0, 1],
+                "position": [6, 0, 1],
                 "key": [1, 2, 4, 5, 6, 8, 13]
             }
         }
@@ -6927,7 +6927,7 @@
         "step": 623,
         "agents": {
             "1": {
-                "position": [9, 0, 1],
+                "position": [7, 0, 1],
                 "key": [1, 2, 4, 5, 6, 8, 13]
             }
         }
@@ -6938,7 +6938,7 @@
         "step": 624,
         "agents": {
             "1": {
-                "position": [9, 1, 1],
+                "position": [8, 0, 1],
                 "key": [1, 2, 4, 5, 6, 8, 13]
             }
         }
@@ -6949,7 +6949,7 @@
         "step": 625,
         "agents": {
             "1": {
-                "position": [9, 2, 1],
+                "position": [9, 0, 1],
                 "key": [1, 2, 4, 5, 6, 8, 13]
             }
         }
@@ -6960,7 +6960,7 @@
         "step": 626,
         "agents": {
             "1": {
-                "position": [9, 3, 1],
+                "position": [9, 1, 1],
                 "key": [1, 2, 4, 5, 6, 8, 13]
             }
         }
@@ -6971,7 +6971,7 @@
         "step": 627,
         "agents": {
             "1": {
-                "position": [8, 4, 1],
+                "position": [9, 2, 1],
                 "key": [1, 2, 4, 5, 6, 8, 13]
             }
         }
@@ -6982,29 +6982,29 @@
         "step": 628,
         "agents": {
             "1": {
-                "position": [9, 5, 1],
+                "position": [9, 3, 1],
                 "key": [1, 2, 4, 5, 6, 8, 13]
             }
         }
     },
     "629": {
         "isWin": false,
-        "floor": [0],
+        "floor": [1],
         "step": 629,
         "agents": {
             "1": {
-                "position": [8, 7, 0],
+                "position": [8, 4, 1],
                 "key": [1, 2, 4, 5, 6, 8, 13]
             }
         }
     },
     "630": {
         "isWin": false,
-        "floor": [0],
+        "floor": [1],
         "step": 630,
         "agents": {
             "1": {
-                "position": [9, 6, 0],
+                "position": [9, 5, 1],
                 "key": [1, 2, 4, 5, 6, 8, 13]
             }
         }
@@ -7015,7 +7015,7 @@
         "step": 631,
         "agents": {
             "1": {
-                "position": [8, 5, 0],
+                "position": [8, 7, 0],
                 "key": [1, 2, 4, 5, 6, 8, 13]
             }
         }
@@ -7026,7 +7026,7 @@
         "step": 632,
         "agents": {
             "1": {
-                "position": [9, 4, 0],
+                "position": [9, 6, 0],
                 "key": [1, 2, 4, 5, 6, 8, 13]
             }
         }
@@ -7037,7 +7037,7 @@
         "step": 633,
         "agents": {
             "1": {
-                "position": [8, 3, 0],
+                "position": [8, 5, 0],
                 "key": [1, 2, 4, 5, 6, 8, 13]
             }
         }
@@ -7048,7 +7048,7 @@
         "step": 634,
         "agents": {
             "1": {
-                "position": [7, 3, 0],
+                "position": [9, 4, 0],
                 "key": [1, 2, 4, 5, 6, 8, 13]
             }
         }
@@ -7059,7 +7059,7 @@
         "step": 635,
         "agents": {
             "1": {
-                "position": [6, 4, 0],
+                "position": [8, 3, 0],
                 "key": [1, 2, 4, 5, 6, 8, 13]
             }
         }
@@ -7070,7 +7070,7 @@
         "step": 636,
         "agents": {
             "1": {
-                "position": [5, 5, 0],
+                "position": [7, 3, 0],
                 "key": [1, 2, 4, 5, 6, 8, 13]
             }
         }
@@ -7081,7 +7081,7 @@
         "step": 637,
         "agents": {
             "1": {
-                "position": [6, 6, 0],
+                "position": [6, 4, 0],
                 "key": [1, 2, 4, 5, 6, 8, 13]
             }
         }
@@ -7092,7 +7092,7 @@
         "step": 638,
         "agents": {
             "1": {
-                "position": [5, 7, 0],
+                "position": [5, 5, 0],
                 "key": [1, 2, 4, 5, 6, 8, 13]
             }
         }
@@ -7103,7 +7103,7 @@
         "step": 639,
         "agents": {
             "1": {
-                "position": [4, 7, 0],
+                "position": [6, 6, 0],
                 "key": [1, 2, 4, 5, 6, 8, 13]
             }
         }
@@ -7114,7 +7114,7 @@
         "step": 640,
         "agents": {
             "1": {
-                "position": [3, 7, 0],
+                "position": [5, 7, 0],
                 "key": [1, 2, 4, 5, 6, 8, 13]
             }
         }
@@ -7125,7 +7125,7 @@
         "step": 641,
         "agents": {
             "1": {
-                "position": [3, 6, 0],
+                "position": [4, 7, 0],
                 "key": [1, 2, 4, 5, 6, 8, 13]
             }
         }
@@ -7136,7 +7136,7 @@
         "step": 642,
         "agents": {
             "1": {
-                "position": [3, 5, 0],
+                "position": [3, 7, 0],
                 "key": [1, 2, 4, 5, 6, 8, 13]
             }
         }
@@ -7147,7 +7147,7 @@
         "step": 643,
         "agents": {
             "1": {
-                "position": [3, 4, 0],
+                "position": [3, 6, 0],
                 "key": [1, 2, 4, 5, 6, 8, 13]
             }
         }
@@ -7158,7 +7158,7 @@
         "step": 644,
         "agents": {
             "1": {
-                "position": [3, 3, 0],
+                "position": [3, 5, 0],
                 "key": [1, 2, 4, 5, 6, 8, 13]
             }
         }
@@ -7169,7 +7169,7 @@
         "step": 645,
         "agents": {
             "1": {
-                "position": [3, 2, 0],
+                "position": [3, 4, 0],
                 "key": [1, 2, 4, 5, 6, 8, 13]
             }
         }
@@ -7180,7 +7180,7 @@
         "step": 646,
         "agents": {
             "1": {
-                "position": [3, 1, 0],
+                "position": [3, 3, 0],
                 "key": [1, 2, 4, 5, 6, 8, 13]
             }
         }
@@ -7191,7 +7191,7 @@
         "step": 647,
         "agents": {
             "1": {
-                "position": [3, 0, 0],
+                "position": [3, 2, 0],
                 "key": [1, 2, 4, 5, 6, 8, 13]
             }
         }
@@ -7202,7 +7202,7 @@
         "step": 648,
         "agents": {
             "1": {
-                "position": [2, 0, 0],
+                "position": [3, 1, 0],
                 "key": [1, 2, 4, 5, 6, 8, 13]
             }
         }
@@ -7213,7 +7213,7 @@
         "step": 649,
         "agents": {
             "1": {
-                "position": [1, 0, 0],
+                "position": [3, 0, 0],
                 "key": [1, 2, 4, 5, 6, 8, 13]
             }
         }
@@ -7224,7 +7224,7 @@
         "step": 650,
         "agents": {
             "1": {
-                "position": [0, 1, 0],
+                "position": [2, 0, 0],
                 "key": [1, 2, 4, 5, 6, 8, 13]
             }
         }
@@ -7235,7 +7235,7 @@
         "step": 651,
         "agents": {
             "1": {
-                "position": [1, 2, 0],
+                "position": [1, 0, 0],
                 "key": [1, 2, 4, 5, 6, 8, 13]
             }
         }
@@ -7246,7 +7246,7 @@
         "step": 652,
         "agents": {
             "1": {
-                "position": [0, 3, 0],
+                "position": [0, 1, 0],
                 "key": [1, 2, 4, 5, 6, 8, 13]
             }
         }
@@ -7257,7 +7257,7 @@
         "step": 653,
         "agents": {
             "1": {
-                "position": [1, 4, 0],
+                "position": [1, 2, 0],
                 "key": [1, 2, 4, 5, 6, 8, 13]
             }
         }
@@ -7268,7 +7268,7 @@
         "step": 654,
         "agents": {
             "1": {
-                "position": [0, 5, 0],
+                "position": [0, 3, 0],
                 "key": [1, 2, 4, 5, 6, 8, 13]
             }
         }
@@ -7279,7 +7279,7 @@
         "step": 655,
         "agents": {
             "1": {
-                "position": [1, 6, 0],
+                "position": [1, 4, 0],
                 "key": [1, 2, 4, 5, 6, 8, 13]
             }
         }
@@ -7290,7 +7290,7 @@
         "step": 656,
         "agents": {
             "1": {
-                "position": [0, 7, 0],
+                "position": [0, 5, 0],
                 "key": [1, 2, 4, 5, 6, 8, 13]
             }
         }
@@ -7301,7 +7301,7 @@
         "step": 657,
         "agents": {
             "1": {
-                "position": [1, 8, 0],
+                "position": [1, 6, 0],
                 "key": [1, 2, 4, 5, 6, 8, 13]
             }
         }
@@ -7312,7 +7312,7 @@
         "step": 658,
         "agents": {
             "1": {
-                "position": [0, 9, 0],
+                "position": [0, 7, 0],
                 "key": [1, 2, 4, 5, 6, 8, 13]
             }
         }
@@ -7323,7 +7323,7 @@
         "step": 659,
         "agents": {
             "1": {
-                "position": [1, 10, 0],
+                "position": [1, 8, 0],
                 "key": [1, 2, 4, 5, 6, 8, 13]
             }
         }
@@ -7334,7 +7334,7 @@
         "step": 660,
         "agents": {
             "1": {
-                "position": [1, 11, 0],
+                "position": [0, 9, 0],
                 "key": [1, 2, 4, 5, 6, 8, 13]
             }
         }
@@ -7345,7 +7345,7 @@
         "step": 661,
         "agents": {
             "1": {
-                "position": [2, 11, 0],
+                "position": [1, 10, 0],
                 "key": [1, 2, 4, 5, 6, 8, 13]
             }
         }
@@ -7356,7 +7356,7 @@
         "step": 662,
         "agents": {
             "1": {
-                "position": [3, 11, 0],
+                "position": [1, 11, 0],
                 "key": [1, 2, 4, 5, 6, 8, 13]
             }
         }
@@ -7367,7 +7367,7 @@
         "step": 663,
         "agents": {
             "1": {
-                "position": [4, 12, 0],
+                "position": [2, 11, 0],
                 "key": [1, 2, 4, 5, 6, 8, 13]
             }
         }
@@ -7378,7 +7378,7 @@
         "step": 664,
         "agents": {
             "1": {
-                "position": [5, 13, 0],
+                "position": [3, 11, 0],
                 "key": [1, 2, 4, 5, 6, 8, 13]
             }
         }
@@ -7389,7 +7389,7 @@
         "step": 665,
         "agents": {
             "1": {
-                "position": [6, 14, 0],
+                "position": [4, 12, 0],
                 "key": [1, 2, 4, 5, 6, 8, 13]
             }
         }
@@ -7400,7 +7400,7 @@
         "step": 666,
         "agents": {
             "1": {
-                "position": [7, 15, 0],
+                "position": [5, 13, 0],
                 "key": [1, 2, 4, 5, 6, 8, 13]
             }
         }
@@ -7411,7 +7411,7 @@
         "step": 667,
         "agents": {
             "1": {
-                "position": [8, 14, 0],
+                "position": [6, 14, 0],
                 "key": [1, 2, 4, 5, 6, 8, 13]
             }
         }
@@ -7422,7 +7422,7 @@
         "step": 668,
         "agents": {
             "1": {
-                "position": [9, 15, 0],
+                "position": [7, 15, 0],
                 "key": [1, 2, 4, 5, 6, 8, 13]
             }
         }
@@ -7433,7 +7433,7 @@
         "step": 669,
         "agents": {
             "1": {
-                "position": [10, 14, 0],
+                "position": [8, 14, 0],
                 "key": [1, 2, 4, 5, 6, 8, 13]
             }
         }
@@ -7444,7 +7444,7 @@
         "step": 670,
         "agents": {
             "1": {
-                "position": [11, 15, 0],
+                "position": [9, 15, 0],
                 "key": [1, 2, 4, 5, 6, 8, 13]
             }
         }
@@ -7455,7 +7455,7 @@
         "step": 671,
         "agents": {
             "1": {
-                "position": [12, 14, 0],
+                "position": [10, 14, 0],
                 "key": [1, 2, 4, 5, 6, 8, 13]
             }
         }
@@ -7466,7 +7466,7 @@
         "step": 672,
         "agents": {
             "1": {
-                "position": [13, 15, 0],
+                "position": [11, 15, 0],
                 "key": [1, 2, 4, 5, 6, 8, 13]
             }
         }
@@ -7477,7 +7477,7 @@
         "step": 673,
         "agents": {
             "1": {
-                "position": [14, 14, 0],
+                "position": [12, 14, 0],
                 "key": [1, 2, 4, 5, 6, 8, 13]
             }
         }
@@ -7488,7 +7488,7 @@
         "step": 674,
         "agents": {
             "1": {
-                "position": [15, 15, 0],
+                "position": [13, 15, 0],
                 "key": [1, 2, 4, 5, 6, 8, 13]
             }
         }
@@ -7499,7 +7499,7 @@
         "step": 675,
         "agents": {
             "1": {
-                "position": [16, 14, 0],
+                "position": [14, 14, 0],
                 "key": [1, 2, 4, 5, 6, 8, 13]
             }
         }
@@ -7510,7 +7510,7 @@
         "step": 676,
         "agents": {
             "1": {
-                "position": [17, 15, 0],
+                "position": [15, 15, 0],
                 "key": [1, 2, 4, 5, 6, 8, 13]
             }
         }
@@ -7521,7 +7521,7 @@
         "step": 677,
         "agents": {
             "1": {
-                "position": [18, 14, 0],
+                "position": [16, 14, 0],
                 "key": [1, 2, 4, 5, 6, 8, 13]
             }
         }
@@ -7532,7 +7532,7 @@
         "step": 678,
         "agents": {
             "1": {
-                "position": [19, 15, 0],
+                "position": [17, 15, 0],
                 "key": [1, 2, 4, 5, 6, 8, 13]
             }
         }
@@ -7543,7 +7543,7 @@
         "step": 679,
         "agents": {
             "1": {
-                "position": [20, 14, 0],
+                "position": [18, 14, 0],
                 "key": [1, 2, 4, 5, 6, 8, 13]
             }
         }
@@ -7554,7 +7554,7 @@
         "step": 680,
         "agents": {
             "1": {
-                "position": [21, 15, 0],
+                "position": [19, 15, 0],
                 "key": [1, 2, 4, 5, 6, 8, 13]
             }
         }
@@ -7565,7 +7565,7 @@
         "step": 681,
         "agents": {
             "1": {
-                "position": [22, 16, 0],
+                "position": [20, 14, 0],
                 "key": [1, 2, 4, 5, 6, 8, 13]
             }
         }
@@ -7576,7 +7576,7 @@
         "step": 682,
         "agents": {
             "1": {
-                "position": [23, 15, 0],
+                "position": [21, 15, 0],
                 "key": [1, 2, 4, 5, 6, 8, 13]
             }
         }
@@ -7587,7 +7587,7 @@
         "step": 683,
         "agents": {
             "1": {
-                "position": [24, 16, 0],
+                "position": [22, 16, 0],
                 "key": [1, 2, 4, 5, 6, 8, 13]
             }
         }
@@ -7598,7 +7598,7 @@
         "step": 684,
         "agents": {
             "1": {
-                "position": [24, 17, 0],
+                "position": [23, 15, 0],
                 "key": [1, 2, 4, 5, 6, 8, 13]
             }
         }
@@ -7609,7 +7609,7 @@
         "step": 685,
         "agents": {
             "1": {
-                "position": [24, 18, 0],
+                "position": [24, 16, 0],
                 "key": [1, 2, 4, 5, 6, 8, 13]
             }
         }
@@ -7620,7 +7620,7 @@
         "step": 686,
         "agents": {
             "1": {
-                "position": [23, 19, 0],
+                "position": [24, 17, 0],
                 "key": [1, 2, 4, 5, 6, 8, 13]
             }
         }
@@ -7631,7 +7631,7 @@
         "step": 687,
         "agents": {
             "1": {
-                "position": [24, 20, 0],
+                "position": [24, 18, 0],
                 "key": [1, 2, 4, 5, 6, 8, 13]
             }
         }
@@ -7642,7 +7642,7 @@
         "step": 688,
         "agents": {
             "1": {
-                "position": [23, 21, 0],
+                "position": [23, 19, 0],
                 "key": [1, 2, 4, 5, 6, 8, 13]
             }
         }
@@ -7653,7 +7653,7 @@
         "step": 689,
         "agents": {
             "1": {
-                "position": [22, 21, 0],
+                "position": [24, 20, 0],
                 "key": [1, 2, 4, 5, 6, 8, 13]
             }
         }
@@ -7664,7 +7664,7 @@
         "step": 690,
         "agents": {
             "1": {
-                "position": [21, 20, 0],
+                "position": [23, 21, 0],
                 "key": [1, 2, 4, 5, 6, 8, 13]
             }
         }
@@ -7675,7 +7675,7 @@
         "step": 691,
         "agents": {
             "1": {
-                "position": [20, 19, 0],
+                "position": [22, 21, 0],
                 "key": [1, 2, 4, 5, 6, 8, 13]
             }
         }
@@ -7686,7 +7686,7 @@
         "step": 692,
         "agents": {
             "1": {
-                "position": [20, 18, 0],
+                "position": [21, 20, 0],
                 "key": [1, 2, 4, 5, 6, 8, 13]
             }
         }
@@ -7697,7 +7697,7 @@
         "step": 693,
         "agents": {
             "1": {
-                "position": [19, 18, 0],
+                "position": [20, 19, 0],
                 "key": [1, 2, 4, 5, 6, 8, 13]
             }
         }
@@ -7708,7 +7708,7 @@
         "step": 694,
         "agents": {
             "1": {
-                "position": [18, 18, 0],
+                "position": [20, 18, 0],
                 "key": [1, 2, 4, 5, 6, 8, 13]
             }
         }
@@ -7719,7 +7719,7 @@
         "step": 695,
         "agents": {
             "1": {
-                "position": [17, 19, 0],
+                "position": [19, 18, 0],
                 "key": [1, 2, 4, 5, 6, 8, 13]
             }
         }
@@ -7730,7 +7730,7 @@
         "step": 696,
         "agents": {
             "1": {
-                "position": [18, 20, 0],
+                "position": [18, 18, 0],
                 "key": [1, 2, 4, 5, 6, 8, 13]
             }
         }
@@ -7741,7 +7741,7 @@
         "step": 697,
         "agents": {
             "1": {
-                "position": [17, 21, 0],
+                "position": [17, 19, 0],
                 "key": [1, 2, 4, 5, 6, 8, 13]
             }
         }
@@ -7752,7 +7752,7 @@
         "step": 698,
         "agents": {
             "1": {
-                "position": [16, 21, 0],
+                "position": [18, 20, 0],
                 "key": [1, 2, 4, 5, 6, 8, 13]
             }
         }
@@ -7763,7 +7763,7 @@
         "step": 699,
         "agents": {
             "1": {
-                "position": [15, 20, 0],
+                "position": [17, 21, 0],
                 "key": [1, 2, 4, 5, 6, 8, 13]
             }
         }
@@ -7774,7 +7774,7 @@
         "step": 700,
         "agents": {
             "1": {
-                "position": [14, 21, 0],
+                "position": [16, 21, 0],
                 "key": [1, 2, 4, 5, 6, 8, 13]
             }
         }
@@ -7785,7 +7785,7 @@
         "step": 701,
         "agents": {
             "1": {
-                "position": [13, 20, 0],
+                "position": [15, 20, 0],
                 "key": [1, 2, 4, 5, 6, 8, 13]
             }
         }
@@ -7796,8 +7796,8 @@
         "step": 702,
         "agents": {
             "1": {
-                "position": [12, 21, 0],
-                "key": [1, 2, 4, 5, 6, 8, 13, 14]
+                "position": [14, 21, 0],
+                "key": [1, 2, 4, 5, 6, 8, 13]
             }
         }
     },
@@ -7808,7 +7808,7 @@
         "agents": {
             "1": {
                 "position": [13, 20, 0],
-                "key": [1, 2, 4, 5, 6, 8, 13, 14]
+                "key": [1, 2, 4, 5, 6, 8, 13]
             }
         }
     },
@@ -7818,7 +7818,7 @@
         "step": 704,
         "agents": {
             "1": {
-                "position": [14, 21, 0],
+                "position": [12, 21, 0],
                 "key": [1, 2, 4, 5, 6, 8, 13, 14]
             }
         }
@@ -7829,7 +7829,7 @@
         "step": 705,
         "agents": {
             "1": {
-                "position": [15, 20, 0],
+                "position": [13, 20, 0],
                 "key": [1, 2, 4, 5, 6, 8, 13, 14]
             }
         }
@@ -7840,7 +7840,7 @@
         "step": 706,
         "agents": {
             "1": {
-                "position": [16, 21, 0],
+                "position": [14, 21, 0],
                 "key": [1, 2, 4, 5, 6, 8, 13, 14]
             }
         }
@@ -7851,7 +7851,7 @@
         "step": 707,
         "agents": {
             "1": {
-                "position": [17, 20, 0],
+                "position": [15, 20, 0],
                 "key": [1, 2, 4, 5, 6, 8, 13, 14]
             }
         }
@@ -7862,7 +7862,7 @@
         "step": 708,
         "agents": {
             "1": {
-                "position": [18, 19, 0],
+                "position": [16, 21, 0],
                 "key": [1, 2, 4, 5, 6, 8, 13, 14]
             }
         }
@@ -7873,7 +7873,7 @@
         "step": 709,
         "agents": {
             "1": {
-                "position": [17, 18, 0],
+                "position": [17, 20, 0],
                 "key": [1, 2, 4, 5, 6, 8, 13, 14]
             }
         }
@@ -7884,7 +7884,7 @@
         "step": 710,
         "agents": {
             "1": {
-                "position": [16, 17, 0],
+                "position": [18, 19, 0],
                 "key": [1, 2, 4, 5, 6, 8, 13, 14]
             }
         }
@@ -7895,7 +7895,7 @@
         "step": 711,
         "agents": {
             "1": {
-                "position": [15, 18, 0],
+                "position": [17, 18, 0],
                 "key": [1, 2, 4, 5, 6, 8, 13, 14]
             }
         }
@@ -7906,7 +7906,7 @@
         "step": 712,
         "agents": {
             "1": {
-                "position": [14, 17, 0],
+                "position": [16, 17, 0],
                 "key": [1, 2, 4, 5, 6, 8, 13, 14]
             }
         }
@@ -7917,7 +7917,7 @@
         "step": 713,
         "agents": {
             "1": {
-                "position": [13, 18, 0],
+                "position": [15, 18, 0],
                 "key": [1, 2, 4, 5, 6, 8, 13, 14]
             }
         }
@@ -7928,7 +7928,7 @@
         "step": 714,
         "agents": {
             "1": {
-                "position": [12, 17, 0],
+                "position": [14, 17, 0],
                 "key": [1, 2, 4, 5, 6, 8, 13, 14]
             }
         }
@@ -7939,7 +7939,7 @@
         "step": 715,
         "agents": {
             "1": {
-                "position": [11, 18, 0],
+                "position": [13, 18, 0],
                 "key": [1, 2, 4, 5, 6, 8, 13, 14]
             }
         }
@@ -7950,7 +7950,7 @@
         "step": 716,
         "agents": {
             "1": {
-                "position": [10, 19, 0],
+                "position": [12, 17, 0],
                 "key": [1, 2, 4, 5, 6, 8, 13, 14]
             }
         }
@@ -7961,7 +7961,7 @@
         "step": 717,
         "agents": {
             "1": {
-                "position": [9, 20, 0],
+                "position": [11, 18, 0],
                 "key": [1, 2, 4, 5, 6, 8, 13, 14]
             }
         }
@@ -7972,7 +7972,7 @@
         "step": 718,
         "agents": {
             "1": {
-                "position": [8, 21, 0],
+                "position": [10, 19, 0],
                 "key": [1, 2, 4, 5, 6, 8, 13, 14]
             }
         }
@@ -7983,7 +7983,7 @@
         "step": 719,
         "agents": {
             "1": {
-                "position": [7, 20, 0],
+                "position": [9, 20, 0],
                 "key": [1, 2, 4, 5, 6, 8, 13, 14]
             }
         }
@@ -7994,7 +7994,7 @@
         "step": 720,
         "agents": {
             "1": {
-                "position": [6, 21, 0],
+                "position": [8, 21, 0],
                 "key": [1, 2, 4, 5, 6, 8, 13, 14]
             }
         }
@@ -8005,7 +8005,7 @@
         "step": 721,
         "agents": {
             "1": {
-                "position": [5, 20, 0],
+                "position": [7, 20, 0],
                 "key": [1, 2, 4, 5, 6, 8, 13, 14]
             }
         }
@@ -8016,7 +8016,7 @@
         "step": 722,
         "agents": {
             "1": {
-                "position": [4, 21, 0],
+                "position": [6, 21, 0],
                 "key": [1, 2, 4, 5, 6, 8, 13, 14]
             }
         }
@@ -8027,7 +8027,7 @@
         "step": 723,
         "agents": {
             "1": {
-                "position": [3, 21, 0],
+                "position": [5, 20, 0],
                 "key": [1, 2, 4, 5, 6, 8, 13, 14]
             }
         }
@@ -8038,7 +8038,7 @@
         "step": 724,
         "agents": {
             "1": {
-                "position": [3, 22, 0],
+                "position": [4, 21, 0],
                 "key": [1, 2, 4, 5, 6, 8, 13, 14]
             }
         }
@@ -8049,7 +8049,7 @@
         "step": 725,
         "agents": {
             "1": {
-                "position": [3, 23, 0],
+                "position": [3, 21, 0],
                 "key": [1, 2, 4, 5, 6, 8, 13, 14]
             }
         }
@@ -8060,7 +8060,7 @@
         "step": 726,
         "agents": {
             "1": {
-                "position": [2, 24, 0],
+                "position": [3, 22, 0],
                 "key": [1, 2, 4, 5, 6, 8, 13, 14]
             }
         }
@@ -8071,7 +8071,7 @@
         "step": 727,
         "agents": {
             "1": {
-                "position": [1, 23, 0],
+                "position": [3, 23, 0],
                 "key": [1, 2, 4, 5, 6, 8, 13, 14]
             }
         }
@@ -8082,7 +8082,7 @@
         "step": 728,
         "agents": {
             "1": {
-                "position": [0, 22, 0],
+                "position": [2, 24, 0],
                 "key": [1, 2, 4, 5, 6, 8, 13, 14]
             }
         }
@@ -8093,7 +8093,7 @@
         "step": 729,
         "agents": {
             "1": {
-                "position": [1, 21, 0],
+                "position": [1, 23, 0],
                 "key": [1, 2, 4, 5, 6, 8, 13, 14]
             }
         }
@@ -8104,7 +8104,7 @@
         "step": 730,
         "agents": {
             "1": {
-                "position": [0, 20, 0],
+                "position": [0, 22, 0],
                 "key": [1, 2, 4, 5, 6, 8, 13, 14]
             }
         }
@@ -8115,7 +8115,7 @@
         "step": 731,
         "agents": {
             "1": {
-                "position": [1, 19, 0],
+                "position": [1, 21, 0],
                 "key": [1, 2, 4, 5, 6, 8, 13, 14]
             }
         }
@@ -8126,7 +8126,7 @@
         "step": 732,
         "agents": {
             "1": {
-                "position": [0, 18, 0],
+                "position": [0, 20, 0],
                 "key": [1, 2, 4, 5, 6, 8, 13, 14]
             }
         }
@@ -8137,7 +8137,7 @@
         "step": 733,
         "agents": {
             "1": {
-                "position": [1, 17, 0],
+                "position": [1, 19, 0],
                 "key": [1, 2, 4, 5, 6, 8, 13, 14]
             }
         }
@@ -8148,7 +8148,7 @@
         "step": 734,
         "agents": {
             "1": {
-                "position": [0, 16, 0],
+                "position": [0, 18, 0],
                 "key": [1, 2, 4, 5, 6, 8, 13, 14]
             }
         }
@@ -8159,7 +8159,7 @@
         "step": 735,
         "agents": {
             "1": {
-                "position": [1, 15, 0],
+                "position": [1, 17, 0],
                 "key": [1, 2, 4, 5, 6, 8, 13, 14]
             }
         }
@@ -8170,7 +8170,7 @@
         "step": 736,
         "agents": {
             "1": {
-                "position": [0, 14, 0],
+                "position": [0, 16, 0],
                 "key": [1, 2, 4, 5, 6, 8, 13, 14]
             }
         }
@@ -8181,7 +8181,7 @@
         "step": 737,
         "agents": {
             "1": {
-                "position": [1, 13, 0],
+                "position": [1, 15, 0],
                 "key": [1, 2, 4, 5, 6, 8, 13, 14]
             }
         }
@@ -8192,7 +8192,7 @@
         "step": 738,
         "agents": {
             "1": {
-                "position": [0, 12, 0],
+                "position": [0, 14, 0],
                 "key": [1, 2, 4, 5, 6, 8, 13, 14]
             }
         }
@@ -8203,7 +8203,7 @@
         "step": 739,
         "agents": {
             "1": {
-                "position": [1, 11, 0],
+                "position": [1, 13, 0],
                 "key": [1, 2, 4, 5, 6, 8, 13, 14]
             }
         }
@@ -8214,7 +8214,7 @@
         "step": 740,
         "agents": {
             "1": {
-                "position": [2, 11, 0],
+                "position": [0, 12, 0],
                 "key": [1, 2, 4, 5, 6, 8, 13, 14]
             }
         }
@@ -8225,7 +8225,7 @@
         "step": 741,
         "agents": {
             "1": {
-                "position": [3, 11, 0],
+                "position": [1, 11, 0],
                 "key": [1, 2, 4, 5, 6, 8, 13, 14]
             }
         }
@@ -8236,7 +8236,7 @@
         "step": 742,
         "agents": {
             "1": {
-                "position": [4, 12, 0],
+                "position": [2, 11, 0],
                 "key": [1, 2, 4, 5, 6, 8, 13, 14]
             }
         }
@@ -8247,7 +8247,7 @@
         "step": 743,
         "agents": {
             "1": {
-                "position": [5, 13, 0],
+                "position": [3, 11, 0],
                 "key": [1, 2, 4, 5, 6, 8, 13, 14]
             }
         }
@@ -8258,7 +8258,7 @@
         "step": 744,
         "agents": {
             "1": {
-                "position": [6, 14, 0],
+                "position": [4, 12, 0],
                 "key": [1, 2, 4, 5, 6, 8, 13, 14]
             }
         }
@@ -8269,7 +8269,7 @@
         "step": 745,
         "agents": {
             "1": {
-                "position": [7, 15, 0],
+                "position": [5, 13, 0],
                 "key": [1, 2, 4, 5, 6, 8, 13, 14]
             }
         }
@@ -8280,7 +8280,7 @@
         "step": 746,
         "agents": {
             "1": {
-                "position": [8, 14, 0],
+                "position": [6, 14, 0],
                 "key": [1, 2, 4, 5, 6, 8, 13, 14]
             }
         }
@@ -8291,7 +8291,7 @@
         "step": 747,
         "agents": {
             "1": {
-                "position": [9, 15, 0],
+                "position": [7, 15, 0],
                 "key": [1, 2, 4, 5, 6, 8, 13, 14]
             }
         }
@@ -8302,7 +8302,7 @@
         "step": 748,
         "agents": {
             "1": {
-                "position": [10, 14, 0],
+                "position": [8, 14, 0],
                 "key": [1, 2, 4, 5, 6, 8, 13, 14]
             }
         }
@@ -8313,7 +8313,7 @@
         "step": 749,
         "agents": {
             "1": {
-                "position": [11, 15, 0],
+                "position": [9, 15, 0],
                 "key": [1, 2, 4, 5, 6, 8, 13, 14]
             }
         }
@@ -8324,7 +8324,7 @@
         "step": 750,
         "agents": {
             "1": {
-                "position": [12, 14, 0],
+                "position": [10, 14, 0],
                 "key": [1, 2, 4, 5, 6, 8, 13, 14]
             }
         }
@@ -8335,7 +8335,7 @@
         "step": 751,
         "agents": {
             "1": {
-                "position": [13, 15, 0],
+                "position": [11, 15, 0],
                 "key": [1, 2, 4, 5, 6, 8, 13, 14]
             }
         }
@@ -8346,7 +8346,7 @@
         "step": 752,
         "agents": {
             "1": {
-                "position": [14, 14, 0],
+                "position": [12, 14, 0],
                 "key": [1, 2, 4, 5, 6, 8, 13, 14]
             }
         }
@@ -8357,7 +8357,7 @@
         "step": 753,
         "agents": {
             "1": {
-                "position": [15, 15, 0],
+                "position": [13, 15, 0],
                 "key": [1, 2, 4, 5, 6, 8, 13, 14]
             }
         }
@@ -8368,7 +8368,7 @@
         "step": 754,
         "agents": {
             "1": {
-                "position": [16, 14, 0],
+                "position": [14, 14, 0],
                 "key": [1, 2, 4, 5, 6, 8, 13, 14]
             }
         }
@@ -8379,7 +8379,7 @@
         "step": 755,
         "agents": {
             "1": {
-                "position": [17, 15, 0],
+                "position": [15, 15, 0],
                 "key": [1, 2, 4, 5, 6, 8, 13, 14]
             }
         }
@@ -8390,7 +8390,7 @@
         "step": 756,
         "agents": {
             "1": {
-                "position": [18, 14, 0],
+                "position": [16, 14, 0],
                 "key": [1, 2, 4, 5, 6, 8, 13, 14]
             }
         }
@@ -8401,7 +8401,7 @@
         "step": 757,
         "agents": {
             "1": {
-                "position": [19, 15, 0],
+                "position": [17, 15, 0],
                 "key": [1, 2, 4, 5, 6, 8, 13, 14]
             }
         }
@@ -8412,7 +8412,7 @@
         "step": 758,
         "agents": {
             "1": {
-                "position": [20, 14, 0],
+                "position": [18, 14, 0],
                 "key": [1, 2, 4, 5, 6, 8, 13, 14]
             }
         }
@@ -8423,7 +8423,7 @@
         "step": 759,
         "agents": {
             "1": {
-                "position": [21, 15, 0],
+                "position": [19, 15, 0],
                 "key": [1, 2, 4, 5, 6, 8, 13, 14]
             }
         }
@@ -8434,7 +8434,7 @@
         "step": 760,
         "agents": {
             "1": {
-                "position": [22, 16, 0],
+                "position": [20, 14, 0],
                 "key": [1, 2, 4, 5, 6, 8, 13, 14]
             }
         }
@@ -8445,7 +8445,7 @@
         "step": 761,
         "agents": {
             "1": {
-                "position": [23, 15, 0],
+                "position": [21, 15, 0],
                 "key": [1, 2, 4, 5, 6, 8, 13, 14]
             }
         }
@@ -8456,7 +8456,7 @@
         "step": 762,
         "agents": {
             "1": {
-                "position": [24, 16, 0],
+                "position": [22, 16, 0],
                 "key": [1, 2, 4, 5, 6, 8, 13, 14]
             }
         }
@@ -8467,7 +8467,7 @@
         "step": 763,
         "agents": {
             "1": {
-                "position": [24, 17, 0],
+                "position": [23, 15, 0],
                 "key": [1, 2, 4, 5, 6, 8, 13, 14]
             }
         }
@@ -8478,7 +8478,7 @@
         "step": 764,
         "agents": {
             "1": {
-                "position": [24, 18, 0],
+                "position": [24, 16, 0],
                 "key": [1, 2, 4, 5, 6, 8, 13, 14]
             }
         }
@@ -8489,7 +8489,7 @@
         "step": 765,
         "agents": {
             "1": {
-                "position": [23, 19, 0],
+                "position": [24, 17, 0],
                 "key": [1, 2, 4, 5, 6, 8, 13, 14]
             }
         }
@@ -8500,7 +8500,7 @@
         "step": 766,
         "agents": {
             "1": {
-                "position": [24, 20, 0],
+                "position": [24, 18, 0],
                 "key": [1, 2, 4, 5, 6, 8, 13, 14]
             }
         }
@@ -8511,7 +8511,7 @@
         "step": 767,
         "agents": {
             "1": {
-                "position": [24, 21, 0],
+                "position": [23, 19, 0],
                 "key": [1, 2, 4, 5, 6, 8, 13, 14]
             }
         }
@@ -8522,7 +8522,7 @@
         "step": 768,
         "agents": {
             "1": {
-                "position": [24, 22, 0],
+                "position": [24, 20, 0],
                 "key": [1, 2, 4, 5, 6, 8, 13, 14]
             }
         }
@@ -8533,15 +8533,37 @@
         "step": 769,
         "agents": {
             "1": {
-                "position": [24, 23, 0],
+                "position": [24, 21, 0],
                 "key": [1, 2, 4, 5, 6, 8, 13, 14]
             }
         }
     },
     "770": {
-        "isWin": true,
+        "isWin": false,
         "floor": [0],
         "step": 770,
+        "agents": {
+            "1": {
+                "position": [24, 22, 0],
+                "key": [1, 2, 4, 5, 6, 8, 13, 14]
+            }
+        }
+    },
+    "771": {
+        "isWin": false,
+        "floor": [0],
+        "step": 771,
+        "agents": {
+            "1": {
+                "position": [24, 23, 0],
+                "key": [1, 2, 4, 5, 6, 8, 13, 14]
+            }
+        }
+    },
+    "772": {
+        "isWin": true,
+        "floor": [0],
+        "step": 772,
         "agents": {
             "1": {
                 "position": [24, 24, 0],

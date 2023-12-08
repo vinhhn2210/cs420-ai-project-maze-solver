@@ -92,6 +92,9 @@ class MazerSolverLevel3:
             # get key
             if self.inside(xNext, yNext, layer) and self.mazer[layerNext][xNext][yNext][0] == 'K':
                 keyNext = keyNext | (1 << int(self.mazer[layerNext][xNext][yNext][1:]))
+            # move to cell
+            if self.canMove(xNext, yNext, layer, keyNext) and self.isValid(xCor, yNext, layer, key) and self.isValid(xNext, yCor, layer, key):
+                succ.append((xNext, yNext, layer, keyNext))
             # go up floor
             if self.inside(xNext, yNext, layer) and self.mazer[layerNext][xNext][yNext] == 'UP':
                 layerNext += 1
@@ -102,9 +105,6 @@ class MazerSolverLevel3:
                 layerNext -= 1
                 xNext, yNext, layerNext = self.upFloorPosition(layerNext)
                 succ.append((xNext, yNext, layerNext, keyNext))
-            # move to cell
-            if self.canMove(xNext, yNext, layer, keyNext) and self.isValid(xCor, yNext, layer, key) and self.isValid(xNext, yCor, layer, key):
-                succ.append((xNext, yNext, layer, keyNext))
         return succ
 
     # dfs algorithm to solve mazer 
