@@ -8,13 +8,6 @@ class Cell:
 		self.cellCoord = cellCoord
 		self.cellID = cellID
 
-	# def AddPlayer(self, playerId):
-	# 	self.playerSet.add(playerId)
-
-	# def RemovePlayer(self, playerId):
-	# 	if playerId in self.playerSet:
-	# 		self.playerSet.discard(playerId)
-
 	def addAdj(self, adjCell, direction):
 		if direction < 0 or direction > 7:
 			return
@@ -43,6 +36,9 @@ class EmptyCell(Cell):
 
 		self.fillColorPadding = (cellSize[0] * 10 / 100, cellSize[1] * 10 / 100)
 
+		self.rect_dimensions = (self.cellCoord[0] + self.fillColorPadding[0], self.cellCoord[1] + self.fillColorPadding[1], self.cellSize[0] - 2 * self.fillColorPadding[0], self.cellSize[1] - 2 * self.fillColorPadding[1])
+		self.rect_surface = pygame.Surface((self.rect_dimensions[2], self.rect_dimensions[3]), pygame.SRCALPHA)
+
 		# Image
 		self.image = [
 			pygame.transform.scale(Const.CELL_IMAGE_LIST[i], cellSize) 
@@ -70,6 +66,7 @@ class EmptyCell(Cell):
 		# Cell Type
 		self.emptyID = random.randint(0, len(self.image) - 1)
 		self.agentID = -1
+		self.agentDeg = -1
 		self.keyID = -1
 		self.doorID = -1
 		self.chestID = -1
@@ -80,8 +77,13 @@ class EmptyCell(Cell):
 		itemCoord = (self.cellCoord[0] + (self.cellSize[0] - itemSize[0]) / 2, self.cellCoord[1] + self.cellSize[1] * 60 / 100 - itemSize[1])
 		return itemCoord
 
-	def updateAgent(self, agentID):
+	def updateAgent(self, agentID, agentDeg):
 		self.agentID = agentID
+		self.agentDeg = agentDeg
+		curColor = Const.COLOR_AGENT[self.agentID]
+		self.rect_surface.fill((curColor[0], curColor[1], curColor[2], min(255, 128 + agentDeg * 50)))
+
+		# print(agentID, agentDeg)
 
 	def updateChest(self, chestID):
 		self.chestID = chestID
@@ -105,7 +107,9 @@ class EmptyCell(Cell):
 			gameScreen.blit(self.supportKeyImage, self.cellCoord)
 
 		if self.agentID != -1:
-			pygame.draw.rect(gameScreen, Const.COLOR_AGENT[self.agentID], pygame.Rect(self.cellCoord[0] + self.fillColorPadding[0], self.cellCoord[1] + self.fillColorPadding[1], self.cellSize[0] - 2 * self.fillColorPadding[0], self.cellSize[1] - 2 * self.fillColorPadding[1]))
+			gameScreen.blit(self.rect_surface, (self.rect_dimensions[0], self.rect_dimensions[1]))
+			# Color = Const.COLOR_AGENT[self.agentID]
+			# pygame.draw.rect(gameScreen, cellColor, pygame.Rect(self.cellCoord[0] + self.fillColorPadding[0], self.cellCoord[1] + self.fillColorPadding[1], self.cellSize[0] - 2 * self.fillColorPadding[0], self.cellSize[1] - 2 * self.fillColorPadding[1]))
 
 		if self.keyID != -1:
 			gameScreen.blit(self.keyImage[self.keyID], self.keyCoord)
