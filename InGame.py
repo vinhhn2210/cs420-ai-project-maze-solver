@@ -91,12 +91,12 @@ class InGame:
 			"Memory: 10MB",
 			(self.gamePropertiesContent[0] + textPadding, self.gamePropertiesContent[1] + self.gamePropertiesContent[3] * 55 / 100, self.gamePropertiesContent[2] - 2 * textPadding, self.gamePropertiesContent[3] * 10 / 100)
 		)
-		# Time Text
+		# Score Text
 		self.scoreText = TextClass.Text(
 			Const.AMATICSC_FONT,
 			Const.BROWN,
 			25,
-			"Score: 10",
+			"Step: 0",
 			(self.gamePropertiesContent[0] + textPadding, self.gamePropertiesContent[1] + self.gamePropertiesContent[3] * 75 / 100, self.gamePropertiesContent[2] - 2 * textPadding, self.gamePropertiesContent[3] * 10 / 100)
 		)
 		# Agent Property
@@ -156,6 +156,8 @@ class InGame:
 		jsonFile.close()
 
 	def updateMap(self):
+		self.scoreText.changeTextContent(f"Step: {self.step}")
+		
 		for i in range(1, self.totalAgent + 1):
 			listKey = self.jsonData[str(self.step)]['agents'][str(i)]['key']
 			self.agentPropertyList[i - 1].updateListKey(listKey)
