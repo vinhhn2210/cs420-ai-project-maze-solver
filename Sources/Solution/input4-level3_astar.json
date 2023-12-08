@@ -206,7 +206,7 @@
         "step": 12,
         "agents": {
             "1": {
-                "position": [7, 6, 1],
+                "position": [8, 6, 1],
                 "key": [2]
             }
         }
