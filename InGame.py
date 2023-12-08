@@ -174,14 +174,29 @@ class InGame:
 					self.agentList[i - 1].updateAgentInStair(self.gameMap[Z].getCell(X, Y))
 					continue
 
-			if self.map[Z][X][Y] == f'A{i}':
+			if len(self.map[Z][X][Y]) < 3:
 				self.map[Z][X][Y] = f'A{i}0'
-				self.gameMap[Z].getCell(X, Y).updateAgent(i)
+				self.gameMap[Z].getCell(X, Y).updateAgent(i, 0)
 				self.agentList[i - 1].updateAgentCell(self.gameMap[Z].getCell(X, Y))
 			else:
-				self.map[Z][X][Y] = f'A{i}'
-				self.gameMap[Z].getCell(X, Y).updateAgent(i)
-				self.agentList[i - 1].updateAgentCell(self.gameMap[Z].getCell(X, Y))
+				if self.map[Z][X][Y][1] == str(i):
+					deg = int(self.map[Z][X][Y][2:])
+					self.map[Z][X][Y] = f'A{i}{deg + 1}'
+					self.gameMap[Z].getCell(X, Y).updateAgent(i, deg + 1)
+					self.agentList[i - 1].updateAgentCell(self.gameMap[Z].getCell(X, Y))
+				else:
+					self.map[Z][X][Y] = f'A{i}0'
+					self.gameMap[Z].getCell(X, Y).updateAgent(i, 0)
+					self.agentList[i - 1].updateAgentCell(self.gameMap[Z].getCell(X, Y))
+
+			# if self.map[Z][X][Y][:] == f'A{i}':
+			# 	self.map[Z][X][Y] = f'A{i}0'
+			# 	self.gameMap[Z].getCell(X, Y).updateAgent(i)
+			# 	self.agentList[i - 1].updateAgentCell(self.gameMap[Z].getCell(X, Y))
+			# else:
+			# 	self.map[Z][X][Y] = f'A{i}0'
+			# 	self.gameMap[Z].getCell(X, Y).updateAgent(i)
+			# 	self.agentList[i - 1].updateAgentCell(self.gameMap[Z].getCell(X, Y))
 
 	def pauseGame(self):
 		while self.isPause == 1:
