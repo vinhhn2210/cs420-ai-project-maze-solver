@@ -38,6 +38,9 @@ class EmptyCell(Cell):
 		self.doorSize = (cellSize[0] * 90 / 100, cellSize[1] * 120 / 100)
 		self.doorCoord = self.getItemCoord(self.doorSize)
 
+		self.keySize = (self.cellSize[0] * 4 / 10, self.cellSize[1] * 8 / 10)
+		self.keyCoord = self.getItemCoord(self.keySize)
+
 		self.fillColorPadding = (cellSize[0] * 10 / 100, cellSize[1] * 10 / 100)
 
 		# Image
@@ -50,7 +53,7 @@ class EmptyCell(Cell):
 		for i in range(9)]
 
 		self.keyImage = [
-			pygame.transform.scale(Const.CELL_IMAGE_KEY[i], self.cellSize) 
+			pygame.transform.scale(Const.CELL_IMAGE_KEY[i], self.keySize) 
 		for i in range(20)
 		]
 
@@ -100,13 +103,12 @@ class EmptyCell(Cell):
 
 		if self.keyID != -1:
 			gameScreen.blit(self.supportKeyImage, self.cellCoord)
-			gameScreen.blit(self.keyImage[self.keyID], self.cellCoord)
 
 		if self.agentID != -1:
 			pygame.draw.rect(gameScreen, Const.COLOR_AGENT[self.agentID], pygame.Rect(self.cellCoord[0] + self.fillColorPadding[0], self.cellCoord[1] + self.fillColorPadding[1], self.cellSize[0] - 2 * self.fillColorPadding[0], self.cellSize[1] - 2 * self.fillColorPadding[1]))
 
 		if self.keyID != -1:
-			gameScreen.blit(self.keyImage[self.keyID], (self.cellCoord[0] , self.cellCoord[1]))
+			gameScreen.blit(self.keyImage[self.keyID], self.keyCoord)
 
 		if self.doorID != -1:
 			gameScreen.blit(self.doorImage[self.doorID], self.doorCoord)

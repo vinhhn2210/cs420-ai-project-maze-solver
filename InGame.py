@@ -6,6 +6,7 @@ import TextClass
 import LeaderboardClass
 import ButtonClass
 import MenuClass
+import AgentPropertyClass
 import json
 
 class InGame:
@@ -51,9 +52,9 @@ class InGame:
 		self.loadJsonFile(jsonFilePath)
 
 		# Game background
-		self.gameBackground = pygame.transform.scale(Const.INGAME_BACKGROUND, (self.screenWidth, self.screenHeight))
-		if menuData[1] == 4:
-			self.gameBackground = pygame.transform.scale(Const.INGAME_BACKGROUND_LEVEL4, (self.screenWidth, self.screenHeight))
+		# self.gameBackground = pygame.transform.scale(Const.INGAME_BACKGROUND, (self.screenWidth, self.screenHeight))
+		# if menuData[1] == 4:
+		self.gameBackground = pygame.transform.scale(Const.INGAME_BACKGROUND_LEVEL4, (self.screenWidth, self.screenHeight))
 		self.gameScreen.blit(self.gameBackground, (0, 0))
 
 		# Game Properties
@@ -98,6 +99,20 @@ class InGame:
 			"Score: 10",
 			(self.gamePropertiesContent[0] + textPadding, self.gamePropertiesContent[1] + self.gamePropertiesContent[3] * 75 / 100, self.gamePropertiesContent[2] - 2 * textPadding, self.gamePropertiesContent[3] * 10 / 100)
 		)
+		# Agent Property
+		agentPropertyCoord = (763 / 1000 * self.screenWidth, 259 / 562.71 * self.screenHeight)
+		agentPropertySize = (64 / 1000 * self.screenWidth, 73 / 562.71 * self.screenHeight)
+		keyProperty = (24 / 1000 * self.screenWidth, 33 / 562.71 * self.screenHeight, 40 / 1000 * self.screenWidth, 40 / 562.71 * self.screenHeight)
+		self.agentPropertyList = []
+		scoreProperty = (17 / 1000 * self.screenWidth, 7 / 562.71 * self.screenHeight, 48 / 1000 * self.screenWidth, 17 / 562.71 * self.screenHeight)
+		cnt = 0
+		for i in range(3):
+			for j in range(3):
+				if cnt < self.totalAgent:
+					cnt += 1
+					curPropertyCoord = (agentPropertyCoord[0] + j * agentPropertySize[0], agentPropertyCoord[1] + i * agentPropertySize[1])
+					curPropertyInfo = (curPropertyCoord[0], curPropertyCoord[1], agentPropertySize[0], agentPropertySize[1])
+					self.agentPropertyList.append(AgentPropertyClass.AgentProperty(curPropertyInfo, cnt, keyProperty, [], scoreProperty))
 
 		# Set up Clock
 		self.clock = pygame.time.Clock()
@@ -111,7 +126,6 @@ class InGame:
 		jsonFile = open(jsonFilePath)
 
 		data = json.load(jsonFile)
-		print(len(data))
 
 		# Initial Map
 		self.totalFloor = data["0"]["numFloor"]
@@ -142,6 +156,10 @@ class InGame:
 		jsonFile.close()
 
 	def updateMap(self):
+		for i in range(1, self.totalAgent + 1):
+			listKey = self.jsonData[str(self.step)]['agents'][str(i)]['key']
+			self.agentPropertyList[i - 1].updateListKey(listKey)
+
 		for i in range(1, self.totalAgent + 1):
 			tmpTuple = self.jsonData[str(self.step)]["agents"][str(i)]["position"]
 			X, Y, Z = tmpTuple[0], tmpTuple[1], tmpTuple[2]
@@ -231,6 +249,8 @@ class InGame:
 			self.scoreText.draw(self.gameScreen)
 			self.gameMap[self.curFloor].draw(self.gameScreen)
 			for i in self.agentList:
+				i.draw(self.gameScreen)
+			for i in self.agentPropertyList:
 				i.draw(self.gameScreen)
 
 			pygame.display.update()
