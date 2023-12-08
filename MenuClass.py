@@ -149,6 +149,7 @@ class Menu:
 			for event in pygame.event.get():
 				if event.type == pygame.QUIT:
 					self.running = False
+					exit(0)
 				if event.type == pygame.MOUSEBUTTONDOWN:
 					mouse_presses = pygame.mouse.get_pressed()
 

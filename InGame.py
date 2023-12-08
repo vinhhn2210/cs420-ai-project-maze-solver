@@ -79,26 +79,35 @@ class InGame:
 		self.timeText = TextClass.Text(
 			Const.AMATICSC_FONT,
 			Const.BROWN,
-			25,
+			20,
 			"Time: 10s",
-			(self.gamePropertiesContent[0] + textPadding, self.gamePropertiesContent[1] + self.gamePropertiesContent[3] * 35 / 100, self.gamePropertiesContent[2] - 2 * textPadding, self.gamePropertiesContent[3] * 10 / 100)
+			(self.gamePropertiesContent[0] + textPadding, self.gamePropertiesContent[1] + self.gamePropertiesContent[3] * 35 / 100, self.gamePropertiesContent[2] - 2 * textPadding, self.gamePropertiesContent[3] * 5 / 100)
 		)
 		# Time Text
 		self.memoryText = TextClass.Text(
 			Const.AMATICSC_FONT,
 			Const.BROWN,
-			25,
+			20,
 			"Memory: 10MB",
-			(self.gamePropertiesContent[0] + textPadding, self.gamePropertiesContent[1] + self.gamePropertiesContent[3] * 55 / 100, self.gamePropertiesContent[2] - 2 * textPadding, self.gamePropertiesContent[3] * 10 / 100)
+			(self.gamePropertiesContent[0] + textPadding, self.gamePropertiesContent[1] + self.gamePropertiesContent[3] * 50 / 100, self.gamePropertiesContent[2] - 2 * textPadding, self.gamePropertiesContent[3] * 5 / 100)
 		)
 		# Score Text
 		self.scoreText = TextClass.Text(
 			Const.AMATICSC_FONT,
 			Const.BROWN,
-			25,
+			20,
 			"Step: 0",
-			(self.gamePropertiesContent[0] + textPadding, self.gamePropertiesContent[1] + self.gamePropertiesContent[3] * 75 / 100, self.gamePropertiesContent[2] - 2 * textPadding, self.gamePropertiesContent[3] * 10 / 100)
+			(self.gamePropertiesContent[0] + textPadding, self.gamePropertiesContent[1] + self.gamePropertiesContent[3] * 65 / 100, self.gamePropertiesContent[2] - 2 * textPadding, self.gamePropertiesContent[3] * 5 / 100)
 		)
+		# Score Text
+		self.floorText = TextClass.Text(
+			Const.AMATICSC_FONT,
+			Const.BROWN,
+			20,
+			"Floor: 1",
+			(self.gamePropertiesContent[0] + textPadding, self.gamePropertiesContent[1] + self.gamePropertiesContent[3] * 80 / 100, self.gamePropertiesContent[2] - 2 * textPadding, self.gamePropertiesContent[3] * 5 / 100)
+		)
+
 		# Agent Property
 		agentPropertyCoord = (763 / 1000 * self.screenWidth, 259 / 562.71 * self.screenHeight)
 		agentPropertySize = (64 / 1000 * self.screenWidth, 73 / 562.71 * self.screenHeight)
@@ -118,7 +127,8 @@ class InGame:
 		self.clock = pygame.time.Clock()
 		self.isEndGame = False
 		self.initTick = pygame.time.get_ticks()
-		self.stepTime = 0.2
+		self.stepTime = 10 / len(self.jsonData)
+		# print(self.stepTime)
 
 		self.updateMap()
 
@@ -157,7 +167,8 @@ class InGame:
 
 	def updateMap(self):
 		self.scoreText.changeTextContent(f"Step: {self.step}")
-		
+		self.floorText.changeTextContent(f'Floor: {self.curFloor + 1}')
+
 		for i in range(1, self.totalAgent + 1):
 			listKey = self.jsonData[str(self.step)]['agents'][str(i)]['key']
 			self.agentPropertyList[i - 1].updateListKey(listKey)
@@ -228,6 +239,7 @@ class InGame:
 			for event in pygame.event.get():
 				if event.type == pygame.QUIT:
 					self.running = False
+					exit(0)
 					break
 
 			pauseState = self.pauseButton[0].isClicked(self.gameScreen)
@@ -264,6 +276,7 @@ class InGame:
 			self.timeText.draw(self.gameScreen)
 			self.memoryText.draw(self.gameScreen)
 			self.scoreText.draw(self.gameScreen)
+			self.floorText.draw(self.gameScreen)
 			self.gameMap[self.curFloor].draw(self.gameScreen)
 			for i in self.agentList:
 				i.draw(self.gameScreen)
