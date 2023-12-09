@@ -13,6 +13,11 @@ class Button:
 	def draw(self, gameScreen):
 		gameScreen.blit(self.image, (self.rect.x , self.rect.y))
 
+	def fillColor(self, gameScreen):
+		gameScreen.blit(self.image, (self.rect.x , self.rect.y))
+		pygame.draw.rect(gameScreen, Const.RED, pygame.Rect(self.coord[0], self.coord[1], self.size[0], self.size[1]))
+
+
 	def isClicked(self, gameScreen): 
 		action = False 
 

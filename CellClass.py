@@ -81,7 +81,7 @@ class EmptyCell(Cell):
 		self.agentID = agentID
 		self.agentDeg = agentDeg
 		curColor = Const.COLOR_AGENT[self.agentID]
-		self.rect_surface.fill((curColor[0], curColor[1], curColor[2], min(255, 128 + agentDeg * 50)))
+		self.rect_surface.fill((curColor[0], curColor[1], curColor[2], min(255, 128 + agentDeg * 68)))
 
 		# print(agentID, agentDeg)
 

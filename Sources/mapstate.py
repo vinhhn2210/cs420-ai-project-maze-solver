@@ -77,6 +77,24 @@ def loadMap(folderPath, mapName):
                 mazer[nLayer - 1].append(row_data)
         return MapState(mapName, nRow, mCol, nLayer, mazer)
 
+def loadMapOnDirectory(mapDirectory, mapName):
+    MAP_PATH = mapDirectory
+
+    with open(MAP_PATH, 'r') as data:
+        # read lines in data without \n
+        lines = [line.rstrip('\n') for line in data]
+        nRow, mCol = list(map(int, lines[0].split(',')))
+        nLayer = 1
+        mazer = []
+        for i in range(1, len(lines)):
+            if lines[i].startswith('[') and lines[i].endswith(']'):
+                nLayer = int(lines[i][6:-1])
+                mazer.append([])
+            else:
+                row_data = lines[i].split(',')
+                mazer[nLayer - 1].append(row_data)
+        return MapState(mapName, nRow, mCol, nLayer, mazer)
+
 def listKeys(keyMask):
     keyList = []
     for i in range(32):
