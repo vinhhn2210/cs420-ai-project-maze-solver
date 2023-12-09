@@ -379,12 +379,14 @@ class Menu:
 			# Up, Down Map Process
 			upMapState = self.upMapButton.isClicked(self.gameScreen)
 			if upMapState == True:
-				self.mapID += 1
+				if self.mapID < 5:
+					self.mapID += 1
 				self.mapIDText.changeTextContent('Map ' + str(self.mapID))
 
 			downMapState = self.downMapButton.isClicked(self.gameScreen)
 			if downMapState == True:
-				self.mapID -= 1
+				if self.mapID > 1:
+					self.mapID -= 1
 				self.mapIDText.changeTextContent('Map ' + str(self.mapID))
 
 			# Algorithm Process
