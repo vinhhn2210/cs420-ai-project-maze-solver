@@ -318,12 +318,15 @@ class Menu:
 					curAlgo = curAlgo.lower()
 					if curAlgo == 'a*':
 						curAlgo = 'astar'
-					menuSystem.solvingAllMap(curAlgo)
+					mapSolution = menuSystem.solvingUserImportMap(curAlgo)
 
-					ingame = InGame.InGame((0, levelID, curAlgo))
-					ingame.run()
+					if mapSolution == None:
+						processText.changeTextContent('No Solution, Please Choose Another Map')
+					else:
+						ingame = InGame.InGame((0, levelID, curAlgo))
+						ingame.run()
 
-					return True
+						return True
 
 			if fileDialogButton.isClicked(self.gameScreen):
 				curFileTxt = openFileDialog()
