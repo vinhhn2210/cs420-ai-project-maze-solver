@@ -130,7 +130,7 @@ class MazerSolverLevel3:
                 path.append(current)
                 current = visited[current]
             path.reverse()
-            return path
+            return [path]
         else:
             return None
         
@@ -156,7 +156,7 @@ class MazerSolverLevel3:
                 path.append(current)
                 current = visited[current]
             path.reverse()
-            return path
+            return [path]
         else:
             return None
 
@@ -233,7 +233,7 @@ class MazerSolverLevel3:
                 path.append(current)
                 current = visited[current]
             path.reverse()
-            return path
+            return [path]
         else:
             return None
     

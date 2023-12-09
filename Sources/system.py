@@ -128,7 +128,7 @@ class SystemController:
             solution = MazeSolver.astar(start, goal)
 
         if solution:
-            self.writeSolutionJsonFile(mapName, [solution], algorithm)
+            self.writeSolutionJsonFile(mapName, solution, algorithm)
         else:
             print('No solution for ' + mapName + ' with ' + algorithm + ' algorithm')
         return solution
