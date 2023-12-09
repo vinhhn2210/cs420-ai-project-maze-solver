@@ -1,6 +1,7 @@
 #import algorithms in level1 folder
 from level1.algorithms import *
 from level1.algorithms_level2 import *
+from level1.algorithms_level1 import *
 from mapstate import *
 from lists_of_algorithms import *
 import os 
@@ -34,7 +35,11 @@ class SystemController:
             fileName = file[:-4]
             self.mapLists[fileName] = loadMap(folderName, fileName)
 
-    def readAllFolderMap(self, folderName):
+    def readAllFolderMap(self, folderName, levelID = None):
+        if levelID != None:
+            mapFolderName = folderName + f'/level{levelID}'
+            self.readFolderMap(mapFolderName)
+            return
         for level in range(1, 4):
             mapFolderName = folderName + f'/level{level}'
             self.readFolderMap(mapFolderName)
@@ -42,7 +47,7 @@ class SystemController:
     def printMapList(self):
         for i, key in enumerate(self.mapLists):
             print(f'{i + 1}. {key}')
-    
+
     def displayMap(self, mapName):
         self.mapLists[mapName].display()
     
@@ -137,7 +142,9 @@ class SystemController:
 
         MazeSolver = None
 
-        if mapLevel == 2:
+        if mapLevel == 1:
+            MazeSolver = MazerSolverLevel1(self.mapLists[mapName].mazer, self.mapLists[mapName].nRow, self.mapLists[mapName].mCol)
+        elif mapLevel == 2:
             MazeSolver = MazerSolverLevel2(self.mapLists[mapName].mazer, self.mapLists[mapName].nRow, self.mapLists[mapName].mCol, self.mapLists[mapName].nLayer)
         else:
             MazeSolver = MazerSolverLevel3(self.mapLists[mapName].mazer, self.mapLists[mapName].nRow, self.mapLists[mapName].mCol, self.mapLists[mapName].nLayer)
@@ -148,6 +155,12 @@ class SystemController:
         # run algorithm and measure time and memory
         self.measureStart()
         
+        #self.mapLists[mapName].display()
+        if not hasattr(MazeSolver, algorithm):
+            # extract the sub string after the word level
+            level = mapName.split('-')[1]
+            print(f'No {algorithm} for ' + level)
+            return
         solution = []
         if algorithm == 'dfs':
             solution = MazeSolver.dfs(start, goal)
@@ -155,6 +168,8 @@ class SystemController:
             solution = MazeSolver.bfs(start, goal)
         elif algorithm == 'astar':
             solution = MazeSolver.astar(start, goal)
+        elif algorithm == 'ucs':
+            solution = MazeSolver.ucs(start, goal)
         
         self.measureEnd()
         
@@ -195,13 +210,12 @@ if __name__ == '__main__':
         exit()
      
     system = SystemController()
-    # Reading map from folder
+        # Reading map from folder
     print('Folder ' + sys.argv[1] + ' is being processed...')
     system.readAllFolderMap(sys.argv[1])
     print('Load folder: ' + sys.argv[1] + ' is done!')
     print("List of map: ")
     system.printMapList()
-
     # solving map
     print('-' * 50)
     if sys.argv[2] == 'auto':
@@ -236,5 +250,3 @@ if __name__ == '__main__':
     print('To visualize the solution, please run the main.py file')
     print('\t python3 main.py')
     print('Thank you for using our program!')
-
-    

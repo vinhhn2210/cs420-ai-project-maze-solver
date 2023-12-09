@@ -234,8 +234,20 @@ import sys
 
 if __name__ == '__main__':
     if (len(sys.argv) < 2):
-        print('Usage: python3 generate.py <width> <height>')
+        print('Usage: python3 view.py -f <folder> or python3 generate.py -s <file>')
         exit(0)
-    maze = generate_map(int(sys.argv[1]), int(sys.argv[2]), 1)
-    visualize(maze)
-    export_maze(maze, 'Map/level1-tmp.txt')
+    op = sys.argv[1]
+    if (op == '-f'):
+        folder = sys.argv[2]
+        # list all files in folder
+        import os
+        files = os.listdir(folder)
+        files.sort()
+        for i in files: 
+            if(i.endswith('.txt')):
+                print(Fore.YELLOW + i)
+                maze = load_maze(folder + '/' + i)
+    elif (op == '-s'):
+        file = sys.argv[2]
+        print(Fore.YELLOW + file)
+        maze = load_maze(file)

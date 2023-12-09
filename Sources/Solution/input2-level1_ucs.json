@@ -290,7 +290,7 @@
         "step": 23,
         "agents": {
             "1": {
-                "position": [15, 8, 0],
+                "position": [14, 8, 0],
                 "key": []
             }
         }
@@ -686,7 +686,7 @@
         "step": 59,
         "agents": {
             "1": {
-                "position": [2, 15, 0],
+                "position": [1, 15, 0],
                 "key": []
             }
         }
