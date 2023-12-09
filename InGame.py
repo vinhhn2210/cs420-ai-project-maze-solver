@@ -226,7 +226,7 @@ class InGame:
 			if menuState == True:
 				menu = MenuClass.Menu((self.screenWidth, self.screenHeight))
 				menu.run()
-				self.run = False
+				self.running = False
 				break		
 
 			self.pauseButton[self.isPause].draw(self.gameScreen)
@@ -264,13 +264,13 @@ class InGame:
 
 				if str(self.step) in self.jsonData:
 					self.updateMap()
-				else:
-					self.isEndGame = True
+			# 	else:
+			# 		self.isEndGame = True
 
-			if self.isEndGame:
-				leaderboard = LeaderboardClass.Leaderboard(self.menuData)
-				leaderboard.run()
-				break
+			# if self.isEndGame:
+				# leaderboard = LeaderboardClass.Leaderboard(self.menuData)
+				# leaderboard.run()
+				# break
 
 			# Draw window
 			self.gameScreen.blit(self.gameBackground, (0, 0))

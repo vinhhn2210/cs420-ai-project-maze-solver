@@ -8,7 +8,6 @@ import sys
 sys.path.append('Sources')
 import system
 
-import tkinter as tk
 from tkinter import filedialog
 
 def openFileDialog():
@@ -32,7 +31,7 @@ class Menu:
 		pygame.display.flip()
 		pygame.display.set_caption("Move Your Step")
 
-		print(self.screenWidth, self.screenHeight)
+		# print(self.screenWidth, self.screenHeight)
 
 		# Run
 		self.running = True
