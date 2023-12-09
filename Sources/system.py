@@ -133,6 +133,11 @@ class SystemController:
             print('No solution for ' + mapName + ' with ' + algorithm + ' algorithm')
         return solution
 
+    def solvingUserImportMap(self, algorithm):
+        for mapName in self.mapLists:
+            solution = self.solving(mapName, algorithm)
+            return solution
+
     def solvingAllMap(self, algorithm):
         for mapName in self.mapLists:
             self.solving(mapName, algorithm)
