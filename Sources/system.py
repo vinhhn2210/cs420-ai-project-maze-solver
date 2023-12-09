@@ -21,7 +21,6 @@ class SystemController:
 
     def readUserImportMap(self, mapPath, levelID):
         mapName = f'input0-level{levelID}'
-        print(mapName)
         self.mapLists[mapName] = loadMapOnDirectory(mapPath, mapName)
 
     def readFolderMap(self, folderName): 
