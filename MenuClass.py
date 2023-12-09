@@ -4,7 +4,18 @@ import ObjectClass
 import TextClass
 import ButtonClass
 import InGame
+import sys
+sys.path.append('Sources')
+import system
 
+import tkinter as tk
+from tkinter import filedialog
+
+def openFileDialog():
+    file_path = filedialog.askopenfilename(title="Select a File", filetypes=[("Text files", "*.txt"), ("All files", "*.*")])
+    if file_path:
+        return file_path
+    return None
 
 class Menu:
 	def __init__(self, screenSize):
@@ -245,9 +256,16 @@ class Menu:
 
 		# Start Button
 		startButton = ButtonClass.Button(
-			(importSize[0] * 15 / 100, importSize[1] * 10 / 100),
+			(importSize[0] * 15 / 100, importSize[1] * 9 / 100),
 			Const.START_BUTTON_IMAGE,
 			(importCoord[0], importCoord[1] + importSize[1] * 7 / 10, importSize[0], importSize[1] * 12 / 100)
+		)
+
+		# Close Button
+		closeButton = ButtonClass.Button(
+			(importSize[0] * 10 / 100, importSize[0] * 10 / 100),
+			Const.CLOSE_BUTTON,
+			(importCoord[0] + importSize[0] * 81 / 100, importCoord[1] + importSize[1] * 9 / 100, importSize[0] * 10 / 100, importSize[0] * 10 / 100)
 		)
 
 		# Process Text
@@ -255,9 +273,11 @@ class Menu:
 			Const.AMATICSC_FONT,
 			Const.BROWN,
 			20,
-			'Loading...',
+			'',
 			(importCoord[0], importCoord[1] + importSize[1] * 8 / 10, importSize[0], importSize[1] * 12 / 100)
 		)
+
+		curFileTxt = None
 
 		while True:
 			for event in pygame.event.get():
@@ -268,20 +288,52 @@ class Menu:
 			# Up, Down Level Process
 			upLevelState = upLevelButton.isClicked(self.gameScreen)
 			if upLevelState == True:
-				levelID += 1
+				if levelID < 4:
+					levelID += 1
 				levelIDText.changeTextContent('Level ' + str(levelID))
 
 			downLevelState = downLevelButton.isClicked(self.gameScreen)
 			if downLevelState == True:
-				levelID -= 1
+				if levelID > 1:
+					levelID -= 1
 				levelIDText.changeTextContent('Level ' + str(levelID))
 
 			for i in range(4):
 				if algoButton[i].isClicked(self.gameScreen) == True:
 					algoID = i
 
+			if closeButton.isClicked(self.gameScreen):
+				return False
+
+			if startButton.isClicked(self.gameScreen):
+				if curFileTxt == None:
+					processText.changeTextContent('Not Valid File')
+				elif algoID == -1:
+					processText.changeTextContent('Please Choose Algorithm')
+				else:
+					processText.changeTextContent('Loading...')
+					menuSystem = system.SystemController()
+					menuSystem.readUserImportMap(curFileTxt, levelID)
+
+					curAlgo = algoList[algoID]
+					curAlgo = curAlgo.lower()
+					if curAlgo == 'a*':
+						curAlgo = 'astar'
+					menuSystem.solvingAllMap(curAlgo)
+
+					ingame = InGame.InGame((0, levelID, curAlgo))
+					ingame.run()
+
+					return True
+
+			if fileDialogButton.isClicked(self.gameScreen):
+				curFileTxt = openFileDialog()
+				if curFileTxt != None:
+					processText.changeTextContent('Loading File')
+
 			self.importMapBackGround.draw(self.gameScreen)
 			startButton.draw(self.gameScreen)
+			closeButton.draw(self.gameScreen)
 			fileDialogButton.draw(self.gameScreen)
 			fileDialogText.draw(self.gameScreen)
 			importText.draw(self.gameScreen)
@@ -297,17 +349,8 @@ class Menu:
 					algoButton[i].draw(self.gameScreen)
 			for i in algoText:
 				i.draw(self.gameScreen)
-			pygame.display.update()
-			# pauseState = self.pauseButton[0].isClicked(self.gameScreen)
-			# if pauseState == True:
-			# 	self.isPause = 1 - self.isPause	
 
-			# menuState = self.menuButton.isClicked(self.gameScreen)
-			# if menuState == True:
-			# 	menu = MenuClass.Menu((self.screenWidth, self.screenHeight))
-			# 	menu.run()
-			# 	self.run = False
-			# 	break		
+			pygame.display.update()	
 
 
 	def run(self):
@@ -324,12 +367,14 @@ class Menu:
 			# Up, Down Level Process
 			upLevelState = self.upLevelButton.isClicked(self.gameScreen)
 			if upLevelState == True:
-				self.levelID += 1
+				if self.levelID < 4:
+					self.levelID += 1
 				self.levelIDText.changeTextContent('Level ' + str(self.levelID))
 
 			downLevelState = self.downLevelButton.isClicked(self.gameScreen)
 			if downLevelState == True:
-				self.levelID -= 1
+				if self.levelID > 1:
+					self.levelID -= 1
 				self.levelIDText.changeTextContent('Level ' + str(self.levelID))
 
 			# Up, Down Map Process

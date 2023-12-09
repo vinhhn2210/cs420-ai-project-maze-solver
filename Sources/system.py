@@ -19,6 +19,11 @@ class SystemController:
     def __init__(self):
         self.mapLists = {}
 
+    def readUserImportMap(self, mapPath, levelID):
+        mapName = f'input0-level{levelID}'
+        print(mapName)
+        self.mapLists[mapName] = loadMapOnDirectory(mapPath, mapName)
+
     def readFolderMap(self, folderName): 
         files = os.listdir(CUR_PATH + '/' + folderName)
         for file in files:

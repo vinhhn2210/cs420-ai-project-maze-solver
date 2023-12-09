@@ -24,6 +24,7 @@ TICK_IMAGE = [
 	pygame.image.load('Assets/Images/Menu/checkbox-unchecked.png'),
 	pygame.image.load('Assets/Images/Menu/checkbox-checked.png')
 ]
+CLOSE_BUTTON = pygame.image.load('Assets/Images/Menu/CloseButton.png')
 
 # In Game
 INGAME_BACKGROUND = pygame.image.load('Assets/Images/InGame/Background.png')
