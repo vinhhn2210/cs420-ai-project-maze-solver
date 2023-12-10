@@ -299,6 +299,8 @@ class InGame:
 			for i in self.agentList:
 				if i.agentFloor == tmpFloor:
 					i.drawWithoutFrame(self.gameScreen)
+			for i in self.agentPropertyList:
+				i.draw(self.gameScreen)
 			pygame.display.update()
 
 		self.initTick = pygame.time.get_ticks()
