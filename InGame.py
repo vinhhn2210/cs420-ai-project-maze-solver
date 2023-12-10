@@ -107,7 +107,7 @@ class InGame:
 			Const.AMATICSC_FONT,
 			Const.BROWN,
 			20,
-			"Time: 0s",
+			"Time: 0ms",
 			(self.gamePropertiesContent[0] + textPadding, self.gamePropertiesContent[1] + self.gamePropertiesContent[3] * 35 / 100, self.gamePropertiesContent[2] - 2 * textPadding, self.gamePropertiesContent[3] * 5 / 100)
 		)
 		# Time Text
@@ -160,7 +160,7 @@ class InGame:
 
 		self.updateMap()
 
-		self.timeText.changeTextContent(f'Time: 0s')
+		self.timeText.changeTextContent(f'Time: 0ms')
 		self.memoryText.changeTextContent(f'Memory: 0MB')
 
 	def loadJsonFile(self, jsonFilePath):
@@ -205,7 +205,7 @@ class InGame:
 		# self.gameMemory = self.jsonData[f'{self.step}']['memory']
 		curTime = round(self.gameTime / self.totalStep * self.step, 2)
 		curMem = round(self.gameMemory / self.totalStep * self.step, 2)
-		self.timeText.changeTextContent(f'Time: {curTime}s')
+		self.timeText.changeTextContent(f'Time: {curTime}ms')
 		self.memoryText.changeTextContent(f'Memory: {curMem}MB')
 
 		self.scoreText.changeTextContent(f"Step: {self.step}")
