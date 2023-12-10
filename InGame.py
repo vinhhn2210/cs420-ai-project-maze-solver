@@ -31,6 +31,7 @@ class InGame:
 			algoName = "astar"
 		jsonFilePath = 'Sources/Solution/input' + str(menuData[0]) + '-level' + str(menuData[1]) + '_' + algoName.lower() + '.json'
 		self.menuData = menuData
+		print(self.menuData)
 
 		# Set up Map
 		self.gameMap = []
