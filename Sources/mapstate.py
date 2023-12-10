@@ -1,6 +1,6 @@
 import os
 from colorama import Fore
-
+import copy
 CUR_PATH = os.path.dirname(os.path.abspath(__file__))
 
 class MapState:
@@ -9,7 +9,7 @@ class MapState:
         self.nRow = nRow
         self.mCol = mCol
         self.nLayer = nLayer
-        self.mazer = mazer
+        self.mazer = copy.deepcopy(mazer)
 
     def display(self):
         print(self.name)
