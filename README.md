@@ -27,4 +27,9 @@
 
 
 ### Solving
-* python system.py your_map_folder
+1. To automaticly solving all map with all current algorithms:
+* python3 Sources/system.py Map auto
+2. To solve with specify map-algorithm and guide:
+* python3 Sources/system.py Map guide
+3. To visualize
+* python3 main.py
