@@ -312,6 +312,7 @@ if __name__ == '__main__':
         print('Solving all map with all current algorithms...')
         system.solvingAllMap('dfs')
         system.solvingAllMap('bfs')
+        system.solvingAllMap('ucs')
         system.solvingAllMap('astar')
     elif sys.argv[2] == 'guide':
         print('Please choose the map you want to solve, for example: input1-level1')
@@ -327,6 +328,8 @@ if __name__ == '__main__':
             system.solving(mapName, 'dfs')
         elif algorithm == 'bfs':
             system.solving(mapName, 'bfs')
+        elif algorithm == 'ucs':
+            system.solving(mapName, 'ucs')
         elif algorithm == 'astar':
             system.solving(mapName, 'astar')
         else:
