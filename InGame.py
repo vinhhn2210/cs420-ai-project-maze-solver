@@ -329,13 +329,8 @@ class InGame:
 				menu.run()
 				break
 
-			# if self.restartButton.isClicked(self.gameScreen) == True:
-			# 	ingame = InGame.InGame(self.menuData)
-			# 	ingame.run()
-			# 	continue
-
 			if self.upSpeedButton.isClicked(self.gameScreen) == True:
-				self.stepTime = max(0.1, self.stepTime - 0.1)
+				self.stepTime = max(0.01, self.stepTime - 0.1)
 			if self.downSpeedButton.isClicked(self.gameScreen) == True:
 				self.stepTime = min(1, self.stepTime + 0.1)
 
