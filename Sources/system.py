@@ -10,7 +10,7 @@ import re
 import sys
 import time
 import psutil
-
+import tracemalloc
 # back to the parent folder
 CUR_PATH = os.path.dirname(os.path.abspath(__file__))
 
@@ -24,7 +24,7 @@ class SystemController:
         self.mapLists = {}
         self.timeCount = 0
         self.memoryCount = 0
-
+        
     def readUserImportMap(self, mapPath, levelID):
         mapName = f'input0-level{levelID}'
         self.mapLists[mapName] = loadMapOnDirectory(mapPath, mapName)
@@ -56,11 +56,13 @@ class SystemController:
             self.mapLists[key].display()
 
     def measureStart(self):
+        tracemalloc.clear_traces()
         self.timeCount = time.time()
         self.memoryCount = psutil.Process()
     def measureEnd(self):
         self.timeCount = time.time() - self.timeCount
-        self.memoryCount = self.memoryCount.memory_info().rss / (1024 ** 2)
+        self.memoryCount = tracemalloc.get_traced_memory()[1] / (1024 ** 2)
+        #self.memoryCount = self.memoryCount.memory_info().rss / (1024 ** 2)
         # print time, mem with 4 digits after comma
         self.timeCount = round(self.timeCount * 1000, 4)
         self.memoryCount = round(self.memoryCount, 4)
@@ -220,6 +222,7 @@ if __name__ == '__main__':
     system.printMapList()
     # solving map
     print('-' * 50)
+    tracemalloc.start()
     if sys.argv[2] == 'auto':
         print('Solving all map with all current algorithms...')
         system.solvingAllMap('dfs')
@@ -245,7 +248,7 @@ if __name__ == '__main__':
             print('Algorithm is not exist!')
             exit()
         print('Solving ' + mapName + ' with ' + algorithm + ' algorithm is done!')
-        
+    tracemalloc.stop()
     # done and visualize the solution
     print('-' * 50)
     print('Program is done!')
