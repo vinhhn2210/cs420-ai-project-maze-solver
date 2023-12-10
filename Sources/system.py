@@ -272,9 +272,56 @@ class SystemController:
             print('No solution for ' + mapName + ' with ' + algorithm + ' algorithm')
         return solution
 
+    def solvingNoHeatMap(self, mapName, algorithm):
+        print('-' * 50)
+        print('Solving ' + mapName + ' with ' + algorithm + ' algorithm...')
+        mapLevel = self.getMapLevel(mapName)
+
+        MazeSolver = None
+
+        if mapLevel == 1:
+            MazeSolver = MazerSolverLevel1(self.mapLists[mapName].mazer, self.mapLists[mapName].nRow, self.mapLists[mapName].mCol)
+        elif mapLevel == 2:
+            MazeSolver = MazerSolverLevel2(self.mapLists[mapName].mazer, self.mapLists[mapName].nRow, self.mapLists[mapName].mCol, self.mapLists[mapName].nLayer)
+        else:
+            MazeSolver = MazerSolverLevel3(self.mapLists[mapName].mazer, self.mapLists[mapName].nRow, self.mapLists[mapName].mCol, self.mapLists[mapName].nLayer)
+        
+        start = MazeSolver.agentPosition('A1')
+        goal = MazeSolver.goalPosition('T1')
+
+        # run algorithm and measure time and memory
+        self.measureStart()
+        
+        #self.mapLists[mapName].display()
+        if not hasattr(MazeSolver, algorithm):
+            # extract the sub string after the word level
+            level = mapName.split('-')[1]
+            print(f'No {algorithm} for ' + level)
+            return
+        solution = []
+        if algorithm == 'dfs':
+            solution = MazeSolver.dfs(start, goal)
+        elif algorithm == 'bfs':
+            solution = MazeSolver.bfs(start, goal)
+        elif algorithm == 'astar':
+            solution = MazeSolver.astar(start, goal)
+        elif algorithm == 'ucs':
+            solution = MazeSolver.ucs(start, goal)
+        
+        self.measureEnd()
+        
+        if solution:
+            print('\t+ Steps:\t' + str(len(solution[0])))
+            print('\t+ Score:\t' + str(100 - len(solution[0])))
+            print('Logs: ')
+            self.writeSolutionJsonFile(mapName, solution, algorithm)
+        else:
+            print('No solution for ' + mapName + ' with ' + algorithm + ' algorithm')
+        return solution
+
     def solvingUserImportMap(self, algorithm):
         for mapName in self.mapLists:
-            solution = self.solving(mapName, algorithm)
+            solution = self.solvingNoHeatMap(mapName, algorithm)
             return solution
 
     def solvingAllMap(self, algorithm):
