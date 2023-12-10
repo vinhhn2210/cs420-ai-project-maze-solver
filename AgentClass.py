@@ -3,7 +3,8 @@ import Const
 import PortalClass
 
 class Agent:
-	def __init__(self, agentID, curCell):
+	def __init__(self, agentID, curCell, agentFloor):
+		self.agentFloor = agentFloor
 		self.agentID = agentID
 		self.agentCell = curCell
 		self.agentSize = (curCell.cellSize[0] * 4 / 7, curCell.cellSize[1] * 7 / 7)
@@ -12,7 +13,7 @@ class Agent:
 
 		# Agent moving
 		self.moveDirection = -1
-		self.agentSpeed = 30
+		self.agentSpeed = 100
 
 		# Agent Animation
 		self.agentFrame = [[
@@ -89,3 +90,6 @@ class Agent:
 		gameScreen.blit(self.agentFrame[self.animationDirection][self.curFrame], tuple(self.agentCoord))
 
 		self.moveFrame()
+
+	def drawWithoutFrame(self, gameScreen):
+		gameScreen.blit(self.agentFrame[self.animationDirection][self.curFrame], tuple(self.agentCoord))

@@ -67,7 +67,10 @@ PAUSE_BUTTON = [
 	pygame.image.load('Assets/Images/InGame/Continue_button.png')
 ]
 MENU_BUTTON = pygame.image.load('Assets/Images/InGame/Menu_button.png')
-
+RESTART_BUTTON = pygame.image.load('Assets/Images/InGame/Restart_button.png')
+FINISH_BUTTON = pygame.image.load('Assets/Images/InGame/Finish_button.png')
+LEFT_BUTTON = pygame.image.load('Assets/Images/InGame/left_preview.png')
+RIGHT_BUTTON = pygame.image.load('Assets/Images/InGame/right_preview.png')
 
 # Leaderboard
 LEADERBOARD_BACKGROUND = pygame.image.load('Assets/Images/Leaderboard/Background.png')
