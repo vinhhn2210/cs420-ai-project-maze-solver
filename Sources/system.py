@@ -2,6 +2,7 @@
 from level1.algorithms import *
 from level1.algorithms_level2 import *
 from level1.algorithms_level1 import *
+from level1.algorithms_level4v import *
 from mapstate import *
 from lists_of_algorithms import *
 import os 
@@ -42,7 +43,7 @@ class SystemController:
             mapFolderName = folderName + f'/level{levelID}'
             self.readFolderMap(mapFolderName)
             return
-        for level in range(1, 4):
+        for level in range(1, 5):
             mapFolderName = folderName + f'/level{level}'
             self.readFolderMap(mapFolderName)
 
@@ -73,7 +74,7 @@ class SystemController:
         return self.timeCount, self.memoryCount
 
     def createFloorImage(self, FLOOR_PATH, grid):
-        heatmap = grid.copy()
+        heatmap = copy.deepcopy(grid)
         #print(heatmap)
         for i in range(len(grid)):
             for j in range(len(grid[0])):
@@ -144,7 +145,7 @@ class SystemController:
     def writeHeatMapFile(self, mapName, agentPath, algorithm):
         # create a heatmap image folder for each map, then for each agentPath, create a heatmap image
         # path = [(x1, y1, layer1), (x2, y2, layer2), ...]
-        MapJson = self.mapLists[mapName]
+        MapJson = copy.deepcopy(self.mapLists[mapName])
         # create folder
         HEATMAP_FOLDER = CUR_PATH + '/Heatmap/' + mapName + '_' + algorithm
         if not os.path.exists(HEATMAP_FOLDER):
@@ -160,7 +161,7 @@ class SystemController:
 
     def writeSolutionJsonFile(self, mapName, agentPath, algorithm):
         # path = [(x1, y1, layer1), (x2, y2, layer2), ...]
-        MapJson = self.mapLists[mapName]
+        MapJson = copy.deepcopy(self.mapLists[mapName])
         # write to json file
         jsonData = {
             "0": {
@@ -235,9 +236,10 @@ class SystemController:
             MazeSolver = MazerSolverLevel1(self.mapLists[mapName].mazer, self.mapLists[mapName].nRow, self.mapLists[mapName].mCol)
         elif mapLevel == 2:
             MazeSolver = MazerSolverLevel2(self.mapLists[mapName].mazer, self.mapLists[mapName].nRow, self.mapLists[mapName].mCol, self.mapLists[mapName].nLayer)
-        else:
+        elif mapLevel == 3:
             MazeSolver = MazerSolverLevel3(self.mapLists[mapName].mazer, self.mapLists[mapName].nRow, self.mapLists[mapName].mCol, self.mapLists[mapName].nLayer)
-        
+        elif mapLevel == 4:
+            MazeSolver = MazerSolverLevel4v(self.mapLists[mapName].mazer, self.mapLists[mapName].nRow, self.mapLists[mapName].mCol, self.mapLists[mapName].nLayer)
         start = MazeSolver.agentPosition('A1')
         goal = MazeSolver.goalPosition('T1')
 
@@ -251,14 +253,17 @@ class SystemController:
             print(f'No {algorithm} for ' + level)
             return
         solution = []
-        if algorithm == 'dfs':
-            solution = MazeSolver.dfs(start, goal)
-        elif algorithm == 'bfs':
-            solution = MazeSolver.bfs(start, goal)
-        elif algorithm == 'astar':
-            solution = MazeSolver.astar(start, goal)
-        elif algorithm == 'ucs':
-            solution = MazeSolver.ucs(start, goal)
+        if mapLevel == 4:
+            solution = MazeSolver.solve(start, goal, algorithm)
+        else:
+            if algorithm == 'dfs':
+                solution = MazeSolver.dfs(start, goal)
+            elif algorithm == 'bfs':
+                solution = MazeSolver.bfs(start, goal)
+            elif algorithm == 'astar':
+                solution = MazeSolver.astar(start, goal)
+            elif algorithm == 'ucs':
+                solution = MazeSolver.ucs(start, goal)
         
         self.measureEnd()
         
