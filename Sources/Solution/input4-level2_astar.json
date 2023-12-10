@@ -1,7 +1,7 @@
 {
     "0": {
-        "time": 157.733,
-        "memory": 0.8037567138671875,
+        "time": 155.1123,
+        "memory": 0.8038,
         "numFloor": 1,
         "numAgent": 1,
         "floor": [0],
