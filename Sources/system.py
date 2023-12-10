@@ -277,7 +277,7 @@ class SystemController:
             print('No solution for ' + mapName + ' with ' + algorithm + ' algorithm')
         return solution
 
-    def solvingNoHeatMap(self, mapName, algorithm):
+    def solving(self, mapName, algorithm):
         print('-' * 50)
         print('Solving ' + mapName + ' with ' + algorithm + ' algorithm...')
         mapLevel = self.getMapLevel(mapName)
@@ -288,9 +288,10 @@ class SystemController:
             MazeSolver = MazerSolverLevel1(self.mapLists[mapName].mazer, self.mapLists[mapName].nRow, self.mapLists[mapName].mCol)
         elif mapLevel == 2:
             MazeSolver = MazerSolverLevel2(self.mapLists[mapName].mazer, self.mapLists[mapName].nRow, self.mapLists[mapName].mCol, self.mapLists[mapName].nLayer)
-        else:
+        elif mapLevel == 3:
             MazeSolver = MazerSolverLevel3(self.mapLists[mapName].mazer, self.mapLists[mapName].nRow, self.mapLists[mapName].mCol, self.mapLists[mapName].nLayer)
-        
+        elif mapLevel == 4:
+            MazeSolver = MazerSolverLevel4v(self.mapLists[mapName].mazer, self.mapLists[mapName].nRow, self.mapLists[mapName].mCol, self.mapLists[mapName].nLayer)
         start = MazeSolver.agentPosition('A1')
         goal = MazeSolver.goalPosition('T1')
 
@@ -304,14 +305,17 @@ class SystemController:
             print(f'No {algorithm} for ' + level)
             return
         solution = []
-        if algorithm == 'dfs':
-            solution = MazeSolver.dfs(start, goal)
-        elif algorithm == 'bfs':
-            solution = MazeSolver.bfs(start, goal)
-        elif algorithm == 'astar':
-            solution = MazeSolver.astar(start, goal)
-        elif algorithm == 'ucs':
-            solution = MazeSolver.ucs(start, goal)
+        if mapLevel == 4:
+            solution = MazeSolver.solve(start, goal, algorithm)
+        else:
+            if algorithm == 'dfs':
+                solution = MazeSolver.dfs(start, goal)
+            elif algorithm == 'bfs':
+                solution = MazeSolver.bfs(start, goal)
+            elif algorithm == 'astar':
+                solution = MazeSolver.astar(start, goal)
+            elif algorithm == 'ucs':
+                solution = MazeSolver.ucs(start, goal)
         
         self.measureEnd()
         
@@ -320,6 +324,7 @@ class SystemController:
             print('\t+ Score:\t' + str(100 - len(solution[0])))
             print('Logs: ')
             self.writeSolutionJsonFile(mapName, solution, algorithm)
+            # self.writeHeatMapFile(mapName, solution, algorithm)
         else:
             print('No solution for ' + mapName + ' with ' + algorithm + ' algorithm')
         return solution

@@ -106,7 +106,7 @@ class Menu:
             ('BFS', 'DFS', 'UCS', 'A*'),
             ('BFS', 'DFS', 'A*'),
             ('BFS', 'DFS', 'A*'),
-            ('BFS-DFS',)
+            ('BFS', 'DFS', 'A*')
         )
 
         self.algoText = [TextClass.Text(
@@ -241,7 +241,7 @@ class Menu:
             ('BFS', 'DFS', 'UCS', 'A*',),
             ('BFS', 'DFS', 'A*',),
             ('BFS', 'DFS', 'A*',),
-            ('BFS-DFS',)
+            ('BFS', 'DFS', 'A*')
         )
         algoID = -1
         algoCoord = (importCoord[0] + importSize[0] * 10 / 100, importCoord[1] + importSize[1] * 60 / 100)

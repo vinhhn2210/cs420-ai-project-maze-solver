@@ -140,7 +140,7 @@ class InGame:
 		agentPropertySize = (64 / 1000 * self.screenWidth, 73 / 562.71 * self.screenHeight)
 		keyProperty = (24 / 1000 * self.screenWidth, 33 / 562.71 * self.screenHeight, 40 / 1000 * self.screenWidth, 40 / 562.71 * self.screenHeight)
 		self.agentPropertyList = []
-		scoreProperty = (17 / 1000 * self.screenWidth, 7 / 562.71 * self.screenHeight, 48 / 1000 * self.screenWidth, 17 / 562.71 * self.screenHeight)
+		scoreProperty = (23 / 1000 * self.screenWidth, 7 / 562.71 * self.screenHeight, 48 / 1000 * self.screenWidth, 17 / 562.71 * self.screenHeight)
 		cnt = 0
 		for i in range(3):
 			for j in range(3):
