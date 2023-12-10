@@ -46,9 +46,12 @@ class InGame:
 		self.step = 0
 		self.jsonData = []
 		self.totalAgent = 0
+		self.gameTime = 0
+		self.gameMemory = 0
 
 		self.keyList = []
 
+		self.jsonPath = jsonFilePath
 		self.loadJsonFile(jsonFilePath)
 
 		# Game background
@@ -56,22 +59,45 @@ class InGame:
 		# if menuData[1] == 4:
 		self.gameBackground = pygame.transform.scale(Const.INGAME_BACKGROUND_LEVEL4, (self.screenWidth, self.screenHeight))
 		self.gameScreen.blit(self.gameBackground, (0, 0))
+		self.inGameContainer = (159 / 1000 * self.screenWidth, 51 / 562.71 * self.screenHeight, 542 / 1000 * self.screenWidth, 447 / 562.71 * self.screenHeight)
+
 
 		# Game Properties
 		self.isPause = 0
 		self.gamePropertiesContent = (762.51 / 1000 * self.screenWidth, 51 / 562.71 * self.screenHeight, 196 / 1000 * self.screenWidth, 152 / 562.71 * self.screenHeight)
 		self.pauseButton = [
 			ButtonClass.Button(
-				(self.gamePropertiesContent[2] * 20 / 100, self.gamePropertiesContent[2] * 20 / 100),
+				(self.gamePropertiesContent[2] * 15 / 100, self.gamePropertiesContent[2] * 15 / 100),
 				Const.PAUSE_BUTTON[i],
-				(self.gamePropertiesContent[0], self.gamePropertiesContent[1], self.gamePropertiesContent[2] / 2, self.gamePropertiesContent[3] * 30 / 100)
+				(self.gamePropertiesContent[0], self.gamePropertiesContent[1], self.gamePropertiesContent[2] / 4, self.gamePropertiesContent[3] * 30 / 100)
 			)
 			for i in range(2)
 		]
+		self.downSpeedButton = ButtonClass.Button(
+			(self.gamePropertiesContent[2] * 15 / 100, self.gamePropertiesContent[2] * 15 / 100),
+			Const.LEFT_BUTTON,
+			(self.gamePropertiesContent[0] + self.gamePropertiesContent[2] / 4, self.gamePropertiesContent[1], self.gamePropertiesContent[2] / 4, self.gamePropertiesContent[3] * 30 / 100)
+		)
+		self.upSpeedButton = ButtonClass.Button(
+			(self.gamePropertiesContent[2] * 15 / 100, self.gamePropertiesContent[2] * 15 / 100),
+			Const.RIGHT_BUTTON,
+			(self.gamePropertiesContent[0] + self.gamePropertiesContent[2] * 2 / 4, self.gamePropertiesContent[1], self.gamePropertiesContent[2] / 4, self.gamePropertiesContent[3] * 30 / 100)
+		)
 		self.menuButton = ButtonClass.Button(
-			(self.gamePropertiesContent[2] * 20 / 100, self.gamePropertiesContent[2] * 20 / 100),
+			(self.gamePropertiesContent[2] * 15 / 100, self.gamePropertiesContent[2] * 15 / 100),
 			Const.MENU_BUTTON,
-			(self.gamePropertiesContent[0] + self.gamePropertiesContent[2] / 2, self.gamePropertiesContent[1], self.gamePropertiesContent[2] / 2, self.gamePropertiesContent[3] * 30 / 100)
+			(self.gamePropertiesContent[0] + self.gamePropertiesContent[2] * 3 / 4, self.gamePropertiesContent[1], self.gamePropertiesContent[2] / 4, self.gamePropertiesContent[3] * 30 / 100)
+		)
+
+		self.leftButton = ButtonClass.Button(
+			(self.inGameContainer[2] * 5 / 100, self.inGameContainer[2] * 5 / 100),
+			Const.LEFT_BUTTON,
+			(self.inGameContainer[0] + self.inGameContainer[2] / 2 - self.inGameContainer[2] * 5 / 100, self.inGameContainer[1] + self.inGameContainer[3] + 30 ,self.inGameContainer[2] * 5 / 100, self.inGameContainer[2] * 5 / 100)
+		)
+		self.rightButton = ButtonClass.Button(
+			(self.inGameContainer[2] * 5 / 100, self.inGameContainer[2] * 5 / 100),
+			Const.RIGHT_BUTTON,
+			(self.inGameContainer[0] + self.inGameContainer[2] / 2, self.inGameContainer[1] + self.inGameContainer[3] + 30 ,self.inGameContainer[2] * 5 / 100, self.inGameContainer[2] * 5 / 100)
 		)
 
 		textPadding = self.gamePropertiesContent[2] * 5 / 100 
@@ -80,7 +106,7 @@ class InGame:
 			Const.AMATICSC_FONT,
 			Const.BROWN,
 			20,
-			"Time: 10s",
+			"Time: 0s",
 			(self.gamePropertiesContent[0] + textPadding, self.gamePropertiesContent[1] + self.gamePropertiesContent[3] * 35 / 100, self.gamePropertiesContent[2] - 2 * textPadding, self.gamePropertiesContent[3] * 5 / 100)
 		)
 		# Time Text
@@ -88,7 +114,7 @@ class InGame:
 			Const.AMATICSC_FONT,
 			Const.BROWN,
 			20,
-			"Memory: 10MB",
+			"Memory: 0MB",
 			(self.gamePropertiesContent[0] + textPadding, self.gamePropertiesContent[1] + self.gamePropertiesContent[3] * 50 / 100, self.gamePropertiesContent[2] - 2 * textPadding, self.gamePropertiesContent[3] * 5 / 100)
 		)
 		# Score Text
@@ -127,10 +153,14 @@ class InGame:
 		self.clock = pygame.time.Clock()
 		self.isEndGame = False
 		self.initTick = pygame.time.get_ticks()
-		self.stepTime = 10 / len(self.jsonData) * self.totalFloor
+		self.stepTime = max(0.1, 10 / len(self.jsonData) * self.totalFloor)
+		self.totalStep = len(self.jsonData)
 		# print(self.stepTime)
 
 		self.updateMap()
+
+		self.timeText.changeTextContent(f'Time: 0s')
+		self.memoryText.changeTextContent(f'Memory: 0MB')
 
 	def loadJsonFile(self, jsonFilePath):
 		jsonFile = open(jsonFilePath)
@@ -153,7 +183,7 @@ class InGame:
 			tmpTuple = data["0"]["agents"][str(i)]["position"]
 			X, Y, Z = tmpTuple[0], tmpTuple[1], tmpTuple[2]
 
-			self.agentList.append(AgentClass.Agent(i, self.gameMap[Z].getCell(X, Y)))
+			self.agentList.append(AgentClass.Agent(i, self.gameMap[Z].getCell(X, Y), Z))
 
 		# Initial Key
 		self.keyList = data["0"]["key"]
@@ -163,9 +193,20 @@ class InGame:
 		# Json Data
 		self.jsonData = data
 
+		# Time, memory
+		self.gameTime = self.jsonData['0']['time']
+		self.gameMemory = self.jsonData['0']['memory']
+
 		jsonFile.close()
 
 	def updateMap(self):
+		# self.gameTime = self.jsonData[f'{self.step}']['time']
+		# self.gameMemory = self.jsonData[f'{self.step}']['memory']
+		curTime = round(self.gameTime / self.totalStep * self.step, 2)
+		curMem = round(self.gameMemory / self.totalStep * self.step, 2)
+		self.timeText.changeTextContent(f'Time: {curTime}s')
+		self.memoryText.changeTextContent(f'Memory: {curMem}MB')
+
 		self.scoreText.changeTextContent(f"Step: {self.step}")
 		self.floorText.changeTextContent(f'Floor: {self.curFloor + 1}')
 
@@ -176,6 +217,7 @@ class InGame:
 		for i in range(1, self.totalAgent + 1):
 			tmpTuple = self.jsonData[str(self.step)]["agents"][str(i)]["position"]
 			X, Y, Z = tmpTuple[0], tmpTuple[1], tmpTuple[2]
+			self.agentList[i - 1].agentFloor = Z
 
 			if self.step >= 1:
 				preTuple = self.jsonData[str(self.step - 1)]["agents"][str(i)]["position"]
@@ -212,6 +254,8 @@ class InGame:
 			# 	self.agentList[i - 1].updateAgentCell(self.gameMap[Z].getCell(X, Y))
 
 	def pauseGame(self):
+		tmpFloor = self.curFloor
+
 		while self.isPause == 1:
 			for event in pygame.event.get():
 				if event.type == pygame.QUIT:
@@ -227,12 +271,38 @@ class InGame:
 				menu = MenuClass.Menu((self.screenWidth, self.screenHeight))
 				menu.run()
 				self.running = False
-				break		
+				break
 
+			if self.leftButton.isClicked(self.gameScreen) == True:
+				if tmpFloor > 0:
+					tmpFloor -= 1
+					self.floorText.changeTextContent(f'Floor: {tmpFloor + 1}')
+
+			
+			if self.rightButton.isClicked(self.gameScreen) == True:
+				if tmpFloor < self.totalFloor - 1:
+					tmpFloor += 1
+					self.floorText.changeTextContent(f'Floor: {tmpFloor + 1}')
+
+			self.gameScreen.blit(self.gameBackground, (0, 0))
 			self.pauseButton[self.isPause].draw(self.gameScreen)
+			self.menuButton.draw(self.gameScreen)
+			self.upSpeedButton.draw(self.gameScreen)
+			self.downSpeedButton.draw(self.gameScreen)
+			self.timeText.draw(self.gameScreen)
+			self.memoryText.draw(self.gameScreen)
+			self.scoreText.draw(self.gameScreen)
+			self.floorText.draw(self.gameScreen)
+			self.leftButton.draw(self.gameScreen)
+			self.rightButton.draw(self.gameScreen)
+			self.gameMap[tmpFloor].draw(self.gameScreen)
+			for i in self.agentList:
+				if i.agentFloor == tmpFloor:
+					i.drawWithoutFrame(self.gameScreen)
 			pygame.display.update()
 
 		self.initTick = pygame.time.get_ticks()
+		self.floorText.changeTextContent(f'Floor: {self.curFloor + 1}')
 
 
 	def run(self):
@@ -257,6 +327,17 @@ class InGame:
 				menu.run()
 				break
 
+			# if self.restartButton.isClicked(self.gameScreen) == True:
+			# 	ingame = InGame.InGame(self.menuData)
+			# 	ingame.run()
+			# 	continue
+
+			if self.upSpeedButton.isClicked(self.gameScreen) == True:
+				self.stepTime = max(0.1, self.stepTime - 0.1)
+			if self.downSpeedButton.isClicked(self.gameScreen) == True:
+				self.stepTime = min(1, self.stepTime + 0.1)
+
+
 			tick = pygame.time.get_ticks()
 			if tick >= self.initTick + self.stepTime * 1000:
 				self.step += 1
@@ -276,13 +357,16 @@ class InGame:
 			self.gameScreen.blit(self.gameBackground, (0, 0))
 			self.pauseButton[self.isPause].draw(self.gameScreen)
 			self.menuButton.draw(self.gameScreen)
+			self.upSpeedButton.draw(self.gameScreen)
+			self.downSpeedButton.draw(self.gameScreen)
 			self.timeText.draw(self.gameScreen)
 			self.memoryText.draw(self.gameScreen)
 			self.scoreText.draw(self.gameScreen)
 			self.floorText.draw(self.gameScreen)
 			self.gameMap[self.curFloor].draw(self.gameScreen)
 			for i in self.agentList:
-				i.draw(self.gameScreen)
+				if i.agentFloor == self.curFloor:
+					i.draw(self.gameScreen)
 			for i in self.agentPropertyList:
 				i.draw(self.gameScreen)
 

@@ -15,7 +15,7 @@ class AgentProperty:
 			Const.AMATICSC_FONT,
 			Const.BROWN,
 			15,
-			"Score: 0",
+			f"Agent: {agentID}",
 			self.scoreProperty
 		)
 		self.keyImage = [pygame.transform.scale(Const.CELL_IMAGE_KEY[i], (self.keySize[0] * 6 / 10, self.keySize[1] * 8 / 10)) for i in range(0, 20)]
