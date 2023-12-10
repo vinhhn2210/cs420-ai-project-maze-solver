@@ -1,7 +1,7 @@
 {
     "0": {
-        "time": 316.0722,
-        "memory": 0.0077,
+        "time": 191.2808,
+        "memory": 0.0108,
         "numFloor": 1,
         "numAgent": 9,
         "floor": [0],
@@ -66,7 +66,7 @@
         "step": 1,
         "agents": {
             "1": {
-                "position": [5, 0, 0],
+                "position": [4, 1, 0],
                 "key": []
             },
             "2": {
@@ -90,11 +90,11 @@
                 "key": []
             },
             "7": {
-                "position": [5, 1, 0],
+                "position": [7, 1, 0],
                 "key": []
             },
             "8": {
-                "position": [7, 1, 0],
+                "position": [8, 2, 0],
                 "key": []
             },
             "9": {
@@ -109,7 +109,7 @@
         "step": 2,
         "agents": {
             "1": {
-                "position": [5, 1, 0],
+                "position": [4, 1, 0],
                 "key": []
             },
             "2": {
@@ -129,15 +129,15 @@
                 "key": []
             },
             "6": {
-                "position": [6, 8, 0],
+                "position": [5, 8, 0],
                 "key": []
             },
             "7": {
-                "position": [4, 1, 0],
+                "position": [6, 1, 0],
                 "key": []
             },
             "8": {
-                "position": [6, 1, 0],
+                "position": [7, 2, 0],
                 "key": []
             },
             "9": {
@@ -152,7 +152,7 @@
         "step": 3,
         "agents": {
             "1": {
-                "position": [5, 2, 0],
+                "position": [3, 2, 0],
                 "key": []
             },
             "2": {
@@ -172,11 +172,11 @@
                 "key": []
             },
             "6": {
-                "position": [5, 9, 0],
+                "position": [4, 9, 0],
                 "key": []
             },
             "7": {
-                "position": [3, 1, 0],
+                "position": [5, 0, 0],
                 "key": []
             },
             "8": {
@@ -195,7 +195,7 @@
         "step": 4,
         "agents": {
             "1": {
-                "position": [6, 1, 0],
+                "position": [3, 2, 0],
                 "key": []
             },
             "2": {
@@ -203,11 +203,11 @@
                 "key": []
             },
             "3": {
-                "position": [4, 2, 0],
+                "position": [4, 3, 0],
                 "key": []
             },
             "4": {
-                "position": [3, 6, 0],
+                "position": [2, 7, 0],
                 "key": []
             },
             "5": {
@@ -219,11 +219,11 @@
                 "key": []
             },
             "7": {
-                "position": [2, 1, 0],
+                "position": [4, 0, 0],
                 "key": []
             },
             "8": {
-                "position": [6, 3, 0],
+                "position": [5, 2, 0],
                 "key": []
             },
             "9": {
@@ -238,7 +238,7 @@
         "step": 5,
         "agents": {
             "1": {
-                "position": [7, 0, 0],
+                "position": [4, 2, 0],
                 "key": []
             },
             "2": {
@@ -246,11 +246,11 @@
                 "key": []
             },
             "3": {
-                "position": [5, 2, 0],
+                "position": [5, 3, 0],
                 "key": []
             },
             "4": {
-                "position": [4, 6, 0],
+                "position": [2, 6, 0],
                 "key": []
             },
             "5": {
@@ -258,19 +258,19 @@
                 "key": []
             },
             "6": {
-                "position": [5, 9, 0],
+                "position": [4, 9, 0],
                 "key": []
             },
             "7": {
-                "position": [1, 1, 0],
+                "position": [3, 0, 0],
                 "key": []
             },
             "8": {
-                "position": [5, 3, 0],
+                "position": [4, 1, 0],
                 "key": []
             },
             "9": {
-                "position": [9, 2, 0],
+                "position": [8, 3, 0],
                 "key": []
             }
         }
@@ -281,7 +281,7 @@
         "step": 6,
         "agents": {
             "1": {
-                "position": [8, 1, 0],
+                "position": [5, 2, 0],
                 "key": []
             },
             "2": {
@@ -289,31 +289,31 @@
                 "key": []
             },
             "3": {
-                "position": [6, 2, 0],
+                "position": [6, 3, 0],
                 "key": []
             },
             "4": {
-                "position": [5, 6, 0],
+                "position": [2, 6, 0],
                 "key": []
             },
             "5": {
-                "position": [8, 3, 0],
+                "position": [9, 2, 0],
                 "key": []
             },
             "6": {
-                "position": [5, 9, 0],
+                "position": [4, 9, 0],
                 "key": []
             },
             "7": {
-                "position": [0, 1, 0],
+                "position": [2, 0, 0],
                 "key": []
             },
             "8": {
-                "position": [4, 3, 0],
+                "position": [3, 1, 0],
                 "key": []
             },
             "9": {
-                "position": [8, 2, 0],
+                "position": [7, 2, 0],
                 "key": []
             }
         }
@@ -324,7 +324,7 @@
         "step": 7,
         "agents": {
             "1": {
-                "position": [8, 0, 0],
+                "position": [5, 1, 0],
                 "key": []
             },
             "2": {
@@ -332,11 +332,11 @@
                 "key": []
             },
             "3": {
-                "position": [7, 1, 0],
+                "position": [7, 3, 0],
                 "key": []
             },
             "4": {
-                "position": [6, 6, 0],
+                "position": [2, 6, 0],
                 "key": []
             },
             "5": {
@@ -348,15 +348,15 @@
                 "key": []
             },
             "7": {
-                "position": [6, 1, 0],
+                "position": [1, 0, 0],
                 "key": []
             },
             "8": {
-                "position": [3, 3, 0],
+                "position": [2, 1, 0],
                 "key": []
             },
             "9": {
-                "position": [7, 2, 0],
+                "position": [6, 1, 0],
                 "key": []
             }
         }
@@ -367,7 +367,7 @@
         "step": 8,
         "agents": {
             "1": {
-                "position": [9, 0, 0],
+                "position": [6, 1, 0],
                 "key": []
             },
             "2": {
@@ -375,11 +375,11 @@
                 "key": []
             },
             "3": {
-                "position": [8, 1, 0],
+                "position": [8, 3, 0],
                 "key": []
             },
             "4": {
-                "position": [7, 5, 0],
+                "position": [3, 6, 0],
                 "key": []
             },
             "5": {
@@ -391,11 +391,11 @@
                 "key": []
             },
             "7": {
-                "position": [5, 1, 0],
+                "position": [0, 1, 0],
                 "key": []
             },
             "8": {
-                "position": [2, 2, 0],
+                "position": [1, 1, 0],
                 "key": []
             },
             "9": {
@@ -410,7 +410,7 @@
         "step": 9,
         "agents": {
             "1": {
-                "position": [8, 0, 0],
+                "position": [7, 2, 0],
                 "key": []
             },
             "2": {
@@ -418,11 +418,11 @@
                 "key": []
             },
             "3": {
-                "position": [8, 2, 0],
+                "position": [0, 3, 0],
                 "key": []
             },
             "4": {
-                "position": [8, 5, 0],
+                "position": [4, 6, 0],
                 "key": []
             },
             "5": {
@@ -430,15 +430,15 @@
                 "key": []
             },
             "6": {
-                "position": [5, 9, 0],
+                "position": [7, 8, 0],
                 "key": []
             },
             "7": {
-                "position": [4, 1, 0],
+                "position": [6, 1, 0],
                 "key": []
             },
             "8": {
-                "position": [1, 1, 0],
+                "position": [8, 1, 0],
                 "key": []
             },
             "9": {
@@ -453,7 +453,7 @@
         "step": 10,
         "agents": {
             "1": {
-                "position": [9, 0, 0],
+                "position": [8, 2, 0],
                 "key": []
             },
             "2": {
@@ -461,11 +461,11 @@
                 "key": []
             },
             "3": {
-                "position": [8, 3, 0],
+                "position": [1, 3, 0],
                 "key": []
             },
             "4": {
-                "position": [9, 5, 0],
+                "position": [5, 6, 0],
                 "key": []
             },
             "5": {
@@ -473,15 +473,15 @@
                 "key": []
             },
             "6": {
-                "position": [6, 8, 0],
+                "position": [8, 8, 0],
                 "key": []
             },
             "7": {
-                "position": [3, 1, 0],
+                "position": [5, 1, 0],
                 "key": []
             },
             "8": {
-                "position": [8, 1, 0],
+                "position": [7, 1, 0],
                 "key": []
             },
             "9": {
@@ -496,7 +496,7 @@
         "step": 11,
         "agents": {
             "1": {
-                "position": [8, 1, 0],
+                "position": [8, 2, 0],
                 "key": []
             },
             "2": {
@@ -504,11 +504,11 @@
                 "key": []
             },
             "3": {
-                "position": [0, 3, 0],
+                "position": [2, 2, 0],
                 "key": []
             },
             "4": {
-                "position": [9, 6, 0],
+                "position": [6, 6, 0],
                 "key": []
             },
             "5": {
@@ -516,19 +516,19 @@
                 "key": []
             },
             "6": {
-                "position": [7, 8, 0],
+                "position": [9, 7, 0],
                 "key": []
             },
             "7": {
-                "position": [3, 1, 0],
+                "position": [4, 1, 0],
                 "key": []
             },
             "8": {
-                "position": [7, 1, 0],
+                "position": [6, 1, 0],
                 "key": []
             },
             "9": {
-                "position": [3, 2, 0],
+                "position": [3, 3, 0],
                 "key": []
             }
         }
@@ -539,19 +539,19 @@
         "step": 12,
         "agents": {
             "1": {
-                "position": [9, 0, 0],
+                "position": [7, 2, 0],
                 "key": []
             },
             "2": {
-                "position": [1, 2, 0],
+                "position": [0, 2, 0],
                 "key": []
             },
             "3": {
-                "position": [1, 3, 0],
+                "position": [3, 2, 0],
                 "key": []
             },
             "4": {
-                "position": [9, 7, 0],
+                "position": [6, 5, 0],
                 "key": []
             },
             "5": {
@@ -559,15 +559,15 @@
                 "key": []
             },
             "6": {
-                "position": [7, 9, 0],
+                "position": [9, 6, 0],
                 "key": []
             },
             "7": {
-                "position": [2, 1, 0],
+                "position": [3, 1, 0],
                 "key": []
             },
             "8": {
-                "position": [6, 1, 0],
+                "position": [5, 1, 0],
                 "key": []
             },
             "9": {
@@ -582,19 +582,19 @@
         "step": 13,
         "agents": {
             "1": {
-                "position": [9, 1, 0],
+                "position": [6, 3, 0],
                 "key": []
             },
             "2": {
-                "position": [0, 2, 0],
+                "position": [0, 3, 0],
                 "key": []
             },
             "3": {
-                "position": [1, 4, 0],
+                "position": [4, 2, 0],
                 "key": []
             },
             "4": {
-                "position": [8, 8, 0],
+                "position": [6, 5, 0],
                 "key": []
             },
             "5": {
@@ -602,15 +602,15 @@
                 "key": []
             },
             "6": {
-                "position": [6, 8, 0],
+                "position": [9, 5, 0],
                 "key": []
             },
             "7": {
-                "position": [1, 1, 0],
+                "position": [2, 1, 0],
                 "key": []
             },
             "8": {
-                "position": [7, 2, 0],
+                "position": [4, 1, 0],
                 "key": []
             },
             "9": {
@@ -625,19 +625,19 @@
         "step": 14,
         "agents": {
             "1": {
-                "position": [9, 1, 0],
+                "position": [5, 2, 0],
                 "key": []
             },
             "2": {
-                "position": [0, 3, 0],
+                "position": [0, 4, 0],
                 "key": []
             },
             "3": {
-                "position": [1, 5, 0],
+                "position": [4, 2, 0],
                 "key": []
             },
             "4": {
-                "position": [7, 9, 0],
+                "position": [6, 6, 0],
                 "key": []
             },
             "5": {
@@ -645,19 +645,19 @@
                 "key": []
             },
             "6": {
-                "position": [7, 8, 0],
+                "position": [9, 5, 0],
                 "key": []
             },
             "7": {
-                "position": [0, 1, 0],
+                "position": [1, 1, 0],
                 "key": []
             },
             "8": {
-                "position": [6, 2, 0],
+                "position": [3, 0, 0],
                 "key": []
             },
             "9": {
-                "position": [8, 5, 0],
+                "position": [9, 5, 0],
                 "key": []
             }
         }
@@ -668,19 +668,19 @@
         "step": 15,
         "agents": {
             "1": {
-                "position": [8, 0, 0],
+                "position": [4, 2, 0],
                 "key": []
             },
             "2": {
-                "position": [0, 4, 0],
+                "position": [0, 5, 0],
                 "key": []
             },
             "3": {
-                "position": [1, 4, 0],
+                "position": [4, 3, 0],
                 "key": []
             },
             "4": {
-                "position": [6, 9, 0],
+                "position": [6, 5, 0],
                 "key": []
             },
             "5": {
@@ -688,19 +688,19 @@
                 "key": []
             },
             "6": {
-                "position": [8, 8, 0],
+                "position": [9, 4, 0],
                 "key": []
             },
             "7": {
-                "position": [6, 1, 0],
+                "position": [0, 1, 0],
                 "key": []
             },
             "8": {
-                "position": [5, 2, 0],
+                "position": [2, 0, 0],
                 "key": []
             },
             "9": {
-                "position": [9, 5, 0],
+                "position": [8, 5, 0],
                 "key": []
             }
         }
@@ -711,39 +711,39 @@
         "step": 16,
         "agents": {
             "1": {
-                "position": [8, 1, 0],
-                "key": []
-            },
-            "2": {
-                "position": [0, 5, 0],
-                "key": []
-            },
-            "3": {
-                "position": [2, 4, 0],
-                "key": []
-            },
-            "4": {
-                "position": [5, 9, 0],
-                "key": []
-            },
-            "5": {
                 "position": [4, 3, 0],
                 "key": []
             },
+            "2": {
+                "position": [0, 6, 0],
+                "key": []
+            },
+            "3": {
+                "position": [5, 3, 0],
+                "key": []
+            },
+            "4": {
+                "position": [7, 6, 0],
+                "key": []
+            },
+            "5": {
+                "position": [3, 2, 0],
+                "key": []
+            },
             "6": {
-                "position": [9, 7, 0],
+                "position": [9, 3, 0],
                 "key": []
             },
             "7": {
-                "position": [5, 1, 0],
+                "position": [6, 1, 0],
                 "key": []
             },
             "8": {
-                "position": [4, 2, 0],
+                "position": [1, 1, 0],
                 "key": []
             },
             "9": {
-                "position": [9, 4, 0],
+                "position": [7, 5, 0],
                 "key": []
             }
         }
@@ -754,39 +754,39 @@
         "step": 17,
         "agents": {
             "1": {
-                "position": [9, 1, 0],
-                "key": []
-            },
-            "2": {
-                "position": [0, 6, 0],
-                "key": []
-            },
-            "3": {
-                "position": [2, 3, 0],
-                "key": []
-            },
-            "4": {
-                "position": [4, 9, 0],
-                "key": []
-            },
-            "5": {
                 "position": [5, 3, 0],
                 "key": []
             },
+            "2": {
+                "position": [0, 7, 0],
+                "key": []
+            },
+            "3": {
+                "position": [6, 3, 0],
+                "key": []
+            },
+            "4": {
+                "position": [6, 6, 0],
+                "key": []
+            },
+            "5": {
+                "position": [4, 2, 0],
+                "key": []
+            },
             "6": {
-                "position": [9, 6, 0],
+                "position": [9, 2, 0],
                 "key": []
             },
             "7": {
-                "position": [4, 1, 0],
+                "position": [5, 1, 0],
                 "key": []
             },
             "8": {
-                "position": [3, 2, 0],
+                "position": [8, 1, 0],
                 "key": []
             },
             "9": {
-                "position": [9, 5, 0],
+                "position": [8, 5, 0],
                 "key": []
             }
         }
@@ -797,39 +797,39 @@
         "step": 18,
         "agents": {
             "1": {
-                "position": [9, 1, 0],
+                "position": [4, 3, 0],
                 "key": []
             },
             "2": {
-                "position": [0, 7, 0],
+                "position": [0, 8, 0],
                 "key": []
             },
             "3": {
-                "position": [3, 3, 0],
+                "position": [7, 3, 0],
                 "key": []
             },
             "4": {
-                "position": [2, 7, 0],
+                "position": [5, 6, 0],
                 "key": []
             },
             "5": {
-                "position": [6, 3, 0],
+                "position": [5, 2, 0],
                 "key": []
             },
             "6": {
-                "position": [9, 6, 0],
+                "position": [9, 1, 0],
                 "key": []
             },
             "7": {
-                "position": [3, 1, 0],
+                "position": [4, 1, 0],
                 "key": []
             },
             "8": {
-                "position": [2, 2, 0],
+                "position": [7, 1, 0],
                 "key": []
             },
             "9": {
-                "position": [8, 5, 0],
+                "position": [9, 5, 0],
                 "key": []
             }
         }
@@ -840,39 +840,39 @@
         "step": 19,
         "agents": {
             "1": {
-                "position": [9, 1, 0],
+                "position": [5, 2, 0],
                 "key": []
             },
             "2": {
-                "position": [0, 8, 0],
+                "position": [0, 9, 0],
                 "key": []
             },
             "3": {
-                "position": [4, 3, 0],
+                "position": [8, 3, 0],
                 "key": []
             },
             "4": {
-                "position": [2, 7, 0],
+                "position": [5, 6, 0],
                 "key": []
             },
             "5": {
-                "position": [7, 3, 0],
+                "position": [6, 2, 0],
                 "key": []
             },
             "6": {
-                "position": [9, 5, 0],
+                "position": [9, 0, 0],
                 "key": []
             },
             "7": {
-                "position": [2, 1, 0],
+                "position": [3, 1, 0],
                 "key": []
             },
             "8": {
-                "position": [1, 2, 0],
+                "position": [6, 1, 0],
                 "key": []
             },
             "9": {
-                "position": [7, 5, 0],
+                "position": [9, 4, 0],
                 "key": []
             }
         }
@@ -883,39 +883,39 @@
         "step": 20,
         "agents": {
             "1": {
-                "position": [8, 2, 0],
-                "key": []
-            },
-            "2": {
-                "position": [0, 9, 0],
-                "key": []
-            },
-            "3": {
                 "position": [5, 3, 0],
                 "key": []
             },
+            "2": {
+                "position": [0, 0, 0],
+                "key": []
+            },
+            "3": {
+                "position": [0, 3, 0],
+                "key": []
+            },
             "4": {
-                "position": [1, 6, 0],
+                "position": [6, 6, 0],
                 "key": []
             },
             "5": {
-                "position": [8, 3, 0],
+                "position": [7, 2, 0],
                 "key": []
             },
             "6": {
-                "position": [9, 4, 0],
+                "position": [4, 8, 0],
                 "key": []
             },
             "7": {
-                "position": [1, 1, 0],
+                "position": [2, 1, 0],
                 "key": []
             },
             "8": {
-                "position": [1, 2, 0],
+                "position": [5, 1, 0],
                 "key": []
             },
             "9": {
-                "position": [6, 6, 0],
+                "position": [9, 3, 0],
                 "key": []
             }
         }
@@ -926,39 +926,39 @@
         "step": 21,
         "agents": {
             "1": {
-                "position": [9, 1, 0],
+                "position": [6, 3, 0],
                 "key": []
             },
             "2": {
-                "position": [0, 0, 0],
-                "key": []
-            },
-            "3": {
-                "position": [5, 2, 0],
-                "key": []
-            },
-            "4": {
-                "position": [1, 7, 0],
-                "key": []
-            },
-            "5": {
-                "position": [9, 3, 0],
-                "key": []
-            },
-            "6": {
-                "position": [9, 4, 0],
-                "key": []
-            },
-            "7": {
                 "position": [0, 1, 0],
                 "key": []
             },
+            "3": {
+                "position": [1, 3, 0],
+                "key": []
+            },
+            "4": {
+                "position": [7, 5, 0],
+                "key": []
+            },
+            "5": {
+                "position": [8, 1, 0],
+                "key": []
+            },
+            "6": {
+                "position": [5, 8, 0],
+                "key": []
+            },
+            "7": {
+                "position": [2, 0, 0],
+                "key": []
+            },
             "8": {
-                "position": [1, 1, 0],
+                "position": [4, 1, 0],
                 "key": []
             },
             "9": {
-                "position": [5, 6, 0],
+                "position": [8, 3, 0],
                 "key": []
             }
         }
@@ -969,39 +969,39 @@
         "step": 22,
         "agents": {
             "1": {
-                "position": [9, 1, 0],
-                "key": []
-            },
-            "2": {
-                "position": [1, 0, 0],
-                "key": []
-            },
-            "3": {
                 "position": [6, 2, 0],
                 "key": []
             },
+            "2": {
+                "position": [0, 2, 0],
+                "key": []
+            },
+            "3": {
+                "position": [2, 4, 0],
+                "key": []
+            },
             "4": {
-                "position": [0, 6, 0],
+                "position": [8, 5, 0],
                 "key": []
             },
             "5": {
-                "position": [3, 3, 0],
+                "position": [9, 2, 0],
                 "key": []
             },
             "6": {
-                "position": [9, 3, 0],
+                "position": [5, 9, 0],
                 "key": []
             },
             "7": {
-                "position": [6, 1, 0],
+                "position": [1, 0, 0],
                 "key": []
             },
             "8": {
-                "position": [8, 1, 0],
+                "position": [3, 1, 0],
                 "key": []
             },
             "9": {
-                "position": [4, 6, 0],
+                "position": [7, 2, 0],
                 "key": []
             }
         }
@@ -1012,39 +1012,39 @@
         "step": 23,
         "agents": {
             "1": {
-                "position": [9, 2, 0],
+                "position": [6, 1, 0],
                 "key": []
             },
             "2": {
-                "position": [1, 1, 0],
+                "position": [0, 3, 0],
                 "key": []
             },
             "3": {
-                "position": [7, 2, 0],
+                "position": [3, 4, 0],
                 "key": []
             },
             "4": {
-                "position": [1, 6, 0],
+                "position": [9, 5, 0],
                 "key": []
             },
             "5": {
-                "position": [2, 3, 0],
+                "position": [9, 3, 0],
                 "key": []
             },
             "6": {
-                "position": [8, 3, 0],
+                "position": [5, 8, 0],
                 "key": []
             },
             "7": {
-                "position": [5, 1, 0],
+                "position": [0, 1, 0],
                 "key": []
             },
             "8": {
-                "position": [8, 0, 0],
+                "position": [2, 1, 0],
                 "key": []
             },
             "9": {
-                "position": [4, 6, 0],
+                "position": [7, 3, 0],
                 "key": []
             }
         }
@@ -1055,39 +1055,39 @@
         "step": 24,
         "agents": {
             "1": {
-                "position": [9, 3, 0],
+                "position": [5, 2, 0],
                 "key": []
             },
             "2": {
-                "position": [1, 2, 0],
+                "position": [0, 4, 0],
                 "key": []
             },
             "3": {
-                "position": [7, 2, 0],
+                "position": [4, 3, 0],
                 "key": []
             },
             "4": {
-                "position": [0, 6, 0],
+                "position": [9, 6, 0],
                 "key": []
             },
             "5": {
-                "position": [2, 3, 0],
+                "position": [3, 3, 0],
                 "key": []
             },
             "6": {
-                "position": [8, 2, 0],
+                "position": [4, 9, 0],
                 "key": []
             },
             "7": {
-                "position": [4, 1, 0],
+                "position": [6, 1, 0],
                 "key": []
             },
             "8": {
-                "position": [7, 0, 0],
+                "position": [1, 1, 0],
                 "key": []
             },
             "9": {
-                "position": [5, 6, 0],
+                "position": [6, 3, 0],
                 "key": []
             }
         }
@@ -1098,39 +1098,39 @@
         "step": 25,
         "agents": {
             "1": {
-                "position": [9, 4, 0],
+                "position": [6, 2, 0],
                 "key": []
             },
             "2": {
-                "position": [1, 3, 0],
+                "position": [0, 5, 0],
                 "key": []
             },
             "3": {
-                "position": [7, 3, 0],
+                "position": [4, 2, 0],
                 "key": []
             },
             "4": {
-                "position": [0, 7, 0],
+                "position": [9, 6, 0],
                 "key": []
             },
             "5": {
-                "position": [3, 4, 0],
+                "position": [3, 2, 0],
                 "key": []
             },
             "6": {
-                "position": [8, 1, 0],
+                "position": [5, 9, 0],
                 "key": []
             },
             "7": {
-                "position": [3, 1, 0],
+                "position": [5, 1, 0],
                 "key": []
             },
             "8": {
-                "position": [6, 0, 0],
+                "position": [8, 1, 0],
                 "key": []
             },
             "9": {
-                "position": [4, 6, 0],
+                "position": [5, 3, 0],
                 "key": []
             }
         }
@@ -1141,39 +1141,39 @@
         "step": 26,
         "agents": {
             "1": {
-                "position": [9, 5, 0],
+                "position": [6, 1, 0],
                 "key": []
             },
             "2": {
-                "position": [1, 4, 0],
+                "position": [0, 6, 0],
                 "key": []
             },
             "3": {
-                "position": [8, 3, 0],
+                "position": [4, 1, 0],
                 "key": []
             },
             "4": {
-                "position": [1, 8, 0],
+                "position": [9, 7, 0],
                 "key": []
             },
             "5": {
-                "position": [4, 3, 0],
+                "position": [3, 1, 0],
                 "key": []
             },
             "6": {
-                "position": [9, 0, 0],
+                "position": [4, 9, 0],
                 "key": []
             },
             "7": {
-                "position": [2, 1, 0],
+                "position": [5, 2, 0],
                 "key": []
             },
             "8": {
-                "position": [5, 0, 0],
+                "position": [7, 1, 0],
                 "key": []
             },
             "9": {
-                "position": [3, 6, 0],
+                "position": [4, 3, 0],
                 "key": []
             }
         }
@@ -1184,11 +1184,269 @@
         "step": 27,
         "agents": {
             "1": {
-                "position": [9, 6, 0],
+                "position": [7, 1, 0],
                 "key": []
             },
             "2": {
-                "position": [1, 5, 0],
+                "position": [0, 7, 0],
+                "key": []
+            },
+            "3": {
+                "position": [5, 0, 0],
+                "key": []
+            },
+            "4": {
+                "position": [9, 8, 0],
+                "key": []
+            },
+            "5": {
+                "position": [3, 2, 0],
+                "key": []
+            },
+            "6": {
+                "position": [5, 9, 0],
+                "key": []
+            },
+            "7": {
+                "position": [4, 1, 0],
+                "key": []
+            },
+            "8": {
+                "position": [8, 2, 0],
+                "key": []
+            },
+            "9": {
+                "position": [3, 3, 0],
+                "key": []
+            }
+        }
+    },
+    "28": {
+        "isWin": false,
+        "floor": [0],
+        "step": 28,
+        "agents": {
+            "1": {
+                "position": [8, 1, 0],
+                "key": []
+            },
+            "2": {
+                "position": [0, 8, 0],
+                "key": []
+            },
+            "3": {
+                "position": [5, 1, 0],
+                "key": []
+            },
+            "4": {
+                "position": [8, 8, 0],
+                "key": []
+            },
+            "5": {
+                "position": [4, 2, 0],
+                "key": []
+            },
+            "6": {
+                "position": [6, 9, 0],
+                "key": []
+            },
+            "7": {
+                "position": [3, 1, 0],
+                "key": []
+            },
+            "8": {
+                "position": [7, 2, 0],
+                "key": []
+            },
+            "9": {
+                "position": [2, 3, 0],
+                "key": []
+            }
+        }
+    },
+    "29": {
+        "isWin": false,
+        "floor": [0],
+        "step": 29,
+        "agents": {
+            "1": {
+                "position": [7, 2, 0],
+                "key": []
+            },
+            "2": {
+                "position": [0, 9, 0],
+                "key": []
+            },
+            "3": {
+                "position": [5, 2, 0],
+                "key": []
+            },
+            "4": {
+                "position": [7, 8, 0],
+                "key": []
+            },
+            "5": {
+                "position": [4, 3, 0],
+                "key": []
+            },
+            "6": {
+                "position": [7, 9, 0],
+                "key": []
+            },
+            "7": {
+                "position": [2, 1, 0],
+                "key": []
+            },
+            "8": {
+                "position": [6, 1, 0],
+                "key": []
+            },
+            "9": {
+                "position": [9, 5, 0],
+                "key": []
+            }
+        }
+    },
+    "30": {
+        "isWin": false,
+        "floor": [0],
+        "step": 30,
+        "agents": {
+            "1": {
+                "position": [8, 2, 0],
+                "key": []
+            },
+            "2": {
+                "position": [0, 0, 0],
+                "key": []
+            },
+            "3": {
+                "position": [6, 3, 0],
+                "key": []
+            },
+            "4": {
+                "position": [6, 8, 0],
+                "key": []
+            },
+            "5": {
+                "position": [4, 2, 0],
+                "key": []
+            },
+            "6": {
+                "position": [7, 8, 0],
+                "key": []
+            },
+            "7": {
+                "position": [1, 1, 0],
+                "key": []
+            },
+            "8": {
+                "position": [6, 0, 0],
+                "key": []
+            },
+            "9": {
+                "position": [8, 5, 0],
+                "key": []
+            }
+        }
+    },
+    "31": {
+        "isWin": false,
+        "floor": [0],
+        "step": 31,
+        "agents": {
+            "1": {
+                "position": [9, 3, 0],
+                "key": []
+            },
+            "2": {
+                "position": [0, 1, 0],
+                "key": []
+            },
+            "3": {
+                "position": [7, 3, 0],
+                "key": []
+            },
+            "4": {
+                "position": [5, 8, 0],
+                "key": []
+            },
+            "5": {
+                "position": [5, 2, 0],
+                "key": []
+            },
+            "6": {
+                "position": [8, 8, 0],
+                "key": []
+            },
+            "7": {
+                "position": [2, 0, 0],
+                "key": []
+            },
+            "8": {
+                "position": [5, 0, 0],
+                "key": []
+            },
+            "9": {
+                "position": [7, 5, 0],
+                "key": []
+            }
+        }
+    },
+    "32": {
+        "isWin": false,
+        "floor": [0],
+        "step": 32,
+        "agents": {
+            "1": {
+                "position": [9, 4, 0],
+                "key": []
+            },
+            "2": {
+                "position": [0, 2, 0],
+                "key": []
+            },
+            "3": {
+                "position": [8, 3, 0],
+                "key": []
+            },
+            "4": {
+                "position": [4, 9, 0],
+                "key": []
+            },
+            "5": {
+                "position": [5, 2, 0],
+                "key": []
+            },
+            "6": {
+                "position": [7, 8, 0],
+                "key": []
+            },
+            "7": {
+                "position": [1, 0, 0],
+                "key": []
+            },
+            "8": {
+                "position": [4, 0, 0],
+                "key": []
+            },
+            "9": {
+                "position": [6, 6, 0],
+                "key": []
+            }
+        }
+    },
+    "33": {
+        "isWin": false,
+        "floor": [0],
+        "step": 33,
+        "agents": {
+            "1": {
+                "position": [9, 5, 0],
+                "key": []
+            },
+            "2": {
+                "position": [0, 3, 0],
                 "key": []
             },
             "3": {
@@ -1196,15 +1454,273 @@
                 "key": []
             },
             "4": {
-                "position": [2, 9, 0],
+                "position": [2, 7, 0],
                 "key": []
             },
             "5": {
-                "position": [5, 3, 0],
+                "position": [6, 2, 0],
                 "key": []
             },
             "6": {
-                "position": [4, 8, 0],
+                "position": [7, 8, 0],
+                "key": []
+            },
+            "7": {
+                "position": [0, 1, 0],
+                "key": []
+            },
+            "8": {
+                "position": [3, 0, 0],
+                "key": []
+            },
+            "9": {
+                "position": [5, 6, 0],
+                "key": []
+            }
+        }
+    },
+    "34": {
+        "isWin": false,
+        "floor": [0],
+        "step": 34,
+        "agents": {
+            "1": {
+                "position": [9, 6, 0],
+                "key": []
+            },
+            "2": {
+                "position": [0, 4, 0],
+                "key": []
+            },
+            "3": {
+                "position": [1, 3, 0],
+                "key": []
+            },
+            "4": {
+                "position": [1, 8, 0],
+                "key": []
+            },
+            "5": {
+                "position": [7, 2, 0],
+                "key": []
+            },
+            "6": {
+                "position": [7, 8, 0],
+                "key": []
+            },
+            "7": {
+                "position": [6, 1, 0],
+                "key": []
+            },
+            "8": {
+                "position": [2, 0, 0],
+                "key": []
+            },
+            "9": {
+                "position": [4, 6, 0],
+                "key": []
+            }
+        }
+    },
+    "35": {
+        "isWin": false,
+        "floor": [0],
+        "step": 35,
+        "agents": {
+            "1": {
+                "position": [9, 7, 0],
+                "key": []
+            },
+            "2": {
+                "position": [0, 5, 0],
+                "key": []
+            },
+            "3": {
+                "position": [2, 3, 0],
+                "key": []
+            },
+            "4": {
+                "position": [1, 7, 0],
+                "key": []
+            },
+            "5": {
+                "position": [8, 2, 0],
+                "key": []
+            },
+            "6": {
+                "position": [8, 8, 0],
+                "key": []
+            },
+            "7": {
+                "position": [5, 1, 0],
+                "key": []
+            },
+            "8": {
+                "position": [1, 1, 0],
+                "key": []
+            },
+            "9": {
+                "position": [3, 6, 0],
+                "key": []
+            }
+        }
+    },
+    "36": {
+        "isWin": false,
+        "floor": [0],
+        "step": 36,
+        "agents": {
+            "1": {
+                "position": [9, 8, 0],
+                "key": []
+            },
+            "2": {
+                "position": [0, 6, 0],
+                "key": []
+            },
+            "3": {
+                "position": [3, 3, 0],
+                "key": []
+            },
+            "4": {
+                "position": [0, 8, 0],
+                "key": []
+            },
+            "5": {
+                "position": [9, 3, 0],
+                "key": []
+            },
+            "6": {
+                "position": [8, 7, 0],
+                "key": []
+            },
+            "7": {
+                "position": [4, 1, 0],
+                "key": []
+            },
+            "8": {
+                "position": [8, 1, 0],
+                "key": []
+            },
+            "9": {
+                "position": [2, 6, 0],
+                "key": []
+            }
+        }
+    },
+    "37": {
+        "isWin": false,
+        "floor": [0],
+        "step": 37,
+        "agents": {
+            "1": {
+                "position": [8, 8, 0],
+                "key": []
+            },
+            "2": {
+                "position": [1, 7, 0],
+                "key": []
+            },
+            "3": {
+                "position": [4, 3, 0],
+                "key": []
+            },
+            "4": {
+                "position": [0, 9, 0],
+                "key": []
+            },
+            "5": {
+                "position": [3, 3, 0],
+                "key": []
+            },
+            "6": {
+                "position": [9, 7, 0],
+                "key": []
+            },
+            "7": {
+                "position": [3, 1, 0],
+                "key": []
+            },
+            "8": {
+                "position": [7, 1, 0],
+                "key": []
+            },
+            "9": {
+                "position": [1, 6, 0],
+                "key": []
+            }
+        }
+    },
+    "38": {
+        "isWin": false,
+        "floor": [0],
+        "step": 38,
+        "agents": {
+            "1": {
+                "position": [7, 8, 0],
+                "key": []
+            },
+            "2": {
+                "position": [1, 8, 0],
+                "key": []
+            },
+            "3": {
+                "position": [5, 3, 0],
+                "key": []
+            },
+            "4": {
+                "position": [1, 9, 0],
+                "key": []
+            },
+            "5": {
+                "position": [4, 2, 0],
+                "key": []
+            },
+            "6": {
+                "position": [9, 6, 0],
+                "key": []
+            },
+            "7": {
+                "position": [2, 1, 0],
+                "key": []
+            },
+            "8": {
+                "position": [6, 1, 0],
+                "key": []
+            },
+            "9": {
+                "position": [1, 5, 0],
+                "key": []
+            }
+        }
+    },
+    "39": {
+        "isWin": false,
+        "floor": [0],
+        "step": 39,
+        "agents": {
+            "1": {
+                "position": [6, 8, 0],
+                "key": []
+            },
+            "2": {
+                "position": [0, 8, 0],
+                "key": []
+            },
+            "3": {
+                "position": [6, 3, 0],
+                "key": []
+            },
+            "4": {
+                "position": [0, 9, 0],
+                "key": []
+            },
+            "5": {
+                "position": [5, 2, 0],
+                "key": []
+            },
+            "6": {
+                "position": [9, 5, 0],
                 "key": []
             },
             "7": {
@@ -1216,38 +1732,38 @@
                 "key": []
             },
             "9": {
-                "position": [2, 6, 0],
+                "position": [1, 4, 0],
                 "key": []
             }
         }
     },
-    "28": {
-        "isWin": false,
+    "40": {
+        "isWin": true,
         "floor": [0],
-        "step": 28,
+        "step": 40,
         "agents": {
             "1": {
-                "position": [9, 6, 0],
+                "position": [5, 9, 0],
                 "key": []
             },
             "2": {
-                "position": [1, 6, 0],
+                "position": [0, 7, 0],
                 "key": []
             },
             "3": {
-                "position": [1, 3, 0],
+                "position": [7, 3, 0],
                 "key": []
             },
             "4": {
-                "position": [2, 8, 0],
+                "position": [0, 9, 0],
                 "key": []
             },
             "5": {
-                "position": [6, 3, 0],
+                "position": [6, 2, 0],
                 "key": []
             },
             "6": {
-                "position": [5, 9, 0],
+                "position": [9, 4, 0],
                 "key": []
             },
             "7": {
@@ -1256,221 +1772,6 @@
             },
             "8": {
                 "position": [4, 0, 0],
-                "key": []
-            },
-            "9": {
-                "position": [2, 7, 0],
-                "key": []
-            }
-        }
-    },
-    "29": {
-        "isWin": false,
-        "floor": [0],
-        "step": 29,
-        "agents": {
-            "1": {
-                "position": [9, 7, 0],
-                "key": []
-            },
-            "2": {
-                "position": [1, 7, 0],
-                "key": []
-            },
-            "3": {
-                "position": [2, 3, 0],
-                "key": []
-            },
-            "4": {
-                "position": [2, 8, 0],
-                "key": []
-            },
-            "5": {
-                "position": [7, 3, 0],
-                "key": []
-            },
-            "6": {
-                "position": [6, 9, 0],
-                "key": []
-            },
-            "7": {
-                "position": [6, 1, 0],
-                "key": []
-            },
-            "8": {
-                "position": [3, 0, 0],
-                "key": []
-            },
-            "9": {
-                "position": [2, 7, 0],
-                "key": []
-            }
-        }
-    },
-    "30": {
-        "isWin": false,
-        "floor": [0],
-        "step": 30,
-        "agents": {
-            "1": {
-                "position": [8, 8, 0],
-                "key": []
-            },
-            "2": {
-                "position": [1, 8, 0],
-                "key": []
-            },
-            "3": {
-                "position": [3, 3, 0],
-                "key": []
-            },
-            "4": {
-                "position": [2, 8, 0],
-                "key": []
-            },
-            "5": {
-                "position": [8, 3, 0],
-                "key": []
-            },
-            "6": {
-                "position": [7, 9, 0],
-                "key": []
-            },
-            "7": {
-                "position": [5, 1, 0],
-                "key": []
-            },
-            "8": {
-                "position": [2, 0, 0],
-                "key": []
-            },
-            "9": {
-                "position": [1, 6, 0],
-                "key": []
-            }
-        }
-    },
-    "31": {
-        "isWin": false,
-        "floor": [0],
-        "step": 31,
-        "agents": {
-            "1": {
-                "position": [7, 8, 0],
-                "key": []
-            },
-            "2": {
-                "position": [0, 9, 0],
-                "key": []
-            },
-            "3": {
-                "position": [3, 2, 0],
-                "key": []
-            },
-            "4": {
-                "position": [1, 7, 0],
-                "key": []
-            },
-            "5": {
-                "position": [9, 3, 0],
-                "key": []
-            },
-            "6": {
-                "position": [8, 9, 0],
-                "key": []
-            },
-            "7": {
-                "position": [4, 1, 0],
-                "key": []
-            },
-            "8": {
-                "position": [1, 1, 0],
-                "key": []
-            },
-            "9": {
-                "position": [1, 5, 0],
-                "key": []
-            }
-        }
-    },
-    "32": {
-        "isWin": false,
-        "floor": [0],
-        "step": 32,
-        "agents": {
-            "1": {
-                "position": [6, 8, 0],
-                "key": []
-            },
-            "2": {
-                "position": [0, 0, 0],
-                "key": []
-            },
-            "3": {
-                "position": [4, 2, 0],
-                "key": []
-            },
-            "4": {
-                "position": [2, 6, 0],
-                "key": []
-            },
-            "5": {
-                "position": [3, 3, 0],
-                "key": []
-            },
-            "6": {
-                "position": [8, 8, 0],
-                "key": []
-            },
-            "7": {
-                "position": [3, 1, 0],
-                "key": []
-            },
-            "8": {
-                "position": [8, 1, 0],
-                "key": []
-            },
-            "9": {
-                "position": [1, 4, 0],
-                "key": []
-            }
-        }
-    },
-    "33": {
-        "isWin": true,
-        "floor": [0],
-        "step": 33,
-        "agents": {
-            "1": {
-                "position": [5, 9, 0],
-                "key": []
-            },
-            "2": {
-                "position": [0, 1, 0],
-                "key": []
-            },
-            "3": {
-                "position": [5, 2, 0],
-                "key": []
-            },
-            "4": {
-                "position": [3, 6, 0],
-                "key": []
-            },
-            "5": {
-                "position": [4, 3, 0],
-                "key": []
-            },
-            "6": {
-                "position": [9, 7, 0],
-                "key": []
-            },
-            "7": {
-                "position": [4, 2, 0],
-                "key": []
-            },
-            "8": {
-                "position": [7, 1, 0],
                 "key": []
             },
             "9": {

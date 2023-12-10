@@ -76,6 +76,7 @@ class SystemController:
     def createFloorImage(self, FLOOR_PATH, grid):
         heatmap = copy.deepcopy(grid)
         #print(heatmap)
+        maximum = 0
         for i in range(len(grid)):
             for j in range(len(grid[0])):
                 if grid[i][j] == -1: # obstacle cell
@@ -95,7 +96,27 @@ class SystemController:
                 elif grid[i][j] >= 100: # goal cell
                     heatmap[i][j] = 0.6
                 else: # agent cell (can be multiple times)
-                    heatmap[i][j] = 1 - float(grid[i][j]) / 15
+                    maximum = max(maximum, grid[i][j])
+        for i in range(len(grid)):
+            for j in range(len(grid[0])):
+                if grid[i][j] == -1: # obstacle cell
+                    heatmap[i][j] = 0
+                elif grid[i][j] == 0: # empty cell, color white
+                    heatmap[i][j] = 1
+                elif grid[i][j] >= 600: # stair down cell
+                    heatmap[i][j] = 0.15
+                elif grid[i][j] >= 500: # stair up cell
+                    heatmap[i][j] = 0.2
+                elif grid[i][j] >= 400: # door cell
+                    heatmap[i][j] = 0.1
+                elif grid[i][j] >= 300: # agent cell
+                    heatmap[i][j] = 0.3
+                elif grid[i][j] >= 200: # key cell
+                    heatmap[i][j] = 0.4
+                elif grid[i][j] >= 100: # goal cell
+                    heatmap[i][j] = 0.6
+                else: # agent cell (can be multiple times)
+                    heatmap[i][j] = 1.0 - grid[i][j] / (maximum * 10)
         # create a floor image
         plt.figure(figsize=(10, 10))
         plt.imshow(heatmap, cmap='hot', interpolation='nearest')

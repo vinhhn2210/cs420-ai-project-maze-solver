@@ -1,12 +1,7 @@
 {
     "0": {
-<<<<<<< Updated upstream
-        "time": 4.3986,
-        "memory": 0.0408,
-=======
-        "time": 1.2355,
-        "memory": 0.0402,
->>>>>>> Stashed changes
+        "time": 1.0011,
+        "memory": 0.0232,
         "numFloor": 1,
         "numAgent": 1,
         "floor": [0],
