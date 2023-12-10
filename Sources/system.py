@@ -10,7 +10,9 @@ import re
 import sys
 import time
 import psutil
-
+import tracemalloc
+import PIL.Image as Image
+from matplotlib import pyplot as plt
 # back to the parent folder
 CUR_PATH = os.path.dirname(os.path.abspath(__file__))
 
@@ -24,7 +26,7 @@ class SystemController:
         self.mapLists = {}
         self.timeCount = 0
         self.memoryCount = 0
-
+        
     def readUserImportMap(self, mapPath, levelID):
         mapName = f'input0-level{levelID}'
         self.mapLists[mapName] = loadMapOnDirectory(mapPath, mapName)
@@ -56,11 +58,13 @@ class SystemController:
             self.mapLists[key].display()
 
     def measureStart(self):
+        tracemalloc.clear_traces()
         self.timeCount = time.time()
         self.memoryCount = psutil.Process()
     def measureEnd(self):
         self.timeCount = time.time() - self.timeCount
-        self.memoryCount = self.memoryCount.memory_info().rss / (1024 ** 2)
+        self.memoryCount = tracemalloc.get_traced_memory()[1] / (1024 ** 2)
+        #self.memoryCount = self.memoryCount.memory_info().rss / (1024 ** 2)
         # print time, mem with 4 digits after comma
         self.timeCount = round(self.timeCount * 1000, 4)
         self.memoryCount = round(self.memoryCount, 4)
@@ -68,8 +72,91 @@ class SystemController:
         print('\t+ Memory:\t{} Mib'.format(self.memoryCount))
         return self.timeCount, self.memoryCount
 
+    def createFloorImage(self, FLOOR_PATH, grid):
+        heatmap = grid.copy()
+        #print(heatmap)
+        for i in range(len(grid)):
+            for j in range(len(grid[0])):
+                if grid[i][j] == -1: # obstacle cell
+                    heatmap[i][j] = 0
+                elif grid[i][j] == 0: # empty cell, color white
+                    heatmap[i][j] = 1
+                elif grid[i][j] >= 600: # stair down cell
+                    heatmap[i][j] = 0.15
+                elif grid[i][j] >= 500: # stair up cell
+                    heatmap[i][j] = 0.2
+                elif grid[i][j] >= 400: # door cell
+                    heatmap[i][j] = 0.1
+                elif grid[i][j] >= 300: # agent cell
+                    heatmap[i][j] = 0.3
+                elif grid[i][j] >= 200: # key cell
+                    heatmap[i][j] = 0.4
+                elif grid[i][j] >= 100: # goal cell
+                    heatmap[i][j] = 0.6
+                else: # agent cell (can be multiple times)
+                    heatmap[i][j] = 1 - float(grid[i][j]) / 15
+        # create a floor image
+        plt.figure(figsize=(10, 10))
+        plt.imshow(heatmap, cmap='hot', interpolation='nearest')
+        plt.savefig(FLOOR_PATH)
+        plt.close()
+
+
+    def createHeatMapImage(self, HEATMAP_PATH, MapJson, agentPath):
+        # create a heatmap image with floor image for each agentPath
+        grid = []
+        for layer in range(MapJson.nLayer):
+            grid.append([[0 for i in range(MapJson.mCol)] for j in range(MapJson.nRow)])
+            for xCor in range(MapJson.nRow):
+                for yCor in range(MapJson.mCol):
+                    if MapJson.mazer[layer][xCor][yCor] == '-1':
+                        grid[layer][xCor][yCor] = -1
+                    elif MapJson.mazer[layer][xCor][yCor] == 'UP':
+                        grid[layer][xCor][yCor] = 500
+                    elif MapJson.mazer[layer][xCor][yCor] == 'DO':
+                        grid[layer][xCor][yCor] = 600
+                    elif MapJson.mazer[layer][xCor][yCor][0] == 'T':
+                        grid[layer][xCor][yCor] = 100
+                    elif MapJson.mazer[layer][xCor][yCor][0] == 'K':
+                        grid[layer][xCor][yCor] = 200
+                    elif MapJson.mazer[layer][xCor][yCor][0] == 'A':
+                        grid[layer][xCor][yCor] = 300
+                    elif MapJson.mazer[layer][xCor][yCor][0] == 'D':
+                        grid[layer][xCor][yCor] = 400
+                    
+        
+        # create a heatmap image folder for each map, then for each agentPath, create a heatmap image
+        if not os.path.exists(HEATMAP_PATH):
+            os.makedirs(HEATMAP_PATH)
+        
+        for i in range(0, len(agentPath)):
+            xCor, yCor, layer, key = agentPath[i]
+            grid[layer][xCor][yCor] += 1
+        # create a heatmap image for each floor
+
+        for floor in range(MapJson.nLayer):
+            # create a floor image
+            FLOOR_PATH = HEATMAP_PATH + '/floor' + str(floor + 1) + '.png'
+            # create a heatmap image
+            self.createFloorImage(FLOOR_PATH, grid[floor])
+
+
     def writeHeatMapFile(self, mapName, agentPath, algorithm):
-        print("\t+ Output to heatmap " + mapName + '_' + algorithm + '.txt successfully...')        
+        # create a heatmap image folder for each map, then for each agentPath, create a heatmap image
+        # path = [(x1, y1, layer1), (x2, y2, layer2), ...]
+        MapJson = self.mapLists[mapName]
+        # create folder
+        HEATMAP_FOLDER = CUR_PATH + '/Heatmap/' + mapName + '_' + algorithm
+        if not os.path.exists(HEATMAP_FOLDER):
+            os.makedirs(HEATMAP_FOLDER)
+        # create heatmap image for each agentPath
+        for i in range(0, len(agentPath)):
+            # create a heatmap image for each agentPath
+            HEATMAP_PATH = HEATMAP_FOLDER + '/agent' + str(i + 1)
+            # create a heatmap image
+            self.createHeatMapImage(HEATMAP_PATH, MapJson, agentPath[i])
+
+        print("\t+ Output to heatmap " + mapName + '_' + algorithm + ' successfully...')        
 
     def writeSolutionJsonFile(self, mapName, agentPath, algorithm):
         # path = [(x1, y1, layer1), (x2, y2, layer2), ...]
@@ -220,6 +307,7 @@ if __name__ == '__main__':
     system.printMapList()
     # solving map
     print('-' * 50)
+    tracemalloc.start()
     if sys.argv[2] == 'auto':
         print('Solving all map with all current algorithms...')
         system.solvingAllMap('dfs')
@@ -245,7 +333,7 @@ if __name__ == '__main__':
             print('Algorithm is not exist!')
             exit()
         print('Solving ' + mapName + ' with ' + algorithm + ' algorithm is done!')
-        
+    tracemalloc.stop()
     # done and visualize the solution
     print('-' * 50)
     print('Program is done!')
