@@ -101,13 +101,19 @@ class Menu:
 		) for j in range(2)] for i in range(4)]
 
 		# Algorithm Text
-		self.algoTuple = ('BFS', 'DFS', 'UCS', 'A*')
+		self.algoTuple = (
+			(),
+			('BFS', 'DFS', 'UCS', 'A*'),
+			('BFS', 'DFS', 'A*'),
+			('BFS', 'DFS', 'A*'),
+			('BFS-DFS',)
+		)
 
 		self.algoText = [TextClass.Text(
 			Const.VCR_OSD_MONO_FONT,
 			Const.BROWN,
 			25,
-			self.algoTuple[i],
+			self.algoTuple[1][i],
 			(self.algoTickButtonList[i][0].coord[0] + self.screenWidth * 1 / 100 + self.algoTickButtonList[i][0].size[0], self.algoTickButtonList[i][0].coord[1], 0, self.algoTickButtonList[i][0].size[1])
 		) for i in range(4)]
 
@@ -371,13 +377,19 @@ class Menu:
 			if upLevelState == True:
 				if self.levelID < 4:
 					self.levelID += 1
+					self.algorithmID = -1
 				self.levelIDText.changeTextContent('Level ' + str(self.levelID))
+				for i in range(len(self.algoTuple[self.levelID])):
+					self.algoText[i].changeTextContent(self.algoTuple[self.levelID][i])
 
 			downLevelState = self.downLevelButton.isClicked(self.gameScreen)
 			if downLevelState == True:
 				if self.levelID > 1:
 					self.levelID -= 1
+					self.algorithmID = -1
 				self.levelIDText.changeTextContent('Level ' + str(self.levelID))
+				for i in range(len(self.algoTuple[self.levelID])):
+					self.algoText[i].changeTextContent(self.algoTuple[self.levelID][i])
 
 			# Up, Down Map Process
 			upMapState = self.upMapButton.isClicked(self.gameScreen)
@@ -393,7 +405,7 @@ class Menu:
 				self.mapIDText.changeTextContent('Map ' + str(self.mapID))
 
 			# Algorithm Process
-			for i in range(4):
+			for i in range(len(self.algoTuple[self.levelID])):
 				algoState = self.algoTickButtonList[i][0].isClicked(self.gameScreen)
 				if algoState == True:
 					self.algorithmID = i
@@ -413,7 +425,7 @@ class Menu:
 
 			if startButtonState == True:
 				if self.algorithmID != -1:
-					ingame = InGame.InGame((self.mapID, self.levelID, self.algoTuple[self.algorithmID]))
+					ingame = InGame.InGame((self.mapID, self.levelID, self.algoTuple[self.levelID][self.algorithmID]))
 					ingame.run()
 					break
 
@@ -424,7 +436,7 @@ class Menu:
 			self.levelIDText.draw(self.gameScreen)
 			self.upLevelButton.draw(self.gameScreen)
 			self.downLevelButton.draw(self.gameScreen)
-			for i in range(4):
+			for i in range(len(self.algoTuple[self.levelID])):
 				if self.algorithmID == i:
 					self.algoTickButtonList[i][1].draw(self.gameScreen)
 				else:
