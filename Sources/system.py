@@ -62,9 +62,9 @@ class SystemController:
         self.timeCount = time.time() - self.timeCount
         self.memoryCount = self.memoryCount.memory_info().rss / (1024 ** 2)
         # print time, mem with 4 digits after comma
-        self.timeCount = round(self.timeCount, 4)
+        self.timeCount = round(self.timeCount * 1000, 4)
         self.memoryCount = round(self.memoryCount, 4)
-        print('\t+ Time: \t{} ms'.format(self.timeCount * 1000))
+        print('\t+ Time: \t{} ms'.format(self.timeCount))
         print('\t+ Memory:\t{} Mib'.format(self.memoryCount))
         return self.timeCount, self.memoryCount
 
@@ -77,6 +77,8 @@ class SystemController:
         # write to json file
         jsonData = {
             "0": {
+                "time": self.timeCount,
+                "memory": self.memoryCount,
                 "numFloor": MapJson.nLayer,
                 "numAgent": len(agentPath),
                 "floor": [],
