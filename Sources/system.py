@@ -277,7 +277,7 @@ class SystemController:
             print('No solution for ' + mapName + ' with ' + algorithm + ' algorithm')
         return solution
 
-    def solving(self, mapName, algorithm):
+    def solvingNoHeatMap(self, mapName, algorithm):
         print('-' * 50)
         print('Solving ' + mapName + ' with ' + algorithm + ' algorithm...')
         mapLevel = self.getMapLevel(mapName)
