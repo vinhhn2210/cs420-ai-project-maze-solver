@@ -1,12 +1,7 @@
 {
     "0": {
-<<<<<<< HEAD
-        "time": 16.0701,
-        "memory": 17.7812,
-=======
-        "time": 12.038,
-        "memory": 0.0815,
->>>>>>> main
+        "time": 0.0,
+        "memory": 0.0816,
         "numFloor": 1,
         "numAgent": 1,
         "floor": [0],
